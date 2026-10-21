@@ -2,11 +2,12 @@
 \label{sec:discussion}
 
 \paragraph{Is this just instruction following?}
-A padded list obeys the schema, but the prompt also says ``List all the \ldots'', and when the document holds fewer items than the minimum, the two instructions cannot both be met with true entries.
-A number in the schema is not enough to cause padding: under a shown maximum 35.7\% of outputs over-count, against 34.5\% with no count and 55.4\% under a shown minimum.
-A minimum adds no entries on average when the document already holds enough items, so the added entries fill forced slots.
-Told that a shorter list is fine, seven of eight GPU models shorten their lists against the plain minimum, so most can stop, and the minimum is what keeps them going.
-The failure is following the count over the document and filling the slots with whatever text is at hand.
+In part it is: the model follows the schema over ``List all'', and Section~\ref{sec:scoring} gives our reasons for counting that as the failure.
+The controls show that the minimum does this, not the schema or any number in it.
+Under a shown maximum 35.7\% of outputs over-count, against 34.5\% with no count and 55.4\% under a shown minimum.
+A minimum adds no entries when the document already holds enough items.
+Told that a shorter list is fine, seven of eight GPU models shorten their lists against the plain minimum, so most can stop.
+What goes wrong is that the model meets the count with whatever text is at hand instead of saying the list is short.
 
 \paragraph{Why it is easy to miss.}
 Most of the padding is taken from the document: it parses, meets the schema, and about half of it passes a source check (Section~\ref{sec:what}), so the error shows in full only against an answer list.
@@ -35,6 +36,6 @@ This matches what \citet{han2023empirical} and \citet{qian2026unreliable} find f
 \section{Conclusion}
 \label{sec:conclusion}
 
-When a document holds fewer items than a schema's minimum, most of the open-weight models tested treat the count as a target and pad their lists: a shown minimum raises the share of over-counting lists from 34.5\% to 55.4\%, and an enforced one to 90.1\%.
+When a document holds fewer items than a schema's minimum, most of the open-weight models tested treat the count as a target and pad their lists: a shown minimum raises the share of over-counting lists from 34.5\% to 55.4\%, and an ``N/A'' option under an enforced minimum still leaves half of them padded.
 The added entries are mostly real text taken from the document, so about half of them pass a source check.
 A ``fewer is fine'' line undoes the effect on average at some cost in recall, while re-asking with the validation error makes padding far more common, and thinking does not help.

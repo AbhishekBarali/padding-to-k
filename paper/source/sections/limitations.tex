@@ -4,7 +4,7 @@
 Every list item is one string (a quote, a name or, for meetings, a summary sentence); lists of records with several fields, where padding would force invented field values, are not tested.
 One grammar engine (XGrammar) is used; a second engine gave different outputs in a pre-study test.
 The schema is always pasted in the prompt, in LangChain's format, and $k$ takes the values 1, 3 and 5.
-No closed model is run, so the results speak to open-weight models.
+No closed model is run, and closed APIs may pad less (Section~\ref{sec:models}); the six conditions with a free decoder run on any API, so they are the natural next test.
 
 \paragraph{Answer lists and matcher.}
 The answer lists fix one reading for each ambiguous case, so the blind check measures agreement with the written rules; job-ad skills is the least certain set.
@@ -19,3 +19,4 @@ Two chat templates add a system prompt of their own (Olmo 3.1 a default one, gpt
 Hosted models are a reference, with no pinned revision or serving stack.
 The novel texts lost their non-ASCII characters; the CORD receipts are Indonesian and the other sets English.
 The documents fill fixed cells of up to 15 per set and true count, and documents with no single right count were dropped, so how often a real pipeline meets $n < k$ is not measured here.
+In public schemas a minimum on a list of strings or objects is almost always 1 (Appendix~\ref{app:posthoc}), so the $k = 1$ test matches the common case and $k = 3$ and 5 a rarer one.

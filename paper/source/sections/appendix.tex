@@ -666,6 +666,53 @@ Under a shown minimum, on documents with $n < k$, the matcher calls 29.5\% of th
 The 7.0\% and 7.3\% of Appendix~\ref{app:checks} are shares of all substantive entries, true items included, over every model and condition.
 On the same basis, the hosted models' extra entries are 5.6\% invented.
 
+\paragraph{Documents a model gets right with no count.}
+The 34.5\% over-count with no count mixes ordinary extraction error into every absolute rate.
+To set it aside, we keep only the (model, document) pairs whose no-count list has exactly $n$ substantive entries (2,275 pairs, 3,884 cells of $k = 3$ or 5), or at most $n$ (4,762 cells), so the no-count over-count is 0 by construction.
+On these pairs a shown minimum makes 35.2\% of lists pad, a shown maximum 5.0\%, ``fewer is fine'' 9.6\% and an enforced minimum 83.9\% (Table~\ref{tab:cleanbase}).
+Under a shown maximum, which changes the prompt as much, 5.0\% pad, so most of the 35.2\% comes from the minimum itself.
+Without Qwen3.5-0.8B the shown-minimum share is 36.7\% (\texttt{analysis/posthoc/clean\_baseline.py}).
+
+\begin{table}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{adjustbox}{max width=\linewidth}
+  \begin{tabular}{@{}lrr@{}}
+    \toprule
+    Condition & No count exactly $n$ & No count at most $n$ \\
+    \midrule
+    \rows{generated/app_clean_baseline_rows.tex}
+    \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Post hoc: over-count (\%, 95\% group-bootstrap interval) on the (model, document) pairs whose no-count list was exactly $n$ entries long or at most $n$, eight GPU models pooled, $n < k$, $k = 3$ and 5. With no count the rate is 0 by construction.}
+  \label{tab:cleanbase}
+\end{table}
+
+\paragraph{How often real schemas set a list minimum.}
+We count list minimums in the 9,542 real-world schemas of JSONSchemaBench \citep{geng2025jsonschemabench} (MIT licence, revision \texttt{5bd0f46}), leaving out fixed-length arrays and tuples such as coordinates (Table~\ref{tab:schemaprev}).
+Half the schemas hold an array; 7.7\% put a \texttt{minItems} of at least 1 on a list of strings or objects, and 0.3\% (24 schemas) one of 2 or more, such as a list of players or of interests.
+The common schema minimum is therefore 1, the case of the empty-document test (Section~\ref{sec:named}); larger minimums are rare in public schemas.
+The function-calling subset (Glaiveai2K) sets none (\texttt{analysis/posthoc/schema\_prevalence.py}).
+
+\begin{table}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{adjustbox}{max width=\linewidth}
+  \begin{tabular}{@{}lrrrrr@{}}
+    \toprule
+    Subset & Schemas & Array \% & Min $\geq 1$, list \% & Min $\geq 2$ \% & Min $\geq 2$, list \% \\
+    \midrule
+    \rows{generated/app_schema_prevalence_rows.tex}
+    \bottomrule
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Post hoc: list minimums in JSONSchemaBench, share of schemas. Array: any array. Min $\geq 1$, list: an open array of strings or objects with \texttt{minItems} $\geq 1$. Min $\geq 2$: any open array with \texttt{minItems} $\geq 2$; list: of strings or objects. Open arrays exclude fixed-length arrays (\texttt{minItems} = \texttt{maxItems}) and tuples.}
+  \label{tab:schemaprev}
+\end{table}
+
 \paragraph{Examples.}
 One over-counting output per set under a shown minimum, on a document with $1 \leq n < k$ and with at most six short entries, chosen by a fixed hash rule, not by hand.
 The labels are the matcher's; in the emails example it swaps entries 1 and 2, though the number of extra entries is right.

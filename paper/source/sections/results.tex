@@ -16,7 +16,7 @@ Unless stated, they are on documents with $n < k$ at $k = 3$ and 5; 95\% group-b
 \end{table*}
 
 A minimum shown in the schema lengthens lists for six of the eight GPU models, by 0.26 (Olmo 3.1 32B) to 1.68 entries (Gemma 4 31B), each with an interval above 0 (Table~\ref{tab:permodel}, column C2).
-Pooled over the eight, it adds 0.62 entries [0.46, 0.78] and raises over-count by 20.9 points [19.5, 22.3].
+Pooled over the eight, it adds 0.62 entries [0.46, 0.78] and raises over-count by 20.9 points [19.5, 22.3]: on the same documents, about one more list in five runs past the true count.
 The estimate holds without the pilot documents, under the mixed model, with the five families weighted equally and with any one family left out (0.47 to 0.78; Appendices~\ref{app:generality} and~\ref{app:perset}).
 
 The two smallest models are the exceptions.
@@ -118,8 +118,10 @@ It barely changes over-count (35.7\% against 34.5\%) but leaves out more true it
 
 Over-count is not zero without a count: 34.5\% of no-count outputs on $n < k$ documents already list more than $n$ substantive entries, mostly grounded padding (64.6\%\pre{}; Table~\ref{tab:fillfull}).
 This is ordinary extraction error, and each paired contrast measures what a condition adds to it on the same document and model.
+On the documents a model gets exactly right with no count, a shown minimum makes 35.2\% [33.0, 37.5] of its lists pad, against 5.0\% under a shown maximum (post hoc; Table~\ref{tab:cleanbase}).
 A shown minimum moves lists toward $k$: the share with exactly $k$ entries rises from 5.6\% to 35.5\%, and 55.4\% of outputs pad (Figure~\ref{fig:sorting}).
 Enforced, the minimum leaves 0.6\% of lists short of $k$ and 90.1\% padded.
+That much follows from the decoder, which all but rules out a shorter list; what the enforced condition shows is what fills the slots.
 
 Most extra entries are grounded padding: 62.9\%\pre{} under a shown minimum and 79.6\%\pre{} under an enforced one, as in Figure~\ref{fig:example}.
 Most of the rest are invented: 29.5\%\pre{} under a shown minimum, about the share with no count (29.8\%\pre{}), so the minimum adds both kinds in the proportions they already have; corrected with the authors' labels, the invented share is 23.4\% (post hoc; Appendix~\ref{app:posthoc}).
@@ -143,7 +145,9 @@ The serving stack does not drive the result: for the three models run both on th
 Libraries that validate a schema send a failing reply back with the validation error.
 We did this once for every shown-minimum reply shorter than $k$, in five runs (four models, with Ministral 3 14B both on the GPU and on Bedrock).
 Over-count among the re-asked outputs rose in every run: from 10.0\% to 69.0\% for Qwen3.5-9B and from 14.0\% to 78.3\% for Kimi K3 (Appendix~\ref{app:reask}).
-The error restates the minimum; a re-ask that adds ``fewer is fine'' was not tested.
+The error restates the minimum, so complying with it is expected.
+The point is practical: after the default retry, 44.0 to 81.6\% of these short lists, truthful ones included, are padded.
+A re-ask that adds ``fewer is fine'' was not tested.
 
 \paragraph{Thinking.}
 Thinking does not help (Appendix~\ref{app:thinking}, Table~\ref{tab:thinking}).

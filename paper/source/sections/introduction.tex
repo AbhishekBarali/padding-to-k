@@ -21,11 +21,12 @@ Extraction systems ask language models for structured output: a JSON object that
 The schema, or the prompt around it, can say how many entries a list must have, for example with \texttt{"minItems": 3}.
 That is harmless when the document holds at least that many items.
 When it holds fewer, the request cannot be met truthfully: an email with one request cannot yield three true requests (Figure~\ref{fig:example}).
+Real schemas set list minimums: of the 9,542 real-world schemas in JSONSchemaBench \citep{geng2025jsonschemabench}, 7.7\% put a \texttt{minItems} of at least 1 on a list of strings or objects, which an empty document cannot meet; minimums of 2 or more are rarer (0.3\%; post hoc, Appendix~\ref{app:posthoc}).
 
 We fix what a correct output is in advance (Sections~\ref{sec:scoring} and~\ref{sec:prereg}).
 When the document holds $n < k$ true items, a correct output lists the $n$ items and stops, or marks the list as short with a placeholder, an ``N/A'' where one is offered, or a note.
 Padding the list with entries that are not true items is the failure, whether the padding is invented or taken from the document.
-Section~\ref{sec:discussion} takes up the objection that a padded list just follows the instruction.
+Section~\ref{sec:scoring} gives the reasons for this reading, and Section~\ref{sec:discussion} the evidence that the minimum, not the schema, causes the padding.
 
 Stated counts and required fields are known to push models toward content that is not there \citep{yang2026prompt,ivgi2025loops,usman2026phantomfill}.
 The closest study, PhantomFill \citep{usman2026phantomfill}, puts minimum-count arrays in JSON schemas, but its inputs hold no true items by construction and it does not vary the count.
@@ -56,7 +57,8 @@ The main measure is the length change: for the same document and model, the numb
 We find three things (Section~\ref{sec:results} marks which results are registered tests and which are exploratory or post hoc).
 
 \textbf{Models treat the count as a target.}
-A minimum shown in the schema raises the share of lists longer than the true count from 34.5\% to 55.4\%, and to 90.1\% when the decoder enforces it.
+A minimum shown in the schema, but not enforced, raises the share of lists longer than the true count from 34.5\% to 55.4\%: on the same documents, about one more list in five runs past the true count.
+On the documents a model gets exactly right with no count, a shown minimum still makes about a third of its lists pad (35.2\%; post hoc).
 Six of the eight GPU models and all nine hosted runs lengthen their lists; the exceptions are the two smallest models, one of which often writes no readable list (Section~\ref{sec:main}).
 Registered controls tie the effect to the slots the document cannot fill: a minimum adds nothing on documents that already hold enough items, and a shown maximum barely changes over-count (Section~\ref{sec:named}).
 
@@ -66,6 +68,7 @@ They parse, meet the schema, and about half pass a check that each entry occurs 
 
 \textbf{Common fixes help only partly.}
 A line saying fewer items are fine removes the effect on average but misses more true items.
+An ``N/A'' option under an enforced minimum lowers padding only from 90.1\% to 51.0\%.
 ``Up to $k$'' in prose also raises over-counting, from 34.5\% to 42.7\%.
 Re-asking with the bare validation error, as schema-validating libraries do, made padding far more common in every run tested, from 10.0\% to 69.0\% for Qwen3.5-9B (Section~\ref{sec:exploratory}).
 

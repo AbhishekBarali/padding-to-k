@@ -11,13 +11,14 @@ that a list needs at least *k* entries. We tested what models do when the docume
 items, with eight open-weight models on 558 real documents from nine annotated datasets, and six more
 models on hosted services. Three findings:
 
-- **Models treat the count as a target.** A minimum shown in the schema raises the share of lists longer
-  than the true count from 34.5% to 55.4%, and to 90.1% when the decoder enforces it.
+- **Models treat the count as a target.** A minimum shown in the schema, but not enforced, raises the share
+  of lists longer than the true count from 34.5% to 55.4%.
 - **The padding is hard to catch.** Most added entries are real text from the document, so about half of
   them pass a check that each entry occurs in the source.
 - **Common fixes help only partly.** Saying that fewer items are fine removes the effect on average but
-  misses more true items; "up to *k*" in the prompt also raises over-counting; re-asking with the
-  validation error makes padding far more common.
+  misses more true items; "up to *k*" in the prompt also raises over-counting; an "N/A" option under an
+  enforced minimum still leaves half the lists padded; re-asking with the validation error makes padding
+  far more common.
 
 ## What is here
 

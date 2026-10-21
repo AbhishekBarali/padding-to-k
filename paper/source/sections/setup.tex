@@ -63,14 +63,22 @@ The prose conditions replace the instruction with a count wording modelled on re
 
 Eight open-weight models from five families run on one GPU: Qwen3.5-0.8B, -2B, -9B and -27B, Gemma 4 31B, Olmo 3.1 32B, Ministral 3 14B and gpt-oss-20b.
 Each is pinned to a Hugging Face revision and served by vLLM v0.31.0 \citep{kwon2023vllm} with XGrammar 0.2.7 \citep{dong2025xgrammar}, in BF16 (gpt-oss-20b in its native MXFP4), with greedy decoding (temperature 0, seed 0) and thinking off; gpt-oss cannot turn reasoning off and runs at low effort.
-The study is limited to open-weight models, which can be pinned and rerun and, served locally, run the enforced conditions too.
-Closed models are left to future work, and they may behave differently: in PhantomFill, GPT-5.5 filled a minimum-count array with invented content in only 3 of 20 trials \citep{usman2026phantomfill}.
+We test open-weight models only.
+Closed APIs, which carry much production extraction, are the main gap, and they may behave differently: in PhantomFill, GPT-5.5 filled a minimum-count array with invented content in only 3 of 20 trials \citep{usman2026phantomfill}.
 As a reference, never pooled with the GPU models, six more open-weight models run on hosted services: DeepSeek V4.1 Flash (thinking off) on Together AI in every condition, and Kimi K3 (thinking off), DeepSeek V3.2, Qwen3-235B, Mistral Large 3 and gpt-oss-120b on Amazon Bedrock in the unenforced conditions only, because Bedrock cannot enforce a minimum above 1.
 Three GPU models also run hosted (Qwen3.5-9B on Together, Ministral 3 14B and gpt-oss-20b on Bedrock) to test whether the serving stack matters.
 No Claude model is run, because a Claude model helped prepare the answer lists.
 
 \subsection{Scoring}
 \label{sec:scoring}
+
+\paragraph{Which instruction a correct output follows.}
+When $n < k$, ``List all the requests.'' and the schema's \texttt{minItems} cannot both be met with true entries, so the study has to say which one a correct output follows.
+The registered plan chose the instruction, for three reasons.
+The instruction is about the document in hand, while a schema is written once for a whole pipeline, before any document is seen; an instruction followed by the schema is the layout LangChain's \texttt{JsonOutputParser} is built for.
+A short list is correct data, and a placeholder or a note says that items are missing, while a padded list passes every format check and is wrong.
+And a reading under which the minimum wins would accept any filler, invented entries included.
+The main measure does not depend on this choice: the length change counts how far the stated number moves the list under either reading, and only calling the padding a failure rests on it.
 
 Code reads every output through one parse ladder (strict JSON, a fenced block, the first object holding the list, a bare list, a cut-off list); a copy of the schema is never taken as the answer, so an output that only fills in a schema copy is unreadable.
 The main measure is \emph{length change}: the number of substantive entries under a condition minus the number under its comparison condition, for the same document and model (for contrast 2, a shown minimum against no count).
