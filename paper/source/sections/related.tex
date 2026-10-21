@@ -1,0 +1,31 @@
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Forms and counts as pressure.}
+The closest study to ours, PhantomFill \citep{usman2026phantomfill}, builds inputs that hold no answer by construction, such as a post with engagement counts but no reply text, and finds that required JSON fields drive fabrication to 100\% in ten of thirteen models and that open-weight models ignore an offered ``insufficient evidence'' value, even under enforced decoding.
+Its schemas include minimum-count arrays, which GPT-5.5 filled with invented content in 3 of 20 trials.
+Because its inputs hold nothing true, every filled slot is invented there.
+Our documents hold some true items, so a padded list can also be filled with real text, and we vary $k$ against $n$.
+\citet{yang2026prompt} states an error count in prose for CoNLL-2014 passages of learner English: moving it from two below the true count to two above moves the reported count of four GPT and Claude models by 82 to 94\% of that gap, with one case of GPT-4o inventing errors to reach the stated number, while Gemini models barely move.
+\citet{ivgi2025loops} ask, from memory, for 25 facts where at most 10 exist, and lists move from correct facts to invented ones and then to repetitions.
+Neither uses a schema or compares a minimum with a maximum.
+Instruction-following benchmarks score such counts as goals to meet, for example ``mention the keyword of AI at least 3 times'' in IFEval \citep{zhou2023instruction}; on a document with fewer items than asked, meeting the count and staying true to the document conflict.
+
+\paragraph{What extraction errors are made of.}
+Two audits find that most false positives of model-based extraction are real text, not invention.
+In \citet{han2023empirical}, spans the test set does not annotate are 11.7 to 48.5\% of GPT-4's errors on four information-extraction tasks, while spans absent from the input are 0 to 4.3\%.
+\citet{qian2026unreliable} audits entity extraction from threat-intelligence reports under a preregistered protocol and estimates that 65.6\% of false positives are background mentions, correct strings from the wrong context, against 1.2\% with no support in the report; a hard cap of three items raised the precision of one entity type from 0.060 to 0.381.
+Neither sets a minimum count.
+We find the same kind of error under count pressure, where the minimum itself asks for it.
+
+\paragraph{Prompt against decoder.}
+Output formats change what models produce: JSON and similar formats lower reasoning accuracy, more so the stricter the format \citep{tam2024speak}.
+\citet{lee2026format} separate a format requested in the prompt from a format enforced by the decoder and find that the prompt causes most of the accuracy loss on reasoning tasks.
+Our shown and enforced conditions make the same split for a count: the prompt and schema are identical, and only the decoder differs.
+JSONSchemaBench tests six constrained-decoding frameworks, XGrammar among them, on 10K real-world schemas for efficiency, coverage of constraint types and output quality \citep{geng2025jsonschemabench}; it asks whether the decoder meets the schema, and we ask what the model puts in the slots the schema forces.
+Grammar-constrained decoding can also distort the model's distribution, giving grammatical outputs at likelihoods out of proportion to the model's own \citep{park2026grammar}, one reason an enforced minimum need not behave like a shown one.
+
+\paragraph{Abstention.}
+Saying that a list is short is a form of abstention, which is studied mostly as declining to answer questions that are underspecified or unanswerable \citep{wen2025know}.
+AbstentionBench finds that reasoning fine-tuning lowers abstention by 24\% on average \citep{kirichenko2025abstentionbench}, in line with our thinking side test, where thinking raised padding for two of three models.
+Our ``fewer is fine'' line and N/A escape are abstention options inside a schema.

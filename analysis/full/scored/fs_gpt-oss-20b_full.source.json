@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_gpt-oss-20b_full",
+ "model_key": "gpt-oss-20b",
+ "source": "2c651bbc720089513cf8278b7236749ba8a3aa0ce8218252074cde3a98baae64",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 26784,
+ "entries": 67511
+}

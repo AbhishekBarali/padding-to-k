@@ -1,0 +1,6 @@
+doc_id,n_list,n_A,n_B,unclear_A,unclear_B
+rev-412c2f,1,1,1,True,True
+rev-9e10fa,2,2,2,True,True
+rev-539a02,3,3,4,True,True
+rev-237fd3,4,4,4,True,True
+rev-ba4e31,5,5,5,True,False

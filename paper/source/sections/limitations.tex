@@ -1,0 +1,21 @@
+\section*{Limitations}
+
+\paragraph{Scope.}
+Every list item is one string (a quote, a name or, for meetings, a summary sentence); lists of records with several fields, where padding would force invented field values, are not tested.
+One grammar engine (XGrammar) is used; a second engine gave different outputs in a pre-study test.
+The schema is always pasted in the prompt, in LangChain's format, and $k$ takes the values 1, 3 and 5.
+No closed model is run, so the results speak to open-weight models.
+
+\paragraph{Answer lists and matcher.}
+The answer lists fix one reading for each ambiguous case, so the blind check measures agreement with the written rules; job-ad skills is the least certain set.
+For this reason the main measure needs only the true count, and the confirmatory contrasts are also given with the annotators' original counts.
+Numbers marked \pre{} rest on the item matcher, which does not assign the labels ``true item the list missed'' and ``text from beyond the excerpt''; its invented shares are its least firm numbers.
+Thinking traces are read only by a phrase search, not by hand.
+The share of outputs that note a shortfall outside the list is a lower bound, because the frozen note rules miss some wordings.
+
+\paragraph{Setup.}
+Decoding is greedy outside the thinking test, but repeated prompts did not always give the same reply: the over-count verdict changed for at most 3.0\% of GPU prompts and 8.0\% of Bedrock prompts sent twice (Appendix~\ref{app:repeat}).
+Two chat templates add a system prompt of their own (Olmo 3.1 a default one, gpt-oss one with the current date).
+Hosted models are a reference, with no pinned revision or serving stack.
+The novel texts lost their non-ASCII characters; the CORD receipts are Indonesian and the other sets English.
+The documents fill fixed cells of up to 15 per set and true count, and documents with no single right count were dropped, so how often a real pipeline meets $n < k$ is not measured here.

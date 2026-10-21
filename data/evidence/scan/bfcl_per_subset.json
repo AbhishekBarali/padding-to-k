@@ -1,0 +1,109 @@
+{
+ "input": "results/bfcl_records.jsonl",
+ "results": {
+  "BFCL_live": {
+   "orig": {
+    "array_nodes": 259,
+    "metadata_default_concrete_looking": 2415,
+    "metadata_description_concrete_looking": 2339,
+    "required_properties_declared_array": 120,
+    "schema_nodes": 8697,
+    "schemas_scanned": 1746,
+    "schemas_with_metadata_default_concrete_looking": 1125,
+    "schemas_with_metadata_description_concrete_looking": 1089,
+    "schemas_with_required_properties_declared_array": 84
+   },
+   "strict": {
+    "array_nodes": 259,
+    "metadata_default_concrete_looking": 2415,
+    "metadata_description_concrete_looking": 2339,
+    "metadata_description_eg_marker": 494,
+    "required_properties_declared_array": 120,
+    "schema_nodes": 8571,
+    "schemas_scanned": 1746,
+    "schemas_with_metadata_default_concrete_looking": 1125,
+    "schemas_with_metadata_description_concrete_looking": 1089,
+    "schemas_with_metadata_description_eg_marker": 345,
+    "schemas_with_required_properties_declared_array": 84
+   }
+  },
+  "BFCL_multi_turn": {
+   "orig": {
+    "array_nodes": 12,
+    "metadata_default_concrete_looking": 26,
+    "metadata_description_concrete_looking": 24,
+    "required_properties_declared_array": 10,
+    "schema_nodes": 400,
+    "schemas_scanned": 162,
+    "schemas_with_metadata_default_concrete_looking": 19,
+    "schemas_with_metadata_description_concrete_looking": 19,
+    "schemas_with_required_properties_declared_array": 10
+   },
+   "strict": {
+    "array_nodes": 12,
+    "metadata_default_concrete_looking": 26,
+    "metadata_description_concrete_looking": 24,
+    "metadata_description_eg_marker": 3,
+    "required_properties_declared_array": 10,
+    "schema_nodes": 400,
+    "schemas_scanned": 162,
+    "schemas_with_metadata_default_concrete_looking": 19,
+    "schemas_with_metadata_description_concrete_looking": 19,
+    "schemas_with_metadata_description_eg_marker": 3,
+    "schemas_with_required_properties_declared_array": 10
+   }
+  },
+  "BFCL_non_live": {
+   "orig": {
+    "array_nodes": 287,
+    "metadata_default_concrete_looking": 273,
+    "metadata_description_concrete_looking": 690,
+    "required_properties_declared_array": 192,
+    "schema_nodes": 6068,
+    "schemas_scanned": 1512,
+    "schemas_with_metadata_default_concrete_looking": 262,
+    "schemas_with_metadata_description_concrete_looking": 597,
+    "schemas_with_required_properties_declared_array": 163
+   },
+   "strict": {
+    "array_nodes": 287,
+    "metadata_default_concrete_looking": 273,
+    "metadata_description_concrete_looking": 690,
+    "metadata_description_eg_marker": 277,
+    "required_properties_declared_array": 192,
+    "schema_nodes": 6067,
+    "schemas_scanned": 1512,
+    "schemas_with_metadata_default_concrete_looking": 262,
+    "schemas_with_metadata_description_concrete_looking": 597,
+    "schemas_with_metadata_description_eg_marker": 221,
+    "schemas_with_required_properties_declared_array": 163
+   }
+  },
+  "__ALL__": {
+   "orig": {
+    "array_nodes": 558,
+    "metadata_default_concrete_looking": 2714,
+    "metadata_description_concrete_looking": 3053,
+    "required_properties_declared_array": 322,
+    "schema_nodes": 15165,
+    "schemas_scanned": 3420,
+    "schemas_with_metadata_default_concrete_looking": 1406,
+    "schemas_with_metadata_description_concrete_looking": 1705,
+    "schemas_with_required_properties_declared_array": 257
+   },
+   "strict": {
+    "array_nodes": 558,
+    "metadata_default_concrete_looking": 2714,
+    "metadata_description_concrete_looking": 3053,
+    "metadata_description_eg_marker": 774,
+    "required_properties_declared_array": 322,
+    "schema_nodes": 15038,
+    "schemas_scanned": 3420,
+    "schemas_with_metadata_default_concrete_looking": 1406,
+    "schemas_with_metadata_description_concrete_looking": 1705,
+    "schemas_with_metadata_description_eg_marker": 569,
+    "schemas_with_required_properties_declared_array": 257
+   }
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_gemma-4-31b_full",
+ "model_key": "gemma-4-31b",
+ "source": "88a73278b539bc1bb543be6fd0d025f42fa18347b51f3a48c29c3bbf805f0679",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 26784,
+ "entries": 53890
+}

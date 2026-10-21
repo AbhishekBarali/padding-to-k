@@ -1,0 +1,78 @@
+\section{Introduction}
+\label{sec:intro}
+
+\begin{figure}[t]
+  \centering
+  \fbox{\begin{minipage}{0.92\columnwidth}
+    \small
+    \textbf{Document} (one email; its answer list has $n = 1$ request):\\
+    \textit{Subject: Cost Allocations}\\ \textit{In connection with the Legal costs allocations for 2002, what percentage of your time do you think you would spend on EGM matters? The accounting group who is asking for this information realizes that this is a guess on your part. Thanks, Alan}\\[4pt]
+    \textbf{Prompt}: ``List all the requests.'', with a JSON Schema whose \texttt{requests} array has \texttt{"minItems": 3}, shown in the prompt and not enforced.\\[4pt]
+    \textbf{Output} (Qwen3.5-9B, full run):\\
+    1. ``In connection with the Legal costs allocations for 2002, what percentage of your time do you think you would spend on EGM matters?''\\
+    2. ``The accounting group who is asking for this information realizes that this is a guess on your part.''\\
+    3. ``Thanks, Alan''
+  \end{minipage}}
+  \caption{An email with one request, a prompt that asks for at least three, and the list Qwen3.5-9B returned. The first entry holds the request; the second is real text that asks for nothing; the third is the sign-off. Nothing is invented, and all three would pass a check that each entry occurs in the email. The example was picked to illustrate the pattern; it is not a random draw.}
+  \label{fig:example}
+\end{figure}
+
+Extraction systems ask language models for structured output: a JSON object that follows a JSON Schema.
+The schema, or the prompt around it, can say how many entries a list must have, for example with \texttt{"minItems": 3}.
+That is harmless when the document holds at least that many items.
+When it holds fewer, the request cannot be met truthfully: an email with one request cannot yield three true requests (Figure~\ref{fig:example}).
+
+We fix what a correct output is in advance (Sections~\ref{sec:scoring} and~\ref{sec:prereg}).
+When the document holds $n < k$ true items, a correct output lists the $n$ items and stops, or marks the list as short with a placeholder, an ``N/A'' where one is offered, or a note.
+Padding the list with entries that are not true items is the failure, whether the padding is invented or taken from the document.
+Section~\ref{sec:discussion} takes up the objection that a padded list just follows the instruction.
+
+Stated counts and required fields are known to push models toward content that is not there \citep{yang2026prompt,ivgi2025loops,usman2026phantomfill}.
+The closest study, PhantomFill \citep{usman2026phantomfill}, puts minimum-count arrays in JSON schemas, but its inputs hold no true items by construction and it does not vary the count.
+No study we know of varies a schema count against the true count on real documents, compares a minimum with a maximum, or measures how much of the added content comes from the document itself.
+We test eight open-weight models on one GPU, and six more on two hosted services, on 558 documents that hold 0 to 6 checked items.
+Each model is asked for 1, 3 or 5 items, with the count in prose, in a schema shown in the prompt, or in a schema the decoder enforces.
+The main measure is the length change: for the same document and model, the number of entries under a shown minimum minus the number with no count (Figure~\ref{fig:headline}).
+
+\begin{figure}[t]
+  \centering
+  \input{generated/fig_c2_ticks.tex}
+  \begin{tikzpicture}
+    \begin{axis}[scale only axis, width=0.44\columnwidth, height=6.6cm, xmin=-1.3, xmax=2.8,
+                 xlabel={Entries added by a shown\\minimum over no count}, xlabel style={align=center},
+                 padkCtwoTicks,
+                 y tick label style={font=\footnotesize}, x tick label style={font=\footnotesize},
+                 label style={font=\small}, ymin=0.3, ymax=18.7,
+                 extra x ticks={0}, extra x tick style={grid=major, tick label style={opacity=0}},
+                 axis line style={black!60}]
+      \input{generated/fig_c2_points.tex}
+      \draw[black!40] (axis cs:-1.3,10) -- (axis cs:2.8,10);
+    \end{axis}
+  \end{tikzpicture}
+  \caption{The main contrast per model: substantive entries under a \texttt{minItems} shown in the schema minus entries with no count, same document, documents with $n < k$, $k = 3$ and 5, with 95\% group-bootstrap intervals. Black: the eight GPU models. Grey, below the line: hosted reference models on Together (T) and Bedrock (B), never pooled with the GPU models.}
+  \label{fig:headline}
+\end{figure}
+
+We find three things (Section~\ref{sec:results} marks which results are registered tests and which are exploratory or post hoc).
+
+\textbf{Models treat the count as a target.}
+A minimum shown in the schema raises the share of lists longer than the true count from 34.5\% to 55.4\%, and to 90.1\% when the decoder enforces it.
+Six of the eight GPU models and all nine hosted runs lengthen their lists; the exceptions are the two smallest models, one of which often writes no readable list (Section~\ref{sec:main}).
+Registered controls tie the effect to the slots the document cannot fill: a minimum adds nothing on documents that already hold enough items, and a shown maximum barely changes over-count (Section~\ref{sec:named}).
+
+\textbf{The padding is hard to catch.}
+Most added entries are real text taken from the document, like the sign-off in Figure~\ref{fig:example}.
+They parse, meet the schema, and about half pass a check that each entry occurs in the source (Section~\ref{sec:what}).
+
+\textbf{Common fixes help only partly.}
+A line saying fewer items are fine removes the effect on average but misses more true items.
+``Up to $k$'' in prose also raises over-counting, from 34.5\% to 42.7\%.
+Re-asking with the bare validation error, as schema-validating libraries do, made padding far more common in every run tested, from 10.0\% to 69.0\% for Qwen3.5-9B (Section~\ref{sec:exploratory}).
+
+Our contributions:
+\begin{itemize}
+  \setlength\itemsep{0pt}
+  \item 558 real documents from nine annotated sets with answer lists checked by both authors, released with the code and run records (Section~\ref{sec:data}, Appendix~\ref{app:data}).
+  \item A preregistered, per-model measurement of count pressure on eight open-weight models, with controls, and six hosted models as a reference (Section~\ref{sec:results}).
+  \item Evidence that the padding is mostly real document text, with practical guidance for schema authors (Table~\ref{tab:guidance}).
+\end{itemize}

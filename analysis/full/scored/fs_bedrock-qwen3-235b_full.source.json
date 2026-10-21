@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-qwen3-235b_full",
+ "model_key": "bedrock-qwen3-235b",
+ "source": "393e23de671e956eaef8498e21a67a8bea4b067cb2d9e9d2df5f77313022f299",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 23436,
+ "entries": 51670
+}

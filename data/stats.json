@@ -1,0 +1,2271 @@
+{
+ "seed": 20261013,
+ "sets": {
+  "meetings": {
+   "source": "ami",
+   "list_type": "action_items",
+   "units_from_loader": 584,
+   "excluded_by_rule": 101,
+   "shortfall": [
+    {
+     "n": 2,
+     "split": "full",
+     "wanted": 8,
+     "got": 6
+    },
+    {
+     "n": 2,
+     "split": "reserve",
+     "wanted": 8,
+     "got": 0
+    },
+    {
+     "n": 0,
+     "split": "reserve",
+     "wanted": 8,
+     "got": 1
+    },
+    {
+     "n": 3,
+     "split": "reserve",
+     "wanted": 8,
+     "got": 3
+    },
+    {
+     "n": 6,
+     "split": "full",
+     "wanted": 5,
+     "got": 0
+    },
+    {
+     "n": 5,
+     "split": "full",
+     "wanted": 5,
+     "got": 2
+    }
+   ],
+   "spearman_words_vs_n_main": 0.073
+  },
+  "emails": {
+   "source": "mailex",
+   "list_type": "requests",
+   "units_from_loader": 3045,
+   "excluded_by_rule": 1241,
+   "shortfall": [
+    {
+     "n": 6,
+     "split": "full",
+     "wanted": 5,
+     "got": 4
+    }
+   ],
+   "spearman_words_vs_n_main": 0.274
+  },
+  "receipts": {
+   "source": "cord",
+   "list_type": "line_items",
+   "units_from_loader": 720,
+   "excluded_by_rule": 39,
+   "shortfall": [],
+   "spearman_words_vs_n_main": 0.541
+  },
+  "job_posts": {
+   "source": "skillspan",
+   "list_type": "skills",
+   "units_from_loader": 2882,
+   "excluded_by_rule": 33,
+   "shortfall": [],
+   "spearman_words_vs_n_main": -0.207
+  },
+  "clinical": {
+   "source": "maccrobat",
+   "list_type": "medications",
+   "units_from_loader": 2364,
+   "excluded_by_rule": 0,
+   "shortfall": [
+    {
+     "n": 6,
+     "split": "full",
+     "wanted": 5,
+     "got": 3
+    },
+    {
+     "n": 5,
+     "split": "full",
+     "wanted": 5,
+     "got": 4
+    }
+   ],
+   "spearman_words_vs_n_main": 0.011
+  },
+  "reviews": {
+   "source": "roast",
+   "list_type": "features",
+   "units_from_loader": 6618,
+   "excluded_by_rule": 742,
+   "shortfall": [],
+   "spearman_words_vs_n_main": 0.222
+  },
+  "job_posts_knowledge": {
+   "source": "skillspan",
+   "list_type": "knowledge",
+   "units_from_loader": 2402,
+   "excluded_by_rule": 78,
+   "shortfall": [],
+   "spearman_words_vs_n_main": 0.003
+  },
+  "wiki_people": {
+   "source": "fewnerd",
+   "list_type": "people",
+   "units_from_loader": 27028,
+   "excluded_by_rule": 1923,
+   "shortfall": [],
+   "spearman_words_vs_n_main": 0.025
+  },
+  "novel_quotes": {
+   "source": "pdnc",
+   "list_type": "quotations",
+   "units_from_loader": 71145,
+   "excluded_by_rule": 41335,
+   "shortfall": [],
+   "spearman_words_vs_n_main": 0.017
+  }
+ },
+ "cleanup": {
+  "decisions": 1446,
+  "status_by_set": {
+   "meetings": {
+    "dropped": 17,
+    "fixed": 39,
+    "ok": 53
+   },
+   "emails": {
+    "fixed": 60,
+    "dropped": 61,
+    "ok": 76
+   },
+   "receipts": {
+    "ok": 103,
+    "dropped": 5
+   },
+   "job_posts": {
+    "fixed": 17,
+    "dropped": 153,
+    "ok": 60
+   },
+   "clinical": {
+    "ok": 78,
+    "dropped": 35,
+    "fixed": 23
+   },
+   "reviews": {
+    "dropped": 185,
+    "fixed": 67,
+    "ok": 7
+   },
+   "job_posts_knowledge": {
+    "ok": 50,
+    "fixed": 17,
+    "dropped": 92
+   },
+   "wiki_people": {
+    "ok": 96,
+    "fixed": 14,
+    "dropped": 14
+   },
+   "novel_quotes": {
+    "ok": 107,
+    "dropped": 15,
+    "fixed": 2
+   }
+  },
+  "promoted": [
+   "med-9ba9e9",
+   "med-bfa770",
+   "med-dc0e45",
+   "med-7f6dff",
+   "med-ce3da3",
+   "med-a770bc",
+   "med-92d9cc",
+   "med-5f6003",
+   "med-507752",
+   "med-40ae42",
+   "med-95bed0",
+   "med-c4e086",
+   "med-76f5fd",
+   "med-e07ed1",
+   "eml-018a4e",
+   "eml-7c5695",
+   "eml-b435c1",
+   "eml-f5efcc",
+   "eml-e9d269",
+   "eml-a194fb",
+   "eml-908fe4",
+   "eml-eeb86d",
+   "eml-259926",
+   "eml-8118f7",
+   "eml-02cc85",
+   "eml-5f9388",
+   "eml-caaa4b",
+   "eml-db5f81",
+   "eml-a0968c",
+   "eml-e688e5",
+   "job-d69997",
+   "job-abcdeb",
+   "job-a4794c",
+   "job-40ce81",
+   "job-544269",
+   "job-3708b8",
+   "job-d67d9a",
+   "job-434186",
+   "job-22ddc2",
+   "job-0ad70d",
+   "job-6eedb1",
+   "job-5f1cfe",
+   "job-ca4253",
+   "job-ac5e6b",
+   "job-bd48a9",
+   "job-48be79",
+   "job-cb34d9",
+   "job-564bd4",
+   "job-92b840",
+   "job-d4fd75",
+   "job-b2c8cc",
+   "job-c7e726",
+   "job-27e719",
+   "job-e369e1",
+   "job-38bc37",
+   "job-1d827a",
+   "job-41a50e",
+   "job-711bc9",
+   "job-89c909",
+   "job-200658",
+   "job-464b41",
+   "job-3a7b74",
+   "job-addc7d",
+   "job-70494e",
+   "job-6fb9e8",
+   "jbk-00444b",
+   "jbk-7ee645",
+   "jbk-40caaa",
+   "jbk-a69776",
+   "jbk-c57c14",
+   "jbk-dbaf9b",
+   "jbk-be5d9f",
+   "jbk-47542d",
+   "jbk-2808f9",
+   "jbk-eab4e7",
+   "jbk-b77aaf",
+   "jbk-9d8c0f",
+   "jbk-62845a",
+   "jbk-b38772",
+   "jbk-2ba678",
+   "jbk-5be36a",
+   "jbk-564570",
+   "jbk-3338e7",
+   "jbk-bebeb9",
+   "jbk-07d4dd",
+   "jbk-7a43b8",
+   "jbk-62e9d5",
+   "mtg-bcac70",
+   "mtg-6f17c9",
+   "mtg-5c20f3",
+   "mtg-e48855",
+   "mtg-a6de72",
+   "mtg-0bcf11",
+   "mtg-d0c8e1",
+   "mtg-c09f78",
+   "mtg-ab53b0",
+   "mtg-d7ca25",
+   "quo-801a9f",
+   "quo-dce451",
+   "quo-36d8f1",
+   "quo-ff3144",
+   "quo-bc05d2",
+   "quo-bc886b",
+   "quo-da0869",
+   "quo-fcb29b",
+   "quo-500eb9",
+   "quo-9c6f26",
+   "quo-d39691",
+   "quo-1d3070",
+   "rcp-8cede5",
+   "rcp-70a1c5",
+   "rev-304b99",
+   "rev-374301",
+   "rev-0e0011",
+   "rev-3632ed",
+   "rev-08177a",
+   "rev-3e73b2",
+   "rev-15caca",
+   "rev-179b4f",
+   "rev-185403",
+   "rev-cf2ea9",
+   "rev-085d7d",
+   "rev-5a5119",
+   "rev-9e10fa",
+   "rev-a489a7",
+   "rev-049f1c",
+   "rev-124b6c",
+   "rev-d63d0d",
+   "rev-757b1f",
+   "rev-ed7518",
+   "rev-d406e2",
+   "rev-c4846d",
+   "rev-cc787b",
+   "rev-f20e0f",
+   "rev-4b9c05",
+   "rev-b1e82d",
+   "rev-fc23a5",
+   "rev-b7d1b9",
+   "rev-fbb508",
+   "rev-892369",
+   "rev-6a7457",
+   "rev-7a5203",
+   "rev-ddf4ed",
+   "rev-f006af",
+   "rev-f88ef4",
+   "rev-539a02",
+   "rev-ba4e31",
+   "rev-d5b59f",
+   "rev-24a66c",
+   "ppl-a3e65e",
+   "ppl-83c086",
+   "ppl-7b7236",
+   "ppl-188040",
+   "ppl-3c25ce",
+   "ppl-ddf677",
+   "ppl-99290f",
+   "ppl-d391b8",
+   "ppl-030ebd",
+   "ppl-8cac87",
+   "ppl-42ceed",
+   "ppl-5b5351"
+  ],
+  "n_moves": [
+   {
+    "set": "clinical",
+    "from": 0,
+    "to": 2,
+    "docs": 1
+   },
+   {
+    "set": "clinical",
+    "from": 1,
+    "to": 2,
+    "docs": 1
+   },
+   {
+    "set": "clinical",
+    "from": 2,
+    "to": 1,
+    "docs": 6
+   },
+   {
+    "set": "clinical",
+    "from": 3,
+    "to": 2,
+    "docs": 6
+   },
+   {
+    "set": "clinical",
+    "from": 5,
+    "to": 3,
+    "docs": 2
+   },
+   {
+    "set": "clinical",
+    "from": 5,
+    "to": 4,
+    "docs": 2
+   },
+   {
+    "set": "clinical",
+    "from": 6,
+    "to": 4,
+    "docs": 1
+   },
+   {
+    "set": "clinical",
+    "from": 6,
+    "to": 5,
+    "docs": 2
+   },
+   {
+    "set": "emails",
+    "from": 1,
+    "to": 2,
+    "docs": 2
+   },
+   {
+    "set": "emails",
+    "from": 2,
+    "to": 1,
+    "docs": 11
+   },
+   {
+    "set": "emails",
+    "from": 3,
+    "to": 1,
+    "docs": 8
+   },
+   {
+    "set": "emails",
+    "from": 3,
+    "to": 2,
+    "docs": 24
+   },
+   {
+    "set": "emails",
+    "from": 3,
+    "to": 4,
+    "docs": 4
+   },
+   {
+    "set": "emails",
+    "from": 4,
+    "to": 2,
+    "docs": 3
+   },
+   {
+    "set": "emails",
+    "from": 4,
+    "to": 3,
+    "docs": 3
+   },
+   {
+    "set": "emails",
+    "from": 5,
+    "to": 4,
+    "docs": 2
+   },
+   {
+    "set": "job_posts",
+    "from": 0,
+    "to": 1,
+    "docs": 3
+   },
+   {
+    "set": "job_posts",
+    "from": 0,
+    "to": 3,
+    "docs": 1
+   },
+   {
+    "set": "job_posts",
+    "from": 1,
+    "to": 2,
+    "docs": 4
+   },
+   {
+    "set": "job_posts",
+    "from": 1,
+    "to": 3,
+    "docs": 1
+   },
+   {
+    "set": "job_posts",
+    "from": 2,
+    "to": 1,
+    "docs": 1
+   },
+   {
+    "set": "job_posts",
+    "from": 2,
+    "to": 3,
+    "docs": 3
+   },
+   {
+    "set": "job_posts",
+    "from": 3,
+    "to": 4,
+    "docs": 2
+   },
+   {
+    "set": "job_posts",
+    "from": 5,
+    "to": 6,
+    "docs": 1
+   },
+   {
+    "set": "job_posts_knowledge",
+    "from": 0,
+    "to": 1,
+    "docs": 1
+   },
+   {
+    "set": "job_posts_knowledge",
+    "from": 1,
+    "to": 0,
+    "docs": 3
+   },
+   {
+    "set": "job_posts_knowledge",
+    "from": 1,
+    "to": 2,
+    "docs": 3
+   },
+   {
+    "set": "job_posts_knowledge",
+    "from": 2,
+    "to": 1,
+    "docs": 4
+   },
+   {
+    "set": "job_posts_knowledge",
+    "from": 2,
+    "to": 3,
+    "docs": 2
+   },
+   {
+    "set": "job_posts_knowledge",
+    "from": 3,
+    "to": 2,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 0,
+    "to": 1,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 1,
+    "to": 2,
+    "docs": 9
+   },
+   {
+    "set": "meetings",
+    "from": 1,
+    "to": 3,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 2,
+    "to": 1,
+    "docs": 2
+   },
+   {
+    "set": "meetings",
+    "from": 2,
+    "to": 3,
+    "docs": 5
+   },
+   {
+    "set": "meetings",
+    "from": 2,
+    "to": 4,
+    "docs": 3
+   },
+   {
+    "set": "meetings",
+    "from": 3,
+    "to": 2,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 3,
+    "to": 4,
+    "docs": 8
+   },
+   {
+    "set": "meetings",
+    "from": 3,
+    "to": 5,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 3,
+    "to": 6,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 4,
+    "to": 3,
+    "docs": 2
+   },
+   {
+    "set": "meetings",
+    "from": 4,
+    "to": 5,
+    "docs": 1
+   },
+   {
+    "set": "meetings",
+    "from": 5,
+    "to": 4,
+    "docs": 1
+   },
+   {
+    "set": "novel_quotes",
+    "from": 3,
+    "to": 1,
+    "docs": 1
+   },
+   {
+    "set": "novel_quotes",
+    "from": 3,
+    "to": 2,
+    "docs": 1
+   },
+   {
+    "set": "reviews",
+    "from": 1,
+    "to": 2,
+    "docs": 2
+   },
+   {
+    "set": "reviews",
+    "from": 2,
+    "to": 1,
+    "docs": 12
+   },
+   {
+    "set": "reviews",
+    "from": 2,
+    "to": 3,
+    "docs": 3
+   },
+   {
+    "set": "reviews",
+    "from": 2,
+    "to": 4,
+    "docs": 1
+   },
+   {
+    "set": "reviews",
+    "from": 3,
+    "to": 2,
+    "docs": 11
+   },
+   {
+    "set": "reviews",
+    "from": 3,
+    "to": 4,
+    "docs": 9
+   },
+   {
+    "set": "reviews",
+    "from": 3,
+    "to": 5,
+    "docs": 2
+   },
+   {
+    "set": "reviews",
+    "from": 5,
+    "to": 4,
+    "docs": 1
+   },
+   {
+    "set": "reviews",
+    "from": 5,
+    "to": 6,
+    "docs": 1
+   },
+   {
+    "set": "reviews",
+    "from": 6,
+    "to": 4,
+    "docs": 2
+   },
+   {
+    "set": "reviews",
+    "from": 6,
+    "to": 5,
+    "docs": 3
+   },
+   {
+    "set": "wiki_people",
+    "from": 0,
+    "to": 1,
+    "docs": 1
+   },
+   {
+    "set": "wiki_people",
+    "from": 1,
+    "to": 0,
+    "docs": 1
+   },
+   {
+    "set": "wiki_people",
+    "from": 1,
+    "to": 2,
+    "docs": 1
+   },
+   {
+    "set": "wiki_people",
+    "from": 2,
+    "to": 0,
+    "docs": 2
+   },
+   {
+    "set": "wiki_people",
+    "from": 2,
+    "to": 1,
+    "docs": 2
+   },
+   {
+    "set": "wiki_people",
+    "from": 2,
+    "to": 3,
+    "docs": 1
+   },
+   {
+    "set": "wiki_people",
+    "from": 3,
+    "to": 1,
+    "docs": 1
+   },
+   {
+    "set": "wiki_people",
+    "from": 3,
+    "to": 2,
+    "docs": 3
+   }
+  ],
+  "final_targets": {
+   "pilot": 10,
+   "full": 15,
+   "arm_per_set": 10
+  },
+  "trimmed": {
+   "clinical full -> reserve": 24,
+   "emails full -> reserve": 10,
+   "emails pilot -> full": 9,
+   "emails pilot -> reserve": 29,
+   "job_posts full -> reserve": 7,
+   "job_posts_knowledge full -> reserve": 10,
+   "meetings full -> reserve": 15,
+   "meetings pilot -> full": 9,
+   "meetings pilot -> reserve": 7,
+   "novel_quotes full -> reserve": 31,
+   "receipts full -> reserve": 28,
+   "reviews full -> reserve": 12,
+   "wiki_people full -> reserve": 32
+  },
+  "cells_clean": [
+   {
+    "set": "meetings",
+    "n": 0,
+    "pilot": 10,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 8,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "meetings",
+    "n": 1,
+    "pilot": 10,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 2,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "meetings",
+    "n": 2,
+    "pilot": 10,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 21
+   },
+   {
+    "set": "meetings",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 5,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "meetings",
+    "n": 4,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 6,
+    "full_needs_human": 0,
+    "reserve": 6,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "meetings",
+    "n": 5,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 3,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 2
+   },
+   {
+    "set": "meetings",
+    "n": 6,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 1,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 0
+   },
+   {
+    "set": "emails",
+    "n": 0,
+    "pilot": 10,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 16,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "emails",
+    "n": 1,
+    "pilot": 10,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 27,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "emails",
+    "n": 2,
+    "pilot": 10,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 26,
+    "reserve_needs_human": 0,
+    "candidates_before": 31
+   },
+   {
+    "set": "emails",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 11,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "emails",
+    "n": 4,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 5,
+    "full_needs_human": 0,
+    "reserve": 6,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "emails",
+    "n": 5,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 0,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "emails",
+    "n": 6,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 0,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 4
+   },
+   {
+    "set": "receipts",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 15,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "receipts",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 15,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "receipts",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 14,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "receipts",
+    "n": 4,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 4,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "receipts",
+    "n": 5,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 3,
+    "full_needs_human": 0,
+    "reserve": 2,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "receipts",
+    "n": 6,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 3,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "job_posts",
+    "n": 0,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 6,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts",
+    "n": 4,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 4,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "job_posts",
+    "n": 5,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 2,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "job_posts",
+    "n": 6,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 4,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "clinical",
+    "n": 0,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 12,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "clinical",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 11,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "clinical",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 7,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "clinical",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "clinical",
+    "n": 4,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 8,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "clinical",
+    "n": 5,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 2,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 4
+   },
+   {
+    "set": "clinical",
+    "n": 6,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 0,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 3
+   },
+   {
+    "set": "reviews",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 7,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "reviews",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "reviews",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "reviews",
+    "n": 4,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 4,
+    "full_needs_human": 0,
+    "reserve": 9,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "reviews",
+    "n": 5,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 3,
+    "full_needs_human": 0,
+    "reserve": 2,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "reviews",
+    "n": 6,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 3,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 5
+   },
+   {
+    "set": "job_posts_knowledge",
+    "n": 0,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 5,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts_knowledge",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 4,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts_knowledge",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 1,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "job_posts_knowledge",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 12,
+    "full_needs_human": 0,
+    "reserve": 0,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "wiki_people",
+    "n": 0,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 17,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "wiki_people",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 14,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "wiki_people",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 10,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "wiki_people",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 9,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "novel_quotes",
+    "n": 0,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 16,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "novel_quotes",
+    "n": 1,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 15,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "novel_quotes",
+    "n": 2,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 11,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   },
+   {
+    "set": "novel_quotes",
+    "n": 3,
+    "pilot": 0,
+    "pilot_needs_human": 0,
+    "full": 15,
+    "full_needs_human": 0,
+    "reserve": 7,
+    "reserve_needs_human": 0,
+    "candidates_before": 23
+   }
+  ]
+ },
+ "cells": [
+  {
+   "set": "clinical",
+   "split": "dropped",
+   "n": 0,
+   "docs": 3,
+   "median_words": 72
+  },
+  {
+   "set": "clinical",
+   "split": "dropped",
+   "n": 1,
+   "docs": 10,
+   "median_words": 76.0
+  },
+  {
+   "set": "clinical",
+   "split": "dropped",
+   "n": 2,
+   "docs": 11,
+   "median_words": 86
+  },
+  {
+   "set": "clinical",
+   "split": "dropped",
+   "n": 3,
+   "docs": 11,
+   "median_words": 78
+  },
+  {
+   "set": "clinical",
+   "split": "full",
+   "n": 0,
+   "docs": 15,
+   "median_words": 74
+  },
+  {
+   "set": "clinical",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 78
+  },
+  {
+   "set": "clinical",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 75
+  },
+  {
+   "set": "clinical",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 72
+  },
+  {
+   "set": "clinical",
+   "split": "full",
+   "n": 4,
+   "docs": 8,
+   "median_words": 71.0
+  },
+  {
+   "set": "clinical",
+   "split": "full",
+   "n": 5,
+   "docs": 2,
+   "median_words": 90.5
+  },
+  {
+   "set": "clinical",
+   "split": "reserve",
+   "n": 0,
+   "docs": 12,
+   "median_words": 68.5
+  },
+  {
+   "set": "clinical",
+   "split": "reserve",
+   "n": 1,
+   "docs": 11,
+   "median_words": 92
+  },
+  {
+   "set": "clinical",
+   "split": "reserve",
+   "n": 2,
+   "docs": 7,
+   "median_words": 78
+  },
+  {
+   "set": "clinical",
+   "split": "reserve",
+   "n": 3,
+   "docs": 1,
+   "median_words": 55
+  },
+  {
+   "set": "emails",
+   "split": "dropped",
+   "n": 1,
+   "docs": 6,
+   "median_words": 61.0
+  },
+  {
+   "set": "emails",
+   "split": "dropped",
+   "n": 2,
+   "docs": 8,
+   "median_words": 64.0
+  },
+  {
+   "set": "emails",
+   "split": "dropped",
+   "n": 3,
+   "docs": 32,
+   "median_words": 104.5
+  },
+  {
+   "set": "emails",
+   "split": "dropped",
+   "n": 4,
+   "docs": 6,
+   "median_words": 127.0
+  },
+  {
+   "set": "emails",
+   "split": "dropped",
+   "n": 5,
+   "docs": 5,
+   "median_words": 201
+  },
+  {
+   "set": "emails",
+   "split": "dropped",
+   "n": 6,
+   "docs": 4,
+   "median_words": 195.5
+  },
+  {
+   "set": "emails",
+   "split": "full",
+   "n": 0,
+   "docs": 5,
+   "median_words": 63
+  },
+  {
+   "set": "emails",
+   "split": "full",
+   "n": 1,
+   "docs": 5,
+   "median_words": 66
+  },
+  {
+   "set": "emails",
+   "split": "full",
+   "n": 2,
+   "docs": 5,
+   "median_words": 75
+  },
+  {
+   "set": "emails",
+   "split": "full",
+   "n": 3,
+   "docs": 11,
+   "median_words": 89
+  },
+  {
+   "set": "emails",
+   "split": "full",
+   "n": 4,
+   "docs": 5,
+   "median_words": 106
+  },
+  {
+   "set": "emails",
+   "split": "pilot",
+   "n": 0,
+   "docs": 10,
+   "median_words": 59.5
+  },
+  {
+   "set": "emails",
+   "split": "pilot",
+   "n": 1,
+   "docs": 10,
+   "median_words": 61.0
+  },
+  {
+   "set": "emails",
+   "split": "pilot",
+   "n": 2,
+   "docs": 10,
+   "median_words": 61.0
+  },
+  {
+   "set": "emails",
+   "split": "reserve",
+   "n": 0,
+   "docs": 16,
+   "median_words": 52.5
+  },
+  {
+   "set": "emails",
+   "split": "reserve",
+   "n": 1,
+   "docs": 27,
+   "median_words": 68
+  },
+  {
+   "set": "emails",
+   "split": "reserve",
+   "n": 2,
+   "docs": 26,
+   "median_words": 81.0
+  },
+  {
+   "set": "emails",
+   "split": "reserve",
+   "n": 4,
+   "docs": 6,
+   "median_words": 88.5
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 0,
+   "docs": 12,
+   "median_words": 116.5
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 1,
+   "docs": 29,
+   "median_words": 104
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 2,
+   "docs": 46,
+   "median_words": 110.0
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 3,
+   "docs": 44,
+   "median_words": 128.0
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 4,
+   "docs": 2,
+   "median_words": 108.0
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 5,
+   "docs": 10,
+   "median_words": 127.0
+  },
+  {
+   "set": "job_posts",
+   "split": "dropped",
+   "n": 6,
+   "docs": 10,
+   "median_words": 105.5
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 0,
+   "docs": 15,
+   "median_words": 137
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 116
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 111
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 121
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 4,
+   "docs": 4,
+   "median_words": 132.0
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 5,
+   "docs": 2,
+   "median_words": 117.0
+  },
+  {
+   "set": "job_posts",
+   "split": "full",
+   "n": 6,
+   "docs": 4,
+   "median_words": 127.5
+  },
+  {
+   "set": "job_posts",
+   "split": "reserve",
+   "n": 1,
+   "docs": 6,
+   "median_words": 113.0
+  },
+  {
+   "set": "job_posts",
+   "split": "reserve",
+   "n": 4,
+   "docs": 1,
+   "median_words": 139
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "dropped",
+   "n": 0,
+   "docs": 13,
+   "median_words": 137
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "dropped",
+   "n": 1,
+   "docs": 26,
+   "median_words": 138.0
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "dropped",
+   "n": 2,
+   "docs": 13,
+   "median_words": 134
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "dropped",
+   "n": 3,
+   "docs": 40,
+   "median_words": 136.0
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "full",
+   "n": 0,
+   "docs": 15,
+   "median_words": 137
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 131
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 132
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "full",
+   "n": 3,
+   "docs": 12,
+   "median_words": 135.0
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "reserve",
+   "n": 0,
+   "docs": 5,
+   "median_words": 123
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "reserve",
+   "n": 1,
+   "docs": 4,
+   "median_words": 76.0
+  },
+  {
+   "set": "job_posts_knowledge",
+   "split": "reserve",
+   "n": 2,
+   "docs": 1,
+   "median_words": 187
+  },
+  {
+   "set": "meetings",
+   "split": "dropped",
+   "n": 1,
+   "docs": 7,
+   "median_words": 388
+  },
+  {
+   "set": "meetings",
+   "split": "dropped",
+   "n": 2,
+   "docs": 5,
+   "median_words": 374
+  },
+  {
+   "set": "meetings",
+   "split": "dropped",
+   "n": 3,
+   "docs": 3,
+   "median_words": 427
+  },
+  {
+   "set": "meetings",
+   "split": "dropped",
+   "n": 4,
+   "docs": 2,
+   "median_words": 331.0
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 0,
+   "docs": 5,
+   "median_words": 398
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 1,
+   "docs": 5,
+   "median_words": 319
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 2,
+   "docs": 5,
+   "median_words": 511
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 417
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 4,
+   "docs": 6,
+   "median_words": 391.5
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 5,
+   "docs": 3,
+   "median_words": 404
+  },
+  {
+   "set": "meetings",
+   "split": "full",
+   "n": 6,
+   "docs": 1,
+   "median_words": 229
+  },
+  {
+   "set": "meetings",
+   "split": "pilot",
+   "n": 0,
+   "docs": 10,
+   "median_words": 383.5
+  },
+  {
+   "set": "meetings",
+   "split": "pilot",
+   "n": 1,
+   "docs": 10,
+   "median_words": 387.5
+  },
+  {
+   "set": "meetings",
+   "split": "pilot",
+   "n": 2,
+   "docs": 10,
+   "median_words": 419.0
+  },
+  {
+   "set": "meetings",
+   "split": "reserve",
+   "n": 0,
+   "docs": 8,
+   "median_words": 385.5
+  },
+  {
+   "set": "meetings",
+   "split": "reserve",
+   "n": 1,
+   "docs": 2,
+   "median_words": 288.5
+  },
+  {
+   "set": "meetings",
+   "split": "reserve",
+   "n": 2,
+   "docs": 1,
+   "median_words": 793
+  },
+  {
+   "set": "meetings",
+   "split": "reserve",
+   "n": 3,
+   "docs": 5,
+   "median_words": 462
+  },
+  {
+   "set": "meetings",
+   "split": "reserve",
+   "n": 4,
+   "docs": 6,
+   "median_words": 422.0
+  },
+  {
+   "set": "novel_quotes",
+   "split": "dropped",
+   "n": 1,
+   "docs": 2,
+   "median_words": 111.5
+  },
+  {
+   "set": "novel_quotes",
+   "split": "dropped",
+   "n": 2,
+   "docs": 6,
+   "median_words": 101.5
+  },
+  {
+   "set": "novel_quotes",
+   "split": "dropped",
+   "n": 3,
+   "docs": 7,
+   "median_words": 84
+  },
+  {
+   "set": "novel_quotes",
+   "split": "full",
+   "n": 0,
+   "docs": 15,
+   "median_words": 93
+  },
+  {
+   "set": "novel_quotes",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 92
+  },
+  {
+   "set": "novel_quotes",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 91
+  },
+  {
+   "set": "novel_quotes",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 92
+  },
+  {
+   "set": "novel_quotes",
+   "split": "reserve",
+   "n": 0,
+   "docs": 16,
+   "median_words": 92.0
+  },
+  {
+   "set": "novel_quotes",
+   "split": "reserve",
+   "n": 1,
+   "docs": 15,
+   "median_words": 92
+  },
+  {
+   "set": "novel_quotes",
+   "split": "reserve",
+   "n": 2,
+   "docs": 11,
+   "median_words": 86
+  },
+  {
+   "set": "novel_quotes",
+   "split": "reserve",
+   "n": 3,
+   "docs": 7,
+   "median_words": 103
+  },
+  {
+   "set": "receipts",
+   "split": "dropped",
+   "n": 1,
+   "docs": 1,
+   "median_words": 16
+  },
+  {
+   "set": "receipts",
+   "split": "dropped",
+   "n": 2,
+   "docs": 1,
+   "median_words": 21
+  },
+  {
+   "set": "receipts",
+   "split": "dropped",
+   "n": 3,
+   "docs": 2,
+   "median_words": 23.5
+  },
+  {
+   "set": "receipts",
+   "split": "dropped",
+   "n": 6,
+   "docs": 1,
+   "median_words": 48
+  },
+  {
+   "set": "receipts",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 18
+  },
+  {
+   "set": "receipts",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 19
+  },
+  {
+   "set": "receipts",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 22
+  },
+  {
+   "set": "receipts",
+   "split": "full",
+   "n": 4,
+   "docs": 4,
+   "median_words": 34.0
+  },
+  {
+   "set": "receipts",
+   "split": "full",
+   "n": 5,
+   "docs": 3,
+   "median_words": 33
+  },
+  {
+   "set": "receipts",
+   "split": "full",
+   "n": 6,
+   "docs": 3,
+   "median_words": 41
+  },
+  {
+   "set": "receipts",
+   "split": "reserve",
+   "n": 1,
+   "docs": 15,
+   "median_words": 16
+  },
+  {
+   "set": "receipts",
+   "split": "reserve",
+   "n": 2,
+   "docs": 15,
+   "median_words": 18
+  },
+  {
+   "set": "receipts",
+   "split": "reserve",
+   "n": 3,
+   "docs": 14,
+   "median_words": 26.5
+  },
+  {
+   "set": "receipts",
+   "split": "reserve",
+   "n": 4,
+   "docs": 1,
+   "median_words": 30
+  },
+  {
+   "set": "receipts",
+   "split": "reserve",
+   "n": 5,
+   "docs": 2,
+   "median_words": 28.5
+  },
+  {
+   "set": "receipts",
+   "split": "reserve",
+   "n": 6,
+   "docs": 1,
+   "median_words": 52
+  },
+  {
+   "set": "reviews",
+   "split": "dropped",
+   "n": 1,
+   "docs": 44,
+   "median_words": 69.5
+  },
+  {
+   "set": "reviews",
+   "split": "dropped",
+   "n": 2,
+   "docs": 62,
+   "median_words": 69.5
+  },
+  {
+   "set": "reviews",
+   "split": "dropped",
+   "n": 3,
+   "docs": 67,
+   "median_words": 75
+  },
+  {
+   "set": "reviews",
+   "split": "dropped",
+   "n": 4,
+   "docs": 5,
+   "median_words": 116
+  },
+  {
+   "set": "reviews",
+   "split": "dropped",
+   "n": 5,
+   "docs": 3,
+   "median_words": 83
+  },
+  {
+   "set": "reviews",
+   "split": "dropped",
+   "n": 6,
+   "docs": 4,
+   "median_words": 119.0
+  },
+  {
+   "set": "reviews",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 65
+  },
+  {
+   "set": "reviews",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 71
+  },
+  {
+   "set": "reviews",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 67
+  },
+  {
+   "set": "reviews",
+   "split": "full",
+   "n": 4,
+   "docs": 4,
+   "median_words": 67.5
+  },
+  {
+   "set": "reviews",
+   "split": "full",
+   "n": 5,
+   "docs": 3,
+   "median_words": 79
+  },
+  {
+   "set": "reviews",
+   "split": "full",
+   "n": 6,
+   "docs": 3,
+   "median_words": 79
+  },
+  {
+   "set": "reviews",
+   "split": "reserve",
+   "n": 1,
+   "docs": 7,
+   "median_words": 42
+  },
+  {
+   "set": "reviews",
+   "split": "reserve",
+   "n": 2,
+   "docs": 1,
+   "median_words": 111
+  },
+  {
+   "set": "reviews",
+   "split": "reserve",
+   "n": 4,
+   "docs": 9,
+   "median_words": 76
+  },
+  {
+   "set": "reviews",
+   "split": "reserve",
+   "n": 5,
+   "docs": 2,
+   "median_words": 74.0
+  },
+  {
+   "set": "wiki_people",
+   "split": "dropped",
+   "n": 0,
+   "docs": 1,
+   "median_words": 23
+  },
+  {
+   "set": "wiki_people",
+   "split": "dropped",
+   "n": 1,
+   "docs": 4,
+   "median_words": 23.0
+  },
+  {
+   "set": "wiki_people",
+   "split": "dropped",
+   "n": 2,
+   "docs": 5,
+   "median_words": 23
+  },
+  {
+   "set": "wiki_people",
+   "split": "dropped",
+   "n": 3,
+   "docs": 4,
+   "median_words": 22.5
+  },
+  {
+   "set": "wiki_people",
+   "split": "full",
+   "n": 0,
+   "docs": 15,
+   "median_words": 24
+  },
+  {
+   "set": "wiki_people",
+   "split": "full",
+   "n": 1,
+   "docs": 15,
+   "median_words": 24
+  },
+  {
+   "set": "wiki_people",
+   "split": "full",
+   "n": 2,
+   "docs": 15,
+   "median_words": 23
+  },
+  {
+   "set": "wiki_people",
+   "split": "full",
+   "n": 3,
+   "docs": 15,
+   "median_words": 23
+  },
+  {
+   "set": "wiki_people",
+   "split": "reserve",
+   "n": 0,
+   "docs": 17,
+   "median_words": 18
+  },
+  {
+   "set": "wiki_people",
+   "split": "reserve",
+   "n": 1,
+   "docs": 14,
+   "median_words": 24.5
+  },
+  {
+   "set": "wiki_people",
+   "split": "reserve",
+   "n": 2,
+   "docs": 10,
+   "median_words": 27.5
+  },
+  {
+   "set": "wiki_people",
+   "split": "reserve",
+   "n": 3,
+   "docs": 9,
+   "median_words": 30
+  }
+ ],
+ "totals": {
+  "documents": 1446,
+  "public": 1187,
+  "restricted": 259,
+  "in_study": 558,
+  "spares": 311,
+  "dropped": 577,
+  "requests": 25110,
+  "robustness_requests": 1440,
+  "dev_requests": 3732,
+  "pilot_run_requests_per_model": 240
+ }
+}

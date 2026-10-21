@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-ministral-3-14b_full-repeat",
+ "model_key": "bedrock-ministral-3-14b",
+ "source": "db35090497d1fb745a42008ecd0f2abf96fece861e174ae42d6175f6ca37c9d6",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 300,
+ "entries": 807
+}

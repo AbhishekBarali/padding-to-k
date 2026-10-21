@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-mistral-large-3_full-repeat",
+ "model_key": "bedrock-mistral-large-3",
+ "source": "0f7292a97f7ccb77e14c780aa5ea737e6ff3b1c0be76b886eeb680159038d4f4",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 300,
+ "entries": 762
+}

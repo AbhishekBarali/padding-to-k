@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-gpt-oss-20b_full-repeat",
+ "model_key": "bedrock-gpt-oss-20b",
+ "source": "4775a76c26870b6916447a23e20a0d56cb12a4d9df5bac8e6d29de93d84ede1c",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 300,
+ "entries": 780
+}

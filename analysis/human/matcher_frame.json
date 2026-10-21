@@ -1,0 +1,120 @@
+{
+ "seed": 20261013,
+ "total": 400,
+ "strata": [
+  "true_or_split",
+  "in_text_wrong_type",
+  "missed_gold",
+  "beyond_excerpt",
+  "plausible_invented"
+ ],
+ "frame_entries": {
+  "true_or_split": 637844,
+  "in_text_wrong_type": 408859,
+  "missed_gold": 0,
+  "beyond_excerpt": 0,
+  "plausible_invented": 78798
+ },
+ "frame_entries_by_set": {
+  "true_or_split": {
+   "meetings": 76852,
+   "emails": 59019,
+   "receipts": 88015,
+   "job_posts": 69577,
+   "clinical": 83824,
+   "reviews": 83052,
+   "job_posts_knowledge": 52420,
+   "wiki_people": 56673,
+   "novel_quotes": 68412
+  },
+  "in_text_wrong_type": {
+   "meetings": 73520,
+   "emails": 29203,
+   "receipts": 20545,
+   "job_posts": 124675,
+   "clinical": 5705,
+   "reviews": 49736,
+   "job_posts_knowledge": 82037,
+   "wiki_people": 9626,
+   "novel_quotes": 13812
+  },
+  "missed_gold": {
+   "meetings": 0,
+   "emails": 0,
+   "receipts": 0,
+   "job_posts": 0,
+   "clinical": 0,
+   "reviews": 0,
+   "job_posts_knowledge": 0,
+   "wiki_people": 0,
+   "novel_quotes": 0
+  },
+  "beyond_excerpt": {
+   "meetings": 0,
+   "emails": 0,
+   "receipts": 0,
+   "job_posts": 0,
+   "clinical": 0,
+   "reviews": 0,
+   "job_posts_knowledge": 0,
+   "wiki_people": 0,
+   "novel_quotes": 0
+  },
+  "plausible_invented": {
+   "meetings": 4744,
+   "emails": 1524,
+   "receipts": 58,
+   "job_posts": 25912,
+   "clinical": 3793,
+   "reviews": 6918,
+   "job_posts_knowledge": 35358,
+   "wiki_people": 312,
+   "novel_quotes": 179
+  }
+ },
+ "allocated": {
+  "true_or_split": 134,
+  "in_text_wrong_type": 133,
+  "missed_gold": 0,
+  "beyond_excerpt": 0,
+  "plausible_invented": 133
+ },
+ "drawn_by_set": {
+  "true_or_split": {
+   "emails": 15,
+   "novel_quotes": 14,
+   "clinical": 15,
+   "job_posts": 15,
+   "wiki_people": 15,
+   "receipts": 15,
+   "job_posts_knowledge": 15,
+   "reviews": 15,
+   "meetings": 15
+  },
+  "in_text_wrong_type": {
+   "wiki_people": 14,
+   "reviews": 15,
+   "clinical": 15,
+   "job_posts": 15,
+   "novel_quotes": 14,
+   "emails": 15,
+   "job_posts_knowledge": 15,
+   "receipts": 15,
+   "meetings": 15
+  },
+  "missed_gold": {},
+  "beyond_excerpt": {},
+  "plausible_invented": {
+   "job_posts": 15,
+   "meetings": 15,
+   "receipts": 15,
+   "novel_quotes": 14,
+   "job_posts_knowledge": 15,
+   "emails": 15,
+   "clinical": 15,
+   "reviews": 15,
+   "wiki_people": 14
+  }
+ },
+ "frame": "every substantive entry (matcher label not placeholder or repeat) of every ok output of the fs_<model>_full runs, arm main, all models and conditions"
+}

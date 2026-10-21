@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\ifdefined\pdfinfoomitdate\pdfinfoomitdate=1\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+
+\usepackage[preprint]{acl}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{adjustbox}  % max width: shrinks a table only if it is wider than the column
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+\newcommand{\fl}[1]{\textcolor{red}{#1}}
+\newcommand{\cndcode}[1]{\texttt{#1}}
+\makeatletter
+\edef\@cndus{\string_}
+\DeclareRobustCommand{\cnd}[1]{\begingroup\let\_\@cndus\edef\@cndtmp{#1}\expandafter\@cndout\expandafter{\@cndtmp}\endgroup}
+\newcommand{\@cndout}[1]{\ifcsname cnd@#1\endcsname\csname cnd@#1\endcsname\else\texttt{#1}\fi}
+\@namedef{cnd@none}{no count}
+\@namedef{cnd@prose_up_to_k}{prose ``up to $k$''}
+\@namedef{cnd@prose_exactly_k}{prose ``exactly $k$''}
+\@namedef{cnd@max_k_shown}{shown maximum}
+\@namedef{cnd@min_k_shown}{shown minimum}
+\@namedef{cnd@min_k_shown_fewer_ok}{``fewer is fine''}
+\@namedef{cnd@fewer_ok}{``fewer is fine''}
+\@namedef{cnd@min_k_enforced}{enforced minimum}
+\@namedef{cnd@min_k_escape}{N/A escape}
+\makeatother
+\newcommand{\pre}{$^{\dagger}$}
+\makeatletter
+\newcommand{\rows}[1]{\@@input #1 }
+\makeatother
+
+\title{Padding to $k$: A Minimum Count in the Schema Makes\\Open-Weight Models Pad Their Extraction Lists}
+
+\author{Abhishek Barali \\ St.\ Xavier's College \\ Maitighar, Kathmandu \\ Tribhuvan University, Nepal \\ \texttt{abhibidut@gmail.com} \\ ORCID \href{https://orcid.org/0009-0007-3317-8437}{0009-0007-3317-8437} \And
+  Aayush Paudel \\ St.\ Xavier's College \\ Maitighar, Kathmandu \\ Tribhuvan University, Nepal \\ \texttt{aayushpaudel09@gmail.com}}
+
+\begin{document}
+\makeatletter
+\hypersetup{pdftitle={Padding to k: A Minimum Count in the Schema Makes Open-Weight Models Pad Their Extraction Lists},
+  pdfauthor={\ifacl@anonymize Anonymous\else Abhishek Barali, Aayush Paudel\fi}}
+\makeatother
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related}
+\input{sections/setup}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/ethics}
+\input{sections/acknowledgements}
+
+\bibliography{refs}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

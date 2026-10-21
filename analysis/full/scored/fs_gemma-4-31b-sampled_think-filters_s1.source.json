@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_gemma-4-31b-sampled_think-filters_s1",
+ "model_key": "gemma-4-31b-sampled",
+ "source": "57e3c1c3f6bfe6466b8d549a9a9656d47ac574a6ab984099d35ff56ef916fe3f",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 4464,
+ "entries": 11691
+}

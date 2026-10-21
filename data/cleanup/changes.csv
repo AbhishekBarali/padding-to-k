@@ -1,0 +1,820 @@
+doc_id,set,status,split_before,split_after,n_before,n_after,change,reason,rules,question,authors_ruling,promoted,trimmed
+eml-018a4e,emails,fixed,reserve,reserve,3,2,"removed 3: ""Please call me with any questions, comments, concerns""","Item 3 'Please call me with any questions' is a sign-off offer, not a request.",E2,,,"reserve -> pilot, refilling emails pilot n = 2",pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-02714b,emails,fixed,full,reserve,3,2,"removed 2: ""please note""","Item 2 'please note' is a pointer, not a request (E2).",E2,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-02cc85,emails,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling emails full n = 3",
+eml-04c6ec,emails,ok,pilot,reserve,2,2,,"Two different things asked (follow up on the badge vs. tell me about a 24-hour hold), E4.",E4,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-053cb0,emails,fixed,full,pilot,1,2,"split 1: ""Please send copies of Enron's contracts and Form of Guarantee to Tony Aguiar at aguiar@usourceonline.com and myself"" -> ""Please send copies of Enron's contracts"" | ""Form of Guarantee to Tony Aguiar at aguiar@usourceonline.com and myself""",Two different documents are asked for in one sentence: the contracts and the Form of Guarantee.,E4,,"Settled by Abhishek Barali, 15 Oct 2026, after the blind check, where both authors counted 2: the contracts and the Form of Guarantee are two things asked (E4), so n = 2.",,
+eml-057f0f,emails,dropped,pilot,dropped,2,2,,"Item 1 'lets cook' is the sender choosing between options the reader offered (a decision, not clearly a request); n is 1 or 2 on that call.",E2,,,,
+eml-0b20ea,emails,dropped,reserve,dropped,3,3,,"Items 2-3 are statements, but 'will need to be GTC Firm confirmations' followed by 'Also, please prepare...' can be read as a second instruction, so n is 1 or 2.",E3 E4,,,,
+eml-0ef16b,emails,dropped,reserve,dropped,3,3,,Banter: 'You'd better have a warm up game' and the missed 'just mark it down on your calender' / 'It would probably be good if I could stay there' are borderline requests; n is unclear.,E1 E7,,,,
+eml-105d27,emails,dropped,reserve,dropped,3,3,,"Mailing-list advice on mosquito traps, not requests to the reader; the missed conditional 'If the problem is severe put in more than one' makes n 0, 3 or 4.",E2,,,,
+eml-11cfbf,emails,ok,pilot,reserve,1,1,,,,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-1260e4,emails,fixed,pilot,full,2,1,"removed 1: ""let's do deregulation right""","Item 1 'let's do deregulation right' is a talking point the sender will pass to Gary, not a request to the reader (E2).",E2,,,,pilot -> full: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-1327e6,emails,dropped,pilot,dropped,2,2,,"Item 1 is the sender's opinion ('I think we could continue...'), and the next sentence's recommendation to amend the INS forms may or may not be a request; count depends on whether recommendations count.",E2 E3,,,,
+eml-139901,emails,fixed,reserve,reserve,3,4,"added: ""Is this Yosemite II?""","Missed the question 'Is this Yosemite II?', which asks the reader for information.",E1,,,,
+eml-163eb3,emails,dropped,full,dropped,3,3,,"Items 1 and 2 are one thing (G3), a third party's suggestion relayed as a statement; whether it is a request to the reader decides n = 1 or 2.",G3 E2,,,,
+eml-171cc2,emails,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-18cdad,emails,ok,pilot,reserve,2,2,,,,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-19f7a5,emails,fixed,full,reserve,3,2,"removed 3: ""could go
+to dinner""","Item 3 'could go to dinner' is the purpose of item 1 (take an earlier flight), not a separate request (G4).",G4,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-1bb5b1,emails,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-1db30a,emails,dropped,full,dropped,3,3,,Items 1-2 are one recommendation ('I would recommend that we...') split in two; whether a recommendation is a request decides n = 1 or 2.,E2 G3,,,,
+eml-1e50c8,emails,fixed,pilot,pilot,2,1,"removed 1: ""should schedule him for additional interviews""","Items 1 and 2 are one request (schedule Michael for more interviews: next round or custom), G3/E4.",G3 E4,,,,
+eml-1eebaa,emails,dropped,full,dropped,5,5,,"Item 5 (copies for Thursday) may be the deadline of item 3 (compile contracts), and items 2 and 4 are both notes to put in one e-mail; n could be 3, 4 or 5.",G3 E4,,,,
+eml-1ef910,emails,dropped,reserve,dropped,3,3,,"Items 1 and 3 are the same; whether 'stick with the original date' is separate from 'disregard this fax', and whether the conditional ROFR notice counts, leaves n at 1-3.",G3 E3 E4,,,,
+eml-1ef9e8,emails,fixed,reserve,reserve,3,2,"removed 3: ""which BU all ENW and ISC employees support (i.e. EGM, EIM, EBS, EES, and ENA)""; replaced 2: ""return"" -> ""return by 11 AM tomorrow""",Item 3 is the need ('They need to know which BU...') that item 1's request already covers (E3/G3); item 2's one-word span 'return' is widened to name the deadline.,E3 G3 G5,,,,
+eml-22ea30,emails,dropped,reserve,dropped,3,3,,"Whether 'let me know about the curves for Riccardo' repeats the status question on the Brazil curves depends on who Riccardo is, which the text does not say (n = 2 or 3).",E8 G1,,,,
+eml-233b79,emails,fixed,pilot,reserve,2,1,"removed 1: ""It will need to be forwarded to there office in Norway for signature""","Item 1 is a statement about the document's routing (done by the other party), not a request to the reader (E2).",E2,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-24204b,emails,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-24838f,emails,dropped,reserve,dropped,3,3,,Item 2 is the sender's plan; the count then hangs on the advice 'You may want to include it in an HR Q&A' (n = 1 or 2).,E2 E7,,,,
+eml-259926,emails,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling emails full n = 3",
+eml-268eb9,emails,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-26b548,emails,dropped,full,dropped,5,5,,"Most items are statements or options ('needs work', 'You can sell the gas outright...', 'we can discuss'), not requests (E2/E3); only the conditional fuel-estimate instruction is arguable, so n is unclear.",E2 E3,,,,
+eml-2b28e9,emails,dropped,full,dropped,3,3,,"Items 1-2 split one phrase ('go ahead and do the work'), which is a go-ahead/approval rather than clearly a request; n is 1 or 2.",G3 E2,,,,
+eml-2ca1c7,emails,dropped,reserve,dropped,4,4,,Item 4 'Questions or concerns????' is a sign-off; the count then hangs on the advice-style 'You might also touch base with the contractor' (n = 2 or 3).,E2 E7,,,,
+eml-2da75a,emails,fixed,pilot,pilot,2,1,"removed 1: ""are being required to put some sort of end date into our system""","Item 1 is a statement of a requirement, not a request (E2).",E2,,,,
+eml-2e0a04,emails,ok,pilot,full,0,0,,,,,,,pilot -> full: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-35f59b,emails,fixed,full,full,3,1,"removed 1: ""draft their questions""; removed 2: ""fix that""","Items 1 and 2 are the sender's own plans ('We can have the technical gurus draft...', 'we can fix that'), not requests (E2).",E2,,,,
+eml-36d2d9,emails,dropped,full,dropped,3,3,,How-to instructions with overlapping items (1 and 3 both 'load the addin') and a 'see the Results sheet' pointer (E2); no single count.,E2 G3,,,,
+eml-385890,emails,fixed,pilot,pilot,1,1,"removed 1: ""assume that this isn't that urgent from her standpoint""; added: ""give us until this afternoon""","Item 1 is the sender's own assumption about a third party, not a request (E2); the missed request is 'give us until this afternoon' (E1).",E2 E1,,,,
+eml-3c8830,emails,dropped,reserve,dropped,5,5,,"Missed 'we will need new job descriptions' (E3), item 3 holds two questions, item 5 is 'we should'; n could be 5-7.",E3 E4,,,,
+eml-3f9bdb,emails,fixed,reserve,reserve,3,1,"removed 2: ""contact the parties
+named in the letter""; removed 3: ""look forward to your response""",'Please feel free to contact the parties' is an offer and 'look forward to your response' repeats the bid request; one request remains.,E2 E4,,,,
+eml-40b479,emails,fixed,reserve,reserve,3,2,"removed 3: ""meeting with the guys""; replaced 2: ""Please let me know your date preferences and the names of anyone else that should attend the meetings"" -> ""the names of anyone else that should attend the meetings""","Items 1, 2 and 3 overlap: the calendar question and 'let me know your date preferences' are one item; the names of other attendees are the second.",E4 E8,,,,
+eml-42b52e,emails,ok,full,reserve,1,1,,"Span starts a few words early but contains ""Can you give her a ring"" (G5).",G5,,,,full -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-42fbec,emails,fixed,full,full,4,3,"removed 3: ""need to talk about plans for book/portfolio set ups""",Item 3 'need to talk about plans...' is the topic of item 4's meeting request (E3/E4).,E3 E4,,,,
+eml-437850,emails,dropped,reserve,dropped,4,4,,Contains Anne Heard's quoted message; item 4 'What do you think' is hers.,E6,,,,
+eml-448a1f,emails,fixed,pilot,reserve,2,2,"removed 1: ""Please advise""; split 2: ""Are there any one off contracts and does the Wabash termination notice cover if there are"" -> ""Are there any one off contracts"" | ""does the Wabash termination notice cover if there are""","'Please advise' repeats the question (E4), and the question asks two different things: are there one-off contracts, and does the notice cover them (E4 split).",E4,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-457af9,emails,dropped,reserve,dropped,3,3,,"Item 3 restates the purpose of item 2; item 1 'we do need to send a call notice' has no clear owner, so n is 1 or 2.",E3,,,,
+eml-45b51c,emails,dropped,reserve,dropped,3,3,,"'To register... you can reply or fill out the form' is one registration instruction phrased conditionally; it is unclear whether it is a request at all (n = 0 or 1, not 3).",E2 E4,,,,
+eml-46e676,emails,fixed,reserve,reserve,3,2,"removed 1: ""is there someone in the corporate area you'd rather I approach""","Items 1 and 3 are one question with alternatives (continue with Haedicke's group, or someone in corporate), E4.",E4,,,,
+eml-48e080,emails,fixed,pilot,full,1,2,"added: ""I just wanted to confirm""","Missed second request: the sender also asks the reader to confirm that no payment is required tomorrow ('I just wanted to confirm'), a different thing from the EESI/EPMI mix-up (E4).",E1 E4,,,,pilot -> full: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-49987e,emails,ok,pilot,reserve,1,1,,One question with alternatives (E4).,E4,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-4c516a,emails,fixed,full,full,5,4,"removed 5: ""request middle of next week churn date""","Item 5 ('request middle of next week churn date') is a detail of the churn request in item 1, not a separate request (G4).",G4,,,,
+eml-4da71b,emails,dropped,reserve,dropped,3,3,,"FW chain: the second and third requests are Kyle's quoted messages to Rod, not the sender's.",E6,,,,
+eml-4de124,emails,dropped,pilot,dropped,2,2,,Item 1 'We should continue low key development...' is a 'we' statement whose owner is unclear (E3); n is 1 or 2 on that call.,E3,,,,
+eml-4ec882,emails,dropped,full,dropped,3,3,,Items 1-2 are 'I suggest that we...' and 'We also need to...' statements whose owner is unclear (E3); n is 1 to 3.,E3,,,,
+eml-4f4896,emails,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-537769,emails,dropped,pilot,dropped,2,2,,"Both items are one thing (settle the $28M internal transfer), phrased 'we need to'; whether it is the reader's job is unclear (E3), so n is 0 or 1.",E3 G3,,,,
+eml-54d261,emails,ok,pilot,reserve,2,2,,,,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-587455,emails,dropped,reserve,dropped,3,3,,"The list of what 'is needed to process' (incl. the unlisted Change Order) reads as requests only if the reader is the borrower; n could be 0, 3 or 4.",E3 G1,,,,
+eml-5e5628,emails,dropped,reserve,dropped,1,1,,The only item is a policy deadline stated as fact ('requests must be received on or before November 30'); whether it is a request decides n = 0 or 1.,E2,,,,
+eml-5f9388,emails,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling emails full n = 3",
+eml-60db15,emails,ok,pilot,reserve,1,1,,,,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-63f20b,emails,fixed,reserve,reserve,3,2,"removed 2: ""Let me know""",'Let me know...' only repeats the curve question ('One more thing...' = the curve / Nymex Ref question).,E8 E4,,,,
+eml-64b0cb,emails,dropped,reserve,dropped,3,3,,Item 2 'a barbecue' is an offer; whether 'Please reply and let me know' also asks the barbecue-or-restaurant choice gives n = 1 or 2.,E2 E8,,,,
+eml-65a10b,emails,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-667d17,emails,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-673566,emails,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-675364,emails,fixed,reserve,reserve,5,4,"removed 5: ""did he call""; replaced 4: ""Did you find him"" -> ""Did you find him or did he call?""",'Did you find him or did he call?' is one question with alternatives.,E4,,,,
+eml-69e2f1,emails,fixed,reserve,reserve,3,1,"removed 1: ""need to file the response""; removed 3: ""would appreciate receiving any comments""",'Your comments would be greatly appreciated' and 'would appreciate receiving any comments' are one request; 'We need to file' is the sender's deadline.,E4 E3,,,,
+eml-6fc242,emails,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-7002e3,emails,fixed,full,reserve,3,1,"removed 1: ""need to file this""; removed 2: ""Your comments would be greatly appreciated""",Item 1 is the sender's filing deadline (E2); items 2 and 3 are the same request for comments (E4).,E2 E4,,,,full -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-710e3f,emails,dropped,reserve,dropped,3,3,,"Items 1 and 2 are one request; the rest are Terry's relayed asks and 'we need to' items with unclear owners, so n is unclear.",E3 E7,,,,
+eml-7112dd,emails,fixed,full,pilot,3,2,"removed 1: ""Please note, included in this report is a delayed in-service schedule for Red Rock""","Item 1 'Please note, included in this report...' is a pointer (E2).",E2,,,,
+eml-724b7c,emails,fixed,pilot,pilot,2,1,"removed 1: ""Please let me know""",'Please let me know' repeats the question about the managers (E4).,E4,,,,
+eml-729315,emails,fixed,reserve,reserve,3,1,"removed 1: ""Please let me know""; removed 2: ""return this call on his behalf. He feels that you are probably the only person who will understand and be able to determine if Enron should have an interest""","'Ken would like you to return this call', 'Do you mind returning this call?' and 'Please let me know' are one request.",E4 E8,,,,
+eml-72bde0,emails,dropped,reserve,dropped,4,4,,"Items 2-3 are 'Note that ... need to be added / we need to determine' with unclear owner, partly covered by 'Do you have any views'; n is 2-4.",E2 E3,,,,
+eml-74f44a,emails,dropped,full,dropped,3,3,,"Opinion in a discussion ('we need to be really careful', 'we should either get more active, or abandon...'); not plainly the reader's job (E3), and items 2-3 are one choice (E4); n is 0 or 1.",E3 E4,,,,
+eml-795f38,emails,dropped,reserve,dropped,3,3,,"The count hangs on the advice 'I would have Gerald take a look at the Letter of Interest' (and on whether 'Review, make any minor changes' is one job).",E7 G4,,,,
+eml-7a24db,emails,ok,pilot,reserve,2,2,,,,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-7c5695,emails,fixed,reserve,pilot,3,2,"removed 1: ""please send a reference
+letter to Prof. Daskin (at your earliest convenient) ?""",Item 1 'send a reference letter' is the same thing as item 3 'send an electronic version'; the signed original is the second item.,E4,,,"reserve -> pilot, refilling emails pilot n = 2",
+eml-7dd15a,emails,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-7f96c0,emails,dropped,reserve,dropped,3,3,,Whether 'do not use the ... Benchmark Reports id' is its own request or part of 'send requests to Risk Analytics' decides n (2 or 3).,E4,,,,
+eml-807a54,emails,fixed,reserve,reserve,3,2,"removed 2: ""please see the red-lined language addressing the tax reimbursement""",Item 2 'please see the red-lined language' is a pointer within the review already asked for in item 1.,E2 E4,,,,
+eml-80cafd,emails,dropped,reserve,dropped,3,3,,Item 1 is an 'it is critical that we get this letter to the PUCT' statement that the explicit 'get a copy ... and forward' may cover (E3); n is 2 or 3.,E3,,,,
+eml-8118f7,emails,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling emails full n = 3",
+eml-85ab95,emails,fixed,reserve,reserve,4,4,"replaced 2: ""need 3 of you to attend dinner on the 29th, 2 of your to faciliate the office tour and give insight to the operations"" -> ""2 of your to faciliate the office tour and give insight to the operations""",Item 2 overlaps item 1 (dinner); it should be the office-tour request only.,E4 G5,,,,
+eml-86b159,emails,dropped,pilot,dropped,1,1,,"Besides 'let me know what you think', the sender states two preferences to the organiser (a late-morning or afternoon slot, and Jean Adams being available); whether those are requests decides n (1 to 3).",E1 E7,,,,
+eml-8815d6,emails,dropped,reserve,dropped,3,3,,Items 1-2 are statements; missed 'Do you know about that?' and 'should you give Andrea a call about it?' (advice phrased as a question) leave n at 2 or 3.,E2 E7,,,,
+eml-8ae4e1,emails,fixed,full,pilot,3,2,"removed 2: ""Let me know""; replaced 1: ""do for me"" -> ""Is that something you could do for me?""","'Let me know' repeats 'Is that something you could do for me?' (E4); item 1 span 'do for me' is a fragment, fixed.",E4 G5,,,,
+eml-8b9b2f,emails,dropped,reserve,dropped,3,3,,"Only candidate is the advice 'you may want to send out one more reminder' (item 2 is a how-to tip, item 3 a statement); n is 0 or 1.",E7 E2,,,,
+eml-8d7185,emails,fixed,pilot,reserve,2,1,"removed 1: ""need to file this""","Item 1 'need to file this' is the sender's own deadline, not a request (E2/E3).",E2 E3,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-8f398e,emails,fixed,pilot,reserve,2,1,"removed 2: ""is this a separate document that I need to have for the ""data room""; replaced 1: ""Is this what you referred to when you asked if I had the disclosures"" -> ""Is this what you referred to when you asked if I had the disclosures? If not, is this a separate document that I need to have for the ""data room?""""","The two items are one question with an alternative ('Is it X? If not, is it a separate document?'), E4; merged into one span.",E4,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-908fe4,emails,fixed,reserve,reserve,3,2,"removed 2: ""execute the signature page""; replaced 1: ""please print"" -> ""please print and execute the signature page""",'print' and 'execute' are one job on one object (print and sign the page); sending it back is the second.,G4 E4,,,"reserve -> pilot, refilling emails pilot n = 2",pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-916001,emails,dropped,pilot,dropped,2,2,,"Besides 'Pls. confirm', the email has recommendations ('makes sense to run it past Whalley', 'I would run it past Greg') and a conditional 'If ... labor-intensive, pls. advise'; the count depends on borderline calls.",E2 E1,,,,
+eml-94a2cd,emails,dropped,full,dropped,1,1,,"Item 1 is the sender's own plan (E2); the only possible request is the conditional 'if you can think of anything at your company...', so n is 0 or 1.",E2,,,,
+eml-959329,emails,fixed,reserve,reserve,3,2,"removed 1: ""have to get citation issued""; removed 2: ""serve the papers on MSN's registered agent in Austin""; added: ""please let me know if any commercial reason arises such that you believe service should be delayed""","Items 1-2 are the sender's own steps; missed 'please let me know if any commercial reason arises...', which asks the reader to report.",E2 E1,,,,
+eml-9802aa,emails,ok,pilot,full,2,2,,,,,,,pilot -> full: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-98c725,emails,dropped,full,dropped,3,3,,The text holds a letter signed by James F. Hughes III plus a forwarding note by 'Jim' asking a cc'd third party to pass it on; whose requests to whom is unclear (E6).,E6,,,,
+eml-98e424,emails,dropped,full,dropped,6,6,,"Item 3 'review the comments' matches two different requests (Susan: Kevin, Alan: Tim); with both, the list has 7 requests, outside the range.",G7 G5,,,,
+eml-9b66cc,emails,dropped,reserve,dropped,3,3,,"The head count covers three events (meeting, dinner, golf); whether that is one request or three decides n (1 or 3).",E4 G4,,,,
+eml-9b89bd,emails,dropped,full,dropped,6,6,,"Item 4 is a broken span of the numbered list, and item 1 is a suggestion ('It would be a good idea to dissect...') whose status decides n = 5 or 6.",G5 E2,,,,
+eml-a0968c,emails,fixed,reserve,full,3,4,"split 3: ""lets sit down=
+and make sure we're okay from an overall budget perspective and then make sure that the participating staff know that we need to stick to the budget"" -> ""lets sit down=
+and make sure we're okay from an overall budget perspective"" | ""make sure that the participating staff know that we need to stick to the budget""","Item 3 holds two jobs: sit down to check the overall budget, and make sure the staff know to stick to it (G4); split.",G4 E4,,,"reserve -> full, refilling emails full n = 4",
+eml-a0d4d8,emails,dropped,full,dropped,6,6,,"Announcement with about ten 'please' instructions (two 'attend' lines, three 'dial' lines, two 'no cell phones'); items 5-6 match several, and the full list is outside the range.",G7 G5,,,,
+eml-a194fb,emails,fixed,reserve,reserve,3,2,"removed 1: ""Let me know""; replaced 2: ""can either order in"" -> ""We can either order in or I would love to cook anything you would like. It's up to you.""",'Let me know' repeats the questions; item 2 is a fragment of the order-in-or-cook choice the reader is asked to make ('It's up to you').,E8 G5,,,"reserve -> pilot, refilling emails pilot n = 2",pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-a45596,emails,fixed,reserve,reserve,3,2,"removed 1: ""help me with a couple of pieces""; replaced 3: ""looking for a history of TW and some basic overview stuff"" -> ""some basic overview stuff""","'help me with a couple of pieces' is the two pieces named next; items 2 and 3 overlap: history of TW, basic overview.",E4,,,,
+eml-a6014f,emails,dropped,reserve,dropped,3,3,,"'Where are the taxes? ... Return on Investment?' are rhetorical objections to a presentation; whether they ask the reader anything is unclear (n = 0, 3 or 4).",E1 E2,,,,
+eml-aebe16,emails,dropped,reserve,dropped,3,3,,"Items 1 and 2 are one request; item 3 is a vague hope to visit over dinner some day, which decides n (1 or 2).",E4 E7,,,,
+eml-b0a3a8,emails,ok,pilot,full,2,2,,,,,,,pilot -> full: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-b17c81,emails,fixed,full,reserve,4,2,"removed 1: ""review on an expedited basis all material contracts of ENE and ENA for change-of-control type provisions""; removed 2: ""need to begin reviewing/collecting information""",Item 1 states what the sender was asked to do and item 2 is the sender's own need; neither is a request to the reader (E2).,E2,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-b20f56,emails,fixed,pilot,reserve,2,1,"removed 1: ""Let me know""",'Let me know' repeats the question about field visits (E4).,E4,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-b435c1,emails,fixed,reserve,reserve,3,2,"removed 3: ""would be happy to call""",Item 3 'would be happy to call' is the sender's offer.,E2,,,"reserve -> pilot, refilling emails pilot n = 2",pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-b86472,emails,fixed,full,full,3,2,"removed 3: ""Please provide me with a brief description of the project or work that is going to be discussed with VMAC and a contact name/e-mail address""; replaced 1: ""Please provide me with a brief description of the project"" -> ""Please provide me with a brief description of the project or work that is going to be discussed with VMAC""; replaced 2: ""Please provide me with a brief description of the project or work that is going to be discussed with VMAC"" -> ""a contact name/e-mail address""",Items 1-3 are three overlapping spans of one sentence that asks for two things: a project description and a contact name/e-mail (E4).,E4 G3,,,,pilot -> full: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-b9fa93,emails,dropped,pilot,dropped,1,1,,"The only item is a 'Please note that...' pointer (E2), yet the whole email is an implicit request to get the monitor fixed; n=0 vs n=1 is a borderline call.",E2,,,,
+eml-bbef23,emails,dropped,reserve,dropped,1,1,,"Besides the listed request, 'I would not recommend using the numbers...' is advice to the reader; whether a recommendation counts decides n = 1 or 2.",E1 E2,,,,
+eml-bf51b9,emails,dropped,pilot,dropped,2,2,,"Both items are one 'we need to' methodological statement; not plainly the reader's job (E3), so n is 0 or 1, and the annotators split one thing in two.",E3 G3,,,,
+eml-c10115,emails,fixed,full,pilot,3,2,"removed 1: ""need this""",Item 1 'need this' is a deadline statement covered by the two questions (E3).,E3,,,,
+eml-c1dc57,emails,fixed,reserve,reserve,3,4,"added: ""Do we get a chance to respond to the protest before the FERC makes a decision on whether to hold a Tech Conf?""",Missed the question 'Do we get a chance to respond to the protest before the FERC makes a decision...?'.,E1,,,,
+eml-c1e167,emails,fixed,full,full,4,3,"removed 3: ""Any feedback would be greatly appreciated""",Item 3 'Any feedback would be greatly appreciated' repeats the three questions (E4).,E4,,,,
+eml-c24b28,emails,dropped,pilot,dropped,2,2,,"Both items are broken duplicates; the real requests are cards by April 2nd and a proof by March 26th, but the hedged '(we might not want to include e-mail address)' may be a third request, so n is 2 or 3.",G5 E1,,,,
+eml-c3420d,emails,dropped,reserve,dropped,4,4,,"Contains Patrice's quoted message; items 3-4 ('Keep pulling for me', 'how are you') are hers.",E6,,,,
+eml-c635e0,emails,fixed,reserve,reserve,3,1,"removed 1: ""proceed""; removed 2: ""Let me know""; replaced 3: ""need a meeting"" -> ""do we need a meeting, or can you proceed?""","'do we need a meeting, or can you proceed?' is one question with alternatives, and 'Let me know' repeats it.",E4 E8,,,,
+eml-c91ebe,emails,ok,pilot,reserve,2,2,,,,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-caaa4b,emails,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling emails full n = 3",
+eml-d2b79d,emails,fixed,full,pilot,3,2,"removed 1: ""need you to re-do your org chart in Powerpoint""","Items 1 and 2 are the same request (re-do the org chart in PowerPoint), G3.",G3,,,,
+eml-d4d440,emails,dropped,reserve,dropped,3,3,,"Missed 'Do I remember you saying... including the contract termination fee or not?', which may repeat 'Does this number get included?'; item 1 is the sender's advice. n unclear.",E4 E7,,,,
+eml-d53ce6,emails,dropped,full,dropped,6,6,,"Besides five clear requests, item 5 ('the rate handle will need to be attached...') and the missed 'Risk needs to set-up this curve in ERMS' are passive 'needs' whose status is borderline (E3); n is 5 to 7.",E3,,,,
+eml-d58462,emails,fixed,reserve,reserve,3,1,"removed 1: ""need to create new books for them""; removed 2: ""set up roles""",Creating books and setting up roles are what the sender's side would do; the request is 'Please let us know what has to happen'.,E2 E3,,,,
+eml-d93203,emails,fixed,reserve,reserve,4,2,"removed 1: ""track down an answer for me""; removed 3: ""Any information""",'track down an answer' and 'Any information... appreciated' only restate the two questions.,E4,,,,
+eml-d938c6,emails,fixed,pilot,reserve,2,1,"removed 2: ""need something to default to in the template I am setting up""","Item 2 is the sender's reason/need, already covered by 'please confirm' (E3).",E3,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-d98d33,emails,dropped,reserve,dropped,3,3,,Relayed suggestion ('she believes that you might also need to see this') plus 'see and give the OK' vs 'Please advise' makes n 1 or 2.,E7 E8,,,,
+eml-da107b,emails,dropped,reserve,dropped,4,4,,Item 4 is an expectation; whether 'please remember that all information needs to be reconciled' is a request or a 'please note' pointer decides n (2 or 3).,E2 E3,,,,
+eml-db24f4,emails,fixed,reserve,reserve,4,2,"removed 1: ""need to make these two contracts long to the system each month""; removed 2: ""put an OBA at Bushton's inlet""",Items 1-2 are options in the sender's analysis with no owner; the requests are confirm calculations and set a meeting.,E3,,,,
+eml-db5f81,emails,ok,reserve,full,4,4,,,,,,"reserve -> full, refilling emails full n = 4",
+eml-dc9414,emails,fixed,pilot,reserve,2,1,"removed 2: ""should we meet to develop something""; replaced 1: ""Will there be a checklist for him to use in gathering information from the documents"" -> ""Will there be a checklist for him to use in gathering information from the documents, or should we meet to develop something?""","One question with alternatives (checklist, or meet to develop one), E4; merged.",E4,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-dca63f,emails,fixed,reserve,reserve,3,2,"removed 2: ""hold our meeting""","Item 2 'hold our meeting' is the group's decision, not a request.",E2,,,,
+eml-dfe4d0,emails,dropped,full,dropped,3,3,,"The items are conditions precedent of a draft agreement (obligations of AEP/ENA), not requests to the reader (E2); the n=0 reading is plausible but it is unclear what the reader is asked.",E2,,,,
+eml-e1deec,emails,fixed,full,full,4,3,"removed 1: ""Please have this documentation completed""","Items 1 and 2 are the same request (complete and sign the documentation), G3.",G3,,,,
+eml-e54595,emails,ok,pilot,full,1,1,,,,,,,pilot -> full: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-e57a1b,emails,dropped,pilot,dropped,2,2,,"Besides the two 'Please...' requests, the conditional 'we need to confirm that any collateral ... is capable of covering the different entity' may be a third request for the reader (E3); n is 2 or 3.",E3,,,,
+eml-e688e5,emails,fixed,reserve,full,3,4,"added: ""arrange for the execution
+of two copies""","Missed 'arrange for the execution of two copies', a separate step after reviewing.",E4 E1,,,"reserve -> full, refilling emails full n = 4",
+eml-e6a52d,emails,ok,pilot,full,0,0,,,,,,,pilot -> full: over the final number for emails n = 0; the kept documents match the set's lengths best
+eml-e9d269,emails,fixed,reserve,reserve,3,2,"removed 1: ""need to fill these positions""",Item 1 'need to fill these positions' is covered by 'Any help you can provide would be appreciated' (E3).,E3,,,"reserve -> pilot, refilling emails pilot n = 2",pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-e9f402,emails,dropped,reserve,dropped,4,4,,'Lynn will compile...' and 'Donna Scott will compile...' are assignments phrased as plans; whether they count moves n from 4 to 6.,E2 E3,,,,
+eml-eeb86d,emails,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling emails full n = 3",
+eml-f03baf,emails,fixed,full,pilot,3,2,"removed 3: ""schedule an informal 2002 O&M and Capital plan review""","Item 3 is Tracy's relayed recommendation, already covered by 'please confirm this with Rod and Tracey' (E2).",E2,,,,
+eml-f0adbb,emails,dropped,full,dropped,3,3,,Whether 'was wondering if Vince would like to do lunch' is a request on top of 'check his calendar and let me know if he is available' (one or two items) is borderline; n is 1 to 3.,E4,,,,
+eml-f17551,emails,fixed,pilot,pilot,2,1,"removed 2: ""were you referring to something else?""","'Or were you referring to something else?' is part of the same question (E4, the rule's own example).",E4,,,,
+eml-f1f5a2,emails,dropped,pilot,dropped,1,1,,"Item 1 is a recommendation; whether advice counts as a request is not settled by E1/E2, and the email holds a second recommendation ('if included should not be represented as a completed solution'), so n could be 0, 1 or 2.",E1 E2,,,,
+eml-f5efcc,emails,fixed,reserve,full,3,2,"removed 3: ""would like your input""",'would like your input' is the form request itself; complete and return remain.,E4,,,"reserve -> pilot, refilling emails pilot n = 2",pilot -> full: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-f73e29,emails,dropped,full,dropped,3,3,,Items 1-2 are one need (form B as of 1/31/02 deals); whether that is a request separate from 'let me know when you will be able prepare the schedule' is borderline (E3); n is 1 or 2.,E3 G3,,,,
+eml-f75d5f,emails,dropped,full,dropped,5,5,,"Item 4 is a 'please note' pointer and item 5 a sign-off (E2); item 1 is a relayed suggestion that is the email's real ask, and items 2-3 may be one; n is 2 or 3.",E2 E4,,,,
+eml-fafff3,emails,ok,pilot,reserve,1,1,,,,,,,pilot -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-fc4a33,emails,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for emails n = 1; the kept documents match the set's lengths best
+eml-fd2810,emails,fixed,reserve,reserve,3,1,"removed 1: ""reply""; removed 2: ""Please call""",'Please call me ... or reply' is one alternative and only asks for the answer to the vesting question.,E4 E8,,,,
+eml-fe7d4b,emails,dropped,full,dropped,5,5,,"Items 3-5 are broken overlapping spans of one 'I am still in need of...' statement, and item 2 repeats item 1; whether the needs are asked of the reader is unclear (E3).",E3 G3 G5,,,,
+eml-fed3af,emails,fixed,full,reserve,3,2,"removed 2: ""What's up man""","Item 2 'What's up man' is a greeting, not a request.",E2,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+eml-ff46e9,emails,ok,pilot,reserve,2,2,,Look over the maps and give feedback are two separate asks (E4).,E4,,,,pilot -> reserve: over the final number for emails n = 2; the kept documents match the set's lengths best
+jbk-00444b,job_posts_knowledge,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 0",
+jbk-03c630,job_posts_knowledge,fixed,full,full,1,2,"added: ""SAP""","Missed technology: 'SAP' (SAP technology trends, SAP solution).",K1,,,,
+jbk-05f1a8,job_posts_knowledge,dropped,full,dropped,3,3,,"Items name body parts/substances while the techniques (optical microscopy, light sheet fluorescence microscope) are missed; n would be unclear.",K1 G6,,,,
+jbk-078957,job_posts_knowledge,dropped,full,dropped,3,3,,"'retail', 'international sales', 'how to run a business' are borderline fields vs experience/abilities; 'P&L' also unclear.",K1 K2 G6,,,,
+jbk-07d4dd,job_posts_knowledge,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 3",
+jbk-096e16,job_posts_knowledge,dropped,reserve,dropped,3,3,,Item 3 'production environment' is not knowledge; 'cloud computing' / 'programming' are borderline.,K1 G6,,,,
+jbk-099714,job_posts_knowledge,fixed,full,full,1,0,"removed 1: ""PhD degree""",Item 1 'PhD degree' is a degree with no named field; no knowledge items remain.,K4,,,,
+jbk-0c8f57,job_posts_knowledge,dropped,full,dropped,1,1,,Item 1 'Data Science' only describes the company's plans; whether it counts is borderline.,K2 G6,,,,
+jbk-0fb320,job_posts_knowledge,dropped,full,dropped,3,3,,Items 'application delivery' and 'stakeholder management' read as skills; whether they count is borderline.,K2 G6,,,,
+jbk-10f842,job_posts_knowledge,dropped,full,dropped,2,2,,"'WordPress/PHP' and 'Scrum/Agile' each name two things; split gives n=4, outside range.",K3 G7,,,,
+jbk-129a03,job_posts_knowledge,dropped,reserve,dropped,1,1,,Item 1 'frontend architecture' is something to build; 'agile' and 'UX' are borderline; n unclear.,K1 G6,,,,
+jbk-1574cc,job_posts_knowledge,dropped,reserve,dropped,3,3,,"The Technologies line also lists 'reactjs', which was missed; n becomes 4, outside the 0-3 range.",K1 G7,,,,
+jbk-16e2a8,job_posts_knowledge,dropped,full,dropped,1,1,,'English' and 'Danish' are both mentioned as not required; whether either counts is borderline.,K1 G6,,,,
+jbk-170646,job_posts_knowledge,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for job_posts_knowledge n = 0; the kept documents match the set's lengths best
+jbk-1869b3,job_posts_knowledge,dropped,full,dropped,0,0,,Fields 'Managerial Economics' / 'Supply Chain management' appear only inside the position title; whether they count is borderline.,K1 K2 G6,,,,
+jbk-20ec33,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Item 1 'MVP' is the product the agency built, not knowledge (remove); 'data science' names the team the hire will lead, a borderline field, so n is 0 or 1.",K2 G6,,,,
+jbk-22ccf1,job_posts_knowledge,dropped,reserve,dropped,3,3,,'dairy chemistry powder processing' is a comma-less run that can be one field or two.,K3 J4,,,,
+jbk-25b23c,job_posts_knowledge,fixed,full,full,2,1,"removed 1: ""standardized global processes""",Item 1 'standardized global processes' names no method or tool; SAP stays.,K1 K2,,,,
+jbk-2808f9,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-2ba678,job_posts_knowledge,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 2",
+jbk-2ca7a7,job_posts_knowledge,dropped,full,dropped,1,1,,"Item 1 'equipment documentation' is a duty; the true list (P&ID's, ERP system, flow charts?) depends on borderline calls.",K1 K2 G6,,,,
+jbk-3338e7,job_posts_knowledge,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 3",
+jbk-3683ef,job_posts_knowledge,dropped,full,dropped,3,3,,'front-end back-end and cloud technologies' may add front-end/back-end as items beyond the tag list; borderline.,K1 K3 G6,,,,
+jbk-3bd52d,job_posts_knowledge,fixed,full,full,2,1,"removed 2: ""BS/BA degree""",Item 2 'BS/BA degree' is a degree with no field.,K4,,,,
+jbk-3cae5c,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 1 'Technical Bachelor/' is a bare degree (remove); 'passionate about programming' leaves 'programming' as a borderline field, so n is 2 or 3.",K4 G6,,,,
+jbk-3ce342,job_posts_knowledge,dropped,reserve,dropped,2,2,,"Missed 'S/TEM' and 'EELS' besides SCR and catalysis sciences; n=4, outside range.",K1 G7,,,,
+jbk-3d46ce,job_posts_knowledge,fixed,full,reserve,2,1,"removed 2: ""complex system""",Item 2 'complex system' names no technology; 'You can code' is an ability.,K1 K2,,,,full -> reserve: over the final number for job_posts_knowledge n = 1; the kept documents match the set's lengths best
+jbk-3fbb0f,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Items 'supply chain', 'marketing', 'sales' are value-chain areas; 'business development', 'consulting', 'M&A', 'corporate strategy' are equally plausible; no single count.",K1 G6,,,,
+jbk-3fe11c,job_posts_knowledge,dropped,reserve,dropped,0,0,,"'process mining', 'PQL', 'AI technologies' are named technologies but only describe the company; borderline.",K2 G6,,,,
+jbk-40caaa,job_posts_knowledge,ok,reserve,reserve,0,0,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 0",full -> reserve: over the final number for job_posts_knowledge n = 0; the kept documents match the set's lengths best
+jbk-40ea9e,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Items are a business area ('Retail and Markets trading') and duties ('application deployments in production', 'automated mechanisms'); the right list is unclear.",K2 G6,,,,
+jbk-42a0ab,job_posts_knowledge,dropped,reserve,dropped,3,3,,"JavaScript, HTML and CSS are right, but 'send us your application in English' may add English as a fourth item; borderline.",K1 G6 G7,,,,
+jbk-434f05,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Items 1-2 'security reviews'/'code reviews' are duties; 'SDL', 'threat models', 'CI/CD' (two items) are possible additions; n unclear.",K2 K5 G6,,,,
+jbk-47542d,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-48a18a,job_posts_knowledge,dropped,full,dropped,0,0,,"Lists technologies (big data, cybersecurity, machine learning, cloud development) that only describe the company; whether they count is borderline and would push n past 3.",K2 G6,,,,
+jbk-4c684e,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Item 1 'German' appears only as a free in-house course (a benefit), not as a requirement; whether it counts is borderline.",K1 G6,,,,
+jbk-4fdc5f,job_posts_knowledge,dropped,full,dropped,3,3,,Missed 'Micro-Services' architecture and possibly 'agile'; n would be 4-5 or depend on borderline calls.,K1 G6 G7,,,,
+jbk-503a27,job_posts_knowledge,dropped,reserve,dropped,3,3,,"All three items are tasks; knowledge candidates ('data warehouse', 'Data modelling', '3rd normal form', 'dimensional', 'Personalised Medicine') make the count unclear.",K2 G6,,,,
+jbk-50b34d,job_posts_knowledge,dropped,reserve,dropped,3,3,,Item 1 'method development' is an activity (remove); 'The application must be in English' may add English; n is 2 or 3.,K2 G6,,,,
+jbk-52a718,job_posts_knowledge,dropped,full,dropped,0,0,,'pricing analysis' could be read as a field of knowledge or as a duty; n depends on that call.,K1 G6,,,,
+jbk-564570,job_posts_knowledge,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 3",
+jbk-567a65,job_posts_knowledge,dropped,full,dropped,3,3,,Item 3 'digitalization' and item 1 'data processes and typical value streams' are borderline knowledge items.,K1 G6,,,,
+jbk-5827d6,job_posts_knowledge,dropped,reserve,dropped,3,3,,Comma-less tag run 'linux embedded c' can read as 3 items or as 'linux' + 'embedded c'.,K3 J4,,,,
+jbk-5a7e7c,job_posts_knowledge,dropped,reserve,dropped,3,3,,Missed 'reactjs' in the Technologies line (and React/Node in the title); n is at least 4.,K1 G7,,,,
+jbk-5aa284,job_posts_knowledge,dropped,reserve,dropped,2,2,,'PPT.' (PowerPoint) and 'quantitative data' analysis are possible missed items; borderline.,K1 G6,,,,
+jbk-5ad1c2,job_posts_knowledge,fixed,full,full,1,2,"added: ""SILAC""",Missed named method: 'SILAC'.,K1,,,,
+jbk-5b5924,job_posts_knowledge,dropped,full,dropped,3,3,,'payment loyalty and shopping' is a comma-less run ('payment loyalty' could be one item).,K3 J4,,,,
+jbk-5be36a,job_posts_knowledge,fixed,reserve,full,1,2,"added: ""SAFe""",Missed named method 'SAFe' (release train engineer).,K1,,,"reserve -> full, refilling job_posts_knowledge full n = 2",
+jbk-5ce5b9,job_posts_knowledge,dropped,reserve,dropped,3,3,,Item 1 is a degree (field 'production/supply chain' may be one or two); items 2-3 are experience settings; n unclear.,K4 K3 G6,,,,
+jbk-60e880,job_posts_knowledge,dropped,reserve,dropped,0,0,,Lists technologies (PET MRI fMRI MEG EEG tDCS TMS) that describe the workplace's infrastructure; whether they count is borderline and would push n far past 3.,K2 G6 G7,,,,
+jbk-62845a,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-62e9d5,job_posts_knowledge,fixed,reserve,full,3,3,"removed 3: ""master degree (MSc)""; split 2: ""electrophysiological and optical measurements"" -> ""electrophysiological"" | ""optical measurements""","Item 3 'master degree (MSc)' is a bare degree; item 2 lists two methods (electrophysiological, optical measurements).",K4 K3,,,"reserve -> full, refilling job_posts_knowledge full n = 3",
+jbk-64e3fc,job_posts_knowledge,dropped,full,dropped,3,3,,"D2B/S2D are contexts, not tools, and 'ART Epics' is unclear; n depends on borderline calls.",K1 G6,,,,
+jbk-65d020,job_posts_knowledge,dropped,full,dropped,2,2,,'business analysis development maintenance and software improvement' is a comma-less run that cannot be split one clear way.,K3 J4,,,,
+jbk-6e3ed5,job_posts_knowledge,dropped,full,dropped,3,3,,"Items 1-2 ('technical expertise', 'technical knowledge') name nothing; item 3 needs a split; n unclear.",K1 K3 G6,,,,
+jbk-6edbbc,job_posts_knowledge,dropped,full,dropped,3,3,,"Item 2 'Unity3D (iOS and/or Android)' splits into three, giving n=5 with C# and mobile games; 'mobile games' is borderline.",K3 G6 G7,,,,
+jbk-716f54,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Item 1 'testing tools and frameworks' is a generic tool category and 'RFC's' is a borderline document type; n is 0, 1 or 2.",K1 G6,,,,
+jbk-7286b3,job_posts_knowledge,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for job_posts_knowledge n = 1; the kept documents match the set's lengths best
+jbk-728e78,job_posts_knowledge,dropped,full,dropped,0,0,,'Social Engineering' / 'information security' sit in a job title and a duty; whether they count as fields is borderline.,K1 K2 G6,,,,
+jbk-72fb8b,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 1 'design implementation' is a duty, 'CI/CD' is two items, '50+ PB scale data store' is the company's system; 'DevOps' and 'software-defined storage' are borderline.",K2 K5 G6,,,,
+jbk-764f03,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 2 'Constructive Diversity' is a company value and item 3 is a bare degree; 'SOX', 'data protection', 'IT compliance' are missed or borderline; n unclear.",K2 K4 G6,,,,
+jbk-7a43b8,job_posts_knowledge,fixed,reserve,full,2,3,"added: ""Danish""",Missed language 'Danish' in 'Danish Swedish and Norwegian'.,K1 K3,,,"reserve -> full, refilling job_posts_knowledge full n = 3",
+jbk-7c0015,job_posts_knowledge,fixed,full,full,2,1,"removed 2: ""Research management""",Item 2 'Research management' is listed under job duties; 'business research' (field) stays.,K2,,,,
+jbk-7df2a8,job_posts_knowledge,dropped,full,dropped,3,3,,'Financial Services' (environment) and 'IT infrastructure' are borderline; n unclear.,K1 K2 G6,,,,
+jbk-7e1b82,job_posts_knowledge,dropped,full,dropped,3,3,,"Items are vague ('best practices'); agile, user stories, unit tests, DevOps, POC also appear; n unclear and likely over 3.",K1 G6 G7,,,,
+jbk-7ee645,job_posts_knowledge,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 0",
+jbk-7f4bd7,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Besides 'computer networks', the hire develops 'Intel SmartNIC and 5G products'; whether SmartNIC/5G count as technologies or company products is borderline.",K1 K2 G6,,,,
+jbk-81176a,job_posts_knowledge,dropped,reserve,dropped,2,2,,'Product / Project Management' is a borderline field vs skill; n depends on it.,K1 K2 G6,,,,
+jbk-8165d8,job_posts_knowledge,fixed,full,reserve,1,0,"removed 1: ""master degree""",Item 1 'master degree' is a degree with no field; no knowledge items remain.,K4,,,,full -> reserve: over the final number for job_posts_knowledge n = 0; the kept documents match the set's lengths best
+jbk-82a4d0,job_posts_knowledge,dropped,reserve,dropped,1,1,,"The 'Core technologies' line (PHP 7, React, jQuery, MySQL, Docker, RabbitMQ, ... Jenkins/GitLab CI) was missed; n is far above 3.",K1 G7,,,,
+jbk-836bc9,job_posts_knowledge,dropped,reserve,dropped,1,1,,Item 1 'global market & business dynamics' can be one field or two (global market / business dynamics); count unclear.,K3 G6,,,,
+jbk-85d80d,job_posts_knowledge,dropped,full,dropped,1,1,,"Item 1 'MSc/PhD' is a bare degree; the remaining fields (mathematics, statistics, computer science) only describe the department's courses, so n is borderline.",K4 K2 G6,,,,
+jbk-87311d,job_posts_knowledge,fixed,full,reserve,0,1,"added: ""hand scanner""",Missed tool: 'hand scanner' used for picking orders.,K1,,,,full -> reserve: over the final number for job_posts_knowledge n = 1; the kept documents match the set's lengths best
+jbk-88bfe2,job_posts_knowledge,dropped,full,dropped,1,1,,Item 1 'Criminal record certificate' is a background-check document; whether it is a K1 certificate is borderline.,K1 G6,,,,
+jbk-88fe60,job_posts_knowledge,dropped,full,dropped,0,0,,'use cases/user stories' may be a named method and 'DevOps' sits in a title; n depends on borderline calls.,K1 K2 G6,,,,
+jbk-89adc5,job_posts_knowledge,dropped,full,dropped,1,1,,'programming languages' (counted as an item in a sibling ad) is a borderline field here beside Machine Learning.,K1 G6,,,,
+jbk-8d2d33,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Missed 'software development lifecycle' (counted in sibling ad jbk-3bd52d); n becomes 4, outside range.",K1 G7,,,,
+jbk-8eace7,job_posts_knowledge,dropped,reserve,dropped,3,3,,Item 3 should be the field 'Computer Science'; 'automation and orchestration' may be two; 'service topology' is vague; 'distributed systems' was missed; n unclear.,K3 K4 G6,,,,
+jbk-9024a3,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Missed named method 'event storming'; n would be 4, outside range.",K1 G7,,,,
+jbk-97e991,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 1 'Mobile Technology' is a department name and item 3 a bare degree; 'agile', 'software architecture', 'digital payments' leave the count unclear.",K2 K4 G6,,,,
+jbk-9abe29,job_posts_knowledge,dropped,full,dropped,2,2,,"Missed 'CI' and 'Behaviour Driven Development', and item 1 is a comma-less run of disciplines; n unclear and likely over 3.",K3 J4 G7,,,,
+jbk-9d8c0f,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-9dd547,job_posts_knowledge,dropped,full,dropped,0,0,,'Cyber Security' appears as a professional description; whether it is a field item is borderline.,K1 K2 G6,,,,
+jbk-9f04f9,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Missed 'Java 8', 'Spring (MVC)', 'Spring Boot'; with 'API' n is at least 4, and Spring/MVC is one or two items.",K1 K3 G7,,,,
+jbk-a1a6e0,job_posts_knowledge,fixed,full,full,1,0,"removed 1: ""tech trends""","Item 1 'tech trends' names no tool, technology or field; nothing else in the window counts.",K1,,,,
+jbk-a23da5,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 1 'academic record' is not knowledge; 'German' is stated as not a prerequisite, a borderline item; n is 1 or 2.",K2 G6,,,,
+jbk-a69776,job_posts_knowledge,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 0",
+jbk-a71590,job_posts_knowledge,dropped,full,dropped,0,0,,'finance expertise' (field) and 'balance scorecard' (named method) are borderline knowledge items the list omits.,K1 G6,,,,
+jbk-a8e7a8,job_posts_knowledge,dropped,full,dropped,2,2,,Items 'international sales' / 'business development process' read as duties as much as fields; borderline.,K1 K2 G6,,,,
+jbk-aa31ed,job_posts_knowledge,dropped,reserve,dropped,2,2,,Team fields 'frontend development machine learning and data engineering' are possible missed items; n would leave range.,K1 G6 G7,,,,
+jbk-aa975d,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Item 1 'BSc/MSc diploma' is a bare degree (remove), and 'Excel' appears only as an application file format; borderline.",K4 G6,,,,
+jbk-abc5d9,job_posts_knowledge,dropped,reserve,dropped,0,0,,'experience within the educational area' may name a field (education); borderline.,K1 G6,,,,
+jbk-ae203b,job_posts_knowledge,dropped,reserve,dropped,1,1,,'custom electronic instruments' and 'MedTech' are borderline beside 'bio-assay'.,K1 G6,,,,
+jbk-afbdaf,job_posts_knowledge,fixed,full,full,3,3,"replaced 2: ""B"" -> ""B.
+subtilis""",Item 2 'B' is a name cut by a sentence break; the organism is 'B. subtilis'.,G5 K1,,,,
+jbk-b38772,job_posts_knowledge,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 2",
+jbk-b42bd2,job_posts_knowledge,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for job_posts_knowledge n = 2; the kept documents match the set's lengths best
+jbk-b59d15,job_posts_knowledge,dropped,full,dropped,0,0,,"'user experience' / 'UX & UI' / 'API-based web application' are borderline (title, company product); n unclear.",K1 K2 G6,,,,
+jbk-b77aaf,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-be5d9f,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-bebeb9,job_posts_knowledge,fixed,reserve,full,2,3,"added: ""Python""",Missed language 'Python' on the first line.,K1,,,"reserve -> full, refilling job_posts_knowledge full n = 3",
+jbk-c15006,job_posts_knowledge,dropped,reserve,dropped,1,1,,Item 1 'HR software' is the company's product line; whether it is knowledge the hire needs is borderline (n=0 or 1).,K2 G6,,,,
+jbk-c19217,job_posts_knowledge,dropped,full,dropped,2,2,,"Item 1 'back-end services' is something to build, not a technology; 'forecasting algorithms' and 'back-end programming' are borderline.",K1 G6,,,,
+jbk-c2b329,job_posts_knowledge,dropped,reserve,dropped,3,3,,Item 3 'best practise' is not a tool; 'slack' (channel) and 'one page app' are possible missed items; n unclear.,K1 K2 G6,,,,
+jbk-c55f30,job_posts_knowledge,dropped,full,dropped,1,1,,"Only 'biology' listed; omics analyses, bioinformatics, data mining, sequence/pathway analysis, text-mining also appear, pushing n past 3.",K1 G7,,,,
+jbk-c57c14,job_posts_knowledge,ok,reserve,reserve,0,0,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 0",full -> reserve: over the final number for job_posts_knowledge n = 0; the kept documents match the set's lengths best
+jbk-cc0a89,job_posts_knowledge,dropped,full,dropped,0,0,,'criminal record certificate' is a certificate requested of applicants; whether it counts under K1 is borderline.,K1 G6,,,,
+jbk-ce7861,job_posts_knowledge,dropped,full,dropped,3,3,,'microsoft-dynamics' and 'dynamics-365' may be one product (G3); count depends on that call.,G3 G6,,,,
+jbk-d4e5c7,job_posts_knowledge,dropped,reserve,dropped,1,1,,Item 1 'university education' is training the applicant has received (pedagogy); whether it is a field is borderline.,K1 G6,,,,
+jbk-d79c74,job_posts_knowledge,dropped,full,dropped,1,1,,"Missed Teamcenter, QSYS and TOGAF besides PLM; n would be 4, outside range.",K1 G7,,,,
+jbk-d99d85,job_posts_knowledge,dropped,full,dropped,2,2,,Item 2 is a comma-less run ('methodologies tools and processes') and testing methods (exploratory/manual tests) are borderline.,J4 G6,,,,
+jbk-dbaf9b,job_posts_knowledge,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-df6f02,job_posts_knowledge,dropped,reserve,dropped,3,3,,Item 3 'modular scss' may be the same thing as 'SCSS' or a separate technique; n is 2 or 3.,G3 G6,,,,
+jbk-df9cdf,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 1 holds two fields (computer science, information science), giving at least 4 with Scrum and Agile; 'Data Governance' etc. are also candidates.",K4 K5 G7,,,,
+jbk-e06414,job_posts_knowledge,dropped,full,dropped,3,3,,'graph database' and 'multi-threaded systems' are possible missed items; n would leave range or depend on borderline calls.,K1 G6,,,,
+jbk-e069da,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Besides 'SRE', the hire runs a 'private cloud service' / 'cloud systems'; whether 'cloud' counts is borderline.",K1 G6,,,,
+jbk-e47a69,job_posts_knowledge,dropped,full,dropped,3,3,,Item 3 'Resource management' reads as a skill; borderline.,K2 G6,,,,
+jbk-e5e5cd,job_posts_knowledge,dropped,full,dropped,0,0,,"Both blind checkers listed security, data handling, reliability and accessibility; whether these are fields of knowledge or only describe the product (K2) is a borderline call, and n = 4 would be outside the set's range.",G6 G7 K2,,"Settled by Abhishek Barali, 15 Oct 2026, after the blind check: the count turns on a borderline call and the authors' count is outside the set's range, so the document is dropped.",,
+jbk-e80923,job_posts_knowledge,fixed,full,full,3,2,"removed 3: ""international IT""; replaced 2: ""Bachelor’s or Master’s degree in the IT field"" -> ""IT field""",Item 2 is a degree: keep only its field 'IT'; item 3 'international IT' is years of experience in the same field.,K4 J2 G3,,,,
+jbk-e8da81,job_posts_knowledge,dropped,reserve,dropped,1,1,,"Item 1 'cloud transformation' is vague, and 'cloud architecture', 'cloud migration', 'IT strategies', 'automation' are equally plausible; no single count.",K1 G6,,,,
+jbk-ea578c,job_posts_knowledge,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for job_posts_knowledge n = 0; the kept documents match the set's lengths best
+jbk-eab4e7,job_posts_knowledge,fixed,reserve,full,1,1,"replaced 1: ""hyper-growth environment"" -> ""web development""",Item 1 'hyper-growth environment' is not knowledge; the field in that line is 'web development'.,K1 K2,,,"reserve -> full, refilling job_posts_knowledge full n = 1",
+jbk-eb432f,job_posts_knowledge,dropped,full,dropped,3,3,,"Items are not knowledge ('security concerns'); missed 'micro-service architecture', 'machine translation'; n unclear.",K1 G6,,,,
+jbk-ef1101,job_posts_knowledge,dropped,reserve,dropped,3,3,,"Item 2 'Business data' is a broken fragment of 'cross-Line of Business data governance'; remaining items (frameworks, MDM) borderline.",G5 G6,,,,
+jbk-f0ef94,job_posts_knowledge,dropped,full,dropped,1,1,,Item 1 'acceptable criminal record' is not knowledge; 'Latin alphabet' is a borderline item.,K2 G6,,,,
+jbk-f241ce,job_posts_knowledge,dropped,full,dropped,2,2,,"Both items are bare degrees (remove under K4), leaving 'good knowledge of Copenhagen' as a borderline field.",K4 G6,,,,
+jbk-f29cf2,job_posts_knowledge,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for job_posts_knowledge n = 1; the kept documents match the set's lengths best
+jbk-f57be0,job_posts_knowledge,dropped,full,dropped,1,1,,Item 1 describes the department's remit; whether it or 'Transport Construction Maintenance processes' counts is borderline.,K2 G6,,,,
+jbk-f67ef9,job_posts_knowledge,dropped,full,dropped,2,2,,'cloud - native systems' is a possible missed technology; borderline call decides n.,K1 G6,,,,
+jbk-f94526,job_posts_knowledge,dropped,full,dropped,2,2,,"'digital solutions', 'digital tools', 'Digital Supply Chain' are vague; which count is borderline.",K1 G6,,,,
+jbk-fa9ddf,job_posts_knowledge,dropped,full,dropped,1,1,,"Item 1 'Kotlin/SpringBoot' needs a split, and 'Java' (in the title), 'Google Hangouts', 'APIs' are borderline; n unclear.",K3 K2 G6,,,,
+jbk-fd6fef,job_posts_knowledge,dropped,full,dropped,1,1,,Item 1 'production' comes from 'commercial insight or production knowledge'; whether either is a field is borderline.,K1 G6,,,,
+job-0257fe,job_posts,dropped,full,dropped,1,1,,'to design them for the benefit of our customers' is phrased as an opportunity but reads as a duty; borderline.,J1,,,,
+job-027b8d,job_posts,dropped,reserve,dropped,6,6,,"Missed 'Analytical' in 'Analytical data-driven and pragmatic mindset'; adding it gives n=7, outside the range.",J3 G7,,,,
+job-03375b,job_posts,dropped,full,dropped,3,3,,'passionate' and 'stay focused on common goals' may be extra items; borderline.,J1,,,,
+job-048e6e,job_posts,dropped,full,dropped,0,0,,"'Documentation of teaching skills' is an application document, but a reader could list 'teaching skills'; borderline.",J1 J2,,,,
+job-084f37,job_posts,fixed,full,full,3,4,"added: ""Own the full app lifecycle from ideation to delivery to the Play Store""",Missed the duty 'Own the full app lifecycle from ideation to delivery to the Play Store' (n becomes 4).,J1,,,,
+job-0a9f5e,job_posts,dropped,reserve,dropped,1,1,,'Contributions to open source projects' is borderline as a skill; 'passionate and determined professionals' may count.,J1,,,,
+job-0ad70d,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-0b41f3,job_posts,dropped,reserve,dropped,2,2,,'C / C++ development in a Linux environment' and 'Experience in user mode development' sit on the skill/knowledge edge; the count depends on them.,J1 J2,,,,
+job-0b6ff7,job_posts,dropped,reserve,dropped,5,5,,'on-site tests commissioning and trouble-shooting' is a comma-less run split two ways; 'international B-t-B project sales and/or execution' is on the skill/knowledge edge.,J2 J4,,,,
+job-0c3eb3,job_posts,dropped,reserve,dropped,2,2,,'This role may require occasional international travel' may be read as a duty; borderline (one phrase).,J1,,,,
+job-0c4e24,job_posts,dropped,reserve,dropped,6,6,,Items 1 and 5 are the same duty (G3); item 2 'envision design and implement' is a comma-less verb run (dropped in batch 1).,G3 J4,,,,
+job-0cb9a7,job_posts,dropped,full,dropped,1,1,,"Missed skills (awareness of code quality, exchange of ideas with colleagues) and 'quality and responsibility' may be two; count unclear.",J1 J3,,,,
+job-0ff2a5,job_posts,dropped,full,dropped,2,2,,Missed 'want an opportunity to build on your existing experience and learn and develop within the role' (a quality?); borderline.,J1,,,,
+job-106cbe,job_posts,dropped,full,dropped,0,0,,"Missed qualities/duties: 'passionate about digital', 'be involved in the overall architecture', planning sessions; count unclear.",J1,,,,
+job-10e82c,job_posts,dropped,reserve,dropped,1,1,,"Item 1 is one of two mandates of the Equities IT department, not clearly the hire's duty; if it counts, 'enable and support the Equities business' must count too (n=0 or 2); borderline.",J1,,,,
+job-10f2b0,job_posts,dropped,reserve,dropped,3,3,,Missed qualities 'Results driven' and 'analytical expertise'; 'Have a global role' is not clearly a duty; count unclear.,J1,,,,
+job-11a4e5,job_posts,dropped,reserve,dropped,3,3,,Item 3 'working with and sharing ideas information and innovation' is a comma-less run (1 to 4 items); same template as job-7515c8.,J3 J4,,,,
+job-12e97d,job_posts,dropped,full,dropped,0,0,,"Department work ('participate in external collaborations', 'supporting drug discovery') may be read as the hire's duties; borderline.",J1,,,,
+job-132c8a,job_posts,dropped,full,dropped,6,6,,Item 5 is part of item 4 and item 3 part of item 2; count unclear.,G4,,,,
+job-150675,job_posts,dropped,full,dropped,2,2,,'automatic and manual/exploratory testing is equally important' may be read as required skills; borderline.,J1 J2,,,,
+job-16313b,job_posts,dropped,full,dropped,1,1,,'business analysis development maintenance and software improvement' is a comma-less run with no single split.,J4,,,,
+job-18183f,job_posts,dropped,reserve,dropped,3,3,,Missed duties 'research in molecular cell biology' and 'further develop this research area'; 'visions in these areas' and the teaching/examination split are arguable.,J1 J3,,,,
+job-18b4f6,job_posts,dropped,reserve,dropped,1,1,,'your experience of working in challenging environments to deliver optimum well planned out solutions' may be read as a required ability; team values are company text; borderline.,J1 J2,,,,
+job-19c1d5,job_posts,dropped,reserve,dropped,1,1,,"The 'Because you...' lines ('feel most comfortable in a small non-bureaucratic company', 'prefer open transparent and direct communication') may be candidate qualities; annotator took only one; borderline.",J1,,,,
+job-1a1166,job_posts,dropped,reserve,dropped,2,2,,"Items 'specialist' / 'generalist' are cut from 'put your specialist skills into play while gravitating towards a generalist position'; unclear whether this is 0, 1 or 2 skills.",J1 G5,,,,
+job-1a5188,job_posts,fixed,full,full,1,3,"added: ""Enjoy science""; added: ""adhere to the European code of conduct for research integrity""",Missed two listed requirements: 'Enjoy science' and 'adhere to the European code of conduct for research integrity'.,J1,,,,
+job-1c8514,job_posts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for job_posts n = 1; the kept documents match the set's lengths best
+job-1ce47f,job_posts,fixed,full,full,2,3,"added: ""translate those into findings and key messages""",Missed the separate skill 'translate those into findings and key messages'.,J1 J3,,,,
+job-1d827a,job_posts,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts full n = 3",
+job-1e1528,job_posts,dropped,reserve,dropped,2,2,,Missed duty 'working with marketing and tech teams'; item 2 'drive customer engagement' is the purpose of item 1; the team's 'building Content as a platform...' may count too; count unclear.,J1 G4,,,,
+job-200658,job_posts,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts full n = 3",
+job-212dab,job_posts,dropped,full,dropped,0,0,,Missed duty 'participate in a project concerning ancestral population genomics ... and in the development of the CoalHMM methodology'; one or two items is unclear.,J1 J3,,,,
+job-2277db,job_posts,dropped,full,dropped,2,2,,'Running and aligning digital supply chain initiatives' and 'collaborating with customers and suppliers' may be duties; count unclear.,J1,,,,
+job-22ddc2,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-232640,job_posts,dropped,reserve,dropped,1,1,,Item 1 takes a comma-less list of objects ('needs information security scalability availability and cost-efficiency'); one item or several is unclear; 'When developing services' may also be a duty.,J3 J4,,,,
+job-23d0a1,job_posts,dropped,full,dropped,3,3,,"Missed 'developing designing and architecture high-scale distributed services', a comma-less run; 'software development' is a field.",J2 J4,,,,
+job-24034d,job_posts,dropped,reserve,dropped,1,1,,Missed duty 'drive the embedded software development'; item 1 'skilled' (from 'highly skilled colleague') is a borderline quality.,J1,,,,
+job-24fb53,job_posts,dropped,full,dropped,0,0,,'UX architect and design experience' / 'front-end development' could be read as skills or knowledge; borderline.,J1 J2,,,,
+job-25f73b,job_posts,dropped,full,dropped,1,1,,'co-operation' is only an agenda remark and 'freedom to make decisions' may be read as a duty; borderline.,J1,,,,
+job-260eef,job_posts,dropped,reserve,dropped,1,1,,'Affinity for statistical modeling' and the non-smoking requirement are borderline.,J1 J2,,,,
+job-27bba0,job_posts,fixed,full,full,0,1,"added: ""checking on the lights in the stables""",Missed duty 'checking on the lights in the stables' (night-shift task).,J1,,,,
+job-27e719,job_posts,fixed,reserve,full,1,2,"split 1: ""support and problem-solving"" -> ""support"" | ""problem-solving""",'support and problem-solving' is two duties.,J3,,,"reserve -> full, refilling job_posts full n = 2",
+job-280a33,job_posts,dropped,full,dropped,1,1,,'cooperation enthusiasm and quality' describe the team but may be read as required qualities; borderline.,J1 J4,,,,
+job-2884c1,job_posts,dropped,reserve,dropped,1,1,,"Missed duties 'collaborating with team members', 'be a role model for pushing excellence', 'be part of continuous improvement projects'; whether 'be on call' is a duty decides n=4 or 5 (borderline, one phrase).",J1,,,,
+job-2e254a,job_posts,dropped,reserve,dropped,2,2,,'security in web-based solutions' and 'web development' sit on the skill/knowledge edge; the count depends on them.,J1 J2,,,,
+job-2e58fa,job_posts,fixed,full,full,0,3,"added: ""work closely with a postdoc counterpart""; added: ""computational analysis of RNA-seq and DNA-sequencing data""; added: ""integrating these data with phenotypic measurements""","Missed three clear duties: working closely with a postdoc, computational analysis of sequencing data, integrating it with phenotypic measurements.",J1,,,,
+job-305215,job_posts,dropped,reserve,dropped,3,3,,'work independently and in teams' can be one or two items.,J3,,,,
+job-31279d,job_posts,dropped,full,dropped,6,6,,'hands-on' (with tools) and the split of 'adapt ... to solve issues' are borderline.,J2 J3,,,,
+job-329834,job_posts,dropped,full,dropped,3,3,,"'work in large collaborative teams to achieve organizational goals' is arguably one ability, not two.",J3,,,,
+job-34d31a,job_posts,dropped,full,dropped,3,3,,'technical insight and business understanding' may be qualities or knowledge; borderline.,J1 J2,,,,
+job-353393,job_posts,dropped,full,dropped,2,2,,'focus on UI' / 'take our industry-leading website to the next level' may be duties; borderline.,J1,,,,
+job-3708b8,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-37940e,job_posts,dropped,full,dropped,6,6,,'Supporting Strategic Procurement in defining and integrating technical solutions' split into 2 is arguable.,J3,,,,
+job-38235d,job_posts,dropped,reserve,dropped,2,2,,"Missed duties ('be physically present', 'actively participate in the teaching and research activities', 'participate in the assistant professor program'); 'Teaching and associated examination' split into two is arguable.",J1 J3,,,,
+job-38bc37,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-3935a8,job_posts,dropped,reserve,dropped,2,2,,'continuous improvement mindset' may be a quality (missed) or part of the knowledge phrase; borderline.,J1 J2,,,,
+job-39ef23,job_posts,dropped,reserve,dropped,5,5,,"Missed duties 'manage Mono Solutions´ relationships with partners', 'drive customer adoption and success' and the expertise items push n past 6.",J1 G7,,,,
+job-3a7b74,job_posts,ok,reserve,full,5,5,,,,,,"reserve -> full, refilling job_posts full n = 5",
+job-3b2412,job_posts,dropped,reserve,dropped,2,2,,'ambitious graduates who wants to have influence and put their ideas to work' may hold more qualities than 'ambitious'; borderline.,J1,,,,
+job-3da7a2,job_posts,dropped,reserve,dropped,2,2,,"Missed 'become our go-to person for everything infrastructure related', 'have a huge impact on how we will organize and build our infrastructure'; 'as motivated helpful and open to change as you are' is borderline.",J1 J4,,,,
+job-3ffc1f,job_posts,dropped,reserve,dropped,3,3,,"Missed duties 'Leading developer role in an agile and cross-functional Scrum team', 'Responsibility for the complete software development cycle ...' (comma-less), 'working with our very experienced team'; count unclear.",J1 J4,,,,
+job-40a70c,job_posts,dropped,reserve,dropped,3,3,,Item 3 must split ('interpersonal and communicative skills'); item 1 'external academic activities as well as knowledge and technology transfer' is one or two items.,J3,,,,
+job-40ce81,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-40e8ee,job_posts,dropped,reserve,dropped,3,3,,"Missed 'Work with members of security engineering team', 'enjoy working with a modern tech stack'; 'develop evangelise' is comma-less; item 2 is the purpose of item 1.",J1 J4,,,,
+job-40f991,job_posts,dropped,reserve,dropped,1,1,,Missed duty 'You'll work on enterprise payments & identity software ...'; whether it is separate from 'developing new financial products' is unclear.,J1 G4,,,,
+job-4188d0,job_posts,dropped,reserve,dropped,3,3,,Missed 'use your experience within the educational area' and 'influence tomorrows educational preschool agenda' in an employee quote; count unclear.,J1,,,,
+job-41a50e,job_posts,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts full n = 3",
+job-425255,job_posts,dropped,reserve,dropped,1,1,,"Item 1 is an optional research approach ('There is scope ... for pursuing'), not clearly a duty or skill; borderline.",J1,,,,
+job-426be2,job_posts,dropped,full,dropped,2,2,,"Item 2 only elaborates item 1, and 'experience in automation' may be a skill; count unclear.",G3 J1,,,,
+job-434186,job_posts,ok,reserve,reserve,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",full -> reserve: over the final number for job_posts n = 1; the kept documents match the set's lengths best
+job-43d1a7,job_posts,dropped,full,dropped,0,0,,Missed duties (participate in development of material schemes; substrate fabrication; characterization) with no clear split.,J1 J4,,,,
+job-45147c,job_posts,dropped,reserve,dropped,2,2,,'Be yourself' is borderline; 'delivering a great experience for our players' may be a duty.,J1,,,,
+job-45e8ee,job_posts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for job_posts n = 1; the kept documents match the set's lengths best
+job-464b41,job_posts,fixed,reserve,full,3,4,"added: ""engineering and data science team that the successful candidate will build out""",Missed duty: the hire will build out the engineering and data science team (separate from acting as its lead); n=3 -> 4.,J1 G4,,,"reserve -> full, refilling job_posts full n = 4",
+job-48be79,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-4abd76,job_posts,dropped,full,dropped,0,0,,'the ability and the drive to take them' may be read as a required quality; borderline.,J1,,,,
+job-4f3621,job_posts,dropped,reserve,dropped,2,2,,Missed 'design and management of design teams' (one or two items).,J1 J3,,,,
+job-544269,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-554e55,job_posts,ok,full,reserve,4,4,,,,,,,full -> reserve: over the final number for job_posts n = 4; the kept documents match the set's lengths best
+job-564bd4,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-56b0c9,job_posts,dropped,reserve,dropped,3,3,,'experiences in bioreactor handling' and the 'skills in antibody engineering ...' list sit on the skill/knowledge edge; 'work with a team of Senior scientists' may be a duty.,J1 J2,,,,
+job-5d73b4,job_posts,dropped,full,dropped,3,3,,'eDNA analysis' is a field (knowledge) and 'strong publication record' is borderline.,J2,,,,
+job-5e0a83,job_posts,dropped,reserve,dropped,6,6,,"Many missed duties (ingestion, data modelling, data delivery, systems administration, QA/QC, collaborate with IT department); n far above 6.",J1 G7,,,,
+job-5ecbc6,job_posts,dropped,full,dropped,3,3,,"Items 1 and 2 may be the same duty; missed 'passionate about project and programme management', 'eager to take an active role'.",G3 J1,,,,
+job-5f1cfe,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-5f9f63,job_posts,dropped,reserve,dropped,2,2,,Missed 'analytical skills' and the duty 'visit both academic and industrial partners'.,J1,,,,
+job-6278df,job_posts,dropped,reserve,dropped,3,3,,'make sure we're aware of it and plan ahead for the long term' may be a separate duty from 'aggregate technical debt'; borderline.,J1 G4,,,,
+job-62c705,job_posts,dropped,reserve,dropped,2,2,,"Item 2 'project manager skillset' is an opportunity offered, not a requirement; 'stakeholder management' with it; n=1 or 2-3 is borderline.",J1 J2,,,,
+job-63cc5a,job_posts,dropped,full,dropped,1,1,,Missed duty 'Delivery of newspapers magazines letters and small parcels'; 'plan your work' is borderline.,J1,,,,
+job-653616,job_posts,dropped,full,dropped,3,3,,'design analysis coding and testing software' and 'requirement gathering analysis development testing' are comma-less runs.,J4,,,,
+job-653d39,job_posts,dropped,full,dropped,1,1,,Many missed items (passionate about balancing complexity and simplicity; responsible for the architecture; works together with the teams); count unclear.,J1,,,,
+job-655578,job_posts,dropped,full,dropped,2,2,,Item 1 hides a comma-less list; 'performing DevOps' and 'Resource management' missed; count unclear.,J1 J4,,,,
+job-677956,job_posts,dropped,full,dropped,1,1,,Team activities ('interact with different kinds of data sources') may be read as the hire's duties; borderline.,J1,,,,
+job-693afb,job_posts,dropped,reserve,dropped,1,1,,'bright minds eager to join a dynamic international organization' may be read as candidate qualities; borderline (same call as 'great talent' in batch 1).,J1,,,,
+job-694cd7,job_posts,dropped,reserve,dropped,3,3,,'verbal written and interpersonal communication skills' is one item or three (comma-less); 'data analysis' is on the skill/knowledge edge.,J3 J4,,,,
+job-6b8f5b,job_posts,dropped,reserve,dropped,3,3,,Missed 'Excel in change management and communication'; 3-way split of item 1-3 is arguable.,J1 J3,,,,
+job-6bcbd7,job_posts,dropped,full,dropped,2,2,,"'work in large collaborative teams to achieve organizational goals' is arguably one ability, not two; count depends on the split.",J3,,,,
+job-6da8e5,job_posts,dropped,full,dropped,5,5,,'Design' and 'delivery' are one item; missed 'work with your peers'; count unclear.,J1 J3,,,,
+job-6de1e5,job_posts,dropped,reserve,dropped,1,1,,'influence how it is further developed' may be a second item next to item 1; culture line 'move fast ... focus on quality' is borderline.,J1 J3,,,,
+job-6ecf4c,job_posts,dropped,full,dropped,2,2,,'communicate on all levels' and 'persuasive communicator' may be one communication skill; borderline.,G3,,,,
+job-6eedb1,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-6fb9e8,job_posts,ok,reserve,full,6,6,,,,,,"reserve -> full, refilling job_posts full n = 6",
+job-70494e,job_posts,ok,reserve,full,6,6,,,,,,"reserve -> full, refilling job_posts full n = 6",
+job-707f63,job_posts,dropped,full,dropped,3,3,,'great talent' may be read as a required quality; borderline.,J1,,,,
+job-7097b4,job_posts,dropped,reserve,dropped,3,3,,"Item 2 is an opportunity, not a duty; item 3 hides a comma-less list.",J1 J4,,,,
+job-711bc9,job_posts,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts full n = 3",
+job-72132e,job_posts,dropped,reserve,dropped,2,2,,'financial planning and management skills' can be one or two items.,J3,,,,
+job-725973,job_posts,dropped,reserve,dropped,2,2,,'curious problem solvers ... thinking big and taking risks' describes the team but may be read as wanted qualities; borderline.,J1,,,,
+job-7425db,job_posts,fixed,full,full,6,6,"replaced 3: ""Team"" -> ""Team
+-
+player""",Item 3 'Team' is a broken span of 'Team-player' across line breaks.,G5,,,,
+job-74bc76,job_posts,dropped,reserve,dropped,1,1,,'strong interest in the latest technologies' may be a quality; borderline.,J1,,,,
+job-74de1b,job_posts,dropped,reserve,dropped,2,2,,Missed team duty 'designing developing and implementing engaging learning experiences' (comma-less run); item 2 is the purpose of item 1.,J1 J4,,,,
+job-7515c8,job_posts,dropped,reserve,dropped,2,2,,Missed duty 'creating innovative solutions'; 'working with and sharing ideas information and innovation' is a comma-less run with unclear split.,J1 J4,,,,
+job-75382b,job_posts,dropped,full,dropped,3,3,,Missed 'responsible for sales and marketing via existing and new partnerships' and 'develop the global market position'; count unclear.,J1,,,,
+job-779034,job_posts,dropped,reserve,dropped,2,2,,"Missed duties 'effective planning execution and reporting of SE testing capabilities' (comma-less), 'supports the team's annual calendar of events', 'ensuring all testing adheres'.",J1 J4,,,,
+job-7d77c3,job_posts,dropped,reserve,dropped,3,3,,'putting your hands in different technologies doesn't scare you' may be a quality; borderline.,J1,,,,
+job-7d99fd,job_posts,dropped,reserve,dropped,3,3,,"Missed 'Great communicator', 'relate to the different challenges ...', 'testing applications on every level of the testing pyramid'; testing experience is on the skill/knowledge edge.",J1 J2,,,,
+job-7deb1a,job_posts,dropped,full,dropped,2,2,,'work in large collaborative teams to achieve organizational goals' split is arguable and 'financial control and budget management' was missed.,J1 J3,,,,
+job-7e885f,job_posts,fixed,full,full,2,3,"removed 2: ""extension""; replaced 1: ""Design"" -> ""Design and extension of our Micro-Services based web architecture""; added: ""work hand in hand with UX QA and Product Owner""; added: ""all your decisions and actions have the maximum customer benefit and the company goals in mind""",'Design and extension of our ... architecture' is one verb pair on one object; missed two listed duties.,J1 J3,,,,
+job-7ee96f,job_posts,dropped,full,dropped,3,3,,"Many missed skills (prototyping and testing, designing user interfaces, willing to learn German); count unclear.",J1,,,,
+job-806748,job_posts,dropped,full,dropped,3,3,,"Missed 'head the project'; item 3 is what the startups do, not the hire.",J1,,,,
+job-82ca16,job_posts,fixed,full,full,1,2,"split 1: ""interpersonal and communication skills"" -> ""interpersonal"" | ""communication skills""",'interpersonal and communication skills' is two skills (like 'analytical and problem-solving skills').,J3,,,,
+job-82eaf3,job_posts,dropped,reserve,dropped,1,1,,Missed duty 'responsible for which sports/Leagues we should focus on and what type of content we should produce' (one or two items unclear); item 1 is a comma-less run.,J1 J4,,,,
+job-8392a4,job_posts,dropped,reserve,dropped,3,3,,Missed 'love data visualisation'.,J1 J3,,,,
+job-893219,job_posts,dropped,full,dropped,1,1,,Missed 'research management' / 'Ph.D. supervision' / 'other relevant management functions'; split unclear.,J1 J3,,,,
+job-89c909,job_posts,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling job_posts full n = 3",
+job-8c9017,job_posts,dropped,reserve,dropped,3,3,,"'takes responsibility and initiative' is one item or two (one verb, two objects); borderline.",J3,,,,
+job-8f5404,job_posts,dropped,full,dropped,1,1,,"Missed qualities ('see changes and challenges as opportunities', 'dedication', 'ambition' in boilerplate); count unclear.",J1,,,,
+job-910be5,job_posts,fixed,full,full,1,2,"added: ""keen to build your knowledge on them all""",Missed the quality 'keen to build your knowledge on them all'.,J1,,,,
+job-913425,job_posts,dropped,reserve,dropped,5,5,,'expect some travel' and 'gain a deep insight in customer processes' are borderline; item 2 mixes a duty with 'agile working methods' (knowledge).,J1 J2,,,,
+job-91c344,job_posts,dropped,reserve,dropped,2,2,,'Software architecture' (next to 'conception of scalable services') may be a duty or a field; borderline.,J1 J2,,,,
+job-92b840,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-93d056,job_posts,fixed,full,reserve,2,1,"removed 1: ""building front-end layer""",Items 1 and 2 are the same duty (building the front-end/BI layer) stated twice.,G3,,,,full -> reserve: over the final number for job_posts n = 1; the kept documents match the set's lengths best
+job-93e069,job_posts,dropped,reserve,dropped,3,3,,'Available to travel' is borderline; 'share and learn different things' is one or two; 'Every day is ... an opportunity to learn something new' may be a quality.,J1 J3,,,,
+job-946eb0,job_posts,dropped,full,dropped,2,2,,'learn this on your own time' and 'available for this period' may be read as requirements; borderline.,J1,,,,
+job-9a5feb,job_posts,dropped,reserve,dropped,2,2,,"Item 1 'Empathic committed and strategic thinking' should be split (comma-less); 'Practice in system monitoring', 'automated testing', 'agile development' sit on the skill/knowledge edge.",J2 J3 J4,,,,
+job-9e5820,job_posts,dropped,reserve,dropped,0,0,,Missed duties (make sure products are cost-optimized; ad hoc involvement in production shutdowns and customer complaints).,J1,,,,
+job-9f5da3,job_posts,dropped,reserve,dropped,6,6,,Missed duty 'ensuring local P&O content is produced' and 'using the askHR backend'; n goes past 6.,J1 G7,,,,
+job-9fc023,job_posts,dropped,full,dropped,2,2,,'work directly with a team' / 'support our ...' may be duties; item 1 is the team's work; borderline.,J1,,,,
+job-a115cd,job_posts,dropped,reserve,dropped,6,6,,"Missed 'deliver the solutions', 'new platforms to build into the current systems'; n goes past 6.",J1 G7,,,,
+job-a18078,job_posts,dropped,full,dropped,0,0,,'passionate and curious people' may be read as required qualities; borderline.,J1,,,,
+job-a42d27,job_posts,dropped,reserve,dropped,1,1,,'sales experience within B2B and concept sales' may be a skill or a field; borderline.,J1 J2,,,,
+job-a452b0,job_posts,fixed,full,full,2,3,"added: ""continuously improve and evolve core of the graph database""",Missed the team duty 'continuously improve and evolve core of the graph database'.,J1,,,,
+job-a4794c,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-a60a7e,job_posts,dropped,full,dropped,3,3,,"Missed skills (test PHP and Javascript applications, application architecture design, database and API design, monitoring).",J1,,,,
+job-a6ecd5,job_posts,dropped,reserve,dropped,2,2,,"Item 2 is the purpose of item 1, not a separate duty; whether the team's 'We are building world-class Big Data platform' is the hire's duty is borderline.",J1 G4,,,,
+job-a7830f,job_posts,dropped,full,dropped,4,4,,"Window opens on a cut sentence '...speaks at selected conferences', a probable duty; count unclear.",J1,,,,
+job-a8b2ab,job_posts,dropped,reserve,dropped,2,2,,'following the live energy market' is the manner of setting prices (one item or two); 'expect some travelling' is borderline.,J1 J3,,,,
+job-aa6f9d,job_posts,dropped,reserve,dropped,2,2,,"Many missed qualities ('skill creativity and dedication', 'smart thinkers', 'clever minds', 'true specialists'); comma-less run; count unclear.",J1 J4,,,,
+job-ab1ae6,job_posts,dropped,full,dropped,6,6,,Missed 'continuously work to improve the reliability and performance'; 'design develop provision monitor and maintain' is a comma-less run.,J1 J4,,,,
+job-abcdeb,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-ac5e6b,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-ad6c3c,job_posts,fixed,full,full,0,1,"added: ""study nanomaterials for the selective catalytic reduction (SCR) of NOx""",Missed the duty 'study nanomaterials for the selective catalytic reduction (SCR) of NOx'.,J1,,,,
+job-addc7d,job_posts,fixed,reserve,full,5,6,"added: ""be a valuable partner to the Head of International SC""",Missed duty 'You will also be a valuable partner to the Head of International SC'; n=5 -> 6.,J1,,,"reserve -> full, refilling job_posts full n = 6",
+job-b18ea1,job_posts,dropped,full,dropped,2,2,,'testing experience' / 'automation experience' may be skills or fields; borderline.,J1 J2,,,,
+job-b26f4a,job_posts,dropped,full,dropped,3,3,,Missed 'Scoping Project Management and Quality Assurance' (comma-less) and 'interpret these into consolidated development scopes'.,J1 J4,,,,
+job-b2c8cc,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-b5a02b,job_posts,dropped,reserve,dropped,3,3,,'This will happen in close collaboration with our software development team' may be a duty; 'DevOps experience' is on the skill/knowledge edge.,J1 J2,,,,
+job-b6b069,job_posts,dropped,reserve,dropped,2,2,,Missed duty 'work developing the warehouse management system'; whether 'communicating and sharing them to team members' is a separate duty is unclear.,J1 G4,,,,
+job-b78663,job_posts,dropped,reserve,dropped,3,3,,'Consulting' experience may be a field; borderline.,J2,,,,
+job-b7cfff,job_posts,dropped,reserve,dropped,2,2,,'Web development' and 'support our development team' may be extra items; borderline.,J1,,,,
+job-b8d1f9,job_posts,dropped,full,dropped,0,0,,Missed duties (build out subscription functionality; refine and define how we collate process and action...) in a comma-less run; split unclear.,J1 J4,,,,
+job-ba0731,job_posts,fixed,full,full,0,1,"added: ""optimize the user experience on mobile devices and Set-Top Boxes""",Missed the duty 'optimize the user experience on mobile devices and Set-Top Boxes'.,J1,,,,
+job-bd1620,job_posts,dropped,reserve,dropped,3,3,,'experience in Business Development' and 'A strong network in the wine-industry' sit on the skill/knowledge edge; borderline.,J1 J2,,,,
+job-bd48a9,job_posts,ok,reserve,reserve,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",full -> reserve: over the final number for job_posts n = 1; the kept documents match the set's lengths best
+job-be309c,job_posts,dropped,full,dropped,1,1,,Missed duty 'cooperate closely with our sales...' and department duties ('developing and maintaining standard work processes') make the count unclear.,J1,,,,
+job-c1d1d6,job_posts,dropped,full,dropped,2,2,,"Missed 'using them actively to improve your performance', 'Motivated by overcoming obstacles', 'ready to perform and have fun'; split unclear.",J1 J3,,,,
+job-c72e86,job_posts,dropped,reserve,dropped,5,5,,Missed 'Continuously optimize supply chain process' and 'Transform market data to capacity planning'; item 2 (purpose) and item 4 (means) are arguable; count unclear.,J1 G4,,,,
+job-c7e726,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-c86ce3,job_posts,dropped,reserve,dropped,3,3,,Missed duties in the comma-less run 'analysis simulation detail design de-scriptions implementation estimation documentation planning and coordination'; cannot be split with one reading.,J1 J4,,,,
+job-c9d05a,job_posts,dropped,full,dropped,2,2,,"'work in large collaborative teams to achieve organizational goals' is arguably one ability, not two; count depends on the split.",J3,,,,
+job-ca4253,job_posts,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling job_posts full n = 1",
+job-cae3ae,job_posts,dropped,reserve,dropped,5,5,,Missed 'working closely with Digital & Platform Services Operations'; 'Collaborate with Tech partners to design and deploy' as one or two items is arguable.,J1 J3,,,,
+job-cb2445,job_posts,dropped,reserve,dropped,5,5,,Items 1 and 3 ('design' / 'designing') are near duplicates; team duty 'creating our next generation Conversational AI platform' and 'curious/interested in languages' are borderline.,G3 J1,,,,
+job-cb34d9,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-d0c23f,job_posts,dropped,full,dropped,4,4,,'Proven entrepreneurial or interpreneurial success' is borderline; item 3 is a comma-less run.,J1 J4,,,,
+job-d13793,job_posts,dropped,reserve,dropped,1,1,,Item 1 has two objects in a comma-less run ('manufacturing production planning and general supply chain activities'); one or two items is unclear.,J3 J4,,,,
+job-d38b55,job_posts,dropped,reserve,dropped,6,6,,Missed 'represent the Cyber Hunt Team in cross-functional initiatives' and 'lead'; 'have an active voice' / 'defining the strategic direction' is one item split in two; n unclear and likely past 6.,J1 G7,,,,
+job-d4fd75,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-d67d9a,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-d69997,job_posts,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling job_posts full n = 0",
+job-d795c9,job_posts,dropped,reserve,dropped,2,2,,Missed qualities 'Care about software architecture ...' and 'Passionate about code quality continuous delivery automated testing' (one item or three).,J1 J4,,,,
+job-d7c166,job_posts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for job_posts n = 1; the kept documents match the set's lengths best
+job-dca0d2,job_posts,dropped,full,dropped,3,3,,'code reviews and participation in interviews' may be separate duties from item 1; borderline.,J3,,,,
+job-dcc9bb,job_posts,dropped,reserve,dropped,2,2,,"Item 2 'be part of a fast-paced and high-performance environment' describes the environment, not a quality; borderline.",J1 J2,,,,
+job-de10cd,job_posts,fixed,full,full,1,2,"added: ""willing to challenge us as well as yourself""",Missed the second quality 'willing to challenge us as well as yourself'.,J1 J3,,,,
+job-dfba54,job_posts,dropped,full,dropped,3,3,,Missed 'ability to learn new ones quickly'; 'customer insights' (a heading) is borderline.,J1,,,,
+job-e1aefd,job_posts,dropped,full,dropped,5,5,,'having fun and making history' and 'Fluent coding in Java' are borderline.,J1,,,,
+job-e369e1,job_posts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling job_posts full n = 2",
+job-e640ce,job_posts,dropped,reserve,dropped,3,3,,Item 2 is what the services do; items 1 and 3 hide comma-less lists.,J4,,,,
+job-e8b94c,job_posts,dropped,full,dropped,3,3,,Missed 'lead our ... Data Protection Regulation project'; items 2-3 may be one; count unclear.,J1 J3,,,,
+job-e96338,job_posts,dropped,reserve,dropped,2,2,,'working independently and efficiently' can be one or two items.,J3,,,,
+job-e9820d,job_posts,dropped,reserve,dropped,2,2,,'share our passion for excellence' may be a third quality; borderline.,J1,,,,
+job-e9f4c8,job_posts,dropped,full,dropped,5,5,,Missed 'make sure they run smoothly and reliably'; item 5 is a comma-less list of three objects.,J1 J4,,,,
+job-eeef6a,job_posts,dropped,reserve,dropped,3,3,,'help us build the ultimate experience' may be a duty; 'work with cutting edge technology' is a preference; borderline.,J1,,,,
+job-ef6175,job_posts,dropped,reserve,dropped,3,3,,"Missed qualities (customer focus, 'Leave your ego at the door', 'do the right thing', 'set expectations'); 'open and willing to adopt' split is arguable.",J1 J3,,,,
+job-f349a1,job_posts,dropped,reserve,dropped,3,3,,Contains the bank boilerplate 'work in large collaborative teams to achieve organizational goals' (dropped in batch 1); 'Keen understanding of financial control and budget management' is on the skill/knowledge edge.,J1 J2,,,,
+job-f3db24,job_posts,dropped,reserve,dropped,2,2,,Missed duty 'responsible for delivery of project components'; item 2 'unit testing integration testing and supporting system testing' is a comma-less list (1 or 3).,J1 J3 J4,,,,
+job-f3e4c9,job_posts,dropped,full,dropped,5,5,,Missed the main duty 'responsible for testing and QA of the STS system'.,J1,,,,
+job-f3e9cf,job_posts,dropped,full,dropped,0,0,,'understand how they can bring business value to our customers' could be an ability or knowledge; borderline.,J1 J2,,,,
+job-f4d987,job_posts,dropped,full,dropped,2,2,,'contribution to open source projects' is counted as a skill elsewhere in this set; borderline.,J1,,,,
+job-f593ed,job_posts,dropped,reserve,dropped,1,1,,'ambitious proactive and innovative' describes the environment but may be read as required qualities.,J1 J4,,,,
+job-f64d4b,job_posts,dropped,full,dropped,3,3,,"Item 2 is what campaigns do; missed 'lead the projects safely into completion', 'make ends meet'.",J1,,,,
+job-f6b56c,job_posts,dropped,reserve,dropped,1,1,,'convince through pragmatism flexibility and effectiveness' can be one ability or 3-4 qualities; comma-less run.,J3 J4,,,,
+job-f8e067,job_posts,dropped,reserve,dropped,3,3,,'work both independently and in a research team' is one item or two; 'must be excellent' may be a quality; borderline.,J1 J3,,,,
+job-f92b40,job_posts,dropped,full,dropped,0,0,,'knowledge of app development strategic planning and architecture design' could be skills or knowledge; comma-less run.,J2 J4,,,,
+job-fa5eaf,job_posts,dropped,full,dropped,2,2,,'define value proposition customer segments and customer channels' (1 or 3) and 'project management' experience make the count unclear.,J3 J4,,,,
+med-025498,clinical,fixed,full,full,5,3,"removed 1: ""chemotherapy""; removed 4: ""5-FU""",'chemotherapy' is the class word for the named drugs (C3) and '5-FU' repeats '5-fluorourasil' (G3).,C3 G3,,,,
+med-02b8d3,clinical,dropped,full,dropped,3,3,,"Patient was 'oxygen-dependent' (supplemental oxygen, borderline); n is 3 or 4.",C4,,,,
+med-02e8ab,clinical,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-02fddc,clinical,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-0c287b,clinical,dropped,full,dropped,1,1,,"Item 'anaesthesia' (local anaesthesia) and the missed contrast iopamidol-370 are both borderline; n could be 0, 1 or 2.",C4,,,,
+med-23f231,clinical,fixed,full,full,2,1,"removed 1: ""chelation therapy""","'chelation therapy' is the class word for the same treatment as EDTA, so one item.",C3,,,,
+med-24cc2a,clinical,dropped,full,dropped,2,2,,"Item 'anesthesia' (standard spinal anesthesia, no drug named) is borderline; n is 1 or 2.",C4,,,,
+med-2ebb07,clinical,fixed,full,full,3,2,"removed 3: ""THAM""",'THAM' is the abbreviation of item 2 'Tris-hydroxymethyl aminomethane'.,G3,,,,
+med-33b18f,clinical,fixed,full,full,3,2,"removed 1: ""heart failure medications""",'heart failure medications' is the class word for the named lisinopril and metoprolol tartrate.,C3,,,,
+med-3742ce,clinical,ok,full,reserve,0,0,,Only an unnamed 'injection' is mentioned; no drug name or class appears in the text.,G1,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-39ce8d,clinical,dropped,reserve,dropped,2,2,,'prophylactic therapy for stress ulcer' is an unnamed drug treatment; n is 2 or 3.,C1 G6,,,,
+med-3e6e53,clinical,dropped,full,dropped,3,3,,"Insulin and ACTH (one item twice) were given only as stimulation-test agents, a borderline call like contrast; n is 0 or 2.",C2 C4 G3,,,,
+med-40ae42,clinical,fixed,reserve,full,3,2,"removed 3: ""GH""",'GH' repeats item 2 'growth hormone'.,G3,,,"reserve -> full, refilling clinical full n = 2",
+med-436a94,clinical,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-443383,clinical,dropped,reserve,dropped,1,1,,"Item 'zinc supplementation' was given inside TPN (nutrition, borderline); n is 0 to 2.",C4,,,,
+med-46bde0,clinical,dropped,full,dropped,1,1,,Only item 'anesthetic' (anesthetic induction) is borderline anaesthesia; n is 0 or 1.,C4,,,,
+med-46ccb2,clinical,fixed,full,full,2,1,"removed 2: ""carnitine supplement regimen""",'carnitine supplement regimen' is the same drug as item 1 'carnitine supplements'.,G3,,,,
+med-47ecec,clinical,dropped,full,dropped,2,2,,'Antimicrobial therapy was changed to penicillin G' implies an earlier unnamed antimicrobial; n is 1 or 2 depending on reading.,C3 G6,,,,
+med-4d34c5,clinical,dropped,reserve,dropped,0,0,,'standard heart failure therapy' is unnamed treatment that may or may not be read as a drug class; n is 0 or 1.,C1 G6,,,,
+med-4de5e8,clinical,dropped,full,dropped,2,2,,Item 'parenteral nutrition' is borderline nutrition; n is 1 or 2.,C4,,,,
+med-507752,clinical,ok,reserve,reserve,2,2,,,,,,"reserve -> full, refilling clinical full n = 2",full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-509b79,clinical,fixed,full,reserve,2,1,"removed 2: ""TAZ/PIPC""","'TAZ/PIPC' is the abbreviation of item 1 'tazobactam/piperacillin', one combination drug (the beta-lactamase inhibitor is not a drug on its own).",G3 G4,,,,full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-5594b2,clinical,dropped,reserve,dropped,3,3,,"'Keppra' is Levetiracetam (G3), but the patient also smokes cigarettes (drug of abuse, borderline); n is 2 or 3.",G3 C4,,,,
+med-5efb62,clinical,fixed,full,full,6,4,"removed 1: ""chemotherapy""; removed 6: ""G-CSF""",'chemotherapy' is the class word for the named drugs (C3) and 'G-CSF' repeats item 5 (G3).,C3 G3,,,,
+med-5f6003,clinical,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling clinical full n = 2",
+med-6191f9,clinical,fixed,full,full,3,3,"removed 1: ""anti-estrogen therapy""; added: ""chemotherapy""",'anti-estrogen therapy' is tamoxifen/letrozole (C3); the earlier 'chemotherapy' (no named drug) was missed.,C3 C1,,,,
+med-63527d,clinical,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-697638,clinical,dropped,full,dropped,1,1,,Only item gadolinium is a contrast agent; n is 0 or 1 depending on a borderline substance.,C4,,,,
+med-6aa989,clinical,fixed,full,reserve,3,2,"removed 2: ""anti-thyroid drugs""",'anti-thyroid drugs' is the class word for the same treatment as methimazole.,C3,,,,full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-6ce661,clinical,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-76f5fd,clinical,ok,reserve,reserve,3,3,,,,,,"reserve -> full, refilling clinical full n = 3",full -> reserve: over the final number for clinical n = 3; the kept documents match the set's lengths best
+med-7774ad,clinical,ok,full,reserve,2,2,,HBV vaccinations were given (a substance) and glucocorticoid replacement is a class; two items.,C1,,,,full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-7f6dff,clinical,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling clinical full n = 1",
+med-81e687,clinical,dropped,full,dropped,2,2,,"Both items (fresh-frozen plasma, platelets) are blood products, which are borderline.",C4,,,,
+med-87c403,clinical,fixed,full,reserve,2,1,"removed 2: ""beta-blockers""","'beta-blockers' is the class word for the same treatment as atenolol, so one item.",C3,,,,full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-88b819,clinical,dropped,full,dropped,1,1,,"Kybernin P (antithrombin III) was missed and fresh frozen plasma, red cells, platelets and rehydration are borderline blood products/fluids; n is not settled.",C1 C4,,,,
+med-8e0ccd,clinical,dropped,reserve,dropped,2,2,,"Item 'anesthesia' (intravenous anesthesia, no drug named) is borderline; n is 1 or 2.",C4,,,,
+med-9058da,clinical,dropped,reserve,dropped,2,2,,'anti-infection and topical treatments' may be extra drug classes beyond voriconazole and micafungin; n is 2 to 4.,C1 G6,,,,
+med-914896,clinical,fixed,full,full,3,2,"removed 1: ""contraceptive""","'contraceptive' is the class word for the named pill; drospirenone and ethinylestradiol are each a drug on their own, so they stay two items.",C3 G4,,,,
+med-92d9cc,clinical,ok,reserve,reserve,2,2,,,,,,"reserve -> full, refilling clinical full n = 2",full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-95bed0,clinical,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling clinical full n = 2",
+med-978e9f,clinical,dropped,full,dropped,2,2,,"'Adept' and '4% icodextrin solution' are one product (G3), and an instilled anti-adhesion solution is a borderline fluid; n is 0 or 1.",G3 C4,,,,
+med-98a7bd,clinical,fixed,full,full,6,5,"removed 1: ""chemotherapy""",'chemotherapy' is the class word for the named melphalan and dexamethasone.,C3,,,,
+med-9ba9e9,clinical,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling clinical full n = 0",
+med-9be2b3,clinical,dropped,full,dropped,3,3,,"DMSO is a solvent and Onyx-18 an embolic agent, both borderline; n is 1 to 3.",C4,,,,
+med-a12453,clinical,fixed,full,reserve,1,2,"added: ""chemotherapy""","Patient completed chemotherapy (class, no named drug) before everolimus; it is a separate item.",C1 C3,,,,full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-a770bc,clinical,ok,reserve,reserve,1,1,,,,,,"reserve -> full, refilling clinical full n = 1",full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-aaae7d,clinical,dropped,full,dropped,3,3,,'vasoactive drugs' may or may not include the later noradrenaline infusion; n is 2 or 3.,C3 G6,,,,
+med-ab7f49,clinical,dropped,full,dropped,1,1,,"Besides 'local anesthetic', the text has radiopaque contrast dye and sedation, both borderline; n could be 1 to 3.",C4,,,,
+med-ae06de,clinical,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-b24fb9,clinical,fixed,full,full,3,3,"removed 1: ""HAART""; split 2: ""emtricitabine and tenofovir disoproxil fumarate"" -> ""emtricitabine"" | ""tenofovir disoproxil fumarate""",'HAART' is the class word for the named drugs; emtricitabine and tenofovir are two separate drugs.,C3 G4,,,,
+med-b8f835,clinical,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-b9fc87,clinical,fixed,full,full,5,4,"removed 1: ""GP chemotherapy""",'GP chemotherapy' is the class word for the named cisplatin and gemcitabine.,C3,,,,
+med-bc3cb1,clinical,dropped,reserve,dropped,1,1,,"Only item is oxygen, a borderline substance; n is 0 or 1.",C4,,,,
+med-bce5a0,clinical,dropped,full,dropped,0,0,,'CT with contrast' gives a contrast agent; n is 0 or 1 depending on a borderline substance.,C4,,,,
+med-bde403,clinical,dropped,full,dropped,3,3,,Item 'fluids' (intravenous fluids) is borderline; n is 2 or 3.,C4,,,,
+med-bf5d11,clinical,dropped,full,dropped,1,1,,"Only item RBC is a blood product, and gelform particles are an embolic agent; both borderline, n is 0 to 2.",C4,,,,
+med-bfa770,clinical,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling clinical full n = 0",
+med-c054f5,clinical,dropped,full,dropped,2,2,,"Both items (barium sulfate suspension, iopromide) are contrast agents, which are borderline.",C4,,,,
+med-c1d00f,clinical,fixed,full,full,5,4,"removed 4: ""IVIG""","'IVIG' repeats item 3 'immunoglobulin' (given twice, one drug).",G3,,,,
+med-c4e086,clinical,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling clinical full n = 3",
+med-c7b222,clinical,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for clinical n = 2; the kept documents match the set's lengths best
+med-c92f6e,clinical,dropped,reserve,dropped,3,3,,Platelet transfusions (borderline blood product) were given; n is 3 or 4.,C4,,,,
+med-c988c5,clinical,fixed,full,full,6,5,"removed 3: ""chemotherapy""",'chemotherapy' (induction chemotherapy) is the same treatment as item 2 'taxane-based chemotherapy'.,G3 C3,,,,
+med-cbf0d8,clinical,dropped,full,dropped,3,3,,"'more frequent transfusions' (blood products, borderline) were given; n is 3 or 4.",C4,,,,
+med-ce3da3,clinical,fixed,reserve,reserve,2,1,"removed 1: ""calcium""",'calcium' (calcium tablets) and 'calcium lactate' are the same drug.,G3,,,"reserve -> full, refilling clinical full n = 1",full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-cf5f13,clinical,dropped,reserve,dropped,3,3,,Item 'saline' (0.9% saline hydration) is a borderline fluid; n is 2 or 3.,C4,,,,
+med-cff140,clinical,dropped,full,dropped,2,2,,"Both items ('fluid load', 'crystalloids') are one borderline fluid; n is 0 or 1.",C4 G3,,,,
+med-d2c1d1,clinical,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-d67109,clinical,dropped,full,dropped,1,1,,'various combinations of anticonvulsant therapy' may or may not be separate from Clonazepam; n is 1 or 2.,C3 G6,,,,
+med-db5279,clinical,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-dc0e45,clinical,ok,reserve,reserve,0,0,,,,,,"reserve -> full, refilling clinical full n = 0",full -> reserve: over the final number for clinical n = 0; the kept documents match the set's lengths best
+med-dd80dc,clinical,dropped,full,dropped,3,3,,Platelet transfusions (borderline blood product) were given; n is 3 or 4.,C4,,,,
+med-e01f90,clinical,fixed,full,reserve,2,1,"removed 1: ""antibiotic therapy""","'antibiotic therapy' is the class word for the same treatment as levofloxacin, so one item.",C3,,,,full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-e07ed1,clinical,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling clinical full n = 3",
+med-e12244,clinical,fixed,full,full,0,2,"added: ""miglustat""; added: ""ERT""","Patient received miglustat and ERT (enzyme replacement therapy, a substance); the n=0 list missed both.",C1 C3,,,,
+med-e2a371,clinical,dropped,full,dropped,0,0,,Only substance is saline used as echo contrast; n is 0 or 1 depending on a borderline substance.,C4,,,,
+med-e33943,clinical,fixed,full,full,5,3,"removed 1: ""chemotherapy""; removed 2: ""MAP regimen""","'chemotherapy' and 'MAP regimen' are class/regimen words for methotrexate, cisplatin and doxorubicin.",C3,,,,
+med-e71d6a,clinical,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for clinical n = 1; the kept documents match the set's lengths best
+med-e9130f,clinical,fixed,full,full,3,2,"removed 1: ""antibiotic therapy""",'antibiotic therapy' is the class word for the same treatment as imipenem-cilastatin.,C3,,,,
+med-ee3a73,clinical,dropped,reserve,dropped,1,1,,'Treatment for hypertension and diabetes' is unnamed drug treatment besides zoledronic acid; n is 1 to 3.,C1 G6,,,,
+med-ee539b,clinical,dropped,reserve,dropped,3,3,,"A contrast-enhanced CT was done (contrast agent, borderline); n is 3 or 4.",C4,,,,
+med-f5eccf,clinical,dropped,full,dropped,2,2,,"'dopamine analog' is cabergoline (C3), but contrast gadolinium is also given; n is 1 or 2 depending on a borderline substance.",C3 C4,,,,
+mtg-05e3ce,meetings,fixed,full,pilot,1,2,"added: ""The Project Manager will do the minutes of this meeting.""",Missed the Project Manager's commitment to do the minutes of this meeting.,M5,,,,
+mtg-073666,meetings,fixed,full,full,5,5,"removed 5: ""They will get extra instructions from their personal coach""; added: ""Everyone who has not yet done so will put their presentation in the project documents folder.""",Item 5 (coach sends instructions) is not a job; missed the request that everyone put their presentation in the project folder.,M6 M3,,,,
+mtg-085be8,meetings,dropped,pilot,dropped,1,1,,"Besides the questionnaire, the PM says he must 'catch up with everything that I fell behind with' and 'I've got minutes for two of the meeting'; whether that is a PM job (n=2) or not (n=1) is a borderline call.",M5 G6,,,,
+mtg-0920fb,meetings,fixed,full,full,3,4,"split 2: ""The User Interface Designer will work on the interface and the Industrial Designer will work on the look and feel of the device."" -> ""The Industrial Designer will work on the look and feel design."" | ""The User Interface Designer will work on the user interface design.""",Item 2 bundles two jobs for two people: the ID's look-and-feel design and the UI Designer's interface design.,M4,,,,
+mtg-0a42d7,meetings,fixed,full,pilot,3,2,"removed 2: ""The User Interface Designer will receive further assignments at a later time.""","Item 2 ('will receive further assignments') is a remark about instructions, not a job.",M6,,,,
+mtg-0bcf11,meetings,fixed,reserve,full,1,2,"split 1: ""The project manager will prepare the final presentation, while the rest of the group will fill in a questionnaire."" -> ""The Project Manager will prepare the final presentation summarising the project."" | ""The other team members will fill in another questionnaire.""",Item 1 bundles two jobs: the PM's final presentation and the others' questionnaire.,M4,,,"reserve -> pilot, refilling meetings pilot n = 2",pilot -> full: over the final number for meetings n = 2; the kept documents match the set's lengths best
+mtg-0cf991,meetings,fixed,full,reserve,3,3,"replaced 2: ""The interface specialist will do the working design and functional design."" -> ""The User Interface Designer will work on the technical functions design.""",Item 2 repeats the ID's 'working design'; the UI Designer's job is the technical/functional design.,G3 M1,,,,full -> reserve: over the final number for meetings n = 3; the kept documents match the set's lengths best
+mtg-0dc85b,meetings,ok,pilot,full,1,1,,,,,,,pilot -> full: over the final number for meetings n = 1; the kept documents match the set's lengths best
+mtg-0f1ff6,meetings,fixed,full,full,4,3,"removed 4: ""They were recieve specific instructions on what to do.""","Item 4 ('will receive specific instructions') is a remark about instructions, not a job.",M6,,,,
+mtg-0fab39,meetings,fixed,full,full,3,4,"replaced 3: ""The Marketing Expert will present the marketing concept."" -> ""The Marketing Expert will keep watching the trends.""; added: ""The Project Manager will send the team the minutes of the meeting.""",Missed the Project Manager's commitment to send the minutes; item 3 restated as the trend watching actually assigned.,M5 M1,,,,
+mtg-11e41f,meetings,fixed,full,full,4,3,"removed 1: ""They will get specific instructions when they get back to their workspace.""","Item 1 ('will get specific instructions') is a remark about instructions, not a job.",M6,,,,
+mtg-13a699,meetings,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-19cd45,meetings,fixed,full,full,3,4,"added: ""The Project Manager will put the minutes of this meeting into the project documents folder.""",Missed the Project Manager's commitment to put the minutes in the project documents folder.,M5,,,,
+mtg-1e6f07,meetings,dropped,reserve,dropped,1,1,,"'Fill in all this stuff' and 'write final reports' may be one job or two, and the owner of the report is left open; n is 1 or 2.",M4 G6,,,,
+mtg-242838,meetings,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-343d2a,meetings,fixed,pilot,reserve,2,4,"split 2: ""The user interface designer will work on the user interface concept and trend-watching"" -> ""The User Interface Designer will work on the user interface concept."" | ""The Marketing Expert will do the trend-watching for the next meeting.""; added: ""The Project Manager will put the minutes in the project document folder.""","Item 2 bundles the UI concept with trend-watching (the Marketing Expert's job, the third role in the PM's list): split; also missed the PM's 'I will put the minutes in the project document folder'.",M4 M5,,,,full -> reserve: over the final number for meetings n = 4; the kept documents match the set's lengths best
+mtg-362a72,meetings,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-3a0680,meetings,fixed,full,reserve,3,4,"added: ""The Project Manager will write up the minutes of this meeting for the next meeting.""",Missed the Project Manager's commitment to write up the minutes for the next meeting.,M5,,,,full -> reserve: over the final number for meetings n = 4; the kept documents match the set's lengths best
+mtg-3e4bf0,meetings,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for meetings n = 3; the kept documents match the set's lengths best
+mtg-405906,meetings,fixed,pilot,reserve,2,4,"split 1: ""The User Interface Designer and the Industrial Designer were instructed to build the prototype; the User Interface Designer will decide which buttons will be included and the Industrial Designer will focus on the look and the materials."" -> ""The Industrial Designer will do the look and feel design."" | ""The User Interface Designer will do the user interface design and have the final say on which buttons are included."" | ""The Industrial Designer and the User Interface Designer will build a prototype together out of modelling clay.""","Item 1 bundles three jobs: ID look-and-feel design, UID user interface design (incl. buttons), and the joint clay prototype 'right now'. Split.",M4 M2,,,,full -> reserve: over the final number for meetings n = 4; the kept documents match the set's lengths best
+mtg-4145d1,meetings,dropped,full,dropped,1,1,,Whether 'keep the button shape and labelling simple' is a separate job for the UI Designer or just a product decision decides n (1 or 2).,M1 M6 G6,,,,
+mtg-415520,meetings,dropped,pilot,dropped,2,2,,Missed the Marketing Expert's job: the PM says 'you are working on the user requirements' alongside the other two roles' jobs.,M1,Is the Project Manager's passing 'because you are working on the user requirements' (cut off at the end of the window) an action item for the Marketing Expert? If yes n = 3 (proposed list); if no the annotators' n = 2 stands.,"Settled by the authors (Abhishek Barali and co-author), 13 Oct 2026: whether the cut-off 'you are working on the user requirements' is a job is a coin flip, so the document is dropped.",,
+mtg-42912b,meetings,fixed,full,full,0,1,"added: ""The Project Manager will specify the final design in the final report.""",Missed the Project Manager's own commitment to write up the final design in the final report.,M5,,,,
+mtg-47e48c,meetings,dropped,pilot,dropped,2,2,,"Unclear whether 'maybe more in the technical parts' (item 2) is a separate job or part of item 1, and whether the Marketing Expert's 'I'll think of that' about the user requirements spec is an extra item: n could be 1, 2 or 3.",G4 M4 G6,,,,
+mtg-4803ad,meetings,fixed,full,full,3,4,"added: ""The Project Manager will look into how the costs will be determined.""",Missed the Project Manager's commitment to look into how the costs will be determined.,M5,,,,
+mtg-484916,meetings,fixed,pilot,pilot,1,2,"added: ""The Marketing Expert will send the working components document again and put it in the shared documents.""",Missed job: the Marketing Expert commits to re-send the working components document and put it in shared documents again.,M1,,,,
+mtg-4a4ec6,meetings,ok,pilot,full,2,2,,,,,,,pilot -> full: over the final number for meetings n = 2; the kept documents match the set's lengths best
+mtg-4dc498,meetings,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-51c87a,meetings,dropped,full,dropped,1,1,,"The 'decide basic functionality / how the UI works / figure out what the user wants' talk is vague and can be read as 0, 1 or 3 jobs.",M1 M6 G6,,,,
+mtg-555b0f,meetings,ok,pilot,full,2,2,,,,,,,pilot -> full: over the final number for meetings n = 2; the kept documents match the set's lengths best
+mtg-570447,meetings,fixed,pilot,reserve,2,1,"removed 2: ""They will receive information from their personal coaches.""","Item 2 ('they will receive information from their personal coaches') is an instructions-by-email remark, not a job.",M6,,,,pilot -> reserve: over the final number for meetings n = 1; the kept documents match the set's lengths best
+mtg-5c1996,meetings,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-5c20f3,meetings,ok,reserve,pilot,1,1,,,,,,"reserve -> pilot, refilling meetings pilot n = 1",
+mtg-604fbd,meetings,fixed,full,reserve,1,3,"replaced 1: ""The interface specialist will look at button and over all look."" -> ""The User Interface Designer will look into the precision of the buttons and which buttons will be on the remote.""; added: ""The Industrial Designer will look into the technical design, form and look and feel of the remote.""; added: ""The Marketing Expert will do market research on whether people like coloured fronts such as pink or Teletubby fronts.""","Item 1 gives the UI Designer the 'overall look', which is the Industrial Designer's job; the ID's job and the Marketing Expert's 'I will investigate' were missed.",M4 M1,,,,full -> reserve: over the final number for meetings n = 3; the kept documents match the set's lengths best
+mtg-62cf2c,meetings,fixed,full,reserve,5,4,"removed 5: ""Their personal coaches will give the rest of the information""",Item 5 (coach gives the rest of the information) is not a job.,M6,,,,full -> reserve: over the final number for meetings n = 4; the kept documents match the set's lengths best
+mtg-6527b5,meetings,fixed,pilot,full,1,2,"added: ""The Project Manager will put the minutes from this meeting in the project folder.""",Missed the PM's own commitment to put the minutes in the project folder.,M5,,,,pilot -> full: over the final number for meetings n = 2; the kept documents match the set's lengths best
+mtg-65fe4f,meetings,fixed,pilot,reserve,2,2,"removed 1: ""They will receive specific instructions for the next meeting by email.""; added: ""All participants will do thirty minutes of individual work after lunch, following the instructions sent by email.""","Item 1 (instructions by email) is not a job; missed the thirty minutes of individual work after lunch, counted as in the other documents.",M6 M3,,,,pilot -> reserve: over the final number for meetings n = 2; the kept documents match the set's lengths best
+mtg-68185b,meetings,dropped,pilot,dropped,2,2,,"'And Florent to work my subject' (Marketing Expert's job?) is garbled, and the PM's 'please record your presentations in your own folder' to the Industrial Designer is a borderline job: n could be 2, 3 or 4.",G6 M6,,,,
+mtg-6835ed,meetings,fixed,pilot,pilot,1,2,"split 1: ""All participants will fill out a final questionnaire."" -> ""All participants will fill out a final questionnaire."" | ""The team will complete the meeting summary.""","Item 1 covers 'complete the final questionnaire and meeting summary': two different jobs, split.",M4,,,,
+mtg-68d1a0,meetings,fixed,pilot,reserve,2,3,"added: ""The Industrial Designer will work on the design of the remote control and come up with new ideas.""","Missed the Industrial Designer's job: the first assignment ('work on the design of the remote control, start to have new idea') is his ('Okay, so I'm the first one').",M1,,,,full -> reserve: over the final number for meetings n = 3; the kept documents match the set's lengths best
+mtg-69b8d9,meetings,ok,pilot,reserve,1,1,,,,,,,pilot -> reserve: over the final number for meetings n = 1; the kept documents match the set's lengths best
+mtg-6a9cd1,meetings,dropped,pilot,dropped,1,1,,"Item 1 (LCD cost) was looked up by the Industrial Designer during the meeting ('Doesn't say') with no follow-up; whether it is still an after-meeting job is borderline, and the annotator names the wrong role.",M6 G6,,,,
+mtg-6c1a51,meetings,fixed,full,pilot,1,2,"split 1: ""The team have two questionnaires and a report on the last meeting to complete before they finish."" -> ""The team will complete the final questionnaires."" | ""The team will write the meeting summary report on the last meeting.""",Item 1 bundles two jobs: filling in the questionnaires and writing the meeting summary/report.,M4,,,,
+mtg-6f17c9,meetings,ok,reserve,pilot,1,1,,,,,,"reserve -> pilot, refilling meetings pilot n = 1",
+mtg-72b4b4,meetings,ok,pilot,full,2,2,,,,,,,pilot -> full: over the final number for meetings n = 2; the kept documents match the set's lengths best
+mtg-767246,meetings,dropped,pilot,dropped,1,1,,"Item 1 (redesign): the team appears to do the redesign in the remaining ten minutes of this meeting ('So, we can uh redesign our'); in-meeting vs after-meeting is borderline and decides n.",M6 G6,,,,
+mtg-7675f5,meetings,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-7e1967,meetings,fixed,full,pilot,1,2,"added: ""The Project Manager will save this into the project documents.""",Missed the Project Manager's commitment to save the material into the project documents.,M5,,,,
+mtg-7f60d5,meetings,fixed,pilot,full,2,3,"added: ""The Project Manager will make a folder and reorganise the project documents.""","Missed the PM's own commitment to make a folder ('map') and reorganise the many documents, asked for by the User Interface Designer.",M5,,,,
+mtg-801564,meetings,fixed,full,full,3,4,"added: ""The Marketing Expert will save everything in the right files.""",Missed the Marketing Expert's stated job of saving everything in the right files.,M1,,,,
+mtg-80a650,meetings,fixed,full,full,3,4,"replaced 3: ""The project manager will type up the minutes of the current meeting and e-mail those to the team members."" -> ""The Marketing Expert will work on the user requirements, gathering trends and what people need.""; added: ""The Project Manager will put together the agenda for the next meeting.""",Item 3 (PM types up minutes) is not in the text; its evidence is the Marketing Expert's user-requirements job. Also missed the PM's 'I'll put that together' (agenda).,G1 M5,,,,
+mtg-82f79a,meetings,fixed,pilot,reserve,2,3,"removed 2: ""They will receive more information by email.""; split 1: ""The project manager designates each group member's task- working on the working design, technical functions, or user requirement specs."" -> ""The Industrial Designer will work on the working design."" | ""The User Interface Designer will work on the technical functions."" | ""The Marketing Expert will work on the user requirements specs, including what people expect for twenty-five Euros.""","Item 1 bundles three people's jobs (working design, technical functions, user requirements specs): split; item 2 (information by email) is not a job.",M4 M6,,,,full -> reserve: over the final number for meetings n = 3; the kept documents match the set's lengths best
+mtg-861ec5,meetings,fixed,full,full,4,5,"removed 4: ""Their coaches will send specific instructions and answer questions.""; replaced 1: ""The industrial designer will come up with a user interface design."" -> ""The User Interface Designer will come up with the user interface design.""; added: ""The Industrial Designer will work on the look and feel design.""; added: ""The Industrial Designer will research how expensive speech recognition would be.""",Item 1 gives the UI design to the ID; the ID's look-and-feel job and his speech-recognition cost research were missed; item 4 (coaches send instructions) is not a job.,M4 M6,,,,
+mtg-8b5061,meetings,dropped,full,dropped,4,4,,Item 3 ('explore the two-piece') may be its own job or just the topic of the ID's and UI's jobs; n is 3 or 4.,G3 M1 G6,,,,
+mtg-9cb320,meetings,fixed,pilot,pilot,2,1,"removed 1: ""The design of the remote control is to be carried out at the next meeting.""; replaced 2: ""Individual actions for the next meeeting can be found in emails to be sent."" -> ""All participants will do their individual actions, sent by email, in the thirty minutes of work after lunch.""",Item 1 (design 'for the next phase') is a scheduling remark with no owner; item 2 is reworded to the job itself: the individual actions in the thirty minutes of work after lunch.,M6 M3,,,,
+mtg-a2042e,meetings,dropped,pilot,dropped,2,2,,"'look and feel design ... user interface, in fact you two you have to work together to model the first prototype' reads as one joint job or as two or three separate jobs: n could be 2, 3 or 4.",M2 M4 G6,,,,
+mtg-a67f5c,meetings,dropped,full,dropped,4,4,,"The PM says working on the prototype 'will accomplish your other two actions', so n is 2 or 4.",M2 M4 G6,,,,
+mtg-a6de72,meetings,ok,reserve,pilot,1,1,,,,,,"reserve -> pilot, refilling meetings pilot n = 1",
+mtg-a93d7c,meetings,fixed,full,full,3,6,"added: ""The Project Manager will type up the minutes of this meeting.""; added: ""The team will fill in the questionnaire sent by e-mail after the meeting.""; added: ""The team will write the meeting summary sent by e-mail after the meeting.""",Missed the PM's commitment to type up the minutes and the team's jobs of replying with the questionnaire and the summary.,M5 M3 M4,,,,
+mtg-ab53b0,meetings,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling meetings full n = 3",
+mtg-b408f1,meetings,dropped,pilot,dropped,1,1,,"Besides the legal-department item, the PM says 'we should have a look into' any medical background on RSI; a concrete job with a soft 'we should', so n is 1 or 2.",M6 G6,,,,
+mtg-bcac70,meetings,ok,reserve,full,1,1,,,,,,"reserve -> pilot, refilling meetings pilot n = 1",pilot -> full: over the final number for meetings n = 1; the kept documents match the set's lengths best
+mtg-c09f78,meetings,ok,reserve,full,0,0,,,,,,"reserve -> full, refilling meetings full n = 0",
+mtg-c12d5b,meetings,dropped,full,dropped,3,3,,"Owners and number of the look-and-feel, interface design, product evaluation, website check, minutes and questionnaire jobs are too unclear for one count.",M1 M2 G6,,,,
+mtg-c76285,meetings,ok,pilot,full,1,1,,,,,,,pilot -> full: over the final number for meetings n = 1; the kept documents match the set's lengths best
+mtg-c8164a,meetings,dropped,pilot,dropped,2,2,,"The annotator's role assignments look swapped (the User Interface Designer answers the look-and-feel line, the Industrial Designer the spongy-buttons line), item 2 bundles buttons and shape, and 'we'll have to evaluate the product too' has no clear owner: n is 2 to 4.",M4 M1 G6,,,,
+mtg-c9ed0b,meetings,ok,pilot,full,0,0,,,,,,,pilot -> full: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-ccf76e,meetings,fixed,full,reserve,3,4,"added: ""The Industrial Designer will work on the look and feel design.""",Missed the Industrial Designer's look-and-feel design job (item 1 covers only the UI Designer).,M4,,,,full -> reserve: over the final number for meetings n = 4; the kept documents match the set's lengths best
+mtg-d03940,meetings,fixed,pilot,full,2,3,"added: ""All participants will look into the initial ideas and come up with new ones for the next meeting.""","A group job with some content, next to the specific role jobs; M8 covers bare 'individual work' but not this.",M1 M8,"Next to the two role jobs, does the PM's 'we've got some initial ideas that we can all look into, and come up with some new ones for the next meeting' count as a third action item (a job for everyone)? Yes: n = 3. No: n = 2 as annotated.","Settled by the authors (Abhishek Barali and co-author), 13 Oct 2026: 'look into these ideas and come up with new ones for the next meeting' is a job for everyone, so n = 3.",,
+mtg-d0c8e1,meetings,fixed,reserve,pilot,1,2,"added: ""The Project Manager will get the minutes up as soon as possible.""",Missed the Project Manager's commitment to get the minutes up.,M5,,,"reserve -> pilot, refilling meetings pilot n = 2",
+mtg-d236e3,meetings,fixed,full,pilot,1,2,"split 1: ""The industrial designer and user interface designer will work together on a prototype, using the SMARTboard. The marketing expert will work on the product evaluation."" -> ""The Industrial Designer and the User Interface Designer will work together on a prototype, drawing it on the SMARTboard."" | ""The Marketing Expert will work on the product evaluation.""",Item 1 bundles two jobs for different people: the designers' prototype and the Marketing Expert's product evaluation.,M4,,,,
+mtg-d2f793,meetings,fixed,pilot,full,2,3,"removed 2: ""The team members will go to their own rooms.""; added: ""All participants will fill in a questionnaire.""; added: ""The User Interface Designer will make a screenshot of the design and put it in the project folder for the final report.""","Item 2 (go to own rooms) is logistics, not a job; missed the questionnaire and the PM's request for a screenshot of the design put in the project folder for the final report.",M6 M3 M1,,,,
+mtg-d7ca25,meetings,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling meetings full n = 3",
+mtg-d9c877,meetings,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-dc92dd,meetings,fixed,pilot,reserve,2,4,"split 1: ""The Marketing Expert will find out how much the display component costs and will present his marketing strategy at the next meeting."" -> ""The Marketing Expert will find out how much the display costs."" | ""The Marketing Expert will present his marketing strategy at the next meeting.""; added: ""The Project Manager will submit the prototype design to the management.""",Item 1 is the M4 example (display cost + marketing strategy): split; also missed the PM's 'I will submit to the management'.,M4 M5,,,,full -> reserve: over the final number for meetings n = 4; the kept documents match the set's lengths best
+mtg-e2e088,meetings,dropped,reserve,dropped,3,3,,"Many loosely stated jobs (CC Ed, copy mails to PM, PM submits to management, send slides, functional design) with unclear owners; no single count.",M1 M5 G6,,,,
+mtg-e48855,meetings,ok,reserve,pilot,1,1,,,,,,"reserve -> pilot, refilling meetings pilot n = 1",
+mtg-eeed74,meetings,ok,pilot,reserve,0,0,,,,,,,pilot -> reserve: over the final number for meetings n = 0; the kept documents match the set's lengths best
+mtg-f4db6f,meetings,fixed,full,full,3,5,"added: ""The team will complete the questionnaire.""; added: ""The Project Manager will put together the minutes of this meeting.""",Missed the questionnaire everyone completes and the PM's commitment to put the minutes together.,M3 M5,,,,
+mtg-fc36dc,meetings,dropped,full,dropped,3,3,,'If you put them in there' may or may not be a job for the Marketing Expert (put requirements in the folder); n is 3 or 4.,M6 G6,,,,
+ppl-030ebd,wiki_people,fixed,reserve,reserve,3,3,"replaced 2: ""Anne Westfal"" -> ""Anne Westfal l""",Item 2 'Anne Westfal' drops the last letter; the text has 'Anne Westfal l'.,G5,,,"reserve -> full, refilling wiki_people full n = 3",full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-03bd91,wiki_people,dropped,full,dropped,2,2,,'Dolly Devore' is a film character played by Christine McIntyre; n depends on a fictional character.,W3,,,,
+ppl-08067f,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-0c2ffa,wiki_people,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-10b42b,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-188040,wiki_people,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling wiki_people full n = 2",
+ppl-19eb81,wiki_people,fixed,full,full,0,1,"added: ""Harry Turner""",Missed person: 'Harry Turner' (the group's leader); Spartacist League is a group.,W1,,,,
+ppl-1b231d,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-1ddd69,wiki_people,fixed,full,full,3,2,"removed 1: ""Asterix""","'Asterix' is used inside the name of the comic book series, not as a person.",W2,,,,
+ppl-224e0d,wiki_people,dropped,full,dropped,1,1,,"Only listed name 'Clytemnestra' is a play character; the actress is unnamed, so n depends on a fictional character.",W3,,,,
+ppl-26af9f,wiki_people,dropped,full,dropped,1,1,,'Tancredi' is a character in an epic poem (Canto 12); n depends on a fictional character.,W3,,,,
+ppl-28a6fc,wiki_people,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-2c10f9,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-2d62d7,wiki_people,dropped,full,dropped,3,3,,"'Washington' likely stands for the US Navy command, not a person, but it sits beside Rochefort/Layton as a speaker; n is 2 or 3.",W1 W2,,,,
+ppl-2e1141,wiki_people,dropped,full,dropped,3,3,,"'Saaransh', 'Mahima', 'Preesha' are TV-serial plot characters; n depends on fictional characters.",W3,,,,
+ppl-2ea01b,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-35a6ad,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-3c25ce,wiki_people,ok,reserve,reserve,2,2,,,,,,"reserve -> full, refilling wiki_people full n = 2",full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-3e560b,wiki_people,dropped,full,dropped,2,2,,'Rosemary' and 'Paul' read as soap/plot characters; n depends on fictional characters.,W3,,,,
+ppl-3ffcb8,wiki_people,dropped,full,dropped,2,2,,'Molson' (who gave permission with the Rangers) may be the Molson company/owners rather than a person; n is 1 or 2.,W1 W2,,,,
+ppl-41b9e8,wiki_people,fixed,full,full,2,0,"removed 1: ""Japanese""; removed 2: ""J Soul Brothers""","'Japanese' is a nationality and 'J Soul Brothers' a group (as is Exile); no person, n = 0.",W2,,,,
+ppl-42ceed,wiki_people,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling wiki_people full n = 3",
+ppl-4742bf,wiki_people,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-4f53cd,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-502480,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-588798,wiki_people,fixed,full,full,2,0,"removed 1: ""Bytom""; removed 2: ""Cieszyn""","'Bytom' and 'Cieszyn' are places in the dukes' title, not named people; n = 0.",W1 W2,,,,
+ppl-5985b0,wiki_people,fixed,full,reserve,3,3,"replaced 1: ""acques Maritain"" -> ""J acques Maritain""",Item 1 'acques Maritain' is cut mid-word; the text has 'J acques Maritain'.,G5,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-5b5351,wiki_people,fixed,reserve,full,2,3,"added: ""George Gray""","Missed person: 'George Gray', the squatter who employed the two stockmen.",W1,,,"reserve -> full, refilling wiki_people full n = 3",
+ppl-633e3a,wiki_people,dropped,full,dropped,3,3,,"'Albert Woodruff', 'Justin Victor', 'Ruth Allen' are film-plot characters; n depends on fictional characters.",W3,,,,
+ppl-6b6b92,wiki_people,dropped,reserve,dropped,1,1,,'Duffy' is the warden as portrayed in a film/series's stories; n depends on whether this character counts.,W3,,,,
+ppl-6fc970,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-70c43c,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-7a2e42,wiki_people,fixed,full,full,1,2,"added: ""Nagata""",Missed person: 'Nagata' (promoted posthumously) besides Aizawa.,W1,,,,
+ppl-7a50b8,wiki_people,dropped,full,dropped,2,2,,'Meredith Grey' is a fictional TV character; n depends on it.,W3,,,,
+ppl-7b7236,wiki_people,fixed,reserve,full,3,2,"removed 1: ""Da Beatminerz""","'Da Beatminerz' is a production duo/group, not a person.",W2,,,"reserve -> full, refilling wiki_people full n = 2",
+ppl-7eb2a1,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-83c086,wiki_people,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling wiki_people full n = 2",
+ppl-8a6220,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-8cac87,wiki_people,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling wiki_people full n = 3",
+ppl-9110c9,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-9363ba,wiki_people,fixed,full,full,2,1,"removed 2: ""Branislav Micić""","'Branko Ve Poljanski' is the pseudonym of 'Branislav Micić': one person, one item.",W4 G3,,,,
+ppl-99290f,wiki_people,fixed,reserve,full,3,2,"removed 2: ""Charger""","'Charger' refers to the team (Chargers head coach), not a person.",W2,,,"reserve -> full, refilling wiki_people full n = 2",
+ppl-99da35,wiki_people,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-9d54c3,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-a3e65e,wiki_people,fixed,reserve,full,3,1,"removed 2: ""Henk""; removed 3: ""Beernink""; replaced 1: ""Hendrik Karel Jan"" -> ""Hendrik Karel Jan ""Henk"" Beernink""","Items 1-3 are parts of one person's name, Hendrik Karel Jan ""Henk"" Beernink: one item.",W4 G3,,,"reserve -> full, refilling wiki_people full n = 1",
+ppl-ac15a3,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-b26c0d,wiki_people,fixed,reserve,reserve,1,0,"removed 1: ""Dietrich""","'Dietrich' is used inside the name 'the Dietrich cycle' (of poems), not as a person; n = 0.",W2,,,,
+ppl-b77163,wiki_people,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-bf4b8e,wiki_people,dropped,reserve,dropped,3,3,,"'Ayu', 'Putri', 'Reza' are TV-plot characters; n depends on fictional characters.",W3,,,,
+ppl-c46d4d,wiki_people,fixed,full,full,2,1,"removed 2: ""Grays Athletic""","'Grays Athletic' is a football club, not a person.",W2,,,,
+ppl-c7def1,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-ca372a,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-d30d19,wiki_people,dropped,full,dropped,2,2,,'Kumar Govind' and 'Nagaraj Rao' are film-plot characters; n depends on fictional characters.,W3,,,,
+ppl-d391b8,wiki_people,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling wiki_people full n = 2",
+ppl-d9a255,wiki_people,dropped,full,dropped,1,1,,'Eli Zabar's Vinegar Factory' may be the shop's name (W2) or an owner mention; that call decides n (1 or 2).,W2,,,,
+ppl-dabe31,wiki_people,dropped,full,dropped,0,0,,'Lennon compositions' names John Lennon as composer; whether this attributive use counts as a person mention decides n (0 or 1).,W1 W2,,,,
+ppl-dd41f2,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-ddf677,wiki_people,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling wiki_people full n = 2",
+ppl-df89de,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+ppl-e734fa,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-eb14d0,wiki_people,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for wiki_people n = 1; the kept documents match the set's lengths best
+ppl-ed803c,wiki_people,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for wiki_people n = 0; the kept documents match the set's lengths best
+ppl-f244a1,wiki_people,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for wiki_people n = 3; the kept documents match the set's lengths best
+ppl-fccec2,wiki_people,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for wiki_people n = 2; the kept documents match the set's lengths best
+quo-1c6d98,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-1d3070,novel_quotes,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling novel_quotes full n = 3",
+quo-234f78,novel_quotes,dropped,reserve,dropped,3,3,,Items 2 and 3 are the nurse continuing across a paragraph break after her tag; one or two quotations is a judgment call.,Q2 G6,,,,
+quo-237371,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-24e309,novel_quotes,dropped,full,dropped,2,2,,"""On business?"" and ""On business."" are the same words twice (only punctuation differs).",Q3,,,,
+quo-27bcec,novel_quotes,dropped,full,dropped,3,3,,"Embedded narration with unclosed paragraph quotes and lost inner marks; item 3 ""he said. His long hairy hand..."" is narration.",Q1 G6,,,,
+quo-2adf24,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-2e02ad,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-3639bd,novel_quotes,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-36d8f1,novel_quotes,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling novel_quotes full n = 2",
+quo-38e8ed,novel_quotes,dropped,full,dropped,3,3,,"One quotation interrupted by a speech tag, listed by the annotators as two; a reader may count it as one or two, so the count is unclear (set has spares).",Q2,,,,
+quo-3c79bd,novel_quotes,dropped,full,dropped,3,3,,"One quotation interrupted by a speech tag, listed by the annotators as two; a reader may count it as one or two, so the count is unclear (set has spares).",Q2,,,,
+quo-44a12d,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-453cbc,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-500eb9,novel_quotes,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling novel_quotes full n = 3",
+quo-5988df,novel_quotes,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-5aa1db,novel_quotes,dropped,full,dropped,2,2,,"Quote marks lost: the speech resumes at ""Can it be Neptune?"" with no opening mark and a verse line sits between; text too broken to count.",Q1 G6,,,,
+quo-5da102,novel_quotes,dropped,full,dropped,3,3,,"One quotation interrupted by a speech tag, listed by the annotators as two; a reader may count it as one or two, so the count is unclear (set has spares).",Q2,,,,
+quo-5e2e3c,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-63ba64,novel_quotes,dropped,full,dropped,3,3,,"One quotation interrupted by a speech tag, listed by the annotators as two; a reader may count it as one or two, so the count is unclear (set has spares).",Q2,,,,
+quo-6fa514,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-71c0d0,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-730f0b,novel_quotes,dropped,reserve,dropped,2,2,,"One quotation interrupted by a speech tag, listed by the annotators as two; a reader may count it as one or two, so the count is unclear (set has spares).",Q2,,,,
+quo-74e2c8,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-7911b6,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-7f4209,novel_quotes,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-801a9f,novel_quotes,ok,reserve,full,1,1,,,,,,"reserve -> full, refilling novel_quotes full n = 1",
+quo-8e84a3,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-8f1e32,novel_quotes,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-8f61b6,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-917963,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-94cc77,novel_quotes,dropped,full,dropped,1,1,,"Only item is a hypothetical self-description with mismatched marks (opening double, closing single), not speech actually said; count 0 or 1.",Q1 Q4,,,,
+quo-9bae2b,novel_quotes,dropped,full,dropped,2,2,,"Inner quote marks lost; item 2 ""said one."" is narration, and the boys' speech has no marks, so the count is unclear.",Q1 G6,,,,
+quo-9c6f26,novel_quotes,ok,reserve,reserve,3,3,,,,,,"reserve -> full, refilling novel_quotes full n = 3",full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-a2d176,novel_quotes,fixed,full,reserve,3,1,"removed 2: ""she said,""; removed 3: ""just made her blood run cold.""; replaced 1: ""I love Miss Stacy with my whole heart, Marilla. She is so ladylike and she has such a sweet voice. When she pronounces my name I feel _instinctively_ that she's spelling it with an E. We had recitations this afternoon. I just wish you could have been there to hear me recite ?Mary, Queen of Scots.' I just put my whole soul into it. Ruby Gillis told me coming home that the way I said the line,"" -> ""I love Miss Stacy with my whole heart, Marilla. She is so ladylike and she has such a sweet voice. When she pronounces my name I feel _instinctively_ that she's spelling it with an E. We had recitations this afternoon. I just wish you could have been there to hear me recite ?Mary, Queen of Scots.' I just put my whole soul into it. Ruby Gillis told me coming home that the way I said the line, ?Now for my father's arm,' she said, ?my woman's heart farewell,' just made her blood run cold.""",One double-quoted speech by Anne; items 2-3 are pieces of it split at a nested quoted verse line (with garbled single marks); n 3->1.,Q1 Q4,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-a757fc,novel_quotes,dropped,full,dropped,3,3,,"Items 2-3 are messages tapped/signalled on the table, not spoken; whether they count as direct speech decides n (1 or 3).",Q1 G6,,,,
+quo-ab822a,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-abac11,novel_quotes,dropped,full,dropped,2,2,,"""Very well."" and ""I'll take you down..."" are one speaker split by two sentences of narration (not a plain speech tag): 1 or 2 is a judgment call.",Q2 G6,,,,
+quo-af2dd0,novel_quotes,dropped,full,dropped,1,1,,"Opening quote mark with no closing one: an embedded narration that runs on past the window, so the item is a fragment of an unknown whole.",Q1,,,,
+quo-b8ee97,novel_quotes,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-bb6fab,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-bc05d2,novel_quotes,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling novel_quotes full n = 2",
+quo-bc886b,novel_quotes,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling novel_quotes full n = 2",
+quo-c01fd8,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-c8c93c,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-cd52fe,novel_quotes,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for novel_quotes n = 3; the kept documents match the set's lengths best
+quo-d39691,novel_quotes,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling novel_quotes full n = 3",
+quo-d712ec,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-d80670,novel_quotes,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for novel_quotes n = 1; the kept documents match the set's lengths best
+quo-da0869,novel_quotes,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling novel_quotes full n = 3",
+quo-dce451,novel_quotes,fixed,reserve,full,3,2,"removed 3: ""Isn't that grand? It has such a roll to it--just like a big organ playing. You couldn't quite call it poetry, I suppose, but it sounds a lot like it, doesn't it?""; replaced 2: ""Oh, at the asylum Sunday-school. They made us learn the whole catechism. I liked it pretty well. There's something splendid about some of the words."" -> ""Oh, at the asylum Sunday-school. They made us learn the whole catechism. I liked it pretty well. There's something splendid about some of the words. ?Infinite, eternal and unchangeable.' Isn't that grand? It has such a roll to it--just like a big organ playing. You couldn't quite call it poetry, I suppose, but it sounds a lot like it, doesn't it?""","Items 2-3 are one double-quoted speech split at a nested quoted catechism phrase; merged, n 3->2.",Q1,,,"reserve -> full, refilling novel_quotes full n = 2",
+quo-df186c,novel_quotes,dropped,full,dropped,2,2,,"Quote marks lost; both items are narration (""said the major."", ""He tried to speak..."") and the real speech has no closing mark.",Q1 G6,,,,
+quo-e842aa,novel_quotes,ok,full,reserve,0,0,,,,,,,full -> reserve: over the final number for novel_quotes n = 0; the kept documents match the set's lengths best
+quo-ef7bb0,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-f812bc,novel_quotes,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for novel_quotes n = 2; the kept documents match the set's lengths best
+quo-fcb29b,novel_quotes,ok,reserve,full,3,3,,,,,,"reserve -> full, refilling novel_quotes full n = 3",
+quo-ff3144,novel_quotes,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling novel_quotes full n = 2",
+rcp-073bc3,receipts,dropped,reserve,dropped,1,1,,"The only line 'DP. ORDER' is a down payment on an order, not a product; n would be 0, outside receipts' range.",R2 G7,,,,
+rcp-3306dd,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-346946,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-40af2a,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-4b359e,receipts,dropped,full,dropped,2,2,,"Both lines are salon services, one a free wash ('Cuci'), the other a cryptic code ('B Pjg/Vr 3'); whether a free wash is a purchased item decides n (1 or 2).",R1 R4 R5,,,,
+rcp-4bdfd3,receipts,ok,full,reserve,4,4,,,,,,,full -> reserve: over the final number for receipts n = 4; the kept documents match the set's lengths best
+rcp-506921,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-50c124,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-585d22,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-70220d,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-70a1c5,receipts,ok,reserve,reserve,3,3,,,,,,"reserve -> full, refilling receipts full n = 3",full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-733cd4,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-73d1e8,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-77c1c0,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-77e5e9,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-84fab7,receipts,ok,full,reserve,5,5,,,,,,,full -> reserve: over the final number for receipts n = 5; the kept documents match the set's lengths best
+rcp-862e4d,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-872c0d,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-885fc9,receipts,dropped,reserve,dropped,3,3,,"Item 3 'Extra Jelly Lychee' is a topping modifier with its own price (5,000).",R3,,,,
+rcp-8c0c74,receipts,ok,full,reserve,6,6,,,,,,,full -> reserve: over the final number for receipts n = 6; the kept documents match the set's lengths best
+rcp-8cede5,receipts,ok,reserve,full,2,2,,,,,,"reserve -> full, refilling receipts full n = 2",
+rcp-a231af,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-a2e2b1,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-a35a36,receipts,dropped,full,dropped,3,3,,'Kupon 9' and 'Kupon 1' are coupon lines; whether a coupon is a product decides n (1 or 3).,R1 R2,,,,
+rcp-abe850,receipts,dropped,full,dropped,6,6,,"Items 2-4 (F.FRIES MEDIUM, F.FRIES COMBO, BROWN SAUCE) are price-0 lines that look like the sirloin combo's contents (R3) but could be free items (R4); n is 3 or 6.",R3 R4,,,,
+rcp-af5021,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-b3d4d7,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-c2a6bf,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-cc2cdb,receipts,ok,full,reserve,3,3,,,,,,,full -> reserve: over the final number for receipts n = 3; the kept documents match the set's lengths best
+rcp-d4b55c,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best
+rcp-dd49bd,receipts,ok,full,reserve,5,5,,,,,,,full -> reserve: over the final number for receipts n = 5; the kept documents match the set's lengths best
+rcp-e1fe91,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-e30738,receipts,ok,full,reserve,1,1,,,,,,,full -> reserve: over the final number for receipts n = 1; the kept documents match the set's lengths best
+rcp-e353ab,receipts,ok,full,reserve,2,2,,,,,,,full -> reserve: over the final number for receipts n = 2; the kept documents match the set's lengths best

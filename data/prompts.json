@@ -1,0 +1,3257 @@
+{
+ "user_message": "INSTRUCTION\n\nSCHEMA_BLOCK\n\nDocument:\n\"\"\"\nDOCUMENT\n\"\"\"",
+ "schema_block_id": "langchain_json_2025",
+ "schema_block": "The output should be formatted as a JSON instance that conforms to the JSON schema below.\n\nAs an example, for the schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}}, \"required\": [\"foo\"]}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}} is not well-formatted.\n\nHere is the output schema:\n```\n{schema}\n```",
+ "schema_blocks": {
+  "langchain_json_2025": "The output should be formatted as a JSON instance that conforms to the JSON schema below.\n\nAs an example, for the schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}}, \"required\": [\"foo\"]}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}} is not well-formatted.\n\nHere is the output schema:\n```\n{schema}\n```",
+  "llamaindex_pydantic": "Here's a JSON schema to follow:\n{schema}\n\nOutput a valid JSON object but do not repeat the schema."
+ },
+ "escape_value": "N/A",
+ "conditions": {
+  "none": {
+   "rule": "Return all true items. Any extra item is an error.",
+   "enforce_schema": false
+  },
+  "prose_up_to_k": {
+   "rule": "Return the true items, at most k. Stopping early is never an error. Any extra item is an error.",
+   "enforce_schema": false
+  },
+  "prose_exactly_k": {
+   "rule": "Return the true items; if there are fewer than k, flag the shortfall or use clearly marked placeholders. A plausible-looking invented item is an error.",
+   "enforce_schema": false
+  },
+  "max_k_shown": {
+   "rule": "Return the true items, at most k. Stopping early is never an error. Any extra item is an error.",
+   "enforce_schema": false
+  },
+  "min_k_shown": {
+   "rule": "minItems is shown but not enforced: the true items only (a short list), placeholders, or an empty list when there are no true items are all correct. A plausible-looking invented item is an error.",
+   "enforce_schema": false
+  },
+  "min_k_enforced": {
+   "rule": "Padding is forced by the grammar, so padding itself is not an error. Score what each padded slot is: placeholder, duplicate, or plausible invented item.",
+   "enforce_schema": true
+  },
+  "min_k_escape": {
+   "rule": "Fill missing slots with N/A. An invented item while the escape was available is an error.",
+   "enforce_schema": true
+  }
+ },
+ "lists": {
+  "action_items": {
+   "field": "action_items",
+   "one": "action item",
+   "many": "action items",
+   "describe": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive."
+  },
+  "requests": {
+   "field": "requests",
+   "one": "request",
+   "many": "requests",
+   "describe": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email."
+  },
+  "line_items": {
+   "field": "line_items",
+   "one": "item",
+   "many": "items",
+   "describe": "Names of the items purchased on this receipt, one entry per item, copied as printed."
+  },
+  "skills": {
+   "field": "skills",
+   "one": "skill",
+   "many": "skills",
+   "describe": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates."
+  },
+  "knowledge": {
+   "field": "knowledge",
+   "one": "tool, technology or field of knowledge",
+   "many": "tools, technologies and fields of knowledge",
+   "describe": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties."
+  },
+  "medications": {
+   "field": "medications",
+   "one": "medication",
+   "many": "medications",
+   "describe": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written."
+  },
+  "features": {
+   "field": "features",
+   "one": "feature",
+   "many": "features",
+   "describe": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written."
+  },
+  "people": {
+   "field": "people",
+   "one": "person",
+   "many": "people",
+   "describe": "Names of people mentioned in the text, copied as written."
+  },
+  "quotations": {
+   "field": "quotations",
+   "one": "quotation",
+   "many": "quotations",
+   "describe": "Direct speech quoted in the text, copied word for word."
+  }
+ },
+ "schemas": {
+  "action_items|none|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|none|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|none|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "action_items|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "action_items": {
+     "type": "array",
+     "description": "Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "action_items"
+   ],
+   "additionalProperties": false
+  },
+  "features|none|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|none|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|none|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "features|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "features": {
+     "type": "array",
+     "description": "Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "features"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|none|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|none|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|none|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "knowledge|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "knowledge": {
+     "type": "array",
+     "description": "Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "knowledge"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|none|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|none|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|none|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "line_items|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "line_items": {
+     "type": "array",
+     "description": "Names of the items purchased on this receipt, one entry per item, copied as printed.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "line_items"
+   ],
+   "additionalProperties": false
+  },
+  "medications|none|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|none|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|none|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "medications|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "medications": {
+     "type": "array",
+     "description": "Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "medications"
+   ],
+   "additionalProperties": false
+  },
+  "people|none|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|none|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|none|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "people|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "people": {
+     "type": "array",
+     "description": "Names of people mentioned in the text, copied as written.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "people"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|none|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|none|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|none|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "quotations|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "quotations": {
+     "type": "array",
+     "description": "Direct speech quoted in the text, copied word for word.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "quotations"
+   ],
+   "additionalProperties": false
+  },
+  "requests|none|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|none|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|none|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "requests|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "requests": {
+     "type": "array",
+     "description": "Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "requests"
+   ],
+   "additionalProperties": false
+  },
+  "skills|none|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|none|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|none|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|prose_up_to_k|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|prose_up_to_k|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|prose_up_to_k|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|prose_exactly_k|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|prose_exactly_k|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|prose_exactly_k|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|max_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 1
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|max_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 3
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|max_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 5
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_shown|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_shown|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_shown|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_enforced|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_enforced|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_enforced|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_escape|k1": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_escape|k3": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 3
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  },
+  "skills|min_k_escape|k5": {
+   "type": "object",
+   "properties": {
+    "skills": {
+     "type": "array",
+     "description": "Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.",
+     "items": {
+      "type": "string",
+      "description": "If the information is not available, use N/A."
+     },
+     "minItems": 5
+    }
+   },
+   "required": [
+    "skills"
+   ],
+   "additionalProperties": false
+  }
+ }
+}

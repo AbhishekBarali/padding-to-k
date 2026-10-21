@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-deepseek-v3.2_full",
+ "model_key": "bedrock-deepseek-v3.2",
+ "source": "6a872e8d7e0012cf3a1726f9ca7ff276fafbf6c2c19368039655351f7079a92f",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 23436,
+ "entries": 53875
+}

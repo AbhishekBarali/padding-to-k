@@ -1,0 +1,95 @@
+\section{Data and design}
+\label{sec:setup}
+
+\paragraph{Terms.}
+A document has $n$ true items, the entries of its answer list.
+A request asks for $k$ items; when $k > n$ it leaves $k - n$ \emph{forced slots} that no true item can fill.
+An output's \emph{substantive entries} are its entries that are neither placeholders (``N/A'', ``none found'') nor string-level repeats of an earlier entry.
+The output \emph{over-counts} when it has more substantive entries than $n$; its \emph{excess} is how many more.
+An \emph{extra entry} is a substantive entry that the item matcher (Section~\ref{sec:scoring}) does not match to a distinct true item.
+Extra entries that the matcher finds in the document, verbatim or closely paraphrased, but that are not items of the kind asked for are \emph{grounded padding} (the matcher's ``wrong kind'' label).
+A \emph{source check} keeps only the entries that occur in the source document.
+
+\subsection{Documents and answer lists}
+\label{sec:data}
+
+The 558 documents come from nine sets drawn from eight published datasets with human annotations of the items we ask for: action items in AMI meetings \citep{carletta2005ami}, requests in MailEx emails \citep{srivastava2023mailex}, items on CORD receipts \citep{park2019cord}, skills and, separately, knowledge (tools) in SkillSpan job ads \citep{zhang2022skillspan}, medications in MACCROBAT case reports \citep{caufield2019maccrobat}, features in ROAST product reviews \citep{roast}, people in Few-NERD Wikipedia sentences \citep{ding2021fewnerd}, and direct speech in PDNC novels \citep{vishnubhotla2022pdnc}.
+Each set has 15 documents for each $n$ from 0 to 3 (two cells hold 11 and 12; receipts and reviews have no $n = 0$ documents), and six sets add documents with $n = 4$ to 6 for asking fewer than exist (per-set totals in Table~\ref{tab:keysource}).
+Long originals are cut into windows on sentence or speaker-turn boundaries, so each window holds a known number of whole items.
+
+The answer lists start from the datasets' own annotations, which we cleaned under written counting rules that fix one reading for ambiguous cases, such as a request phrased twice.
+We set the rules, including the five calls that move the most documents; an AI assistant applied them to all 1,446 candidate lists under our direction, keeping the annotators' original beside every change; author B checked every resulting decision by hand; and we settled every case the rules left open.
+Documents were dropped for recorded reasons, mostly that they had no single right count; the 558 study documents fill the design's cells, and the reserve documents served only to develop the item matcher and the placeholder rules.
+
+The lists pass the registered blind check: each author counted 40 documents from eight sets alone, without seeing the lists, and matched the list's count on 35 (87.5\%) and 38 (95.0\%), above the threshold of 85\% (Gwet's AC1 between the authors 0.851).
+The reviews set, whose text may not be shared, was counted blind in a separate check of five documents: author A matched the list on all five and author B on four (Appendix~\ref{app:key}).
+Job-ad skills is the least certain list (2 and 3 of 5 matches).
+The cleaned count equals the annotators' count on 423 of the 558 documents (76\%), and the confirmatory contrasts are also given with the annotators' counts and per set (Appendices~\ref{app:key} and~\ref{app:perset}).
+
+\subsection{Conditions}
+\label{sec:conditions}
+
+Every prompt is one user message: an instruction, the JSON schema pasted the way LangChain's \texttt{JsonOutputParser} pastes it, then the document.
+The schema describes the item in one line (each set's line is quoted with its example in Appendix~\ref{app:posthoc}).
+Table~\ref{tab:conditions} lists the eight conditions; each runs at $k = 1$, 3 and 5 (the no-count prompt does not depend on $k$ and is sent once), with all five wordings of each prose condition.
+The schema conditions keep one instruction (``List all the requests.'' for emails) and differ only in a \texttt{minItems} or \texttt{maxItems} keyword, an added line or the decoder; the shown and the enforced minimum send the same prompt.
+The ``fewer is fine'' line is ``If the document contains fewer than $k$, list all available ones.''
+The prose conditions replace the instruction with a count wording modelled on real extraction prompts, such as ``Extract up to $k$ requests from this document.'' or ``Return the top $k$ requests.'', and keep the schema without a count (Table~\ref{tab:wordings}), so they differ from no count in the instruction as well as the count.
+
+\begin{table}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Condition & Count stated & Decoder \\
+    \midrule
+    \cnd{none} & no count & free \\
+    \cnd{prose\_up\_to\_k} & ``up to $k$'', 5 wordings & free \\
+    \cnd{prose\_exactly\_k} & ``exactly $k$'', 5 wordings & free \\
+    \cnd{max\_k\_shown} & \texttt{maxItems} in the schema & free \\
+    \cnd{min\_k\_shown} & \texttt{minItems} in the schema & free \\
+    \cnd{min\_k\_shown\_fewer\_ok} & as above, plus ``fewer is fine'' & free \\
+    \cnd{min\_k\_enforced} & \texttt{minItems} in the schema & enforced \\
+    \cnd{min\_k\_escape} & as above, plus ``N/A'' allowed & enforced \\
+    \bottomrule
+  \end{tabular}
+  \caption{Conditions. The first six leave the decoder free; the Bedrock models run only these. In the N/A escape the instruction adds ``If the information is not available, use N/A.'' and the schema allows it. In the code, in this order: \cndcode{none}, \cndcode{prose\_up\_to\_k}, \cndcode{prose\_exactly\_k}, \cndcode{max\_k\_shown}, \cndcode{min\_k\_shown}, \cndcode{min\_k\_shown\_fewer\_ok}, \cndcode{min\_k\_enforced}, \cndcode{min\_k\_escape}.}
+  \label{tab:conditions}
+\end{table}
+
+\subsection{Models}
+\label{sec:models}
+
+Eight open-weight models from five families run on one GPU: Qwen3.5-0.8B, -2B, -9B and -27B, Gemma 4 31B, Olmo 3.1 32B, Ministral 3 14B and gpt-oss-20b.
+Each is pinned to a Hugging Face revision and served by vLLM v0.31.0 \citep{kwon2023vllm} with XGrammar 0.2.7 \citep{dong2025xgrammar}, in BF16 (gpt-oss-20b in its native MXFP4), with greedy decoding (temperature 0, seed 0) and thinking off; gpt-oss cannot turn reasoning off and runs at low effort.
+The study is limited to open-weight models, which can be pinned and rerun and, served locally, run the enforced conditions too.
+Closed models are left to future work, and they may behave differently: in PhantomFill, GPT-5.5 filled a minimum-count array with invented content in only 3 of 20 trials \citep{usman2026phantomfill}.
+As a reference, never pooled with the GPU models, six more open-weight models run on hosted services: DeepSeek V4.1 Flash (thinking off) on Together AI in every condition, and Kimi K3 (thinking off), DeepSeek V3.2, Qwen3-235B, Mistral Large 3 and gpt-oss-120b on Amazon Bedrock in the unenforced conditions only, because Bedrock cannot enforce a minimum above 1.
+Three GPU models also run hosted (Qwen3.5-9B on Together, Ministral 3 14B and gpt-oss-20b on Bedrock) to test whether the serving stack matters.
+No Claude model is run, because a Claude model helped prepare the answer lists.
+
+\subsection{Scoring}
+\label{sec:scoring}
+
+Code reads every output through one parse ladder (strict JSON, a fenced block, the first object holding the list, a bare list, a cut-off list); a copy of the schema is never taken as the answer, so an output that only fills in a schema copy is unreadable.
+The main measure is \emph{length change}: the number of substantive entries under a condition minus the number under its comparison condition, for the same document and model (for contrast 2, a shown minimum against no count).
+It needs the true count $n$ only to choose the documents with $n < k$, not item-level matching, and because the comparison is paired, the extraction errors a model already makes with no count drop out of it.
+\emph{Over-count} is the secondary measure.
+Every output on a document with $n < k$ is also sorted as padded (it over-counts, even if it also flags the shortfall), says it is short (a placeholder, an ``N/A'' or a note), a short list with no note (at most $n$ substantive entries), or unreadable.
+An item matcher labels every substantive entry as a true item, a split of one, grounded padding or invented, and gives the share of true items that no entry matches (\emph{left out}, on documents with $n \geq 1$).
+The matcher was developed on reserve documents and frozen with the registered plan.
+Against 400 entries that both authors labelled independently, it is right on 98\% of its true-item (or split) calls, 85\% of its wrong-kind calls and 69\% of its invented calls, and only 5 of the 400 entries were true items missing from the answer lists (Appendix~\ref{app:checks}).
+Its invented shares are therefore its least firm numbers; every number that rests on it is marked \pre{}.
+No language model judges any headline number.
+
+\subsection{Preregistration and statistics}
+\label{sec:prereg}
+
+We froze a first plan, ran a pilot on 60 documents with three GPU and four hosted models, and registered the final plan on OSF (\url{https://osf.io/e4r9f}) before the full run.
+Five contrasts are confirmatory and corrected together with Holm's method: (1) a larger minimum, a shown minimum at $k = 5$ against $k = 3$ on the same document with $n \leq 2$; (2) a shown minimum against no count, the main measure; (3) a shown minimum against a shown maximum; (4) ``exactly $k$'' against ``up to $k$''; and (5) the N/A escape against the plain enforced minimum, in excess entries per forced slot.
+All are on documents with $n < k$ at $k = 3$ and 5.
+For each, the one primary test is the 95\% interval of the mean paired difference over documents and the eight GPU models, from 10,000 bootstrap draws over document groups (an original meeting, email folder, job ad, case report or novel chapter) within set; a mixed model (linear for contrasts 1 to 4, Poisson for contrast 5) and each model's own estimate are reported next to it, per model first as the protocol asks.
+Four named tests, three controls and an empty-document test, are reported whatever their result, outside the Holm family (Section~\ref{sec:named}).
+The hosted runs, the per-set and per-wording results and the re-ask and thinking side tests are exploratory, and analyses added after the run are marked post hoc.
+The interval describes these eight models on these documents; the per-model, family-level (Appendix~\ref{app:generality}) and hosted results speak to other models.

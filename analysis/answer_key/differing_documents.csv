@@ -1,0 +1,136 @@
+doc_id,set,split,n_source,n_cleaned,status,rules,reason
+mtg-05e3ce,meetings,pilot,1,2,fixed,M5,Missed the Project Manager's commitment to do the minutes of this meeting.
+mtg-0920fb,meetings,full,3,4,fixed,M4,Item 2 bundles two jobs for two people: the ID's look-and-feel design and the UI Designer's interface design.
+mtg-0a42d7,meetings,pilot,3,2,fixed,M6,"Item 2 ('will receive further assignments') is a remark about instructions, not a job."
+mtg-0bcf11,meetings,full,1,2,fixed,M4,Item 1 bundles two jobs: the PM's final presentation and the others' questionnaire.
+mtg-0f1ff6,meetings,full,4,3,fixed,M6,"Item 4 ('will receive specific instructions') is a remark about instructions, not a job."
+mtg-0fab39,meetings,full,3,4,fixed,M5 M1,Missed the Project Manager's commitment to send the minutes; item 3 restated as the trend watching actually assigned.
+mtg-11e41f,meetings,full,4,3,fixed,M6,"Item 1 ('will get specific instructions') is a remark about instructions, not a job."
+mtg-19cd45,meetings,full,3,4,fixed,M5,Missed the Project Manager's commitment to put the minutes in the project documents folder.
+mtg-42912b,meetings,full,0,1,fixed,M5,Missed the Project Manager's own commitment to write up the final design in the final report.
+mtg-4803ad,meetings,full,3,4,fixed,M5,Missed the Project Manager's commitment to look into how the costs will be determined.
+mtg-484916,meetings,pilot,1,2,fixed,M1,Missed job: the Marketing Expert commits to re-send the working components document and put it in shared documents again.
+mtg-6527b5,meetings,full,1,2,fixed,M5,Missed the PM's own commitment to put the minutes in the project folder.
+mtg-6835ed,meetings,pilot,1,2,fixed,M4,"Item 1 covers 'complete the final questionnaire and meeting summary': two different jobs, split."
+mtg-6c1a51,meetings,pilot,1,2,fixed,M4,Item 1 bundles two jobs: filling in the questionnaires and writing the meeting summary/report.
+mtg-7e1967,meetings,pilot,1,2,fixed,M5,Missed the Project Manager's commitment to save the material into the project documents.
+mtg-7f60d5,meetings,full,2,3,fixed,M5,"Missed the PM's own commitment to make a folder ('map') and reorganise the many documents, asked for by the User Interface Designer."
+mtg-801564,meetings,full,3,4,fixed,M1,Missed the Marketing Expert's stated job of saving everything in the right files.
+mtg-80a650,meetings,full,3,4,fixed,G1 M5,Item 3 (PM types up minutes) is not in the text; its evidence is the Marketing Expert's user-requirements job. Also missed the PM's 'I'll put that together' (agenda).
+mtg-861ec5,meetings,full,4,5,fixed,M4 M6,Item 1 gives the UI design to the ID; the ID's look-and-feel job and his speech-recognition cost research were missed; item 4 (coaches send instructions) is not a job.
+mtg-9cb320,meetings,pilot,2,1,fixed,M6 M3,Item 1 (design 'for the next phase') is a scheduling remark with no owner; item 2 is reworded to the job itself: the individual actions in the thirty minutes of work after lunch.
+mtg-a93d7c,meetings,full,3,6,fixed,M5 M3 M4,Missed the PM's commitment to type up the minutes and the team's jobs of replying with the questionnaire and the summary.
+mtg-d03940,meetings,full,2,3,fixed,M1 M8,"A group job with some content, next to the specific role jobs; M8 covers bare 'individual work' but not this."
+mtg-d0c8e1,meetings,pilot,1,2,fixed,M5,Missed the Project Manager's commitment to get the minutes up.
+mtg-d236e3,meetings,pilot,1,2,fixed,M4,Item 1 bundles two jobs for different people: the designers' prototype and the Marketing Expert's product evaluation.
+mtg-d2f793,meetings,full,2,3,fixed,M6 M3 M1,"Item 2 (go to own rooms) is logistics, not a job; missed the questionnaire and the PM's request for a screenshot of the design put in the project folder for the final report."
+mtg-f4db6f,meetings,full,3,5,fixed,M3 M5,Missed the questionnaire everyone completes and the PM's commitment to put the minutes together.
+eml-053cb0,emails,pilot,1,2,fixed,E4,Two different documents are asked for in one sentence: the contracts and the Form of Guarantee.
+eml-1260e4,emails,full,2,1,fixed,E2,"Item 1 'let's do deregulation right' is a talking point the sender will pass to Gary, not a request to the reader (E2)."
+eml-1e50c8,emails,pilot,2,1,fixed,G3 E4,"Items 1 and 2 are one request (schedule Michael for more interviews: next round or custom), G3/E4."
+eml-2da75a,emails,pilot,2,1,fixed,E2,"Item 1 is a statement of a requirement, not a request (E2)."
+eml-35f59b,emails,full,3,1,fixed,E2,"Items 1 and 2 are the sender's own plans ('We can have the technical gurus draft...', 'we can fix that'), not requests (E2)."
+eml-42fbec,emails,full,4,3,fixed,E3 E4,Item 3 'need to talk about plans...' is the topic of item 4's meeting request (E3/E4).
+eml-48e080,emails,full,1,2,fixed,E1 E4,"Missed second request: the sender also asks the reader to confirm that no payment is required tomorrow ('I just wanted to confirm'), a different thing from the EESI/EPMI mix-up (E4)."
+eml-4c516a,emails,full,5,4,fixed,G4,"Item 5 ('request middle of next week churn date') is a detail of the churn request in item 1, not a separate request (G4)."
+eml-7112dd,emails,pilot,3,2,fixed,E2,"Item 1 'Please note, included in this report...' is a pointer (E2)."
+eml-724b7c,emails,pilot,2,1,fixed,E4,'Please let me know' repeats the question about the managers (E4).
+eml-7c5695,emails,pilot,3,2,fixed,E4,Item 1 'send a reference letter' is the same thing as item 3 'send an electronic version'; the signed original is the second item.
+eml-8ae4e1,emails,pilot,3,2,fixed,E4 G5,"'Let me know' repeats 'Is that something you could do for me?' (E4); item 1 span 'do for me' is a fragment, fixed."
+eml-a0968c,emails,full,3,4,fixed,G4 E4,"Item 3 holds two jobs: sit down to check the overall budget, and make sure the staff know to stick to it (G4); split."
+eml-b86472,emails,full,3,2,fixed,E4 G3,Items 1-3 are three overlapping spans of one sentence that asks for two things: a project description and a contact name/e-mail (E4).
+eml-c10115,emails,pilot,3,2,fixed,E3,Item 1 'need this' is a deadline statement covered by the two questions (E3).
+eml-c1e167,emails,full,4,3,fixed,E4,Item 3 'Any feedback would be greatly appreciated' repeats the three questions (E4).
+eml-d2b79d,emails,pilot,3,2,fixed,G3,"Items 1 and 2 are the same request (re-do the org chart in PowerPoint), G3."
+eml-e1deec,emails,full,4,3,fixed,G3,"Items 1 and 2 are the same request (complete and sign the documentation), G3."
+eml-e688e5,emails,full,3,4,fixed,E4 E1,"Missed 'arrange for the execution of two copies', a separate step after reviewing."
+eml-f03baf,emails,pilot,3,2,fixed,E2,"Item 3 is Tracy's relayed recommendation, already covered by 'please confirm this with Rod and Tracey' (E2)."
+eml-f17551,emails,pilot,2,1,fixed,E4,"'Or were you referring to something else?' is part of the same question (E4, the rule's own example)."
+eml-f5efcc,emails,full,3,2,fixed,E4,'would like your input' is the form request itself; complete and return remain.
+job-084f37,job_posts,full,3,4,fixed,J1,Missed the duty 'Own the full app lifecycle from ideation to delivery to the Play Store' (n becomes 4).
+job-1a5188,job_posts,full,1,3,fixed,J1,Missed two listed requirements: 'Enjoy science' and 'adhere to the European code of conduct for research integrity'.
+job-1ce47f,job_posts,full,2,3,fixed,J1 J3,Missed the separate skill 'translate those into findings and key messages'.
+job-27bba0,job_posts,full,0,1,fixed,J1,Missed duty 'checking on the lights in the stables' (night-shift task).
+job-27e719,job_posts,full,1,2,fixed,J3,'support and problem-solving' is two duties.
+job-2e58fa,job_posts,full,0,3,fixed,J1,"Missed three clear duties: working closely with a postdoc, computational analysis of sequencing data, integrating it with phenotypic measurements."
+job-464b41,job_posts,full,3,4,fixed,J1 G4,Missed duty: the hire will build out the engineering and data science team (separate from acting as its lead); n=3 -> 4.
+job-7e885f,job_posts,full,2,3,fixed,J1 J3,'Design and extension of our ... architecture' is one verb pair on one object; missed two listed duties.
+job-82ca16,job_posts,full,1,2,fixed,J3,'interpersonal and communication skills' is two skills (like 'analytical and problem-solving skills').
+job-910be5,job_posts,full,1,2,fixed,J1,Missed the quality 'keen to build your knowledge on them all'.
+job-a452b0,job_posts,full,2,3,fixed,J1,Missed the team duty 'continuously improve and evolve core of the graph database'.
+job-ad6c3c,job_posts,full,0,1,fixed,J1,Missed the duty 'study nanomaterials for the selective catalytic reduction (SCR) of NOx'.
+job-addc7d,job_posts,full,5,6,fixed,J1,Missed duty 'You will also be a valuable partner to the Head of International SC'; n=5 -> 6.
+job-ba0731,job_posts,full,0,1,fixed,J1,Missed the duty 'optimize the user experience on mobile devices and Set-Top Boxes'.
+job-de10cd,job_posts,full,1,2,fixed,J1 J3,Missed the second quality 'willing to challenge us as well as yourself'.
+med-025498,clinical,full,5,3,fixed,C3 G3,'chemotherapy' is the class word for the named drugs (C3) and '5-FU' repeats '5-fluorourasil' (G3).
+med-23f231,clinical,full,2,1,fixed,C3,"'chelation therapy' is the class word for the same treatment as EDTA, so one item."
+med-2ebb07,clinical,full,3,2,fixed,G3,'THAM' is the abbreviation of item 2 'Tris-hydroxymethyl aminomethane'.
+med-33b18f,clinical,full,3,2,fixed,C3,'heart failure medications' is the class word for the named lisinopril and metoprolol tartrate.
+med-40ae42,clinical,full,3,2,fixed,G3,'GH' repeats item 2 'growth hormone'.
+med-46ccb2,clinical,full,2,1,fixed,G3,'carnitine supplement regimen' is the same drug as item 1 'carnitine supplements'.
+med-5efb62,clinical,full,6,4,fixed,C3 G3,'chemotherapy' is the class word for the named drugs (C3) and 'G-CSF' repeats item 5 (G3).
+med-914896,clinical,full,3,2,fixed,C3 G4,"'contraceptive' is the class word for the named pill; drospirenone and ethinylestradiol are each a drug on their own, so they stay two items."
+med-98a7bd,clinical,full,6,5,fixed,C3,'chemotherapy' is the class word for the named melphalan and dexamethasone.
+med-b9fc87,clinical,full,5,4,fixed,C3,'GP chemotherapy' is the class word for the named cisplatin and gemcitabine.
+med-c1d00f,clinical,full,5,4,fixed,G3,"'IVIG' repeats item 3 'immunoglobulin' (given twice, one drug)."
+med-c988c5,clinical,full,6,5,fixed,G3 C3,'chemotherapy' (induction chemotherapy) is the same treatment as item 2 'taxane-based chemotherapy'.
+med-e12244,clinical,full,0,2,fixed,C1 C3,"Patient received miglustat and ERT (enzyme replacement therapy, a substance); the n=0 list missed both."
+med-e33943,clinical,full,5,3,fixed,C3,"'chemotherapy' and 'MAP regimen' are class/regimen words for methotrexate, cisplatin and doxorubicin."
+med-e9130f,clinical,full,3,2,fixed,C3,'antibiotic therapy' is the class word for the same treatment as imipenem-cilastatin.
+rev-049f1c,reviews,full,3,2,fixed,V2 G5,Item 1 is the course itself; the judged part is the project solutions; videos stay.
+rev-04e738,reviews,full,2,1,fixed,V2,Item 1 is the course itself; the instructor stays.
+rev-085d7d,reviews,full,2,1,fixed,V2,Item 1 is the course itself; the professor is the only judged feature.
+rev-0e0011,reviews,full,2,1,fixed,V2 V1,Items 1 and 2 are the hotel itself; the one judged feature is value for money.
+rev-124b6c,reviews,full,3,2,fixed,V2 V3 V1,Item 1 is the course and item 3 the reviewer's own grade; the assignment's format is judged and was missed.
+rev-179b4f,reviews,full,2,1,fixed,V2,Item 2 is the course itself; the material is the one judged feature.
+rev-185403,reviews,full,2,1,fixed,V2 V6,"Item 2 is the hotel itself; the ant problem happened in the room, so it folds into the rooms item."
+rev-237fd3,reviews,full,6,4,fixed,V2,Items 1-2 are the phone and its brand; the four features stay.
+rev-23f8bb,reviews,full,3,2,fixed,V2,Item 3 is the course itself; lectures and professor stay.
+rev-304b99,reviews,full,2,1,fixed,V2,Item 1 is the hotel itself; location is the one named judged feature.
+rev-3e73b2,reviews,full,2,1,fixed,V2,Item 1 is the course itself; the lecturer stays.
+rev-4b9c05,reviews,full,2,3,fixed,V1,Food and rooms are right; the towels are also criticised and were missed.
+rev-4d5502,reviews,full,2,1,fixed,V2,Item 1 is the course itself; the assignments stay.
+rev-620ea7,reviews,full,3,4,fixed,V2 V1,Item 1 is the hotel itself; price and noise are judged and were missed.
+rev-70af43,reviews,full,5,6,fixed,V2 V1,Item 5 is the course itself; information and phone access are also judged and were missed.
+rev-757b1f,reviews,full,3,2,fixed,V2,Item 1 is the course itself; exercises and grading are the judged features.
+rev-80a5e6,reviews,full,1,2,fixed,V1,Battery life stays; the battery-saving setting is also praised and was missed.
+rev-8d079b,reviews,full,2,3,fixed,V2 V1,Item 1 is the hotel itself; the building and the neighbourhood are judged and were missed.
+rev-9e10fa,reviews,full,3,2,fixed,V2,Item 3 is the hotel's name; location and rooms stay.
+rev-acd3cd,reviews,full,2,1,fixed,V2,Item 1 is the phone itself; battery stays.
+rev-ba4e31,reviews,full,6,5,fixed,V2,Item 1 is the hotel itself; the other five features are right.
+rev-bd5839,reviews,full,3,2,fixed,V2,Item 3 is the course itself; assignments and videos stay.
+rev-c4846d,reviews,full,3,2,fixed,V2,Item 1 is the phone itself; display and processor are the judged features.
+rev-cae3a2,reviews,full,5,4,fixed,V2,Item 1 is the course itself; the other four stay.
+rev-cc787b,reviews,full,3,2,fixed,V2,Item 1 is the phone itself; camera and battery life are the judged features.
+rev-ce7edc,reviews,full,6,5,fixed,V2,Item 6 is the course itself; the other five stay.
+rev-d15210,reviews,full,1,2,fixed,V2 V1,Item 1 is the product itself; the judged features are the nuts and the fruit.
+rev-d5b59f,reviews,full,3,5,fixed,V1 G5,Item 2 should name the design; performance and display are also judged and were missed.
+rev-d63d0d,reviews,full,3,2,fixed,V2 V6,Item 1 is the hotel itself; room and burgers are the judged features.
+rev-d720e3,reviews,full,2,1,fixed,V2 G3,Item 2 is the hotel itself; the suite (also called the room) stays.
+rev-e97367,reviews,full,3,4,fixed,V2 V1,Item 1 is the phone itself; performance and responsiveness are judged and were missed.
+rev-ed7518,reviews,full,3,2,fixed,V2,Item 3 is the course itself; teachers and content stay.
+rev-f006af,reviews,full,2,3,fixed,V2 V1,Item 1 should name the judged look of the phone; the heating problem is also judged and was missed.
+rev-fb5a63,reviews,full,2,1,fixed,V2,Item 2 is the hotel itself; staff stays.
+jbk-03c630,job_posts_knowledge,full,1,2,fixed,K1,"Missed technology: 'SAP' (SAP technology trends, SAP solution)."
+jbk-099714,job_posts_knowledge,full,1,0,fixed,K4,Item 1 'PhD degree' is a degree with no named field; no knowledge items remain.
+jbk-25b23c,job_posts_knowledge,full,2,1,fixed,K1 K2,Item 1 'standardized global processes' names no method or tool; SAP stays.
+jbk-3bd52d,job_posts_knowledge,full,2,1,fixed,K4,Item 2 'BS/BA degree' is a degree with no field.
+jbk-5ad1c2,job_posts_knowledge,full,1,2,fixed,K1,Missed named method: 'SILAC'.
+jbk-5be36a,job_posts_knowledge,full,1,2,fixed,K1,Missed named method 'SAFe' (release train engineer).
+jbk-7a43b8,job_posts_knowledge,full,2,3,fixed,K1 K3,Missed language 'Danish' in 'Danish Swedish and Norwegian'.
+jbk-7c0015,job_posts_knowledge,full,2,1,fixed,K2,Item 2 'Research management' is listed under job duties; 'business research' (field) stays.
+jbk-a1a6e0,job_posts_knowledge,full,1,0,fixed,K1,"Item 1 'tech trends' names no tool, technology or field; nothing else in the window counts."
+jbk-bebeb9,job_posts_knowledge,full,2,3,fixed,K1,Missed language 'Python' on the first line.
+jbk-e80923,job_posts_knowledge,full,3,2,fixed,K4 J2 G3,Item 2 is a degree: keep only its field 'IT'; item 3 'international IT' is years of experience in the same field.
+ppl-19eb81,wiki_people,full,0,1,fixed,W1,Missed person: 'Harry Turner' (the group's leader); Spartacist League is a group.
+ppl-1ddd69,wiki_people,full,3,2,fixed,W2,"'Asterix' is used inside the name of the comic book series, not as a person."
+ppl-41b9e8,wiki_people,full,2,0,fixed,W2,"'Japanese' is a nationality and 'J Soul Brothers' a group (as is Exile); no person, n = 0."
+ppl-588798,wiki_people,full,2,0,fixed,W1 W2,"'Bytom' and 'Cieszyn' are places in the dukes' title, not named people; n = 0."
+ppl-5b5351,wiki_people,full,2,3,fixed,W1,"Missed person: 'George Gray', the squatter who employed the two stockmen."
+ppl-7a2e42,wiki_people,full,1,2,fixed,W1,Missed person: 'Nagata' (promoted posthumously) besides Aizawa.
+ppl-7b7236,wiki_people,full,3,2,fixed,W2,"'Da Beatminerz' is a production duo/group, not a person."
+ppl-9363ba,wiki_people,full,2,1,fixed,W4 G3,"'Branko Ve Poljanski' is the pseudonym of 'Branislav Micić': one person, one item."
+ppl-99290f,wiki_people,full,3,2,fixed,W2,"'Charger' refers to the team (Chargers head coach), not a person."
+ppl-a3e65e,wiki_people,full,3,1,fixed,W4 G3,"Items 1-3 are parts of one person's name, Hendrik Karel Jan ""Henk"" Beernink: one item."
+ppl-c46d4d,wiki_people,full,2,1,fixed,W2,"'Grays Athletic' is a football club, not a person."
+quo-dce451,novel_quotes,full,3,2,fixed,Q1,"Items 2-3 are one double-quoted speech split at a nested quoted catechism phrase; merged, n 3->2."

@@ -1,0 +1,401 @@
+item_id,label,notes
+M001,true_item,
+M002,true_item,
+M003,plausible_invented,
+M004,plausible_invented,
+M005,in_text_wrong_type,"Text says ""queried""; not a person"
+M006,in_text_wrong_type,Reviewer wanted durability but gives no opinion on it
+M007,true_item,
+M008,plausible_invented,
+M009,true_item,
+M010,true_item,
+M011,plausible_invented,
+M012,split_of_true,"One line that holds true items 1, 2 and 3 plus extra words. 'A true item' means one of the true items, and a merged entry is not one, so it goes here. Same rule for No. 10, 19 and 26."
+M013,split_of_true,"The opinion is about Dr. Chuck's teaching, and the list already has 'Dr . Chuck'. The lists always fold teaching into the teacher. No. 10 lists 'Andrew Ng', not 'teaching this course'. No. 28 lists 'Jeff Leek', not 'explaining something'. So this restates the listed item."
+M014,plausible_invented,
+M015,split_of_true,"Class name for the drugs the next sentence names, tamoxifen and then letrozole. The list keeps 'letrozole' and drops 'the aromatase inhibitor' before it, so a class that renames listed drugs is not a new item. 'chemotherapy' is listed because no chemo drug is named."
+M016,true_item,
+M017,in_text_wrong_type,
+M018,in_text_wrong_type,"Treatment, not a medication"
+M019,split_of_true,"The ad says the research the applicant will conduct 'will focus on computational modelling and behavioral experiments', in music cognition. So this is a reworded piece of 'conduct research', not made up. 'Designing and executing' is the entry's own wording but adds no new duty."
+M020,split_of_true,
+M021,missed_gold,"Experience working on high throughput mission critical high performance STP platforms (entry rewords it as building such platforms). / Paraphrases ""Experience working on high throughput mission critical high performance STP platforms"", an ability the list left out; wording changed to ""Building"""
+M022,plausible_invented,
+M023,plausible_invented,
+M024,in_text_wrong_type,"Narration, not direct speech"
+M025,plausible_invented,
+M026,true_item,
+M027,in_text_wrong_type,"Statement, not a request"
+M028,in_text_wrong_type,"A team, not a tool or field"
+M029,split_of_true,
+M030,true_item,
+M031,in_text_wrong_type,"Narration, not direct speech"
+M032,true_item,"Reworded ""empathetic mindset"""
+M033,true_item,
+M034,plausible_invented,
+M035,in_text_wrong_type,
+M036,in_text_wrong_type,"Methodology/field, not a skill"
+M037,true_item,"Reworded ""am I using the correct terminology?"""
+M038,in_text_wrong_type,Job title fragment
+M039,true_item,True item with quantity prefix
+M040,plausible_invented,
+M041,plausible_invented,
+M042,split_of_true,"Shrinks 'Strong analytical thinking both in the technical and in the product domain' to two words. It is the technical half of the listed 'analytical thinking', reworded. Everything in it comes from the ad, so it is not made up."
+M043,split_of_true,"Same battery comment as 'battery backup', but 'capacity' is not the review's word. A new word for a listed item is 'in other words', not a clean true item."
+M044,plausible_invented,
+M045,in_text_wrong_type,"Narration, not direct speech"
+M046,true_item,
+M047,plausible_invented,
+M048,plausible_invented,"Not copied from the text; inferred from ""Don't waste your money"", no such phrase appears"
+M049,in_text_wrong_type,"Payment line, not an item"
+M050,in_text_wrong_type,"Review headline, not a single aspect"
+M051,in_text_wrong_type,"Based on ""you will get specific instructions"", an instruction to be received; PM as provider is assumed"
+M052,in_text_wrong_type,"Deadline statement, not a request"
+M053,plausible_invented,
+M054,in_text_wrong_type,"What Frank called about, not a request to the recipient"
+M055,true_item,
+M056,plausible_invented,
+M057,plausible_invented,
+M058,plausible_invented,
+M059,in_text_wrong_type,"Paraphrases ""Flex time"", a benefit"
+M060,split_of_true,Opening fragment of the quotation
+M061,in_text_wrong_type,"Describes team setup, not a skill or duty"
+M062,true_item,
+M063,true_item,
+M064,in_text_wrong_type,Testing frameworks are tools
+M065,in_text_wrong_type,"Narration, not direct speech"
+M066,plausible_invented,
+M067,plausible_invented,
+M068,plausible_invented,
+M069,in_text_wrong_type,
+M070,in_text_wrong_type,"Dynastic title, not a person's name; text says ""Dukes of Bytom and Cieszyn"""
+M071,true_item,
+M072,true_item,
+M073,true_item,
+M074,true_item,
+M075,plausible_invented,
+M076,split_of_true,
+M077,in_text_wrong_type,"'Phase two is the conceptual design. So then we'll have the concepts.' is the PM describing the plan. Nobody takes it on as a step after this meeting. The entry turns the plan into a next step, and 'developing initial concepts' comes from 'we'll have the concepts', so nothing is invented. Same as No. 12."
+M078,plausible_invented,
+M079,in_text_wrong_type,"Opinion phrase, not an aspect"
+M080,plausible_invented,
+M081,split_of_true,
+M082,plausible_invented,
+M083,true_item,
+M084,plausible_invented,
+M085,true_item,
+M086,true_item,"Longer copy of the ""English"" item"
+M087,in_text_wrong_type,
+M088,in_text_wrong_type,"Narration, not direct speech"
+M089,true_item,
+M090,plausible_invented,"The entry flips the email. Kim is the busy one, 'I have been on a fast run', and Kim offers 'I will make time for you'. The entry has Kim asking Ed to make time despite Ed's busy schedule. Changing who does what makes it made up."
+M091,plausible_invented,
+M092,missed_gold,"""so request middle of next week churn date"" is a separate thing Joan is asked to do and is not in the true-items list. / ""request middle of next week churn date"" is a further instruction to Joan the list left out; entry paraphrases it"
+M093,in_text_wrong_type,"Dialogue line, not an action item"
+M094,true_item,
+M095,true_item,
+M096,true_item,
+M097,plausible_invented,
+M098,plausible_invented,
+M099,true_item,
+M100,in_text_wrong_type,"Narration, not direct speech (the model's own note admits this)"
+M101,in_text_wrong_type,"A perk, not a tool or field"
+M102,true_item,"Reworded ""heating issues"""
+M103,in_text_wrong_type,"Technology/practice, not a skill"
+M104,in_text_wrong_type,"Generic phrase, not a specific tool or field"
+M105,true_item,Matches the User Interface Designer item
+M106,in_text_wrong_type,"Narration, not direct speech"
+M107,plausible_invented,
+M108,true_item,
+M109,true_item,
+M110,true_item,
+M111,in_text_wrong_type,"Narration, not direct speech"
+M112,true_item,Item line with quantity and price
+M113,split_of_true,"Fragment of ""Ruby on Rails"""
+M114,true_item,Item with quantity prefix
+M115,true_item,
+M116,in_text_wrong_type,"Courtesy closer, not counted as a request"
+M117,plausible_invented,"""risk management plans"" is not in the email; loosely distorts ""plans for book/portfolio set ups"""
+M118,in_text_wrong_type,"An instruction they will receive (""look at your mail""), excluded by the task"
+M119,plausible_invented,
+M120,plausible_invented,
+M121,plausible_invented,No such commitment in the transcript
+M122,true_item,
+M123,in_text_wrong_type,"Procedure, not a medication"
+M124,true_item,
+M125,plausible_invented,
+M126,true_item,
+M127,split_of_true,"Part of ""computational analysis of RNA-seq and DNA-sequencing data"", reworded"
+M128,plausible_invented,
+M129,plausible_invented,
+M130,split_of_true,"The UI half of ""The UI and ID will send him their design""; in the transcript the ID does the saving"
+M131,in_text_wrong_type,"Cost line, not a request"
+M132,in_text_wrong_type,
+M133,plausible_invented,
+M134,true_item,"""Speakers"" with its opinion sentence"
+M135,split_of_true,"Generic version of 'Fluent knowledge of a Scandinavian language'. It drops 'Scandinavian' and is not copied as written, but the requirement is in the ad, so it is not made up."
+M136,true_item,
+M137,in_text_wrong_type,"A duty, not a field or tool"
+M138,plausible_invented,
+M139,plausible_invented,
+M140,split_of_true,Trade name for the same drospirenone/ethinylestradiol pill
+M141,in_text_wrong_type,"Generic phrase, not a tool or field"
+M142,true_item,
+M143,in_text_wrong_type,"Overall opinion sentence, not an aspect"
+M144,in_text_wrong_type,"A program, not a person"
+M145,true_item,
+M146,true_item,Item with price
+M147,in_text_wrong_type,"Field of knowledge under the task's split, though the ad calls it ""skills in"""
+M148,in_text_wrong_type,"Recap of a past assignment (""You were going to look into""), not a next step; wording merged"
+M149,in_text_wrong_type,Discount line
+M150,plausible_invented,
+M151,plausible_invented,
+M152,true_item,
+M153,true_item,
+M154,plausible_invented,
+M155,true_item,
+M156,plausible_invented,
+M157,plausible_invented,
+M158,true_item,
+M159,true_item,Item line with quantity and price
+M160,true_item,Same quotation with modernised apostrophes and dash
+M161,true_item,
+M162,in_text_wrong_type,"Part of a duty (""Support the supply risk management process"")"
+M163,plausible_invented,
+M164,plausible_invented,
+M165,split_of_true,"Fragment of ""execute a product roadmap"""
+M166,in_text_wrong_type,"From ""360 feedback performance evaluation system"", a perk"
+M167,in_text_wrong_type,"Dialogue line, not an action item"
+M168,split_of_true,
+M169,true_item,
+M170,true_item,"""English"" with the surrounding skill words"
+M171,split_of_true,"One stretch of text holding four true items, content, videos, transcripts and slides, plus opinion words. Merged entries go here. Same rule as No. 1."
+M172,plausible_invented,
+M173,in_text_wrong_type,"Procedure, not a medication"
+M174,plausible_invented,
+M175,in_text_wrong_type,"Overall verdict, not an aspect"
+M176,true_item,Matches the prototype item for the ID and UI designer
+M177,true_item,
+M178,in_text_wrong_type,
+M179,true_item,
+M180,missed_gold,"""the other steroid therapy"": a separate steroid treatment the patient was getting, besides the corticosteroid pulse therapy. / ""the other steroid therapy"" is a drug class the patient was on, distinct from the pulse therapy in the list"
+M181,plausible_invented,
+M182,in_text_wrong_type,"Named only as ""rifampicin-susceptible"", not given to the patient"
+M183,true_item,
+M184,plausible_invented,
+M185,true_item,
+M186,true_item,
+M187,true_item,Reworded version of the kinetic-energy check
+M188,true_item,"""Prof . Katz"" inside its opinion sentence"
+M189,in_text_wrong_type,"Narration, not direct speech"
+M190,split_of_true,Fragment of the single quotation
+M191,in_text_wrong_type,Discount line
+M192,in_text_wrong_type,"CI/CD are practices/technologies in the ad; ""Ensuring"" is the model's wording"
+M193,in_text_wrong_type,"Gene fusion transcript, not a drug"
+M194,plausible_invented,
+M195,plausible_invented,
+M196,in_text_wrong_type,"Band name, not a person"
+M197,plausible_invented,
+M198,plausible_invented,
+M199,true_item,
+M200,in_text_wrong_type,"Dan states the schedule and asks for nothing. The entry adds 'Confirm' to turn that statement into a request. The cargo size and dates match the email, so it is the wrong kind, not made up."
+M201,in_text_wrong_type,"Same as No. 7. 'Phase two is the conceptual design' is the PM describing the plan, not a step anyone takes after the meeting."
+M202,plausible_invented,
+M203,in_text_wrong_type,"Dynastic title, not a person's name"
+M204,in_text_wrong_type,"Review title, not an aspect"
+M205,plausible_invented,"The PM gives materials and how it is made to the Industrial Designer, who answers 'Right'. The entry gives that task to the Marketing Expert and ties the €12.50 price to it. A step on the wrong person is not in the text."
+M206,in_text_wrong_type,"Procedure, not a medication"
+M207,true_item,
+M208,true_item,
+M209,in_text_wrong_type,Price/quantity line
+M210,in_text_wrong_type,"Dynastic title, not a person's name"
+M211,plausible_invented,
+M212,in_text_wrong_type,"Circumstance of purchase, not an aspect reviewed"
+M213,true_item,
+M214,in_text_wrong_type,"Gene, not a drug"
+M215,true_item,
+M216,true_item,
+M217,in_text_wrong_type,"Narration, not direct speech"
+M218,plausible_invented,"Copied from the instructions, not the text"
+M219,split_of_true,"Fragment of ""data visualisation"""
+M220,true_item,
+M221,true_item,
+M222,true_item,"True item with ""research in"" prefix"
+M223,in_text_wrong_type,"Team name, not a person"
+M224,plausible_invented,
+M225,plausible_invented,
+M226,plausible_invented,
+M227,true_item,
+M228,plausible_invented,
+M229,true_item,
+M230,true_item,
+M231,in_text_wrong_type,"PET imaging tracer, not a medication given as treatment"
+M232,true_item,
+M233,in_text_wrong_type,"The subject of the client's request, not an aspect the reviewer rates; paraphrased"
+M234,true_item,
+M235,plausible_invented,
+M236,true_item,
+M237,in_text_wrong_type,"Narration, not direct speech"
+M238,true_item,
+M239,in_text_wrong_type,Not an aspect of the course
+M240,true_item,
+M241,true_item,
+M242,true_item,
+M243,true_item,
+M244,in_text_wrong_type,"Context of an ability, not a field or tool"
+M245,plausible_invented,
+M246,split_of_true,"Same text and entry as No. 3, so same answer. It is the class name for tamoxifen and letrozole, which the list already has."
+M247,plausible_invented,
+M248,plausible_invented,
+M249,plausible_invented,
+M250,in_text_wrong_type,"Benefit, not a tool or field"
+M251,true_item,Item with price
+M252,plausible_invented,
+M253,true_item,"Reworded ""battery backup"""
+M254,in_text_wrong_type,"Narrated thought, not quoted speech"
+M255,true_item,
+M256,plausible_invented,
+M257,plausible_invented,
+M258,in_text_wrong_type,"A decision/instruction from management, not a next step anyone will take"
+M259,in_text_wrong_type,
+M260,true_item,"Shortened ""appreciates learning new things"""
+M261,in_text_wrong_type,
+M262,in_text_wrong_type,
+M263,in_text_wrong_type,"Show title, not a person"
+M264,in_text_wrong_type,"Dialogue line, not an action item"
+M265,in_text_wrong_type,"Tools, not a skill"
+M266,true_item,
+M267,in_text_wrong_type,
+M268,true_item,
+M269,in_text_wrong_type,"Dynastic title, not a person's name"
+M270,true_item,
+M271,in_text_wrong_type,"""communication ... skills"" is an ability, not a field or tool"
+M272,split_of_true,"The email does ask Traci to schedule Michael, 'Let's get him into the next real-time interview round'. The entry is that ask reworded around his dates. So it is the listed request in other words, not a statement turned into a request."
+M273,in_text_wrong_type,
+M274,in_text_wrong_type,"Equipment line, not a request"
+M275,split_of_true,"Fragment of ""study nanomaterials for the selective catalytic reduction (SCR) of NOx"""
+M276,in_text_wrong_type,"The product overall, not an aspect"
+M277,plausible_invented,
+M278,true_item,
+M279,in_text_wrong_type,"Describes the project's experimental approach, reworded; not a listed duty"
+M280,true_item,"Reworded ""battery backup"""
+M281,plausible_invented,
+M282,true_item,Matches the UI designer's LCD menu item
+M283,in_text_wrong_type,"Part of a title, not a person"
+M284,in_text_wrong_type,"Adjective, not a person"
+M285,plausible_invented,
+M286,in_text_wrong_type,
+M287,unsure,"A placeholder meaning 'no medications', which matches the true list, None. It is not an item and no label fits. It is not a made-up drug either, so 'made up' would count a correct 'none' as a hallucination. Treat No. 16 and 25 the same way."
+M288,in_text_wrong_type,
+M289,true_item,
+M290,true_item,
+M291,in_text_wrong_type,"Junk fragment, just the word ""and"""
+M292,plausible_invented,"Closest call in the sheet. 'I need you to tell us what the user's gonna want' comes right after the PM mentions the UID, but the Marketing Expert answers 'What they're looking for', and the list gives that task to the Marketing Expert. A step on the wrong person is not in the text. Same rule as No. 13."
+M293,plausible_invented,"Copied from the instructions, not the text"
+M294,in_text_wrong_type,"Opinion phrase, not an aspect"
+M295,true_item,
+M296,split_of_true,"Vague restatement covering all the individual tasks, no job named"
+M297,in_text_wrong_type,"'in preparation of the Alliance Draft' is in the email, but nobody is asked to prepare it. The entry turns that phrase into a request, the same move as No. 11, 20, 22 and 30."
+M298,split_of_true,"Faithful to 'you two are going to be playing with play-dough' and the look and feel and UI work, but it puts true items 1, 2 and 3 for two people into one entry. The task asks for one per job. Same merge rule as No. 1."
+M299,missed_gold,"""putting some comments in the summary page for you to review"" asks Sally to review the summary page. / ""putting some comments in the summary page for you to review"" asks the recipient to review; not in the list; entry paraphrases it"
+M300,true_item,"True item plus the ""or do a custom schedule"" clause of the same sentence"
+M301,in_text_wrong_type,"Dynastic title, not a person's name"
+M302,plausible_invented,
+M303,split_of_true,
+M304,in_text_wrong_type,"Dynastic title, not a person's name"
+M305,in_text_wrong_type,"A team, not a tool or field"
+M306,plausible_invented,
+M307,true_item,"""location"" with its opinion words"
+M308,in_text_wrong_type,"Dynastic title, not a person's name"
+M309,plausible_invented,
+M310,true_item,"Matches the ""general design"" item. In the transcript the Industrial Designer answers ""Mm-hmm"" after ""work on a design, keep it general"" and the User Interface designer answers ""Yeah, sure"" after ""technical function design"", so the list's role attribution looks swapped; the entry's actor follows the transcript"
+M311,in_text_wrong_type,"""Copies will be distributed"" is a statement by the sender, not a request"
+M312,in_text_wrong_type,"Institution, not a person"
+M313,split_of_true,"The second half of the same request sentence, cut from the listed item"
+M314,plausible_invented,
+M315,plausible_invented,
+M316,true_item,
+M317,in_text_wrong_type,"The blank 'OH, AFUDC, =' line is real text, but the email never asks Mansoor to fill it in. The entry adds 'Provide' and spells out the abbreviations correctly, so it claims nothing new. Wrong kind, as with No. 11."
+M318,plausible_invented,
+M319,in_text_wrong_type,Role title
+M320,true_item,
+M321,in_text_wrong_type,"Overall opinion of the course, not a listed aspect"
+M322,split_of_true,MAP regimen is the three true drugs named collectively
+M323,in_text_wrong_type,"The complaint itself, not an aspect"
+M324,true_item,
+M325,in_text_wrong_type,"Application document, not a tool or certificate"
+M326,missed_gold,"wideangle mode: the reviewer complains the camera lacks a good night mode and wideangle mode, so it is a feature given an opinion. / Reviewer comments on the lack of night mode and wideangle mode; a camera sub-feature not in the list"
+M327,in_text_wrong_type,Quantity/price line
+M328,true_item,
+M329,plausible_invented,
+M330,true_item,
+M331,true_item,
+M332,in_text_wrong_type,"Narration, not direct speech"
+M333,in_text_wrong_type,"Dynastic title, not a person's name"
+M334,split_of_true,
+M335,plausible_invented,
+M336,in_text_wrong_type,
+M337,true_item,Reworded fax request
+M338,plausible_invented,
+M339,in_text_wrong_type,
+M340,plausible_invented,
+M341,plausible_invented,
+M342,in_text_wrong_type,"Dialogue line, not an action item"
+M343,true_item,
+M344,true_item,"Reworded ""Anything else you'd like me to pass along"""
+M345,true_item,
+M346,true_item,
+M347,in_text_wrong_type,"Sweat test device, not a drug"
+M348,in_text_wrong_type,"Military company, not a person"
+M349,true_item,
+M350,true_item,
+M351,plausible_invented,
+M352,plausible_invented,
+M353,in_text_wrong_type,"Part of a place name (Schmidt Glacier), not a person"
+M354,in_text_wrong_type,"Reported speech in narration, not a direct quotation"
+M355,true_item,
+M356,true_item,
+M357,in_text_wrong_type,
+M358,true_item,
+M359,in_text_wrong_type,"Group description built from ""killing up to 40,000 people"", not a name"
+M360,plausible_invented,
+M361,in_text_wrong_type,"Group description, not a person's name"
+M362,true_item,
+M363,in_text_wrong_type,"Narration, not direct speech"
+M364,in_text_wrong_type,"'Or we can put these in the project folder as well' is in the text, but it is a passing suggestion. The PM then cannot find the folder and saves to My Documents during the meeting. The words are real, but nobody takes this on after the meeting, so it is not a next step."
+M365,plausible_invented,
+M366,plausible_invented,
+M367,in_text_wrong_type,
+M368,true_item,
+M369,in_text_wrong_type,"Group name, not a person"
+M370,in_text_wrong_type,"Sender's own commitment, not a request"
+M371,plausible_invented,
+M372,in_text_wrong_type,"The email says a revised schedule is attached and a formula on the first sheet was corrected. It asks for nothing. The entry adds 'Please review'. The facts match the email, so wrong kind, not made up."
+M373,plausible_invented,
+M374,in_text_wrong_type,"Tool, not a skill"
+M375,in_text_wrong_type,"Nationality adjective, not a person"
+M376,true_item,
+M377,in_text_wrong_type,"Technologies, not a skill"
+M378,plausible_invented,
+M379,true_item,
+M380,plausible_invented,
+M381,true_item,The text itself names the drug 'THAM' right after the full name. So this is copied as written and is true item 2. It would only be 'said again' if the same output also listed the full name.
+M382,split_of_true,"Means 'Phone look', but in words the review never uses. Same rule as No. 6."
+M383,in_text_wrong_type,"Section label, not a tool or field"
+M384,split_of_true,
+M385,unsure,"Same as No. 16. A placeholder meaning 'no drugs', which matches the true list, None. No label fits and it is not a made-up drug."
+M386,in_text_wrong_type,"Estate/house name, not a person"
+M387,true_item,
+M388,in_text_wrong_type,
+M389,split_of_true,"Copied text that holds both true items, 'support' and 'problem-solving', plus where the work happens. Two items in one entry is not one true item. Same merge rule as No. 1."
+M390,true_item,
+M391,split_of_true,"'bring some new ideas to our next meeting' is what the thirty minutes of individual work is for, and the list records that work as item 2. So this is item 2 in other words. It is a real next step. 'Instructions they will receive' means later ones from email or the coach, and item 1 shows a task for everyone still counts."
+M392,plausible_invented,
+M393,true_item,
+M394,true_item,
+M395,split_of_true,"'professor' is Jeff Leek here, 'Jeff Leek, he is such a great professor'. So it is the listed item in other words, with the opinion word 'great' attached."
+M396,in_text_wrong_type,"The two adjectives describe the hotel as a whole, and the list skips remarks on the hotel overall. The entry turns opinion words into a noun the review never uses."
+M397,true_item,
+M398,split_of_true,"""teachers"" restated as the teachers' hard work"
+M399,in_text_wrong_type,"'hopefully you will be ok with sending' is a hope, not a request. The entry adds 'Confirm' to make it one. The facts come from the email, so wrong kind, as with No. 11 and 22."
+M400,plausible_invented,

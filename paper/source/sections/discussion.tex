@@ -1,0 +1,40 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Is this just instruction following?}
+A padded list obeys the schema, but the prompt also says ``List all the \ldots'', and when the document holds fewer items than the minimum, the two instructions cannot both be met with true entries.
+A number in the schema is not enough to cause padding: under a shown maximum 35.7\% of outputs over-count, against 34.5\% with no count and 55.4\% under a shown minimum.
+A minimum adds no entries on average when the document already holds enough items, so the added entries fill forced slots.
+Told that a shorter list is fine, seven of eight GPU models shorten their lists against the plain minimum, so most can stop, and the minimum is what keeps them going.
+The failure is following the count over the document and filling the slots with whatever text is at hand.
+
+\paragraph{Why it is easy to miss.}
+Most of the padding is taken from the document: it parses, meets the schema, and about half of it passes a source check (Section~\ref{sec:what}), so the error shows in full only against an answer list.
+This matches what \citet{han2023empirical} and \citet{qian2026unreliable} find for extraction without a minimum count, and differs from PhantomFill, where the inputs hold nothing to copy \citep{usman2026phantomfill}.
+
+\begin{table}[t]
+  \centering
+  \small
+  \fbox{\begin{minipage}{0.92\columnwidth}
+  \textbf{For schema authors}:
+  \begin{itemize}
+    \setlength\itemsep{0pt}
+    \item Leave \texttt{minItems} off lists whose length the document decides (over-count 34.5\% $\to$ 55.4\% shown, 90.1\% enforced).
+    \item If recall matters most, an enforced minimum misses the fewest true items but pads most; prose ``up to $k$'' balances the two best (F1 0.60\pre{} vs 0.53\pre{}).
+    \item Do not rely on a source check: about half of the padding passes it.
+    \item If a minimum must stay, add ``fewer is fine'' and test it: some models still lengthen their lists, and recall falls.
+    \item An ``N/A'' option under enforcement helps but is not a fix (90.1\% $\to$ 51.0\% padded).
+    \item Do not re-ask with the bare validation error (Qwen3.5-9B: 10.0\% $\to$ 69.0\% over-count).
+    \item \texttt{maxItems} barely changes over-count but shortens lists and leaves out more true items.
+  \end{itemize}
+  \end{minipage}}
+  \caption{Guidance from the open-weight models tested.}
+  \label{tab:guidance}
+\end{table}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+When a document holds fewer items than a schema's minimum, most of the open-weight models tested treat the count as a target and pad their lists: a shown minimum raises the share of over-counting lists from 34.5\% to 55.4\%, and an enforced one to 90.1\%.
+The added entries are mostly real text taken from the document, so about half of them pass a source check.
+A ``fewer is fine'' line undoes the effect on average at some cost in recall, while re-asking with the validation error makes padding far more common, and thinking does not help.

@@ -1,0 +1,14 @@
+# Python 3.12. Everything the analysis, the data build and the tests need.
+# The model servers run in the pinned vLLM Docker image named in configs/models.yaml, not from here.
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+statsmodels==0.15.0
+patsy==1.0.3
+rapidfuzz==3.14.6
+PyYAML==6.0.3
+pyarrow==26.0.0
+requests==2.34.2
+pytest==9.0.3
+# Only for the Amazon Bedrock runs (harness/bedrock_probe.py, harness/run.py with a Bedrock model):
+boto3==1.43.112

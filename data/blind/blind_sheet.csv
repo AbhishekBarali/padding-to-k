@@ -1,0 +1,1499 @@
+row,doc_id,set,list_asked,definition,text,checker,items_found,n_found,unclear_y_n,notes
+1,eml-9802aa,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Schedules to Bridgeline Contribution Agreement
+
+Gerald,
+I am researching several outstanding receivables from Bridgeline. I am looking for the Schedules to Contribution Agreement, which is item 3 in the index of documents. Do you know where I might obtain a copy? Also, is there any type of brief available on these contracts. I have seen one for ECS, so I was hoping that one might be available for Bridgeline.
+Thanks for your help.
+Karen",,,,,
+2,rcp-73317d,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","ORIGINAL NO SALT
+1 12,000 12,000
+SOUR CREAM N ONION
+2 17,000 34,000
+SUB TOTAL 46,000
+GRAND TOTAL 46,000
+CASH 100,000
+CHANGE DUE 54,000",,,,,
+3,eml-2f4186,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: Enron bill
+
+Jim:
+The bill e-mailed to you a few minutes ago is for your informational purposes only. We will be submitting it to the Court for authorization under the procedures it will be setting up. The bill is not for current payment by Enron without action by the Court.
+Thanks,
+Chuck",,,,,
+4,mtg-2b1e48,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: It's not one of the scrolls where, for example, with this one you could push it down to be a button?
+User Interface: Uh no we just use it as a scroll.
+Marketing Expert: Ooh.
+Project Manager: Okay then we have fifteen point eight Euros.
+User Interface: It was a pretty accurate estimate I would say.
+Project Manager: It wasn't bad.
+Industrial Designer: Yes. We're wicked. Awesome.
+User Interface: Yeah.
+Project Manager: Okay so we're on to the
+User Interface: S 's kind of s frighteningly accurate.
+Industrial Designer: Yeah.
+Project Manager: We're on to the pat-on-the-back part of the presentation, where we have a look at the criterias th that Paul the criterion criteria that Paul has has given us, and we can use that to tell How's it going? Anyone got any thoughts?
+User Interface: What?
+Project Manager: How how have we done today?
+User Interface: I think we did pretty well.
+Industrial Designer: Yeah.
+Project Manager: I think we did pretty well too. That looks pretty spectacular.
+Marketing Expert: No, I think we come up with a with a attractive marketable um product and and concept.
+Project Manager: Any other chang uh thoughts? Okay so th th what about um room for creativity?
+Industrial Designer: That was mm-hmm
+Project Manager: Is it the.
+User Interface: Sh I think there was plenty of room.
+Industrial Designer: Yeah.
+Project Manager: I I think we we ended up being quite creative there.
+User Interface: We got a couple innovative i
+Marketing Expert: Yeah well we we we kinda broke
+User Interface: Couple innovative ideas.
+Marketing Expert: we kinda at least adjusted every every criteria they gave us because we d we still have the the teletext capability in this thing right,
+Project Manager: Mm.
+Industrial Designer: No.
+User Interface: Mm-hmm.
+Marketing Expert: we raised the price of it, we've added two t new technology to it.
+Industrial Designer: Yeah.
+Marketing Expert: So you know you know if this thing flies then we've we've adjusted or broken every every idea they gave us.
+Project Manager: Not every idea necessarily,
+Industrial Designer: Basically.
+Project Manager: it's still a remote control.
+Marketing Expert: Yeah yeah yeah yeah.
+Project Manager: Uh no yeah but we did we did break with the specs a little bit I guess, but the uh
+Marketing Expert: But I like",,,,,
+5,mtg-484916,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: and if we if we're just having buttons and the speech then we're getting our cheapest option of chipping.
+Industrial Designer: Right, right.
+Project Manager: That's good. Uh woah.
+Industrial Designer: Yeah,
+Project Manager: Okay, we're we're kind of uh we're kind of um
+Industrial Designer: and keeping the L_C_D_ screen out.
+Project Manager: Excuse m I've just deleted that whole thing. Um we're kind of running out of time, so if you could Uh. Was that you? Um that was your bit's covered,
+Industrial Designer: Huh?
+Project Manager: I just dele I just accidentally deleted what I was supposed to say next.
+Industrial Designer: Oh yeah that was that was it.
+Marketing Expert: Uh excuse me, Bri
+Project Manager: Um, yeah.
+Industrial Designer: So control F_ eight, right?
+Project Manager: Oh, yeah.
+User Interface: Yeah, mine seems to have turned off. I can't do anything.
+Project Manager: And I just touch the pad.
+Marketing Expert: You just touch the pad, yeah.
+User Interface: No.
+Marketing Expert: No?
+Project Manager: It's actually shut down.
+User Interface: It's on, but there's nothing on the screen.
+Project Manager: Okay, um now what we have
+Industrial Designer: Try uh flipping the screen down.
+Project Manager: uh our next meeting's in half an hour
+Industrial Designer: 'Kay.
+Project Manager: and what I would like you guys to do is work on giving me a model in clay.
+Industrial Designer: Oh, I get to do it, too.
+Project Manager: Yeah. It's you guys. Yeah.
+User Interface: Cool.
+Industrial Designer: Oh neat.
+Project Manager: So um, you know I mean, luckily we chose a nice simple shape.
+User Interface: Yeah. Mm.
+Industrial Designer: Yeah, yeah.
+Project Manager: Um and further instructions will be sent by your personal coaches.
+User Interface: Okay.
+Industrial Designer: Okay. Save everything to the shared documents, is that right?
+Marketing Expert: That's great.
+Project Manager: Uh yeah, I hope I can recover this, 'cause I've accidentally deleted it.
+User Interface: Yeah.
+Marketing Expert: Mm-hmm.
+Project Manager: Which doesn't really help me much.
+User Interface: I think, I've saved mine already.
+Project Manager: Yeah, can you save that uh send that last one again, please, Raj, as I still can't find it on the
+Marketing Expert: Yeah. Uh it was under a different name. I will show you, in shared documents.
+Project Manager: Okay.
+Marketing Expert: Uh working components. Oh, you didn't get that.
+Project Manager: No.
+Marketing Expert: I will send new.
+Project Manager: Okay, thank you.
+Marketing Expert: Uh I'll put it in shared documents, again.
+Project Manager: Um yeah, Project, Project Documents.
+Marketing Expert: Project documents,",,,,,
+6,mtg-42912b,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: Okay we all all set? Right. Well this is the uh final detailed design meeting. Um we're gonna discuss the look and feel design, the user interface design, and we're gonna evaluate the product. And the end result of this meeting has to be a decision on the details of this remote control, like absolute final decision, um and then I'm gonna have to specify the final design in the final report. So um just from from last time to recap, we said we were gonna have a snowman shaped remote control with no L_C_D_ display, no need for talk-back, it was hopefully gonna be kinetic power and battery uh with rubber buttons, maybe backlighting the buttons with some internal L_E_D_s to shine through the casing, um hopefully a jog-dial, and incorporating the slogan somewhere as well. Anything I've missed?
+Industrial Designer: No.
+Project Manager: Okay um so uh if you want to present your prototype go ahead.
+User Interface: Uh-oh. This is it?
+Industrial Designer: Ninja Homer, made in Japan.
+User Interface: Um, there are a few changes we've made. Um, well look at the expense sheet, and uh it turned to be quite a lot expensive to have open up and have lots of buttons and stuff inside,
+Project Manager: Okay. Mm. Mm-hmm.
+User Interface: so instead we've um this is gonna be an L_C_D_ screen, um just a a very very basic one, very small um with access to the menu through the the scroll wheel and uh confirm um button.
+Marketing Expert: Mm 'kay.",,,,,
+7,rcp-25cca2,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","BEEF CURRY UDON 1 52,727
+SUB TOTAL 52,727
+RESTAURANT TAX 5,273
+GRAND TOTAL
+~CASH [58,000] 58,000
+Change 42,000",,,,,
+8,mtg-1d6ad9,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Marketing Expert: they've identified the product as not working for anything but televisions.
+Industrial Designer: Yeah y y you you wouldn't
+Marketing Expert: They've identified this product limita
+Project Manager: Oh okay okay. We have done this.
+Marketing Expert: That's why I say I don't I don't see the market niche for this.
+Industrial Designer: The interface will be different.
+Marketing Expert: If we if w if we were going to have a product that worked for D_V_D_s, V_C_R_s and everything, then I can see the market niche,
+Project Manager: I see. Mm-hmm.
+Marketing Expert: but we we're only identified as going for televisions without teletext. And it's like whoa we ha in my opinion we have to go with something that's extremely exclusive to make this thing marketable,
+User Interface: Right. Well here's
+Project Manager: And I I'd
+Marketing Expert: because who wants just a television remote?
+Project Manager: Mm sorry.
+User Interface: Right.
+Marketing Expert: I don't.
+User Interface: We he well here's my thing about that. If you're in the market for this ultimate remote, you're not gonna go for just a television remote. If it can't control if it can't control your your D_V_D_ player and a al if y if you can't get that all-in-one ultimate remote, that just you can throw all your other remotes away. I'm not gonna buy a d seventy-five Euro remote.
+Marketing Expert: That's right. I I I have a tendency to agree with you. I really do.
+Project Manager: So we really can't chase that.
+Marketing Expert: That's why I say I quest I q I question the marketability of the product. I really question where we create the demand.
+User Interface: So I think what we So that's what I'm saying
+Project Manager: We're really looking for something basic.",,,,,
+9,jbk-e5e5cd,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","You will be frequently collaborating with team members located in <LOCATION> and <LOCATION>.
+<ORGANIZATION> products need to meet a high quality-bar in terms of security data handling reliability and accessibility.
+You will be a role model for pushing excellence around these requirements.
+We are customer obsessed; you will be part of continuous improvement projects for quality and you will be reacting to incidents in production.
+A couple weeks in a year you will be required to be on call.",,,,,
+10,eml-259926,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Customer meeting
+
+Diana & Sean,
+I understand your trying to set a customer meeting with Grant and Chelan and Douglas. I would be happy to assist in any way I can. Also, I would like to sit down and talk with you about these and other Northwest consumer owned utilities. Will you please take a look at your schedules and let me know a convenient time.
+Jeff",,,,,
+11,jbk-eab4e7,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","Have web development experience in a hyper-growth environment
+The interview process
+Recruiter Call (30 min) Home Test (1-2 hours) 1st Round Technical Interview (2 hours) 2nd Round Technical Interview (2.5 hours) Immersion with your future team (3 hours) Offer!
+More about the position
+Permanent Position
+Full time
+Location: <LOCATION>
+Start Date: as soon as possible
+About <ORGANIZATION>
+Founded in 2013",,,,,
+12,eml-f17551,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: Plant Manager Contract - North Carolina Holdings.
+
+Lloyd,
+Which contracts are you talking about? The Asset Management Agreement between ENA and AGI Highstar or the 2 Operation and Maintenance Agreements between G.L.C.Consulting Service Incorporated and each of Lumberton Power, L.L.C. and Elizabethon Power, L.L.C. Or were you referring to something else?
+Steve",,,,,
+13,eml-97a7e6,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Re: LIDO
+
+Dear Michael,
+
+The Lido is a very popular cart. It is a certified electric vehicle (NEV)
+and has a lot of style. It is perfect for neighborhood use.
+They are available for order and should take 4-6 weeks for delivery.
+Regards,
+Michael Hruby",,,,,
+14,med-b6a551,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","Subsequently, confirmatory diagnostic assays demonstrated ALK protein expression by IHC using the D5F3 antibody (Cell Signaling Technology Inc., Danvers, MA; H score = 150; Fig.2B) and the presence of an echinoderm microtubule-associated protein-like 4 (EML4)-ALK transcript (E13; A20) by RT-PCR (Fig.2C). The patient then received crizotinib (250 mg twice daily) as third-line therapy in May 2013 with an impressive symptomatic improvement and CT response after 1 month of therapy (Fig.1B). He remains on treatment with crizotinib with no evidence of progression as of September 2013.",,,,,
+15,mtg-4062c0,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: uh and we don't want to be constrained by uh kind of convention or uh uh slides on screens or or anything else um but um briefly um th th this is what we want to do. The the remote control needs to be original, there has to be something about it that uh other remote controls don't have so that as soon as people see it they think um yes that's different, uh I want one, um and that goes along with being trendy, uh uh you know the I want it uh scenario. User-friendly as as we all know, remote controls can be uh uh very user-unfriendly so we want to make ours one that people can pick up and think oh yes that's it's obvious how that works, uh and they also want to look at the price and think oh yeah that's something that I may not need another remote control but uh it's such a nice one I'm gonna have one. And last but not least, or indeed first of all, it it must make the company money, and we make the company money by producing what the consumer wants. The uh the further work to be done is i the um the functional design, uh what it uh what it must actually do, the uh conceptual design, uh how we actually present that to the consumer and th the the detailed design i is uh how we get that into production. Uh now th the main design tool that we have available to us at the moment is is the white board",,,,,
+16,mtg-52adf5,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: So you Yeah. So
+Marketing Expert: Because if you have a screen on it, you wanna look at your screen.
+User Interface: Hmm.
+Industrial Designer: Yeah well
+User Interface: That way, it it falls into your hand. I think.
+Project Manager: Okay.
+Marketing Expert: Yeah, I agree on this.
+Industrial Designer: And maybe you can you can grab it a bit higher, so Well
+Marketing Expert: No, I don't think so. That's not uh the point
+User Interface: No but but
+Industrial Designer: Well the the Well that's a reason to to to put the L_C_D_ screen uh of course on the upper side, but
+User Interface: Well f for as far as I can see, three of us agree and only Nils
+Project Manager: Yeah well uh I think uh if you t if you three uh agree then then that's it.
+User Interface: But you're the Project Manager, you can make the hard decisions.
+Project Manager: Yes. So uh I c I c
+Industrial Designer: If necessary. But uh are d Can you live with it? Uh
+Project Manager: Well, we'll we we'll do it like this.
+User Interface: Yeah?
+Project Manager: Alright, if you think that that's the way it should
+Industrial Designer: Y Yeah, y y y y you said it was totally uh unusable.
+Project Manager: No No,
+Industrial Designer: But do you
+Project Manager: when I I my personal taste is that I want it to fall over my hands with a thick But In the market uh
+Industrial Designer: But d you don't think this is completely unusable I guess. I think.
+Project Manager: No not totally.
+Industrial Designer: Not totally, well
+Project Manager: For me, I I wouldn't buy it. Let's say it like that.
+Industrial Designer: Yeah but of course y you are also human. We have to take uh every everyone into account. So
+Project Manager: No
+Marketing Expert: And you might be uh You might be target customer.
+Industrial Designer: Yeah. Well uh who who else thinks like you?
+Project Manager: Yes but
+User Interface: Mm.
+Industrial Designer: We don't know. Maybe a thousand people,
+Project Manager: Yeah, we don't know, but that's uh that's that's that's more market research.
+Industrial Designer: or a million people.
+Project Manager: So let it be like this at uh at this moment.
+Industrial Designer: Let it be. Alright.
+Project Manager: Okay?
+Industrial Designer: So that's that. Uh any other suggestions?
+Project Manager: No, I think it's great.
+Marketing Expert: Yeah.
+User Interface: But what about the redesigning?
+Project Manager: Comes to that later.
+User Interface: Okay.
+Project Manager: Um you. Uh c You can uh Walter. You can do the evaluation uh criteria on this?
+Industrial Designer: You're very personal again.
+Marketing Expert: Alright. Great.
+Project Manager: That's more useful than just speaking.
+Marketing Expert: Well, this is just a short intro. I'm going to do uh the ev evaluation.
+Project Manager: Yes.
+Marketing Expert: That's gonna be done at the end of seven point skill criteria.",,,,,
+17,eml-1260e4,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Riordan contact with WPTF
+
+Gary Ackerman was contacted by the campaign and agreed to meet with them on the 22nd. He will meet with Joe Ridota who is responsible for energy policy. Gary would like some direction -- I'll be chatting with Gary on DA and let's do deregulation right. ANything else you'd like to me pass along?",,,,,
+18,quo-870541,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","""Don t look so angry, Basil. It was at my aunt, Lady Agatha s. She told me she had discovered a wonderful young man who was going to help her in the East End, and that his name was Dorian Gray. I am bound to state that she never told me he was good-looking. Women have no appreciation of good looks; at least, good women have not. She said that he was very earnest and had a beautiful nature. I at once pictured to myself a creature with spectacles and lank hair, horribly freckled, and tramping about on huge feet. I wish I had known it was your friend.""",,,,,
+19,mtg-e48855,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: it's gonna excel in in on in the the range in the field of design and and uh looks and feel.
+User Interface: No, but no.
+Project Manager: That's what it's makes it special. Yeah, and I would li I would have liked a kinetic part as well, to give it some just to give it some extra special feature, and uh I know it will work, but uh it's it's an They're they're not putting technologies on this, but if it if it was impossible to to make it happen.
+Industrial Designer: Why not a hand dynamo then?
+Project Manager: Okay, well we leave it like this. Then it's c then we're yeah.
+User Interface: Yeah, yeah.
+Marketing Expert: We can't do anything else. Warning, finish meeting now.
+Industrial Designer: We're done.
+Project Manager: Okay, project e uh
+Industrial Designer: Is this it?
+Project Manager: well, we were gonna what look take a look at the last sheet.
+Marketing Expert: Yeah, sure.
+Industrial Designer: Okay.
+Marketing Expert: No, we can't.
+Project Manager: Yeah, we have to Yeah, it's
+User Interface: No.
+Marketing Expert: Yes, yes. Celebration.
+Industrial Designer: Yes.
+Marketing Expert: I don't see why, but
+Industrial Designer: Where's the champagne?
+Marketing Expert: I think we gotta fill out another questionnaire, to be honest.
+User Interface: Yeah?
+Industrial Designer: I don't uh hear a bell.
+Marketing Expert: No, not yet. Alright, I'll see you guys in a minute.
+User Interface: We can do it here then.
+Industrial Designer: Bye.
+Marketing Expert: I don't think so.
+User Interface: Can we can't we do it here?
+Marketing Expert: I don't know. I don't I don't think so.
+Industrial Designer: Uh-huh. Just fill that one in.
+User Interface: Yeah, we're doing now. But it's. Oh, okay.
+Project Manager: Uh, I don't know.
+User Interface: Nice.",,,,,
+20,eml-4c516a,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW: Dave Neubauer office
+
+Joan, could you please set up a churn request to relocate Dave Neubauer's Houston office ECN3963 to ECN1354. Julie Armstrong (x33597) should be able to give you company/cost center for the move charges. Julie requested setting up this move after Linda Wehring's return next Monday, so request middle of next week churn date. Please also check with Linda (x36040) on Monday to see if she has anything to add to this request. Since this is not his primary office, there will not be very much to move other than equipment and furniture. Also should check 1354 to see if there is a marker board in there already or if we need to move one in there for him.
+Pat, could you please outfit ECN1354 with VP style furniture (granite racetrack, Mueller chairs, black drum table, along with Barritt guest chairs if they are not already in there) before next week? This will prevent moving the furniture from level 39, then having to replace it when I back-fill the office next week.
+Thanks for your help!",,,,,
+21,med-b12d9f,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","A 68-year-old man referred to the Internal Medicine Department of Razi Hospital in Rasht (a city in the north of Iran) with a hypogastric region discomfort, especially in the right lower quadrant for one month. The pain was a colicky form which had a few episodes each day, each episode lasting for 4–5 minutes. The pain radiated to the back and was alleviated by resting to one side.",,,,,
+22,eml-724b7c,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Enron Net Works LLC
+
+Tana - -
+Are there changes to the managers for the above entity? Current managers are Derrick, Haedicke and Whalley; with many business units removing Derrick and Whalley to comply with the marketing affiliate rule, I did not know if your entities would be subject to the same.
+Please let me know. Thanks.
+Lori Pinder",,,,,
+23,job-27bba0,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","We offer: - A full-time job that is 1 working month and 1 month free (this means that you will be working only 6 months yearly) - Fixed salary which will be allocated in all 12 months (50% of the total salary per month) - The possibility to make the contract for full 12 months - There is accommodation provided with the job
+The job is for around 40 hours a week where you will be working from around 6:30 in the morning until 15:30 in the afternoon.
+Working every 3rd weekend plus night shift the same weekend e.g.
+checking on the lights in the stables (it takes about ½ hour).
+You will have 1 hour of lunch break and 15 min.
+coffee break.",,,,,
+24,mtg-0fab39,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: for anybody need uh any help, for time being, on this uh subjects, okay, so please come back to me,
+User Interface: Oh
+Project Manager: and uh Christine, maybe I can uh try to help you to get some uh the technical uh the companies to help you for uh make a design uh slim, okay, and to add some features, like we are talking about, the speech recognition and all.
+User Interface: Should we maybe make a decision about what features we actually want to include,
+Project Manager: Yeah.
+User Interface: 'cause we've thrown a lot of features onto the table, but do we actually want to incorporate all of them, or have we missed anything?
+Marketing Expert: Hmm.
+Industrial Designer: Do you wanna go back and look at the closing slide, maybe that would provide some guidance?
+User Interface: Sure.
+Industrial Designer: Doesn't really tell us.
+Project Manager: So not really this one we are talk ab
+Marketing Expert: Individual actions.
+Industrial Designer: Well it says individual actions, it says user interf
+Project Manager: Yep.
+Industrial Designer: so I'm supposed to do the components concept, supposed to work on the user interface concept,
+User Interface: Mm-hmm.
+Industrial Designer: and you're supposed to keep watching the trends. Um and specific instructions will be sent by our our coach. I think we should do as many features as uh start with all of them right now
+User Interface: I thought
+Industrial Designer: and eliminate them later in the process, that's my suggestion.
+Project Manager: Okay, that will be great. And uh I'll send you the the minutes of meet
+Industrial Designer: You can object if you want to
+User Interface: No, I I'm just thinking in terms of time, like if
+Marketing Expert: She's objecting.
+Project Manager: Yeah.
+User Interface: Yes, now I'm objecting. No, I mean, I was just thinking is it really practical to start designing something with features that we're just gonna end up throwing away? I mean, it takes a lot of time and effort for everyone to consider different features, um and s if we spend that time and effort on features that we're not gonna use, maybe it's better to spend it on the f thinking more about features that we actually do want,",,,,,
+25,eml-d00fd6,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: Storage Allocations
+
+Lynn, we had a conference call with Kelly and Jeff yesterday. Chris was on the call also. We got nowhere, so then Kent and Steve Kirk called them later and explained how the process works and that we can't ""reserve"" capacity for them. They hung up on Steve and Kent. Shelley has been brought up to speed. thanks. sj",,,,,
+26,eml-84885e,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: HPL Inventory and Working Capital Calculation Statement Reconciliatioin
+
+Below is a revised schedule. There was a formula correction on the first sheet and I also added a column for an adjusted difference based on information provided by David Baumbach.
+<< File: Inv_WC_true_up.xls >>
+Thanks!
+Jim Coffey, Senior Director
+Enron America - Texas Gas Origination
+Phone: (713)853-5346
+Fax: (713)646-3084
+e-mail:j.coffey@enron.com",,,,,
+27,mtg-f5ea7d,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Marketing Expert: If it comes from above.
+Industrial Designer: People aren't gonna want their remote to boot up and to see flashing things come on.
+Project Manager: So.
+Industrial Designer: They just want it to be on and ready to go.
+Marketing Expert: Yeah.
+Project Manager: Yeah. Well fair enough. Um and yeah that would help the battery life too and if it the remote they do have to press a button for the remote to turn on. But then again who wants to turn on a remote control.
+User Interface: Well
+Project Manager: Kind of if i
+User Interface: all you have to do is touch the screen and it automatically goes on.
+Marketing Expert: Mm.
+Project Manager: Oh to wake up okay
+User Interface: Yep.
+Project Manager: or go into like a dormant mode.
+User Interface: Goes into a sleep mode.
+Project Manager: Okay. Oh yeah I like that I like the idea of um putting the logo in the boot up screen, nice. Um. Um cool so any last things before we break? Alright. Fair enough.
+Marketing Expert: We're good?
+Project Manager: Sounds good. I'm gonna save th a copy of this in case you guys need any reminders. I'm gonna save a copy of this and the minutes that I'll do it in a second and put them in the shared folder for later reference.
+User Interface: I've put my files in the shared folder as well.
+Project Manager: Brilliant.
+Marketing Expert: Yeah.
+Project Manager: That's fab guys. Cool.",,,,,
+28,quo-36d8f1,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","Mr. Clacton then told them the substance of the joke, which, however, depended a good deal for its success upon the expression which the artist had put into the people s faces. Mrs. Seal sat all the time perfectly grave. Directly he had done speaking she burst out:
+
+""But surely, if you care about the welfare of your sex at all, you must wish them to have the vote?""
+
+""I never said I didn t wish them to have the vote,"" Katharine protested.",,,,,
+29,rcp-226fb1,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","1 TEH TAWAR 5,454
+2 AIR MINERAL 15,454
+1 I TRIPL CHZ 18,636
+1 I SPECIAL SBL 18,181
+MATAH
+1 I ROA GORENG 18,181
+SPC
+Subtotal 75,906
+Pb1 7,590
+Total 83,497
+CASH 100,000
+Cash CHANGE -16,503",,,,,
+30,ppl-151eff,wiki_people,people,"Names of people mentioned in the text, copied as written.","The single received a video on 20 of the following month, in which both singers sing and act.",,,,,
+31,eml-562d69,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: Requested training by Xcel in Denver
+
+Lynn: From my perspective Randy did an excellent job - both at the meeting and at the social dinner that evening. In my mind he is a definite keeper - one that Marketing will probably be trying to get there hands on in the future if you don't watch out! Thank you for having him participate with us. Bob",,,,,
+32,eml-4d0042,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Cost Allocations
+
+In connection with the Legal costs allocations for 2002, what percentage of your time do you think you would spend on EGM matters?
+The accounting group who is asking for this information realizes that this is a guess on your part.
+Thanks, Alan",,,,,
+33,mtg-9cb320,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: 'cause it it has to work on all televisions. So
+Marketing Expert: Yes.
+Industrial Designer: But then we come to the costs.
+Project Manager: we need N Yes. But if we have this
+Marketing Expert: 'Kay. But well if you aim at the younger market, um a as they as uh s uh as we seen in the usability uh lab, uh they will buy a nice looking um remote control. And also to find the easy to use uh part very important. So if we have a L_C_D_ sh uh screen, and uh not too many buttons, I think that will incre uh uh even when it's a bit more cost, it will still sell.
+Project Manager: So now we don't have a lot of buttons. Is this enough?
+User Interface: Mute.
+Project Manager: Mute. Maybe in the menu?
+User Interface: Um
+Marketing Expert: Mm.
+User Interface: Yeah but then it's always uh more than one uh thing to do.
+Project Manager: Mute. Mm-hmm. Okay.
+Marketing Expert: Yeah.
+Project Manager: Maybe more? No. Well. Then that's all. This will be the buttons. And I think that's enough for the next phase. So we can go on to
+Industrial Designer: But now we have only the buttons. And uh we don't yet have to decide what the remote control would look like? Or
+Project Manager: Yes. No that's for the next phase.
+Industrial Designer: Okay.
+Project Manager: Um Phase two is the conceptual design. So then we'll have the concepts.
+Industrial Designer: Okay. Okay.
+Project Manager: That's for the So uh next point. Now we have lunch-break. After that we have t thirty minutes for work. And you can find the minutes in the Project Documents folder inclusive the uh buttons. No. Your individual action, you can find them in the email. So now it's time for lunch.
+Industrial Designer: Okay.
+Marketing Expert: Okay. Good idea.
+Project Manager: Thanks for coming.",,,,,
+34,med-6ce9ef,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","Mycophenolate mofetil (750 mg/m2) and then abatacept (10 mg/kg/month IV) were sequentially administered, without significant improvement. At age 16 years the patient still had granulomatous retinal lesions and anterior chamber inflammation, and macular edema developed, which led to retinal detachment. In addition to the other steroid therapy, corticosteroid pulse therapy was necessary to control disease flares, with an average of 3 boluses/month for 6 consecutive months.",,,,,
+35,mtg-05e3ce,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"User Interface: So I think um there's quite a lot of like Dolby surround studio, surround sort of things.
+Marketing Expert: Yeah.
+Project Manager: Okay.
+Industrial Designer: Do they have their own do they have their own controls on their actual products, then,
+User Interface: Um maybe for the younger market.
+Industrial Designer: or do you have to do it via the remote?
+User Interface: Um I think they've got their own controls in this kind of like hidden panel.
+Industrial Designer: Yeah I suppose if we've got their if they've got their own controls then we can avoid it for ours just to keep it simple.
+Project Manager: Yeah. Yeah.
+User Interface: Oh no, I mean um like there's kind of individual buttons for them, like on the T_V_ remote.
+Industrial Designer: Oh, okay. Right.
+Marketing Expert: Mm-hmm.
+User Interface: But I don't really know what they're for, I've never used them.
+Industrial Designer: Um.
+User Interface: I just know they're something to do with Dolby.
+Industrial Designer: Maybe unless something comes up then we should I think
+Project Manager: Well you might get some research.
+Industrial Designer: Well shall we look into that and just get back together.
+Project Manager: Okay.
+Marketing Expert: Okay.
+User Interface: Right.
+Project Manager: Right so I'll do the minutes of uh this meeting.
+Marketing Expert: Right.
+Project Manager: And we'll meet back at I'm not sure. Um forty minutes, I believe is the time.
+Industrial Designer: 'Kay.
+Marketing Expert: Okay.
+Project Manager: Come on.",,,,,
+36,rcp-554447,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","1 RB. COKLAT BAR 8,000
+1 RB. CREPES TUNA 9,000
+1 RB. SISIR PANDAN 7,500
+SUBTOTAL 24,500
+DUE 24,500
+CASH 50,000
+CHANGE 25,500",,,,,
+37,mtg-a81827,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: so that is indeed a uh um
+Marketing Expert: And uh it would cut out the R_S_I_ as well if you
+Project Manager: a thought and it it cuts out uh I was was gonna say, you can't get a lot of R_S_I_, j just get jaw ache. Okay, sorry.
+Marketing Expert: Yeah, um oh yeah, so possibly the speech recognition is possibly something could add into the design. Oh, I've got some other things I couldn't fit onto this presentation. Um. You see this okay? Almost no? It's sorry it's a bit. I'll read out to you. Uh functionality, uh like people's opinions on functionality, the relevance to the remote and how often they're used. So um like the power. Using the using the d swi the power switch to switch on T_V_ is a high relevance of nine, but it's not frequently used. You see what I mean? Whereas channel selection, which is very high relevance
+Project Manager: Yeah. Mm-hmm.
+Marketing Expert: is used the most. So m we can maybe even start to cut down on or I was possibly even thinking of a design that maybe some of the buttons are hidden from everyday use. Maybe like uh a folding ledge or something. So that we can maybe go into the channel settings and the audio settings,
+Industrial Designer: Mm.
+Marketing Expert: which are low relevance and rarely used. And keep the v volume selection and channel selection very easily
+Project Manager: Mm-hmm. I mean
+User Interface: It could be oh uh I was just gonna say uh maybe like the flip phones that they use?",,,,,
+38,eml-b87ffa,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW:
+
+Gary Bryan, Tom, and Jim:
+Let's discuss at 1:30 and then I'll forward any changes to Jeff Hodge in preparation of the Alliance Draft. Jeff, I'm sending this just for fyi until after me and the guys meet. I'll get with you following our meeting.",,,,,
+39,quo-fb9b93,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","Catherine submitted, and though sorry to think that Isabella should be doing wrong, felt greatly relieved by Mr. Allen s approbation of her own conduct, and truly rejoiced to be preserved by his advice from the danger of falling into such an error herself. Her escape from being one of the party to Clifton was now an escape indeed; for what would the Tilneys have thought of her, if she had broken her promise to them in order to do what was wrong in itself, if she had been guilty of one breach of propriety, only to enable her to be guilty of another?",,,,,
+40,eml-3356f4,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: TXU Contract Termination Dates
+
+If possible, please forward these MTM values to me by the end of the day. I'd like to get back together for a short meeting tomorrow to discuss the values and make plans for next steps. Tina Holcombe will send out an email for meeting time later today. Thanks.
+Carl Tricoli",,,,,
+41,mtg-3ab8a5,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: I know for sure that everybody who buys this remote control, within a couple of months of they will be in the situation that they they're seeking for the remote control, they wanna see something quick and uh just push the button and th uh,
+User Interface: Yeah.
+Project Manager: I think it's brilliant.
+Marketing Expert: Bleep bleep bleep, oh there it is, yeah. Yeah.
+Project Manager: Yeah, I've never it's so simple, but I've never seen it.
+User Interface: Yeah.
+Marketing Expert: No. Nearly.
+User Interface: And you can leave it just there.
+Project Manager: M maybe we should really do this.
+User Interface: Yeah.
+Marketing Expert: Yeah.
+Project Manager: Okay now, well, how much time have we got left? These clocks aren't uh synched.
+User Interface: Yes.
+Project Manager: Oh, now I've put uh well, it is twenty p
+User Interface: Yeah, I'll
+Project Manager: Okay, so we have ten minutes or something?
+Marketing Expert: Something like that, yeah.
+Project Manager: Yeah, but we're uh we're done. I think.
+User Interface: Uh fifteen minutes.
+Project Manager: We've decided on the functions. Well, there is some oh. There is a closing sheet. We have lunch break, and then we have thirty minutes of individual work.
+Marketing Expert: Oh.
+Project Manager: Oh okay, I'll make sure I'll I had some problems with uh the digitising the the first minutes, the the s the next minutes won't be a problem, but I'll try to make sure the first one will be in the folder too, but maybe it won't work, but you'll see. I think these are more important than the first ones, so
+Marketing Expert: We'll see.
+User Interface: Can you make an uh uh a part of f folder for the minutes maybe? That not not everything in one one uh folder.
+Project Manager: .
+Marketing Expert: Maarten, five minutes.
+Project Manager: Oh, five minutes. Yeah, because uh I I d I did uh the first minutes I did were were were a bit scratchy, you know. Then I did a s second one with a nicer layout, which I could uh, know, use for the other ones well, but uh I d think uh I forgot to do put done under the first one, and when you go write a second uh it's get it's not working when you try to write second uh paper or something.
+User Interface: Yeah. Maybe.
+Marketing Expert: No, that's true uh, yeah.
+Project Manager: And then you you had to overwrite it or someth I don't know.",,,,,
+42,eml-b76982,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Draft - SoCal/Topock Announcement
+
+Here's a simple first draft. I didn't know how much detail we should get into.
+Ramona, am I using the correct terminology? They are not going to confirm in Cycle 1. They are just going to let us fill-in where El Paso filled-up all the capacity downstream.
+<< File: SoCal-TopockScheduling.doc >>
+Let me know your comments.
+Thanks!",,,,,
+43,mtg-d0139c,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: but maybe you can put um the g the options of teletext on the second level of the remote control.
+User Interface: No, I don't need don't need
+Project Manager: Because you ne almost never use it.
+User Interface: Uh teletext options are only four buttons or something.
+Industrial Designer: Yeah, but younger people I think um more often use the internet and elderly people often use teletext.
+Project Manager: Yeah, that's right.
+Industrial Designer: So uh
+User Interface: I use teletext as well.
+Marketing Expert: No, I use te teletext every day, I think.
+Industrial Designer: Hmm. Okay.
+Project Manager: Yeah. For me too, it is. So we just keep it one level then?
+User Interface: Yeah yeah, one level.
+Project Manager: Okay.
+Marketing Expert: Mm.
+User Interface: And I think, uh 'cause um we don't have that many buttons, I think the design is most important.
+Industrial Designer: Yeah.
+User Interface: You can d uh integrate the buttons in the design very much.
+Project Manager: Yeah.
+User Interface: 'Cause simple buttons. If you put one above it, it's clear.
+Project Manager: Okay. Okay. So that's it for toda for We're going to have a lunch lunch break. Um
+User Interface: How long is lunch break?
+Project Manager: So yeah, you know what you have to do. This is uh this is it. You get your meal and everything, so
+Marketing Expert: Trendwatching. Okay. That's fine.
+Project Manager: Yeah.
+Marketing Expert: Yo.
+Project Manager: So, we're finished for t for this time. We're going to have some lunch.
+User Interface: Okay. Bye.
+Project Manager: Yeah.
+Industrial Designer: Yeah.
+Marketing Expert: Mm. Uh.",,,,,
+44,job-abcdeb,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Technologies
+apache amazon-web-services java
+Job description
+<ORGANIZATION> is one of the best-known clients of <ORGANIZATION> – a dedicated team of 90 of our software engineers and data science professionals develop the innovations behind its business success.
+As <ORGANIZATION> technology partner we are expanding our team in <LOCATION> and are ready to hire the brightest talents in the IT market.
+<ORGANIZATION> is the world's largest search engine for vacation rentals comparing over 18 million offers from more than 2,000 trusted partners.
+Founded in 2014 <ORGANIZATION> employs more than 250 people and operates 43 websites.
+From apartments cabins boats castles hotels hostels and everything in between <ORGANIZATION> combines price destination dates and amenities to find the perfect accommodation for any trip worldwide.
+As a Senior Data Engineer (Data Platform) you will join our ambitious and forward-thinking colleagues in the Data Engineering team.",,,,,
+45,mtg-b25710,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: Especially when it's made of soft rubber like this.
+User Interface: Yeah.
+Industrial Designer: You understand?
+Marketing Expert: Yeah, I understand.
+Project Manager: Yeah I would think about colours like uh red, yellow, green, blue,
+Marketing Expert: Yeah o of course.
+Industrial Designer: Yeah.
+Project Manager: just
+Marketing Expert: The fruity colours and the autumn colours, like red and brown, dark red and brown.
+Industrial Designer: Fruity.
+Project Manager: Yeah.
+User Interface: Just all kind of colour.
+Industrial Designer: Fruity loops.
+Project Manager: Mm-hmm. Maroon.
+User Interface: Yeah.
+Project Manager: Yeah.
+Industrial Designer: Okay.
+Project Manager: Okay, so
+User Interface: And and do we have to have a normal black one, or uh
+Project Manager: Who's pinging?
+User Interface: Is it
+Marketing Expert: No.
+Project Manager: You are pingin Okay.
+Industrial Designer: You ping.
+Project Manager: I thought we Okay, so uh that wraps it up? Everybody knows uh what to do?
+User Interface: Yeah.
+Project Manager: Well
+Industrial Designer: Well
+Project Manager: I wrote it down here. I wrote it down here what to do um.
+Industrial Designer: not what to do. Not what to do.
+User Interface: Well I don't know what to do, but.
+Industrial Designer: Look
+Project Manager: The next meeting is once again in thirty minutes.
+Industrial Designer: . Okay.
+Project Manager: Um here are the individual actions, and especially notice that uh the Industrial Designer and the User Interface Designer are going to work together on a prototype drawing on a smart board,
+User Interface: Ooh. Right.
+Marketing Expert: S
+User Interface: Yeah.
+Project Manager: and of course to all four of us uh specific instructions will be emailed by our personal coach.
+Marketing Expert: tough. We'll be available.
+User Interface: But do we have to We'll work together, but do we have to stay here, or do we
+Project Manager: Well I I'd say just wait uh for email and uh find out.
+User Interface: Right. Yes. Okay.
+Project Manager: I don't know.
+Industrial Designer: Thin I think we should work.
+Project Manager: Okay well that was what I had to say, uh,
+User Interface: Yeah I think.
+Project Manager: final thoughts from anyone, or?
+User Interface: No.
+Marketing Expert: No.
+Project Manager: We're finished. Okay, well thank you very much.
+User Interface: Yeah.
+Marketing Expert: Finished.
+Industrial Designer: Thank you very much.
+User Interface: So we have to keep talking English now?",,,,,
+46,med-b9fc87,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","Meanwhile, considering the MST pathology was that of SCC, the patient received GP chemotherapy (cisplatin 75 mg/m2 d1, gemcitabine 1250 mg/m2 d1, d8, for 21 days as a cycle) for 4 cycles, and the patient achieved partial remission (PR) after 2 cycles, followed by stable disease (SD) after 4 cycles (Fig.3[B3[B and F] and [C and G]) according to response evaluation criteria in solid tumors (RECIST) 1.1. Then, gefitinib (150 mg qd) was used as maintenance treatment from November 2015 onward. During the treatment, Ibandronate sodium was given monthly for skeletal-related events.",,,,,
+47,mtg-9c24b3,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: Ah yeah, we could add things. Maybe if you click back in that bottom right cell, where you're starting from, and then use the arrow keys.
+Project Manager: Yeah.
+Industrial Designer: Does that work?
+Project Manager: Yeah, I know, that just extends it as well.
+Industrial Designer: No mm.
+Marketing Expert: Uh you can do one thing.
+Project Manager: I don't know.
+Marketing Expert: You just select one box outsi yeah, this box. Then move it with the help of this Okay.
+Project Manager: It One of the buttons is sticking, I don't know.
+Marketing Expert: Just uh just uh Okay, just a minute. Okay. No input, like this. Shift. No it's not.
+Project Manager: No, it's 'cause the uh the shift button's stuck, or something.
+Marketing Expert: Yeah, it's not working.
+Industrial Designer: Is it the other shift button maybe?
+Marketing Expert: Should we ask Meli Should we ask our technical expert Melissa?
+Project Manager: No that's fine. Um we've worked out what it would be anyway.
+Industrial Designer: Did you try both shift buttons? It could be the other side.
+Project Manager: Yeah. Cancel. Piss off.
+Industrial Designer: That's too bad.
+Project Manager: Oh well, never mind. Um. Right, so that's finances and I dunno what we what could we reckon we could add? Um
+User Interface: Well maybe we could add something, but maybe if What do you th
+Project Manager: Well I suppose that's our that's that's our design that we've got. So
+User Interface: We're trying to save money, so. Yeah, if we're happy with the design there's no point in spending money, if we don't have to.
+Project Manager: Yeah.
+User Interface: But if there is anything you think we've missed out there, then, you know, feel free to add it. Maybe I mean obviously it would be bigger so there might be more space for the the slogan on the front, because it's not in an ideal place right now.
+Project Manager: Yeah yeah. Well that's that's uh Okay, so project evaluation. We have under twelve Euros fifty. Project process, how do we think that went? Are we happy?
+Industrial Designer: Oh.
+User Interface: Mm.
+Industrial Designer: Yeah I think we have a a winning product.
+Project Manager: Okay. Evaluation. Oh we've been writing this up for m months.
+User Interface: I think it went quite smoothly.
+Project Manager: Uh room for creativity, were we happy with that?",,,,,
+48,eml-a73a4b,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW: Frank Stabler - Request to Extend Term Date from 12/01/01 to, 12/31/01
+
+Michelle / David:
+Frank Stabler called to determine the status of his separation agreement amendment. Bernadette Etienne, in Mary Joyce's Office, called to say that she received the amendment signed by Frank in their office and wanted to know what to do with it. Should this document go to the Cash Mgmt Committee for authorization to execute?
+Shelly
+X57962",,,,,
+49,quo-1f0445,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","""Maybe I 'm ol'-fashioned, but I can't believe in any ooman's ladyship when she shows herse'f lak dem gals does. Oh, Kit, don't do it. Ain't you seen enough? Don't you know enough already to stay away f'om dese hyeah people? Dey don't want nothin' but to pull you down an' den laugh at you w'en you 's dragged in de dust.""
+
+""You must n't feel that away, ma. I 'm doin' it to help you.""
+
+""I do' want no sich help. I 'd ruther starve.""",,,,,
+50,mtg-6835ed,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Marketing Expert: Oh.
+User Interface: I was like who's gonna buy a remote just for the T_V_ unless they've lost theirs.
+Marketing Expert: Look at it.
+Project Manager: Yeah.
+Marketing Expert: That is a piece of work.
+Project Manager: Fashionable chic people will.
+User Interface: You're kidding.
+Marketing Expert: Wow.
+User Interface: No, no.
+Marketing Expert: Marketing Director says yeah. Fashionable people will buy it.
+User Interface: No, marketing has to actually create the desire for it.
+Marketing Expert: Oh, I will create desire.
+Industrial Designer: That's okay. We can create a commercial where they think that all their needs will be met. This will help them find the one.
+User Interface: Ri They'll be sexy with it.
+Project Manager: Hmm.
+Marketing Expert: We could have like an Adam and Eve type commercial, and that's the fig-leaf.
+Industrial Designer: That's right.
+User Interface: Oh right.
+Marketing Expert: Mm. That'll sell.
+Project Manager: There you go, marketing.
+User Interface: Let you loose.
+Industrial Designer: And so the serpent says, use our remote.
+Marketing Expert: Yeah.
+Project Manager: Alright.
+User Interface: Yeah, no.
+Marketing Expert: Yeah.
+Project Manager: Okay, we're gonna wrap this up now. Um the costs are within the budget, we evaluated the project, and now we're gonna complete the final questionnaire and meeting summary, and then we're going to have a big giant party, apparently, according to this, so.
+Industrial Designer: Whoohoo. Margaritas for everyone.
+Project Manager: Alright, thank you team, you did a great job, it was lovely working with you.
+User Interface: Good.
+Marketing Expert: You too.
+Industrial Designer: Yay. Thanks to the Project Leader. Now we know w",,,,,
+51,eml-b0a3a8,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Gas Logistics Presentation
+
+Caroline Barnes has indicated that you have a presentation put together that briefly covers the purpose and function of Gas Logistics, and how this department interacts with other departments. I was wondering if you would be interested in making the presentation to GMS personnel to better understand how Measurement impacts your department. Please let me know if you have an interest and when you might be available and I'll arrange for the conference room to be available.
+Thanks-
+Gary",,,,,
+52,ppl-07a6cd,wiki_people,people,"Names of people mentioned in the text, copied as written.","She acted at different theaters in ballets of Michel Fokine (""Paganini""), David Lichine (""Rhapsody"", 1946), George Balanchine (""Song of Norway"", 1946) etc.",,,,,
+53,eml-549da9,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Stack Manager & Web Access Changes for Texas Desk
+
+Stephanie,
+Jim Schwieger and Daren Farmer have left the Company. I also changes some of the Stack Manager and Web Access settings for some of the other guys. Call me if you have any questions.
+<< File: US Gas Stack Website for New Version 121401.xls >>",,,,,
+54,jbk-a69776,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","After the application deadline an assessment committee is appointed.
+Please note that the assessment of applicants is based solely on the material received prior to the application deadline.
+For further information see Guidelines for Assessment Committee Aarhus BSS <CONTACT>
+All interested candidates are encouraged to apply regardless of personal background.
+Deadline All applications must be made online and received by: 15/8/2017 Please apply online here <CONTACT>
+<ORGANIZATION> <ORGANIZATION> is a modern academically diverse and research-intensive university with a strong commitment to high-quality research and education and the development of society nationally and globally.
+The university offers an inspiring research and teaching environment to its 42,500 students and 11,500 employees and has an annual budget of EUR 840 million.
+Over the course of the past decade the university has consolidated its position in the top 100 on the most influential rankings of universities world-wide.",,,,,
+55,eml-547a97,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Re: Skyline proposal
+
+Skyline refers to added seasonality that NNG proposed to add to its rates. The rate case settlement represented a compromise approach to shifting more responsibity to the peak. So no we didn't implement Skyline as proposed and nothing is pending. I expect that NNG will make a new proposal to refect peak cost responsibility as part of the next rate case
+--------------------------
+Sent from my BlackBerry Wireless Handheld (www.BlackBerry.net)",,,,,
+56,job-89c909,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Required skills:
+* Proven track record of tacking complex design challenges & delivering large projects.
+* Strong technical fundamentals in one or more of the modern programming languages Preference for experience in Java/Spring.
+* Experience with core AWS services including developing and implementing solutions on AWS.
+* Deep understanding of core AWS services like Lambda Cloud Watch EC2 IAM Policies VPCs.
+* Experience with Docker and Kubernetes
+* Experience in infrastructure-As-Code (CloudFormation TerraForm etc).",,,,,
+57,eml-8ae4e1,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: CGLF contract
+
+Robert, when you get a chance, please give me all the service deal numbers for CGLF k#37393.
+Marlene, the new termination date for this contract is 5/31/2002. If I have time, I am going to send CGLF a termination notice for this contract effective 5/31/2002. Is that something you could do for me?
+Let me know.",,,,,
+58,mtg-6f17c9,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: It's very cheap.
+Project Manager: Uh, it's very cheap, you you maybe you you you you come at uh
+Marketing Expert: No, it's it's not very cheap, but that
+Project Manager: It's very necessary.
+Marketing Expert: no, but it's a development inside corporation. Like, uh w we don't have to buy parental control. Our own people can make that, I think.
+Project Manager: Yeah, but it still has some
+User Interface: Yeah.
+Marketing Expert: Yeah, it it has some cost, but
+Project Manager: yeah. Okay,
+User Interface: He'll do it in his free time. So uh
+Project Manager: but so we can discuss that uh
+Marketing Expert: Yeah.
+Project Manager: we can discuss that kind of things I think with the with the the board of uh
+User Interface: Of directur or directors.
+Project Manager: What's it what's the company called? I just keep forgetting it.
+Marketing Expert: Real Reaction.
+Project Manager: Real Real Reaction.
+User Interface: Yeah.
+Project Manager: Real Reaction, yeah.
+User Interface: You can ask your personal
+Project Manager: Okay, so uh anybody uh misses something here about uh
+User Interface: Yeah, the end conclusion. But uh
+Project Manager: Yeah, okay, that's that's what I'm gonna write b between now.
+Marketing Expert: Okay. Still the end conclusion. That's all, I think.
+Project Manager: But, i in here nothing uh
+User Interface: Um, the decision to make um the buttons on the top, and the menu on the
+Project Manager: Mm-hmm. Yes.
+User Interface: on the bottom. And clearly Yeah, touch-screen you've mentioned.
+Project Manager: Yeah, touch-screen I've mentioned.
+Marketing Expert: Yeah, but but the the decisions are put in the uh conclusion, I think.
+User Interface: Okay.
+Marketing Expert: Why we decided to use a flat uh L_C_D_.
+User Interface: Okay, this n yeah.
+Project Manager: Yeah, okay, well I gonna redesign uh something now.
+Marketing Expert: Yeah. Um
+Project Manager: No.
+User Interface: Party party.
+Project Manager: Because I think it will Oh, five minutes from to finish meeting.
+User Interface: Oh, before you change anything maybe you um save it first.
+Marketing Expert: Save it. Hmm.
+User Interface: You can't you can select file and export and then those J_ PEG files.
+Marketing Expert: Yeah, but then you had the same thing.
+User Interface: Well, eight. And we have uh, another blank one.
+Marketing Expert: Example of children remote.
+User Interface: Did we change anything?
+Marketing Expert: Oh wait. Wait.
+User Interface: Wow. Yeah. It's a new uh commercial logo.
+Marketing Expert: Hmm. That's a pity.
+User Interface: Don't save it, aye?
+Project Manager: Oh, that's cool, Tim.
+User Interface: Uh,
+Project Manager: Finish meeting now. Well, I'm I'm
+User Interface: why are only the first five SMARTboard files
+Project Manager: I'm going to finish my end report.
+User Interface: saved?
+Industrial Designer: Okay, um hereby is the meeting is finished.
+Marketing Expert: You declare.
+Project Manager: I am the one who can say that. Yeah? Hereby the meeting is finished. Yeah.",,,,,
+59,eml-1e50c8,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW: Enron Candidate
+
+Traci,
+I met with Michael this afternoon, and we should schedule him for additional interviews. I know that he has a schedule conflict next Wednesday, but is generally available starting the following week. Let's get him into the next real-time interview round, or do a custom schedule if it goes out past a couple of weeks.
+Thanks,
+Billy",,,,,
+60,eml-046c26,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: ""Interview"" w Common Vision
+
+*~*~*~*~*~*~*~*~*~*
+Lunch w be provided
+Alan Smith, CFO of Common Vision, a software company, and 2-3 others from his firm will be here to informally discuss
+what software/other tools we use to make business/operating decisions. They have developed decision making software in the
+electric power arena, and are contemplating expanding into gas.
+Alan is a friend of mine (yes I do have one!), and this meeting is strictly informational...no business obligations intended by any parties.",,,,,
+61,med-e12244,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","From the start of ERT/miglustat combination treatment, we observed a reduction in splenomegaly and a gradual normalization of hematological values and plasma angiotensin-converting enzyme activity (Table 1). Plasma chitotriosidase was evaluated at the time of diagnosis and then approximately every 6 months during follow-up. Values showed an initial reduction after the start of ERT, with a further, substantial, and sustained decrease after commencement of miglustat treatment (Fig.1).",,,,,
+62,eml-959329,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: MSN
+
+The lawsuit was filed at 11:06 a.m. The next thing to do is to get MSN formally served. To do that, we have to get citation issued (we are working with the court personnel to expedite this process) and serve the papers on MSN's registered agent in Austin. We are trying to do that as quickly as possible -- hopefully, by the end of the day. Please do not mention the lawsuit to MSN until I notify you that formal service has been accomplished.
+Also, as the day progresses and negotiations continue, please let me know if any commercial reason arises such that you believe service should be delayed.
+I will keep you updated.
+Andy",,,,,
+63,eml-053cb0,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: ERI financials
+
+Kim:
+Attached are ERI Investments Inc's financials. Noresco will be the signatory to the contracts and ERI Investments Inc will guarantee the transaction. Please send copies of Enron's contracts and Form of Guarantee to Tony Aguiar at aguiar@usourceonline.com and myself. Thank you.
+Phil Glaessner
+713-344-2301",,,,,
+64,mtg-249768,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"User Interface: This is coarse, this is fine.
+Industrial Designer: Yeah, yeah yeah. That's
+Project Manager: Okay.
+User Interface: So it's coarse to fine design.
+Industrial Designer: that's very technologic, so. Yeah.
+User Interface: Yeah.
+Marketing Expert: Okay the uh th this looks better. Yeah.
+User Interface: Yeah is is this is, from one channel to maybe to ten channel.
+Industrial Designer: S But I di I didn't see where the t f the turn off t turn on turn off button so much activates
+User Interface: This is from one channel to
+Industrial Designer: maybe one of the
+Project Manager: Yeah, th you have the vocal commands.
+User Interface: Yeah. Yeah.
+Industrial Designer: Uh it's k
+User Interface: Yeah.
+Project Manager: On off.
+Industrial Designer: on off, yeah.
+Marketing Expert: Yeah, but it has to be on to recognise fas
+Project Manager: Most of the time you have the yeah it's a sleeping remote control.
+Industrial Designer: Yeah, sleeping.
+Marketing Expert: Ah, that's not the ecological part, yeah.
+Project Manager: That's true. W that why we have the solar ti yeah.
+Marketing Expert: Solar.
+Industrial Designer: To compensate. Yeah.
+User Interface: Okay.
+Project Manager: So
+Marketing Expert: So, which number?
+Project Manager: three.
+Industrial Designer: Easy to use, it's very relative but three it's fine, I think, it's reasonable three.
+User Interface: Mm-hmm.
+Project Manager: Do you agree?
+User Interface: Yeah, agree, agree.
+Project Manager: Three?
+Marketing Expert: So reasonably, is four, is one?
+Industrial Designer: Three f three for me, it's o it's okay.
+Marketing Expert: So, three.
+Industrial Designer: Four or three. Maybe you can vote to see how many everybody gives and no and just take the mean.
+Project Manager: And what's your opinion?
+Marketing Expert: Uh we wouldn't say, I mean,
+Industrial Designer: Will you give four?
+Marketing Expert: those are sort of agreed but this one would be more five to me.
+Industrial Designer: Five?
+Marketing Expert: I'd like I mean this is the just a prototype. I'm not really convinced it's so easy to use, but I don't know.
+Industrial Designer: Yeah, so maybe if
+User Interface: Uh w w what do y what uh you compare with traditional uh um tr traditional controller?
+Marketing Expert: Yeah.",,,,,
+65,quo-3cc5f8,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","The executioner's argument was, that you couldn't cut off a head unless there was a body to cut it off from: that he had never had to do such a thing before, and he wasn't going to begin at _his_ time of life.
+
+The King's argument was, that anything that had a head could be beheaded, and that you weren't to talk nonsense.
+
+The Queen's argument was, that if something wasn't done about it in less than no time she'd have everybody executed, all round. (It was this last remark that had made the whole party look so grave and anxious.)",,,,,
+66,mtg-53606a,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: We can integrate small microphone in the remote
+Industrial Designer: Yeah.
+Project Manager: so it's not really a problem.
+Industrial Designer: Okay.
+Project Manager: What about lighting adaptive options?
+Marketing Expert: Yeah as discussed in the earlier meeting, but I think uh not much people are really interested in this point if it's not really required.
+Project Manager: According to the re to the new requirements I think we don't need that. Yeah.
+User Interface: It is interesting but we are only concerned with the remote controller.
+Project Manager: Mm.
+User Interface: So you need s special T_V_ sets to do that? Or it's it's done via this remote controller? It's very complex.
+Marketing Expert: I mean
+Industrial Designer: Yeah, I think it's a bit complex too
+Marketing Expert: I mean yeah, it's for the um industrial design and users interface designers to decide if it's going to be working or not.
+User Interface: Mm.
+Industrial Designer: For our next product, our new T_V_ set with uh automatical uh sound adjustment light
+Marketing Expert: I think
+User Interface: Yeah, then we can conclude that. Yeah. Yeah, but it's quite possible but maybe not in this project.
+Project Manager: So we have I think we have s still we have couple of minutes. Mm-mm. So any things to to discuss?
+Marketing Expert: I think as I discussed th that four points would be good for um marketing.
+Project Manager: Or any suggestions?
+Marketing Expert: The speech interface and uh less uh reasonable uh cost.
+Project Manager: Expensive. Price.
+User Interface: Mm.
+Marketing Expert: And the lighting adaptation and the teletext.
+User Interface: Mm.
+Marketing Expert: And regarding the teletext uh these are the subtitl these are the text information which you got on the televisions.
+User Interface: Okay.
+Marketing Expert: If you are watching an foreign movie, you get subtitles sometimes.
+User Interface: Yeah. Okay.
+Marketing Expert: And uh if you are a French guy watching an English movie you would like to have it in French.
+User Interface: Mm.
+Marketing Expert: And if I am a German then I would like to have the my options in German.
+Industrial Designer: .
+Marketing Expert: So, the remote it should have some it should give me some flexibility of choosing the ch languages.
+Industrial Designer: Function.
+Marketing Expert: That should be a good uh point.
+Industrial Designer: Yeah, but well what about the the new project's requirement? I I I think we should give up with teletext, no?",,,,,
+67,mtg-d236e3,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: Well, if you if you have the l L_C_D_ screen, you can you can uh have a small logo i uh at the bottom.
+Marketing Expert: Yeah.
+Industrial Designer: And it could just stay there.
+Marketing Expert: That spins around like all the time.
+Project Manager: Mm yep,
+Industrial Designer: Yeah, that spins around or something.
+Project Manager: yeah.
+User Interface: Very annoying.
+Project Manager: Also also.
+Industrial Designer: Hmm.
+Project Manager: But we we are uh
+Marketing Expert: It it's just like a uh globe in Internet Explorer.
+Project Manager: Yeah yeah y yeah yeah.
+Industrial Designer: Yeah. Yeah, something like that. A small icon.
+User Interface: Yeah.
+Project Manager: Okay, but uh think about that kind of things.
+User Interface: Yeah , I It's ok For f
+Project Manager: That's what they said in the master class..
+Marketing Expert: Okay.
+User Interface: Oh, for the next meeting, right?
+Project Manager: N Uh, next meeting starts in thirty minutes.
+Marketing Expert: Who uh
+Project Manager: So uh maybe you can go to Paris and Milan uh once again.
+Marketing Expert: Who who gave you the master class?
+Project Manager: The master class?
+Marketing Expert: Ronald Betenberg?
+Project Manager: Franz Mehler's.
+Marketing Expert: Okay, thanks.
+Project Manager: Uh, very special, uh next uh session. Uh idea that you uh the the industrial uh development uh centre and uh user interface uh will work together on a prototype. And uh will drawing it on the SMARTboard. So that's a kinda new uh thing.
+Marketing Expert: Ah.
+Project Manager: And um, the marketing expert will uh will uh ke he will be keeping busy with the product uh evaluation. But the most uh specific instructions will be sent to you by email.
+User Interface: Um
+Industrial Designer: So we're going to work together right now?
+User Interface: Stay here and
+Project Manager: Yeah, the well, uh dids this what I uh what I heard. I
+Marketing Expert: In the master class.
+Project Manager: Not in the master class.
+Marketing Expert: Yeah.
+Project Manager: So you uh just wait for the specific instructions and uh
+User Interface: P_.
+Project Manager: But I think it was a very uh very good uh session, uh gentlemen.
+User Interface: Ah, no new email.
+Industrial Designer: Definitely.
+Marketing Expert: Me too.
+Project Manager: I will thank you all.
+User Interface: Okay.
+Industrial Designer: Well thank you too.
+User Interface: Thank you. Thank you very much.
+Project Manager: And uh
+Marketing Expert: Thank you too, lord.
+Project Manager: Give me a good evaluation.
+User Interface: Yeah. Uh-huh.
+Marketing Expert: 'Kay guys, lot of success.
+Industrial Designer: You wish. M Aye? Cheers.
+User Interface: See you.
+Project Manager: Cheers. See you in a half hour.
+Industrial Designer: Hey.
+Project Manager: But keep an eye on your uh laptops for a real uh
+Industrial Designer: Yeah, uh I'm not sure if we uh we",,,,,
+68,jbk-5be36a,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","Can you drive and coordinate Deliveries administrate plans and changes to plans?
+Do you have strong communication skills combined with a disciplined structure to ensure successful delivery according to agreed scope cost time?
+And can you do it within agile?
+Customer and Counterparty IT are currently looking for a highly competent Project Manager who can take the roll of a delivery stream driver (SAFe: release train engineer).
+The position we offer The Customer and Counterparty IT provides applications and services for utilizing customer and counterparty data to optimise the customer processes in all of the <ORGANIZATION> group.
+This means among others creating the golden record for customers and counterparties ensure stability and high performance in IT applications and systems utilization of external data sources data analytics processing and calculations ensure compliance with sector regulations and provide a common service interface for the entire <ORGANIZATION> <ORGANIZATION>.",,,,,
+69,mtg-b3609b,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: I I thought it was a little tricky having to hand around this thing.
+Industrial Designer: Yeah.
+Marketing Expert: Yeah.
+User Interface: Yeah.
+Project Manager: We had a lot of the um
+User Interface: I think. Yeah.
+Project Manager: otherwise the technology today was kinda cool.
+Industrial Designer: That was really neat how I got emails
+User Interface: We didn't we didn't use the whiteboard that much.
+Industrial Designer: and
+Project Manager: Mm-hmm. No.
+Industrial Designer: No.
+Project Manager: Although I don't see how we could have very l at least for me I
+Industrial Designer: I yeah. If I'd gotten pictures of the different parts of the case, the different looks of the case, I would have probably drawn them up, but
+Project Manager: Mm.
+Marketing Expert: 'Cause we weren't like voting on anything and I think usually, like whiteboards are good, you know like crossing out ideas, or like if we had had like a brainstorming period.
+Industrial Designer: Yeah, we could've put our brainstorming stuff up there rather than just talking about it, but with only four people it doesn't really make sense.
+Project Manager: Mm-hmm.
+Marketing Expert: But I thought we were good orally. Get crazy.
+Industrial Designer: I think if you had a larger group
+Project Manager: And with and with the PowerPoint that we can all look at, like you can do all those things pretty much on PowerPoint
+Industrial Designer: Yeah.
+User Interface: Yeah.
+Project Manager: as that's not as necessary to have.
+Marketing Expert: And these might've made us more willing to like take notes than to like write up them here,
+Project Manager: Mm.
+Marketing Expert: 'cause we all needed them separately, kind of on the whiteboards in this room.
+Project Manager: Mm-hmm.
+Industrial Designer: Because we're all gonna be working in different places.
+Marketing Expert: Yeah.
+Industrial Designer: We if we were all gonna stay in here all the time, then having the notes up on the whiteboard would've been alright,
+Project Manager: Mm-hmm.
+Industrial Designer: but everyone needs their own, like specific notes, I guess.
+Project Manager: Now when you were um creating your um prototypes here, did you work together or did you like do separate projects?
+User Interface: Uh we we worked together,
+Industrial Designer: Yeah.
+User Interface: um but we were making like we sort of made different shapes and then discussed how the how the buttons might work,
+Project Manager: Mm-hmm.
+User Interface: um and how we could like improve on the on the design.
+Industrial Designer: Yeah. So it was a bit of both really, we just kind of started out by each taking a colour of clay and just fooling around with it",,,,,
+70,mtg-0a42d7,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: So um one of the things I I was gonna mention to you um you guys the designers is that um it m we probably need a rever it needs to be a universal remote control probably.
+Industrial Designer: Okay.
+Project Manager: Um so something that could do N_T_S_C_ as well as PAL as well as various other formats like if it's gonna control D_V_D_s
+Marketing Expert: Makes sense. Uh.
+Project Manager: but um you know I'll leave that to you guys but that's something that i i it is gonna be an international sold thing. Um but we wanna try to make it for twelve fifty. So we wanna try to make a hundred percent profit on it if we can. Um s right so um just to close up, I'm not sure how much time I've used mm next time right Project Manager, sorted. Um. Is uh we'll meet in another half an hour or so um and I'd like the um Industrial Designer to get ge think about what needs to be done, like what the basic function of it. Um U_I_D_ well yeah you right g your assignments are up there and you'll also get s assignments from in your email as well more spec specifics on what do do. Um mm basic and um so I need you to tell us what um we what the user's gonna want.
+Marketing Expert: What they're looking for.
+Project Manager: So actually in a way you guys c maybe in our next meeting chat a bit about what the user's gonna want and what the user can have, you know like uh so
+Marketing Expert: And negotiate that. Uh.
+Project Manager: yeah well it is and we'll discuss the trade-offs in between um so yeah specific instructions will be sent in your email. But I think that that is more or less a good place to start for now um and as more things come up we'll have meetings and you'll get emails and so forth. Um any questions, before we get started?
+User Interface: I assume that we're building a stand alone uh remote control, we can't kind of build it into other uh products.
+Project Manager: You mean to like
+User Interface: For instance like a mobile phone or something like that.
+Industrial Designer: Mm. Sounds interesting.
+Project Manager: Hmm. Yeah.
+Marketing Expert: I don't think there's any rules about it yet. So",,,,,
+71,mtg-a93d7c,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"User Interface: including v voice recognition if we have any like settings for voice recognition now
+Project Manager: In the middle perhaps.
+User Interface: included in the menu.
+Project Manager: Yep.
+Marketing Expert: Ooh, I just got an idea for a design.
+Project Manager: good. Anybody have anything else they'd like to bring up in this meeting?
+Industrial Designer: I had something, but I forgot.
+Project Manager: Okay. get out of here. Let's go back to the meeting closure then and see what we need to do next. Mm. Alright. After this meeting we're gonna be sent a questionnaire and summary again which we need to reply to that e-mail. And then we're gonna have lunch break. And after lunch thirty minutes of individual work time. Um I'm gonna put the minutes I put the minutes for the first meeting already in the project documents folder, if you'd like to review them. And I'm gonna type up the minutes for this one as well. Um here's what we're each going to do. The I_D_ is going to work on the components concept, um U_I_D_ the user interface concept, and you're going to do some trend watching. 'Kay. Specific instructions will be sent to you by your personal coach. And if anybody has anything they would like to add? No? Okay, well, this meeting is officially over. Thank you all.",,,,,
+72,mtg-7f60a1,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: you know, drawing attention to that. And it also paid um lip service in the instruction manual, 'cause it's very simple so putting it down in words should be helpful.
+Marketing Expert: Mm, and the rechargeable batteries.
+Project Manager: Yeah.
+Marketing Expert: Was there anything else there that we in the new new project requirements?
+Project Manager: Um
+User Interface: Yeah.
+Project Manager: We've got the buttons but I think we'll work through that with the design of it, um.
+User Interface: Yeah.
+Marketing Expert: Mm-hmm. That's not at the moment a requirement, it's something we're looking at,
+Project Manager: Yes. Yes.
+Marketing Expert: what preference so it may come round to market research at some point to see what people would like.
+Project Manager: And we've talked about um there being an alarm or something, a beeping for being lost, um.
+User Interface: For detection, right.
+Industrial Designer: Yeah.
+Project Manager: Learning how to use it should be as simple as possible. But there aren't gonna be that func that many functions incorporated into it so it should be fine and the I the instruction manual, I don't know if we deal with that, um. I think Yep,
+User Interface: Yep,
+Project Manager: and different from what's out there.
+User Interface: I think
+Marketing Expert: Okay.
+Project Manager: Yep, I think that's us.
+Marketing Expert: What would you specifically like marketing to look at before the next meeting?
+User Interface: True.
+Industrial Designer: Okay.
+Marketing Expert: Or shall I just sort of generally look at all the issues involved?
+Project Manager: I think you might get guidance, but um I th Instruction manuals, 'cause there tends to be a demonised thing,
+Marketing Expert: Okay.
+Project Manager: u um, they're everyone's got like a big pile of them, but no one really uses them.
+Marketing Expert: Okay.
+Project Manager: Um.
+Marketing Expert: Whoops, questionnaire four.
+User Interface: Oops. We should f
+Project Manager: Yes, right. Okay.
+Marketing Expert: 'Cause we're at lunchtime now I think.
+User Interface: I think it's time for us to get back to
+Project Manager: Right, okay. I think you can email me, if there's any more questions. Um and I'll be able to not answer them.",,,,,
+73,jbk-d315ca,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","You are skilled in Excel and PowerPoint and have a natural interest in working with numbers and data and translate those into findings and key messages.
+You understand the importance of having a strong focus on details and you are effective at building relationship with your stakeholders.
+As you will be engaging with colleagues across the global organisation it is important that you can communicate effectively and confidently in English.
+Your new team
+The position is based at our Headquarters in the greater <LOCATION> area.
+As you will be responsible for Compensation & Benefits related matters for our HQ you will report to the Strategic HR Business Partner Global Finance and Business Services and have a functional dotted line to the Director Global Rewards.
+That means that you can look forward to a close collaboration with HR Business Partners and Line Managers as well as colleagues in the Global Rewards team.",,,,,
+74,mtg-de7224,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: So we can uh have a whistle uh remote control?
+Industrial Designer: Yeah. Yeah whistle.
+Project Manager: I don't know, whistle-able?
+Industrial Designer: Whistle tracking.
+Project Manager: Th Whistle tracking yeah. Whistle tracking remote control. That's a good idea, that's very original and that's can uh improve.
+User Interface: That's that's quite cool, but uh of course we you don't normally need uh any audio uh recording stuff on your remote control right?
+Project Manager: Yeah d d uh.
+User Interface: So i it's just going to add t to the cost.
+Project Manager: Yeah but s still we have to mm we have to have an advantage over our competitors. I think this is a good advantage.
+User Interface: It's cool. I think I like the idea, but I'm not sure about the what you, who is giving who's giving who's giving our budget. Who's
+Project Manager: Yeah. We have to ask Yeah. We have to ask the quest of that's uh design to the uh Industrial um Designer.
+User Interface: Yeah. Yeah.
+Industrial Designer: Yeah. yeah
+Project Manager: Which is you.
+User Interface: 'Kay.
+Project Manager: Okay so try to find that for next meeting.
+Industrial Designer: Okay.
+Project Manager: Okay. So next meeting is in thirty minutes or so uh. Don't pani.
+Industrial Designer: Don't panic.
+Project Manager: So so I will ask the Industrial Designer to find out more about this industrial design so any working any working function we have discussed.
+Industrial Designer: Mm-hmm.
+Project Manager: So then I will ask the User Interf Interface Designer to to think about the point we discussed like the number of buttons, the the fact that is lighted or not, things like that, and what would be convenient for the user.
+User Interface: Mm-hmm.
+Project Manager: And also um I will ask the Market Expert to uh try to find out what are the absolute requirements, what is absolutely needed in a remote control uh for the user. So. And then uh I will uh just ask you to think about that and uh look at your mail because you will receive uh some good advice soon.
+User Interface: Mm.
+Project Manager: So. Thank you I think that's all for this point.
+User Interface: Good.
+Industrial Designer: Mm-hmm.
+Marketing Expert: Thank you
+User Interface: Uh, so we come back in five minutes? Half an hour.
+Project Manager: Anyway you will receive some messages. Be careful. You eat it? Does it move uh? Okay, but I don't know if it uh is still correctly uh We'll see.
+Industrial Designer: Ah.",,,,,
+75,eml-385890,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW: Updated '98 - '01 Headcount File
+
+Sally -- Brian and I are putting some comments in the summary page for you to review -- give us until this afternoon, and hopefully you will be ok with sending.
+I left a message for Suzanne Brown on Friday night saying that we would have it for her today, but have heard nothing more, so assume that this isn't that urgent from her standpoint.
+Will copy you with the new version this afternoon",,,,,
+76,eml-c10115,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: EOL access
+
+Tom,
+Everyone in risk management needs to get access to EOL bridge monitor and reports. What do we need to do to get this and how soon can it be granted? We need this by Thursday to be prepared for testing.
+Thanks
+Kam",,,,,
+77,mtg-7e1967,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: And then the final would be like th the actual specified prototype or whatever,
+Marketing Expert: Mm.
+Project Manager: I dunno. But.
+Industrial Designer: Hmm.
+Project Manager: All in all it's kinda interesting.
+Marketing Expert: Mm.
+Industrial Designer: So we have more slides or?
+Project Manager: No just this closing one. No we've established that the costs weren't really within budget, but we could s you know do it
+Marketing Expert: We got it to be.
+Project Manager: We did the project evaluation based on um Sarah's evaluation of on off switches
+Marketing Expert: Like cutting corners. Kind of, though it was really technically an evaluation of the product, not the project in general.
+Project Manager: and Mm.
+Industrial Designer: Mm.
+Marketing Expert: Which I'm not sure is the same thing,
+Project Manager: True.
+Marketing Expert: at the time that just i made more sense, but I could see if they were really asking about us.
+Project Manager: Yeah. 'Cause we di we had a thu think about it. Um. Yeah. And it's all recorded, woo-hoo. Yeah
+Marketing Expert: Yay.
+Project Manager: what I'm gonna I'm gonna put um
+Industrial Designer: Hmm.
+Project Manager: I'm supposed to do this final report thing at the end so I'll put all that into the final report as well, or as much as seems like maybe not like the articles and stuff, like because and if and so forth, but I'll put most of it in the reports.
+Industrial Designer: I It'd be so cool if we get a copy of the recording.
+Marketing Expert: Make it sound eloquent. Oh, I have to done I've I've done transcription before
+Project Manager: Nice.
+Marketing Expert: and it's really ridiculous how many words people say like just in the middle of their sentences like that
+Project Manager: Oh yeah.
+Marketing Expert: that mean nothing.
+Project Manager: There's a whole branch of psychology that looks into that, psycholinguistics.
+User Interface: What the uhs and the
+Industrial Designer: Really.
+Marketing Expert: There's a guy studying it here, yeah, he's studying ums and ahs or something.
+Industrial Designer: Filler words or?
+Project Manager: Yep, they're called um disfluencies.
+Marketing Expert: Yeah.
+Industrial Designer: Disfluencies.
+Marketing Expert: That's a good word for it.
+Project Manager: Yeah we like our fancy phrases and terminologies for things.
+Marketing Expert: Just add some prefixes, sounds classier.
+Project Manager: Exactly uh I will save this into the project documents.
+Industrial Designer: I find myself hitting the send and receive button on the email a lot, just out of boredom,",,,,,
+78,mtg-a6de72,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"User Interface: So it's it's not
+Industrial Designer: You you will have the well um the the curve will fit into your hand when you grab the
+User Interface: Yo l yeah. When you hold on it, it is comfortable to hold.
+Industrial Designer: Yeah. It's more confog f comfortable that if these uh it's completely flat.
+User Interface: Okay. Yeah. And the battery, is it kind of a rechargeable or it doesn't matter?
+Industrial Designer: Yeah the um that's the point. The kinetic one is uh y you can recharge uh by the um
+User Interface: That that's what it means by kinetic.
+Industrial Designer: Yeah and by well by just by moving the ar uh your arm the mm well the remote will uh accumulate energy.
+User Interface: Okay. Mm-hmm. Okay.
+Industrial Designer: But I d I don't know it's if it is feasible because I don't know if yet if if the user will move enough to provide the remote um all the necessary energy.
+User Interface: Mm. Mm. Okay. Yeah. Yeah. We we might check with our R_ and D_ department to see if they have this product ready for market.
+Industrial Designer: Yeah. And yeah and so can you go to the next slide please. So and uh that's uh that summarize well what I have said.
+User Interface: Mm mm. Wha
+Industrial Designer: So uh you're right we can uh see in our uh R_ and D_ uh if the kinetic metal is sufficient to provide enough energy.
+User Interface: Ah the department. Mm.
+Industrial Designer: That's it.
+User Interface: Uh So I um keep in touch with the R_ and D_ department.
+Industrial Designer: Oh yeah I take care, it's all right.
+User Interface: So the titanium case is the normal case that I'll show you some pictures that I have and you tell me whether they are titanium case or not.
+Industrial Designer: All right. Yeah.
+User Interface: 'Cause I am not very sure, plastic, titanium or whatever. There's another point I want to make, is that the uh well you've seen them I le na my presentation that um I point out some why buttons are not the mm not the only ways you can use Yeah. Yeah, maybe n
+Project Manager: We will, okay. Three.
+User Interface: Yeah. So the user interface is uh i it uses the aspect uh of a computer system, a programme which can be seen or heard or otherwise perceived by the human user and the commands and mechanism the user uses to control its operation and input data.",,,,,
+79,eml-b59b65,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: LNG/C "" HILLI "" AT PENUELAS, PUERTO RICO .
+
+Victor-
+Using the scenario we discussed with the ""Hilli"" bringing 120,000 cubic meters on May 16 and a one month outage on CT-1, I show our next 90 schedule would be for a full cargo (122,000 cm) on July 4-8 and another one on Aug 12-16.
+Dan",,,,,
+80,eml-7112dd,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW: RED ROCK WEEKLY REPORT W/E 01/10/02
+
+Please note, included in this report is a delayed in-service schedule for Red Rock.
+Stations 1/2 June 15, 2002
+Station 3 July 1, 2002
+Do we want to tell our shippers yet or wait and also do we want to try to use existing space for the Oneok deal so we do not loose out on any revenue?",,,,,
+81,mtg-6c1a51,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Marketing Expert: I think there's a little there's a little um chi
+Industrial Designer: So it's not just for us, it's for the experiment as a whole, so
+Marketing Expert: There's a little there's a little chip, I think you must plug it into something
+Industrial Designer: Should we quickly look at the last slide?
+Marketing Expert: and it produces a
+Industrial Designer: Sh
+User Interface: Right. I think you watch a video of it kind of.
+Marketing Expert: I don't know. Whether it just produces a big image of sort of everything you've written or something, and Page after page.
+Project Manager: Right. New ideas found, so one or two.
+Marketing Expert: Yeah. Kinetic powered remote control. Um, what was the other one?
+User Interface: Voice um recognition thing.
+Marketing Expert: Vo yeah.
+Project Manager: um and uh voice uh, was it voice activated um
+Marketing Expert: Voice recognition, yeah. S
+Project Manager: recognition.
+Marketing Expert: Almost. To fill in these fill in these questionnaires
+User Interface: Pretty much.
+Project Manager: Right, so,
+Marketing Expert: Oh no.
+Project Manager: uh are the costs within budget, yes. Is the project evaluated, yes. Uh, don't forget to complete final questionnaire and meeting summary. Then celebration.
+Industrial Designer: . Is that everything?
+Marketing Expert: Hmm? I think that we've got two questionnaires and a report on the last meeting.
+Project Manager: Yeah. Uh, so we don't re So really I tried to save this the last time at twelve point three, and it didn't seem to have saved anywhere. Mind you, the the figure last was was different, but it should be poss",,,,,
+82,eml-54b30c,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Re: Enron
+
+That is great news on the new contract. You did a super job.
+Can you tell how drastic the changes will be with the new owner?
+Any indication if S might be made an offer to stay on board?
+I will send Al's phone number @ the hotel in case you need to visit with him. Love-Dad",,,,,
+83,eml-48e080,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Re: Enron Daily Notice
+
+It appears that EESI and EPMI were mixed up. Please confirm.
+Alson it appears no payment is required tomorrow. Since this is the first time we received this form I just wanted to confirm.
+Thanks
+Wade
+--------------------------
+Sent from my BlackBerry Wireless Handheld (www.BlackBerry.net)",,,,,
+84,ppl-552c13,wiki_people,people,"Names of people mentioned in the text, copied as written.","Tjader died four months after the completion of ""Heat Wave"", it was his final recording.",,,,,
+85,mtg-e0e558,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Marketing Expert: And then I found on the internet from from my research that some extended electronic entertainment control should be possible. At the budget that we're looking at and at the price point we're looking at, we should be able to make it work the T_V_, the V_C_R_, the stereo set um maybe something else cute like a coffee pot or one other appliance or maybe a lamp.
+Project Manager: Uh okay, can can I at this point interject um something?
+Marketing Expert: I have to wind up? Yeah, sure.
+Project Manager: Um we have received instruction from higher up that certain things should not be uh considered.
+Marketing Expert: Okay.
+Project Manager: Um the one thing for example something to eliminate maybe that's the teletext, because that's sort of outdated with the internet,
+Marketing Expert: Okay.
+Industrial Designer: Mm-hmm.
+Project Manager: and according to to higher management the it should only control the T_V_, mostly because they feel that it's too comp complex a task to um to to include other things,
+Industrial Designer: Complicated, yeah, of course.
+Project Manager: and they are concerned with the time to market.
+Industrial Designer: Yeah.
+Marketing Expert: Of course, yeah.
+User Interface: Okay.
+Project Manager: Okay. Um and the
+Marketing Expert: Okay, so that's something
+Project Manager: and the third thing that they wanna make sure um that their that the corporate image is being maintained, and that the corporate colour and design are being used on the product, so that it's easy that that that they can be easily identified as a product of of of the company, and that there's no mistake that it could be somebody else who is bringing this out.
+Industrial Designer: Mm-hmm.
+Project Manager: So I just wanted to interject this here so we're not getting too much off track here with uh with the things we wanna look at. These were instructions from higher up so we have to eliminate uh these things, so it's only gonna be T_V_,
+Marketing Expert: Okay so
+Project Manager: but the one thing maybe that could be um eliminated is the teletext uh idea.
+Marketing Expert: Okay.
+Project Manager: Mm 'kay.
+User Interface: Okay.
+Marketing Expert: Alright, thanks for that. Um alright now other things that I found out on in my research is that the complaints that people have about the remote controls that are out there now. 'Cause a lot of them take too much time to learn how to use, and that was thirty four percent but even more important the thing that we did address in our last meeting that frequently it's lost somewhere in the room. Um so those are two things that we definitely do wanna address,",,,,,
+86,eml-539cd9,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: New NNG Deferred Delivery Points
+
+Legale,
+Attached is Excel Spreadsheet containing a list of deferred delivery points on NNG.
+The list has been updated with eight (8) new points.
+The sheet is posted at.... http://www.nng.enron.com/dob/etfr_storage.html
+under
+NNG Storage Points
+Thanks for the help!
+<< File: webstoragepts.xls >>",,,,,
+87,mtg-8571c4,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: yeah well I think we'll have to in the next uh half an hour, we'll have to uh s s specify the different uh types we want to launch, when we uh well introduce our remote.
+Industrial Designer: Uh we still have to make We have still have to make the es the the real basic design. Because yeah we have the sketch but
+Marketing Expert: Yeah. But we we must remember that fancy look-and-feel is the most important thing.
+Project Manager: Yes.
+Marketing Expert: Else it w won't sell. So
+Project Manager: Yes.
+Industrial Designer: Alright, yeah.
+Project Manager: Well I'll have to, before I get another warning for five minutes, I'm going to get Where is my mouse? Uh where is my mouse?
+Marketing Expert: Lost my mouse.
+Project Manager: Oh yeah. Um this is it.
+Marketing Expert: Unbelievable.
+Project Manager: Well, um this we have.
+Marketing Expert: Yeah.
+Project Manager: Uh basic stuff. Interface we have. Supplements, L_C_D_. Maybe a a cheap voice recording. Well
+User Interface: Yeah we should do that.
+Industrial Designer: The price?
+Project Manager: Yes. Alright. Individual actions.
+Industrial Designer: We all agree on that. Yeah.
+User Interface: Mm.
+Project Manager: Industry designer,. User Interface, Mike. You're going to work together on a prototype drawing on the SMARTboard.
+User Interface: Yeah, we can do that.
+Industrial Designer: Together or uh Yeah together.
+Marketing Expert: Yeah togeth
+Industrial Designer: How Yeah yeah, but how do I
+Project Manager: That's what I got uh to hear.
+User Interface: But bu we stay we stay here or something?
+Project Manager: Yes well we'll get it to hear that I think. But I think so. Th they're saying SMARTboard and that's it
+Marketing Expert: You can take the SMARTboard.
+User Interface: Ah right.
+Project Manager: This is the SMARTboard, so
+User Interface: And take it to our rooms and uh
+Project Manager: Um so you can uh you you are going to make a prototype, and y Well that's includes uh specifying the buttons etcetera.
+User Interface: Ah, specific instructions will be sent to you by your personal coach.
+Project Manager: Yeah. So you'll get it on your em on your laptop. Um well you will go and do something else uh on the project
+Marketing Expert: Have fun.
+Industrial Designer: Some Some non functional tasks.
+Project Manager: yeah project evaluation. So um
+Marketing Expert: 'Kay.
+Project Manager: , what are you going to do? Uh I don't know what product evaluation exactly means, but uh you'll get uh the specifications.
+Marketing Expert: We don't have produ product yet, so kind of difficult.
+Project Manager: Yeah. That's why I uh But uh
+Industrial Designer: You're fired. No but
+Project Manager: How long do we still have?
+Industrial Designer: Well, can we talk about something else? Uh
+Project Manager: Yeah.
+Industrial Designer: Uh no I don't know anything, but maybe uh anyone else uh
+User Interface: Yeah. Um
+Marketing Expert: Ajax. Nah.
+Industrial Designer: Yeah?
+User Interface: Will we use uh round buttons or square ones for the for the numbers?
+Marketing Expert: Um round.
+Industrial Designer: Round I think.
+Marketing Expert: Yeah. Round.
+User Interface: Yeah I I I also uh thought Yeah.
+Industrial Designer: To make it as uh as round as possible.
+User Interface: And these uh these s these buttons uh are more uh triangle-ish shaped
+Project Manager: Why does
+Marketing Expert: Curvy. Yeah. So you can see you have to up or down.
+User Interface: with a square one in the middle.
+Project Manager: Ah f fuck you.
+User Interface: Yeah. Yeah.
+Industrial Designer: But now I see the
+Marketing Expert: And this must be uh volume I think,",,,,,
+88,eml-fdb5a7,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: CPUC protest to TW RP97-288
+
+Attached is the CPUC's Protest, Notice of Intervention and Request for Tech. Conference and/or hearing filed yesterday in RP97-288-017.
+The CPUC is protesting the revised tariff sheets filed Oct. 31.
+In a nutshell, the CPUC argues ""the fundamental issue that should be investigated is whether the maximum recourse rate is in fact functioning as the FERC intended to assure fair and reasonable use of negotiated rates by a pipeline with market power.""",,,,,
+89,rcp-1e93b8,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","Jamur Crispy
+2 13.500 27.000
+Nasi Putih
+2 7.000 14.000
+Sambel Kecap
+2 4.500 9.000
+Es Teh
+2 7.500 15.000
+Subtotal Rp 65.000
+PB1 ( 10%) Rp 6.500
+SC (3%) Rp 1.950
+Total Rp 73.450
+Cash Rp 100.000
+Change Rp 26.550",,,,,
+90,job-c7e726,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Looking for a job where you do not have to be able to speak Danish?
+In a young and international environment?
+And are you from <LOCATION>?
+<ORGANIZATION> <ORGANIZATION> <ORGANIZATION> offers you the opportunity to work while speaking swedish.
+We are looking for people to interview business managers in <LOCATION> as a part of a survey.
+The job is not telephone sales.
+Qualifications: All you need is a good telephone voice and we will teach you the rest.
+We offer: Good salary - not commission Fulltime.",,,,,
+91,ppl-588798,wiki_people,people,"Names of people mentioned in the text, copied as written.","In the late Middle Ages, the area belonged to the Silesian Dukes of Bytom and Cieszyn, who after Mongol raids initiated a program of settlement, founding several new villages.",,,,,
+92,ppl-7a2e42,wiki_people,people,"Names of people mentioned in the text, copied as written.","Nagata was posthumously promoted to lieutenant general, and Aizawa was shot by firing group after a court martial held by the IJA 1st Division based in Tokyo.",,,,,
+93,eml-45d03e,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: tw subscription rolloff template
+
+I have attached a template to use to summarize the capacity rolloff issue discussed today. I just filled in a bunch of numbers as an example - if they don't make any sense, you can guess why!
+Lindy, if you could use this to fill in the required data, then either Michael or I will incorporate it into the TW model.
+Thanks-
+Davis",,,,,
+94,mtg-9b3fed,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: and um a different shape from what's normal. We were thinking a shell, but something along those lines, just a different shape from what's normal, um. You were going to look into the rechargeable batteries
+Industrial Designer: Yeah.
+Project Manager: and we were gonna think about the port and an alarm for getting it lost,
+Industrial Designer: Yeah.
+Project Manager: things like that, um and our market was going to be young, business, kind of range.
+User Interface: 'Kay.
+Project Manager: Okay, so shall we start with the first presentation?
+Marketing Expert: Shall I?
+User Interface: Yep.
+Project Manager: Yes if you feel
+Marketing Expert: Okay. We just connect up. Thank you. There we go. Okay um so we decided on our market and so this feedback from the marketing department is really about trend watching. Um the methods we used to decide on uh current trends and so on, market trends, were that we did our traditional uh our usual market research study uh with a hundred subjects and the the general feedback from them is that the most im uh w I'm sorry I'm slightly tongue-tied after lunch, sorry Project Manager.
+Project Manager: It's okay.
+Marketing Expert: Um we decided on the most important aspect i uh required in a remote control device and we'll come to that later. So that was one of the first things we did. Also with our company um being forerunners in uh putting fashion into technology, we also looked at a fashion update um using our consultants on fashion and design in Paris and Milan. Uh so the general findings from that was uh in the market trends the most important aspect for remote controls were people want a fancy look and feel, rather than the the current functional look and feel of remote controls. They also also want a remote control to be technologically innovative, and of course, as we predicted, that it should be easy to use.",,,,,
+95,mtg-44eacc,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: basically when I'm watching T_V_ I'm just using like five buttons or so,
+Project Manager: But maybe it's
+User Interface: Yeah. That's what I meant.
+Industrial Designer: so.
+Project Manager: maybe it's very hard to to make it fold open and to l look like it's very uh uh what's it's called?
+Marketing Expert: Mm. If you if if you make to fold open it's or also an uh the strength uh is not s as good as a normal uh remote control.
+User Interface: Uh
+Project Manager: Maybe it's hard t No, that's right. So maybe we have to to uh keep it like mm a square, just normal remote control.
+User Interface: Okay, but yeah.
+Project Manager: Just think about it.
+Industrial Designer: Yeah.
+Project Manager: We have to close this uh to finish this uh meeting, so.
+Industrial Designer: Okay.
+Project Manager: There's some more things. We have uh another thirty minutes, so then we're going to meet again. So you know what you have to what you have to do?
+Marketing Expert: Okay.
+Project Manager: Yeah.
+Marketing Expert: Um for m for me uh the Marketing Expert, the user requirements uh specification, do I need to think as a user, a as a a a only the looks and the
+User Interface: No, what you want to do with it.
+Project Manager: Yeah, I think this if you you have to n know if it's for s a T_V_, a D_V_D_ player, all that things.
+Marketing Expert: Okay. Yeah,
+Project Manager: Also from a user, but all these things together.
+Marketing Expert: it's also about strength and uh for everything uh.
+Project Manager: Yeah, everything.
+User Interface: Yeah, I also wrote down some stuff that you want on a
+Project Manager: Yeah, no maybe not not uh, that's not a f that's something for for for yeah.
+User Interface: Technical fun fu
+Project Manager: That's not for you.
+Marketing Expert: Okay.
+Project Manager: Just if what's in the market, what's normal, uh what kind of uh buttons do you have.
+User Interface: What do you want to do with your remote control, what do you need on your remote control. I already wrote some down, some ideas.
+Project Manager: Yeah, it's alright.
+Marketing Expert: Yep.
+Project Manager: Yeah, just is that okay?
+Marketing Expert: Okay.
+User Interface: Yep.
+Industrial Designer: Okay.
+Project Manager: Okay.
+User Interface: There's already a document in the folder about it.
+Marketing Expert: Yeah, me too.
+Project Manager: So see you in thirty minutes.
+Marketing Expert: Okay, well done.
+User Interface: Okay.
+Industrial Designer: Okay.
+Project Manager: For the next time you have to uh put it exactly on the square, so your laptop.
+User Interface: I will.
+Marketing Expert: Oh Paul.
+User Interface: It didn't say that.
+Project Manager: No, sorry.
+User Interface: Your fault.
+Marketing Expert: Ciao.
+User Interface: Bye bye.
+Marketing Expert: Bye bye.",,,,,
+96,mtg-d0c8e1,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: let's let's try and get the slogan on there
+Marketing Expert: Yeah.
+Project Manager: um, and
+Marketing Expert: And then like a jo
+Industrial Designer: So you wanna expand the shape of the
+Marketing Expert: And then like a jog dial somewhere that fits in with the shape of it like I dunno like here, in with the
+Industrial Designer: That that might have one problem in terms of um in terms of whether you're left handed or you're right handed you might be locking yourself in.
+Marketing Expert: It would get bumped, it's doesn't really fit with your hand. Yeah.
+Project Manager: Mm.
+Marketing Expert: Or maybe just fit it in like down the middle here.
+User Interface: Mm.
+Industrial Designer: Could I just could I just jump in and suggest something quickly?
+Project Manager: Okay. Right I'm gonna have to
+Marketing Expert: A jog di
+Project Manager: I'm really gonna have to hurry you on here 'cause we're we're actually over time.
+Marketing Expert: Yeah . It's kind of yeah
+Project Manager: Um is there anything anybody's unsure about? Just for in closing just the next meeting's gonna be in thirty minutes, and so you can see in the screen here what each of you are gonna hopefully be doing,
+Marketing Expert: Yeah.
+Project Manager: uh I know that the designers are gonna be working with Play-doh on that. So um that'll be that'll be good.
+Marketing Expert: Huh.
+Project Manager: Um and I'll get the the minutes up as soon as possible. Anything at all you think we haven't discussed that we need to? Is everybody kind of happy about what they're gonna be doing?
+Marketing Expert: Um
+Industrial Designer: Um I think one thing would be the jog dial 'cause that's gonna have quite a big impact on the thing um
+Marketing Expert: Yeah I think the jog dial, you know it just after you drew that, what if it was flat and you just spun it,
+Industrial Designer: Yeah that's what I was thinking the
+Marketing Expert: that'd be great.
+Industrial Designer: a slide, because then you you don't have to put the hand.
+Marketing Expert: Yeah. Yep.
+Industrial Designer: I think incorporating a logo is quite straight forward. There's lots of space for it um
+Project Manager: Okay. That's kind of a design thing that you guys can can discuss, yeah.
+Industrial Designer: Yeah but it's also a a marketing and a function",,,,,
+97,mtg-5c20f3,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: You go ahead.
+Marketing Expert: Yeah that's improved uh pretty much.
+User Interface: Yeah.
+Industrial Designer: Yeah it's only a bit like to that side,
+Marketing Expert: Yeah.
+Industrial Designer: but that is that one by the way.
+Marketing Expert: Yeah but it's better, it's better
+Industrial Designer: 'Cause this one makes the angle either like this.
+User Interface: No it
+Industrial Designer: So i if I change this, it will go there, if I change that, will go there.
+Marketing Expert: Mm. No. It's better than it was I guess.
+Industrial Designer: Mm-hmm. I will take this away 'cause it looks messy.
+Marketing Expert: Silly. Yeah. Works pretty well. Five minutes before the meeting's over.
+Project Manager: Yeah. Yeah.
+Marketing Expert: And then? We have to present
+Project Manager: Then I have to uh uh write this, and I don't know if you have to present, because I didn't receive any information about that so far.
+Marketing Expert: Alright.
+Industrial Designer: Maybe we will.
+Project Manager: Maybe we get a a final mail.
+Marketing Expert: So it after the after after these five minutes, you have to
+Project Manager: Yeah. Yeah, I have still ten minutes to finish the report.
+Industrial Designer: What's this anyway?
+User Interface: So cake.
+Marketing Expert: Alright. After after that five minutes, you have ten minutes to finish it, or
+Industrial Designer: It looks like candle wax.
+Project Manager: Yeah.
+Marketing Expert: Alright. And we uh
+Project Manager: And you can uh just uh relax and uh have cup of coffee or
+Marketing Expert: Right. Chill.
+Project Manager: oh no, they don't have beer here so you can't celebrate.
+Marketing Expert: Huh.
+Project Manager: You can just if you ma finish my presentation please. Uh over there.
+Marketing Expert: Uh Yeah?
+Project Manager: The presentation is still open. So if you finish that then you'll see uh Yeah next.
+Marketing Expert: Next slide.
+Project Manager: Oh yeah, we have to do the project uh evaluation. Just uh do that quickly.
+Marketing Expert: Yeah?
+Project Manager: Uh
+Marketing Expert: How do you do it?
+Project Manager: Uh well basically what that says, we discuss it and um So how were did the project process uh go?
+Marketing Expert: Alright.
+Project Manager: Did you, were you all pleased with the process as it was? Or are there uh
+Industrial Designer: Uh th uh do you mean the the interaction between us? Or",,,,,
+98,eml-15e126,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Atoka Cost
+
+Mansoor
+The I/C is a 10"" UltraSonic designed for a range of 35 mmcfd to +100 mmcfd.
+By using the US meter, this allows a wide range of volumes without changing out the tube when Agave want to increase the volumes.
+I/C to include
+US meter
+H2S
+H2O
+Chromatograph
+Flow control
+Positive Shut in
+EFM
+DAS
+UPS
+Building
+GFC
+Material cost =
+Install cost (contractor, inspection, Dlab, Eng, Proj. man) =
+Contingency =
+OH, AFUDC, =",,,,,
+99,job-464b41,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Technical Lead Developer <ORGANIZATION> <ADDRESS> <ADDRESS> <LOCATION> - <LOCATION> Date posted: 2020-12-21 Likes: 0 Dislikes: 0 Love: 0 Job description: Compensation: £75k - 85k | Equity Job type: Full-time Experience level: Lead Role: Frontend Developer Technologies reactjs node.js php laravel vue.js Job description Job description: Technical lead - Salary: c.£75-85K (plus equity package) TALNT is being developed and incubated by the <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> an industry-leading consultancy in people and transformational change with a global presence – and has an ambitious vision to be the ‘go to’ global platform for accurate and transparent data for workforce research and people analytics.
+<ORGANIZATION> is an online platform for providing analytics insights and knowledge on people moves to professionals within an industry to help them find solutions and make a difference in their markets.
+In June 2020 <ORGANIZATION> was successfully launched in beta test and is now rapidly scaling its users.
+Given the success of version 1 <ORGANIZATION> is now developing additional features and functionality to deliver increased value to its growing membership.
+To accelerate the growth of the business <ORGANIZATION> is seeking to hire a hands-on full stack developer to execute a product roadmap and act as a technical lead to an engineering and data science team that the successful candidate will build out over the next 12-18 months.",,,,,
+100,eml-2da75a,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: Jeanette Doll
+
+Teb,
+Regarding the end date, we are being required to put some sort of end date into our system. We can always go back in to extend should the assignment go beyond that date. Would you like me to extend it for 3 or 6 months, or through the end of 2002?
+I'll wait to hear back from Debbie on the coding.
+Thanks for the update!
+Liz",,,,,

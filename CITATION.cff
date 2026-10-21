@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Padding to k: code and data"
+type: software
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/AbhishekBarali/padding-to-k"
+authors:
+  - family-names: Barali
+    given-names: Abhishek
+    orcid: "https://orcid.org/0009-0007-3317-8437"
+    affiliation: "St. Xavier's College, Maitighar, Kathmandu, Nepal (Tribhuvan University)"
+  - family-names: Paudel
+    given-names: Aayush
+    affiliation: "St. Xavier's College, Maitighar, Kathmandu, Nepal (Tribhuvan University)"
+keywords:
+  - structured output
+  - JSON schema
+  - information extraction
+  - language models
+  - preregistration
+preferred-citation:
+  type: article
+  title: "Padding to k: A Minimum Count in the Schema Makes Open-Weight Models Pad Their Extraction Lists"
+  year: 2026
+  authors:
+    - family-names: Barali
+      given-names: Abhishek
+      orcid: "https://orcid.org/0009-0007-3317-8437"
+    - family-names: Paudel
+      given-names: Aayush

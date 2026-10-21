@@ -1,0 +1,5 @@
+# The harness runs on the machine that sends requests (the GPU box, or any machine for Bedrock).
+# The model server itself runs in the pinned vLLM Docker image (configs/models.yaml), not from here.
+PyYAML==6.0.3
+boto3==1.43.112      # only for harness/bedrock_probe.py
+numpy==2.5.4         # optional; the analysis notebooks use it

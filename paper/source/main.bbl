@@ -1,0 +1,192 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Carletta et~al.(2006)Carletta, Ashby, Bourban, Flynn, Guillemot,
+  Hain, Kadlec, Karaiskos, Kraaij, Kronenthal, Lathoud, Lincoln, Lisowska,
+  McCowan, Post, Reidsma, and Wellner}]{carletta2005ami}
+Jean Carletta, Simone Ashby, Sebastien Bourban, Mike Flynn, Mael Guillemot,
+  Thomas Hain, Jaroslav Kadlec, Vasilis Karaiskos, Wessel Kraaij, Melissa
+  Kronenthal, Guillaume Lathoud, Mike Lincoln, Agnes Lisowska, Iain McCowan,
+  Wilfried Post, Dennis Reidsma, and Pierre Wellner. 2006.
+\newblock \href {https://doi.org/10.1007/11677482_3} {{The AMI Meeting Corpus:
+  A Pre-announcement}}.
+\newblock In \emph{{Machine Learning for Multimodal Interaction}}, volume 3869
+  of \emph{{Lecture Notes in Computer Science}}, pages 28--39, Berlin,
+  Heidelberg. Springer.
+\newblock MLMI 2005.
+
+\bibitem[{Caufield et~al.(2019)Caufield, Zhou, Bai, Liem, Garlid, Chang, Sun,
+  Ping, and Wang}]{caufield2019maccrobat}
+J.~Harry Caufield, Yichao Zhou, Yunsheng Bai, David~A. Liem, Anders~O. Garlid,
+  Kai-Wei Chang, Yizhou Sun, Peipei Ping, and Wei Wang. 2019.
+\newblock \href {https://doi.org/10.1101/19009118} {{A Comprehensive Typing
+  System for Information Extraction from Clinical Narratives}}.
+\newblock \emph{{medRxiv}}.
+
+\bibitem[{Chebolu et~al.(2024)Chebolu, Dernoncourt, Lipka, and Solorio}]{roast}
+Siva Uday~Sampreeth Chebolu, Franck Dernoncourt, Nedim Lipka, and Thamar
+  Solorio. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2405.20274} {{ROAST:
+  Review-level Opinion Aspect Sentiment Target Joint Detection for ABSA}}.
+\newblock \emph{{arXiv preprint arXiv:2405.20274}}.
+
+\bibitem[{Ding et~al.(2021)Ding, Xu, Chen, Wang, Han, Xie, Zheng, and
+  Liu}]{ding2021fewnerd}
+Ning Ding, Guangwei Xu, Yulin Chen, Xiaobin Wang, Xu~Han, Pengjun Xie, Haitao
+  Zheng, and Zhiyuan Liu. 2021.
+\newblock \href {https://doi.org/10.18653/v1/2021.acl-long.248} {{Few-NERD: A
+  Few-shot Named Entity Recognition Dataset}}.
+\newblock In \emph{{Proceedings of the 59th Annual Meeting of the Association
+  for Computational Linguistics and the 11th International Joint Conference on
+  Natural Language Processing (Volume 1: Long Papers)}}, pages 3198--3213,
+  Online. Association for Computational Linguistics.
+
+\bibitem[{Dong et~al.(2025)Dong, Ruan, Cai, Lai, Xu, Zhao, and
+  Chen}]{dong2025xgrammar}
+Yixin Dong, Charlie~F. Ruan, Yaxing Cai, Ruihang Lai, Ziyi Xu, Yilong Zhao, and
+  Tianqi Chen. 2025.
+\newblock \href {https://arxiv.org/abs/2411.15100} {{XGrammar: Flexible and
+  Efficient Structured Generation Engine for Large Language Models}}.
+\newblock In \emph{Proceedings of Machine Learning and Systems}, volume~7.
+
+\bibitem[{Geng et~al.(2025)Geng, Cooper, Moskal, Jenkins, Berman, Ranchin,
+  West, Horvitz, and Nori}]{geng2025jsonschemabench}
+Saibo Geng, Hudson Cooper, Micha{\l} Moskal, Samuel Jenkins, Julian Berman,
+  Nathan Ranchin, Robert West, Eric Horvitz, and Harsha Nori. 2025.
+\newblock \href {https://arxiv.org/abs/2501.10868} {{JSONSchemaBench: A
+  Rigorous Benchmark of Structured Outputs for Language Models}}.
+\newblock \emph{Preprint}, arXiv:2501.10868.
+
+\bibitem[{Han et~al.(2024)Han, Yang, Peng, Tiwari, Wan, Liu, and
+  Wang}]{han2023empirical}
+Ridong Han, Chaohao Yang, Tao Peng, Prayag Tiwari, Xiang Wan, Lu~Liu, and
+  Benyou Wang. 2024.
+\newblock \href {https://arxiv.org/abs/2305.14450} {{An Empirical Study on
+  Information Extraction using Large Language Models}}.
+\newblock \emph{Preprint}, arXiv:2305.14450.
+\newblock Version 2; version 1 (2023) was titled ``Is Information Extraction
+  Solved by ChatGPT? An Analysis of Performance, Evaluation Criteria,
+  Robustness and Errors''.
+
+\bibitem[{Ivgi et~al.(2024)Ivgi, Yoran, Berant, and Geva}]{ivgi2025loops}
+Maor Ivgi, Ori Yoran, Jonathan Berant, and Mor Geva. 2024.
+\newblock \href {https://arxiv.org/abs/2407.06071} {{From Loops to Oops:
+  Fallback Behaviors of Language Models Under Uncertainty}}.
+\newblock In \emph{NeurIPS 2024 Workshop on Attributing Model Behavior at Scale
+  (ATTRIB)}.
+
+\bibitem[{Kirichenko et~al.(2025)Kirichenko, Ibrahim, Chaudhuri, and
+  Bell}]{kirichenko2025abstentionbench}
+Polina Kirichenko, Mark Ibrahim, Kamalika Chaudhuri, and Samuel~J. Bell. 2025.
+\newblock \href {https://arxiv.org/abs/2506.09038} {{AbstentionBench: Reasoning
+  LLMs Fail on Unanswerable Questions}}.
+\newblock \emph{Preprint}, arXiv:2506.09038.
+
+\bibitem[{Kwon et~al.(2023)Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang,
+  and Stoica}]{kwon2023vllm}
+Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody~Hao Yu,
+  Joseph~E. Gonzalez, Hao Zhang, and Ion Stoica. 2023.
+\newblock \href {https://doi.org/10.1145/3600006.3613165} {{Efficient Memory
+  Management for Large Language Model Serving with PagedAttention}}.
+\newblock In \emph{Proceedings of the 29th Symposium on Operating Systems
+  Principles (SOSP '23)}, pages 611--626. ACM.
+
+\bibitem[{Lee et~al.(2026)Lee, D'Antoni, and Berg-Kirkpatrick}]{lee2026format}
+Ivan~Yee Lee, Loris D'Antoni, and Taylor Berg-Kirkpatrick. 2026.
+\newblock \href {https://arxiv.org/abs/2604.03616} {{The Format Tax}}.
+\newblock \emph{Preprint}, arXiv:2604.03616.
+
+\bibitem[{Park et~al.(2024)Park, Wang, Berg-Kirkpatrick, Polikarpova, and
+  D'Antoni}]{park2026grammar}
+Kanghee Park, Jiayu Wang, Taylor Berg-Kirkpatrick, Nadia Polikarpova, and Loris
+  D'Antoni. 2024.
+\newblock \href {https://arxiv.org/abs/2405.21047} {{Grammar-Aligned
+  Decoding}}.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~37.
+
+\bibitem[{Park et~al.(2019)Park, Shin, Lee, Lee, Surh, Seo, and
+  Lee}]{park2019cord}
+Seunghyun Park, Seung Shin, Bado Lee, Junyeop Lee, Jaeheung Surh, Minjoon Seo,
+  and Hwalsuk Lee. 2019.
+\newblock \href {https://openreview.net/forum?id=SJl3z659UH} {{CORD: A
+  Consolidated Receipt Dataset for Post-OCR Parsing}}.
+\newblock In \emph{{Workshop on Document Intelligence at NeurIPS 2019}}.
+
+\bibitem[{Qian(2026)}]{qian2026unreliable}
+Jiahong Qian. 2026.
+\newblock \href {https://arxiv.org/abs/2610.20417} {{From Unreliable to Usable:
+  Decomposing Failure Modes and Confidence Signals in LLM Entity Extraction --
+  Evidence from Cyber Threat Intelligence}}.
+\newblock \emph{Preprint}, arXiv:2610.20417.
+
+\bibitem[{Srivastava et~al.(2023)Srivastava, Singh, Matsumoto, Raz, Costa,
+  Poore, and Yao}]{srivastava2023mailex}
+Saurabh Srivastava, Gaurav Singh, Shou Matsumoto, Ali Raz, Paulo Costa, Joshua
+  Poore, and Ziyu Yao. 2023.
+\newblock \href {https://doi.org/10.18653/v1/2023.emnlp-main.801} {{MailEx:
+  Email Event and Argument Extraction}}.
+\newblock In \emph{{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}}, pages 12964--12987, Singapore. Association for
+  Computational Linguistics.
+
+\bibitem[{Tam et~al.(2024)Tam, Wu, Tsai, Lin, yi~Lee, and Chen}]{tam2024speak}
+Zhi~Rui Tam, Cheng-Kuang Wu, Yi-Lin Tsai, Chieh-Yen Lin, Hung yi~Lee, and
+  Yun-Nung Chen. 2024.
+\newblock \href {https://arxiv.org/abs/2408.02442} {{Let Me Speak Freely? A
+  Study on the Impact of Format Restrictions on Large Language Model
+  Performance}}.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing: Industry Track}.
+
+\bibitem[{Usman(2026)}]{usman2026phantomfill}
+Rana~Muhammad Usman. 2026.
+\newblock \href {https://arxiv.org/abs/2607.20492} {{PhantomFill: When the Form
+  Demands an Answer, Language Models Invent One}}.
+\newblock \emph{Preprint}, arXiv:2607.20492.
+
+\bibitem[{Vishnubhotla et~al.(2022)Vishnubhotla, Hammond, and
+  Hirst}]{vishnubhotla2022pdnc}
+Krishnapriya Vishnubhotla, Adam Hammond, and Graeme Hirst. 2022.
+\newblock \href {https://aclanthology.org/2022.lrec-1.628/} {{The Project
+  Dialogism Novel Corpus: A Dataset for Quotation Attribution in Literary
+  Texts}}.
+\newblock In \emph{{Proceedings of the Thirteenth Language Resources and
+  Evaluation Conference}}, pages 5838--5848, Marseille, France. European
+  Language Resources Association.
+
+\bibitem[{Wen et~al.(2025)Wen, Yao, Feng, Xu, Tsvetkov, Howe, and
+  Wang}]{wen2025know}
+Bingbing Wen, Jihan Yao, Shangbin Feng, Chenjun Xu, Yulia Tsvetkov, Bill Howe,
+  and Lucy~Lu Wang. 2025.
+\newblock \href {https://doi.org/10.1162/tacl_a_00754} {{Know Your Limits: A
+  Survey of Abstention in Large Language Models}}.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  13:529--556.
+
+\bibitem[{Yang(2026)}]{yang2026prompt}
+Dekun Yang. 2026.
+\newblock \href {https://arxiv.org/abs/2607.01240} {{Prompt Framing Distorts
+  Count-Based Evaluation of LLM Error Detection: Evidence from Numeric
+  Anchoring}}.
+\newblock \emph{Preprint}, arXiv:2607.01240.
+
+\bibitem[{Zhang et~al.(2022)Zhang, Jensen, Sonniks, and
+  Plank}]{zhang2022skillspan}
+Mike Zhang, Kristian Jensen, Sif Sonniks, and Barbara Plank. 2022.
+\newblock \href {https://doi.org/10.18653/v1/2022.naacl-main.366} {{SkillSpan:
+  Hard and Soft Skill Extraction from English Job Postings}}.
+\newblock In \emph{{Proceedings of the 2022 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}}, pages 4962--4984, Seattle, United States. Association for
+  Computational Linguistics.
+
+\bibitem[{Zhou et~al.(2023)Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and
+  Hou}]{zhou2023instruction}
+Jeffrey Zhou, Tianjian Lu, Swaroop Mishra, Siddhartha Brahma, Sujoy Basu,
+  Yi~Luan, Denny Zhou, and Le~Hou. 2023.
+\newblock \href {https://arxiv.org/abs/2311.07911} {{Instruction-Following
+  Evaluation for Large Language Models}}.
+\newblock \emph{Preprint}, arXiv:2311.07911.
+
+\end{thebibliography}

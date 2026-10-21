@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_together-deepseek-v4.1-flash_full-repeat",
+ "model_key": "together-deepseek-v4.1-flash",
+ "source": "d7746fb8765beb653bc9bc79e9b21c45ec36f96acfc8c9b107e525bdbe11e252",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 300,
+ "entries": 844
+}

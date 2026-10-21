@@ -1,0 +1,314 @@
+row,doc_id,set,list_asked,definition,text,checker,items_found,n_found,unclear_y_n,notes
+1,eml-eaddd3,emails,requests,"Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.","Subject: Petro-Hunt, L.L.C.
+
+We have received an executed financial Master Agreement:
+
+Type of Contract:ISDA Master Agreement (Multicurrency-Cross Border)
+Effective Date:May 30, 2001
+Enron Entity:Enron North America Corp.
+Counterparty:Petro-Hunt, L.L.C.
+Transactions Covered:Approved for all products with the exception of:
+Foreign Exchange
+Confirming Entity:Enron North America Corp.
+Governing Law:Texas
+Special Handling Requirements:No special handling requirements
+Copies will be distributed.",B,,,,
+2,jbk-d740c8,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.","Spoken and written English at negotiation level.
+What’s in it for you A job in a growing global organisation with many contacts and carrier opportunities and a result-oriented working environment with energetic and engaged colleagues.
+At <ORGANIZATION> <ORGANIZATION> we believe in work-life balance have flexible working hours sports and training facilities and offer an attractive pension and insurance scheme incl.
+health care arrangements.
+For more information please contact <NAME> <NAME> Vice president <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> mobile: <CONTACT> <CONTACT> <CONTACT> <CONTACT> <CONTACT> Please send your motivated application and CV via link no later than 2 June 2019",B,,,,
+3,eml-5f9388,emails,requests,"Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.","Subject: RE: credit Guaranty
+
+In the past, have we provided Enron Corp gty's for brokerage accounts? Can we verifty this entiy is a 100% owned subsidiary? What is this legal entity used for?",B,,,,
+4,jbk-f9e72b,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.","* Keen understanding of financial control and budget management
+* Ability to work in large collaborative teams to achieve organizational goals
+*
+Passionate about building an innovative culture
+<ORGANIZATION> <ORGANIZATION>
+<ORGANIZATION> is a global leader in financial services providing strategic advice and products to the world's most prominent corporations governments wealthy individuals and institutional investors.
+Our first-class business in a first-class way approach to serving clients drives everything we do.
+We strive to build trusted long-term partnerships to help our clients achieve their business objectives.
+We recognize that our people are our strength and the diverse talents they bring to our global workforce are directly linked to our success.
+We are an equal opportunity employer and place a high value on diversity and inclusion at our company.",B,,,,
+5,job-2f4da8,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.","1) Experience with running with a full stack development: Java Python React JS Redux
+2) Knowledge of public and private cloud offerings
+3) Data warehousing/ETL experience would be useful
+4) Knowledge of fixed income instruments and reference data would be useful
+<ORGANIZATION> <ORGANIZATION>
+<ORGANIZATION> is a global leader in financial services providing strategic advice and products to the world's most prominent corporations governments wealthy individuals and institutional investors.
+Our first-class business in a first-class way approach to serving clients drives everything we do.
+We strive to build trusted long-term partnerships to help our clients achieve their business objectives.
+We recognize that our people are our strength and the diverse talents they bring to our global workforce are directly linked to our success.
+We are an equal opportunity employer and place a high value on diversity and inclusion at our company.",B,,,,
+6,mtg-5ed5d4,meetings,action items,"Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.","Marketing Expert: So you can go. We can go through.
+Project Manager: Okay.
+Marketing Expert: So I made an evaluation and the the evaluation criteria is made according to the users' requirements and the market trends we talked about uh during the previous uh meetings. So you can go through and
+Project Manager: Okay.
+Marketing Expert: okay so uh we have uh six points. We we talked about before.
+Project Manager: Okay.
+Marketing Expert: So we we want to have a product fancy look and feel, technologically innovative, easy to use, fashion, easy to find in a room, and robust,
+Project Manager: Yeah.
+Industrial Designer: Mm-hmm.
+Marketing Expert: uh and uh uh I have a scale of uh seven points.
+Project Manager: Yeah.
+Marketing Expert: Okay. So I go through all the uh all the points here,
+Project Manager: Yeah.
+Marketing Expert: and uh according to what you think about the this project you can uh mm make a one point, two point or seven point. Okay?
+Project Manager: Okay.
+Marketing Expert: And after we ha we have an an average, and uh we see.
+Industrial Designer: Mm-hmm.
+Project Manager: Okay.
+Marketing Expert: The okay? Uh so uh fancy look and feel, what do you think?
+Project Manager: Okay. Maybe you can presen
+Marketing Expert: F between o one and seven.
+Project Manager: okay. Maybe hold it. So I think it's uh very uh very nice.
+User Interface: I give it a I give it a five.
+Project Manager: What do you think? Yeah. So it's between one and seven?
+Marketing Expert: Yeah.
+Project Manager: Seven is the highest uh?
+Marketing Expert: Seven is the
+Project Manager: I will give a six.
+Industrial Designer: I will give a a five.
+Marketing Expert: Mm-hmm.
+User Interface: And you?
+Marketing Expert: sorry.
+User Interface: Do you vote uh Christine?
+Marketing Expert: eh?
+User Interface: Do you also vote?
+Marketing Expert: No, I just want to see something
+Project Manager: Maybe we all have to agree on a common
+User Interface: Well, we can very easily.
+Project Manager: Yeah.
+Marketing Expert: Mm-hmm. Uh I think uh and need to as well.
+Project Manager: No problem.
+Marketing Expert: Need to
+Project Manager: So
+Marketing Expert: uh I don't know if you we ha we have to put uh one uh f If it's better or
+Project Manager: this is your One is most.
+User Interface: I
+Marketing Expert: Uh-uh. Um.
+Project Manager: Well, we can choose what we want.
+Marketing Expert: Yeah.
+Project Manager: Okay,
+Marketing Expert: Or maybe we can say s
+Project Manager: let's say that seven is the best.
+Marketing Expert: seven is the best mm.
+Project Manager: Okay. So so do note the grade we have five, six for me,
+Industrial Designer: Five.
+Project Manager: five. And what what's your choice?
+Marketing Expert: Oh sorry. Six
+Project Manager: How much would you give on the fancy aspect, on the fashionable aspect?
+Marketing Expert: Uh s you can how much what?
+Project Manager: How much would you you don't answer to this uh questionnaire?
+Marketing Expert: Oh yes I mm I dunno mm,",B,,,,
+7,med-40e777,clinical,medications,"Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.","This 73-year-old female, with a history of coronary artery disease and situs inversus, had recently noticed left arm exercise weakness. The magnetic resonance angiogram and computer tomography of the upper limb vessels showed critical stenosis of the left-side SCA with calcification near the orifice (Fig.1). Percutaneous revascularization was done via right femoral artery approach, and severe left SCA stenosis was confirmed (Fig.2A) (Supplementary Video 1, only online).",B,,,,
+8,jbk-5d2045,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.","If you need us to make any adjustments to our recruitment process speak to our recruiter <NAME> <NAME> who will be happy to support you.
+Why wait? Apply now to build an amazing career and be part of a brilliant team.
+We can't wait to hear from you.
+To find out more about working with us search <NAME> across social media.
+A job you love to talk about Just so you know: if your application is successful we'll ask you to complete a criminal record check.
+And depending on the role you have applied for and the nature of any convictions you may have we might have to withdraw the offer.
+Job benefits: <ORGANIZATION> <ORGANIZATION> for the TV you love all in one place A generous pension package Private healthcare Discounted mobile and broadband Company description: <DESCRIPTION>$",B,,,,
+9,job-249e06,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.","The products can be anything from screws to car tires and therefore you will have to do some lifts during the day.
+As the job can be physical it is important that you enjoy this.
+It is an advantage if you have experience with a runner but it is not required.
+Working hours The shifts will be placed between Monday and Friday and will be from 7:00 to 15:30.
+If the company is busier than usual weekend shifts can occur.
+We expect there to be 2-3 shifts per week until spring 2017 and the possibility for full time in the busy periods and an extension for the best candidates.
+We are looking for following profile: It is expected that you are precise and focused and you enjoy manual work.",B,,,,
+10,med-8fa005,clinical,medications,"Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.","Before referral, he had been admitted to other hospitals 7 times because of infection episodes. He was taking furosemide, spironolactone, enalapril, and carvedilol before referral. When he was referred to our hospital at 14 months old, his body weight was 6 kg (less than 3rd percentile) and his height was 71 cm (less than 3rd percentile).",B,,,,
+11,mtg-c09f78,meetings,action items,"Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.","Industrial Designer: Two.
+Marketing Expert: Yeah.
+Industrial Designer: Yeah?
+Project Manager: Yep.
+Industrial Designer: Yeah.
+Project Manager: Right. There's a fancy look-and-feel.
+Marketing Expert: Uh, yes. That that was uh, yeah, one of the most important things that uh Trendwatch said. I didn't uh say it in my presentation. But um, well does it have that? I would say yes. So um Well, let's also give this a two. T
+Industrial Designer: I gave this a one because of the rubber. It feels soft. Uh, it looks like a l uh uh b uh, a bit like a joystick. It's Yeah. Yeah, f very fancy trendy.
+Project Manager: Okay.
+User Interface: Yes, a one.
+Project Manager: I say a two. It's a a bit personal. If it's fancy.
+Marketing Expert: Yeah.
+Project Manager: So I think s two is better.
+User Interface: Yeah, okay.
+Marketing Expert: Okay. Two.
+Industrial Designer: Two is okay.
+Marketing Expert: And um, then the last one I could think of,
+Industrial Designer: .
+Marketing Expert: uh it goes with the latest trends.
+Project Manager: No, it's new. Innovation.
+Marketing Expert: If we looked at the latest trends for the uh younger people, and they ate uh fruit and vegetables, well it has a um a nice colour, uh well compared to food but we didn't uh We did not paint any uh fruit and vegetable on it for something like that.
+Industrial Designer: Oh.
+Marketing Expert: So, I would did not give this uh a one or two. I We'll go for a three.
+Industrial Designer: I go for two because uh the the shapes are still round.
+Project Manager: .
+Industrial Designer: Uh, the latest trends are soft things, you know, like uh I said in my presentation.
+Marketing Expert: Yes.
+Industrial Designer: Uh But the the colours are um basic, like yellow, red, um blue. Something what also younger people want. It's also a trend, so I'll give it a two.
+Project Manager: Okay.
+User Interface: Mm, three.
+Project Manager: Me too. Three.
+Marketing Expert: A three.
+Project Manager: Yeah.
+Marketing Expert: Okay.",B,,,,
+12,eml-503a6d,emails,requests,"Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.","Subject: FW: Cost Center
+
+Rod - What is our policy of accepting direct charges for corporate assistance? Should this remain in corporate and be a part of the allocation?
+Mike - Was any agreement made up front with Brindle to cover Kyle's expenses? Was the request to travel made by Dave Odneal or yourself?
+Morris A. Brassfield",B,,,,
+13,job-5cf061,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.","The <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> for Protein Research <ORGANIZATION> <ORGANIZATION> Initial Training Network: PhD Stipend in Quantitative proteomics of SUMOylation and other ubiquitin-like molecules in cellular stress responses
+Title: PhD stipend Department of Proteomics Tenure: Three years
+Employment conditions:
+The <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> for Protein Research (CPR) is offering one PhD stipend at the Department of Proteomics.
+The research projects will be carried out in collaboration with other groups in <LOCATION> as part of a <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> (ITN) and you will have excellent training opportunities.
+The ITN mobility rules to apply; the candidate should not have spent more than 12 months in the last 3 years in <LOCATION> the candidate must have less than 4 years research experience the candidate must have a Master degree which allows to start the PhD (in case of ESRs) the candidate has to be recruited before October 2013.",B,,,,
+14,jbk-07d4dd,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.","Full Stack Developer
+Technologies
+.net c# cloud
+Job description
+For our Digital Solutions & Services team at our HQ in <LOCATION> near <LOCATION> we are looking for
+FULL STACK SOFTWARE DEVELOPER (M/F/D) YOUR TASKS:
+As part of a small team you will develop in close cooperation with product management and technical sales the digital products and services of <ORGANIZATION> <ORGANIZATION> in the field of product labelling.
+You will focus on:
+Design and development of software within customer-specific projects
+Support of the development of our new software solution",B,,,,
+15,job-41a50e,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.","A hands-on role where you will build and manage your own teams and coordinate outsourced development as required.
+Our technology: <ORGANIZATION> is building the future of autonomous retail and smart inventory management.
+We are developing a revolutionary IoT Platform and telemetric Smart Kiosks with state-of-the-art smart shelving and monitoring technology leveraging newest concepts and engineering principles like automation autoscaling resilience real time monitoring sensor fusion computer vision machine learning and deep analytics.
+Our stack consists of modern Javascript Typescript Node.Js React & Redux Docker containers client libraries GraphQL all built on a microservice-based kubernetes architecture supported by the Google Cloud Platform.
+We strongly believe in the power of CICD and integrate and deploy our applications with modern CICD tools from Gitlab.",B,,,,
+16,mtg-9d65aa,meetings,action items,"Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.","Project Manager: Oh you always have in the centre an Okay button, for your menu.
+Industrial Designer: Yeah.
+User Interface: Yeah, alright.
+Project Manager: Menu button.
+Industrial Designer: You should Yeah. I think that's important. Uh And and the settings to change the brightness
+Project Manager: Channel, setting, menu. We have to go.
+Industrial Designer: the settings to change the brightness and the contrast.
+Project Manager: Okay.
+Industrial Designer: Channel, yeah.
+Project Manager: So um Save.
+Industrial Designer: Chief? Chief?
+Project Manager: Yes see.
+Industrial Designer: Th the menu menu button is also important. Then you can uh
+Project Manager: Yes I have put it in.
+Industrial Designer: Where? I don't see it.
+Project Manager: Here.
+Industrial Designer: Oh Menu, alright.
+User Interface: I think things like uh contrast and brightness should be um in the menu, yeah.
+Industrial Designer: In the menu. And you can uh then adjust it with the zapping buttons or something.
+User Interface: Yeah, the
+Industrial Designer: Because uh the zapping buttons aren't used then if you are in the menu.
+Project Manager: Alright.
+User Interface: Or the volume or something like that.
+Project Manager: Guys?
+Industrial Designer: Yeah. Or the volume, yeah.
+Project Manager: We're going to uh go to our uh rooms, and uh we'll have to decide s things on our own I think. So
+User Interface: Your pen.
+Marketing Expert: Ah. Great.
+Industrial Designer: Yes chief.
+Marketing Expert: Alright.
+User Interface: I thought we'd uh lunch uh right now, or not?
+Project Manager: Well see you uh
+Industrial Designer: Yeah this is this is your thing.
+Project Manager: W w we have lunchtime, by the way, now uh so uh
+Marketing Expert: Ah. Okay.
+User Interface: Yeah, lunch break.
+Industrial Designer: I am hungry.
+Project Manager: Lunch.
+Marketing Expert: Get into my belly.
+Project Manager: Ah. We didn't exactly do everything but So
+Industrial Designer: See you later mate.",B,,,,
+17,mtg-b6cb26,meetings,action items,"Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.","Project Manager: Well that's that can be down to bit of market researching you know,
+Industrial Designer: Mm.
+Project Manager: if that's easy enough to find out what colours are more popular.
+User Interface: Yeah.
+Industrial Designer: And produce less of the silly colours, maybe.
+Project Manager: Mm. Okay. Alright. Well um, we'll alright let's what we're gonna aim to get together by the next meeting then um is from you Catherine wi your y y you know you're gonna be working on the the look and feel design.
+Industrial Designer: Yep.
+Project Manager: Um Gabriel, you're gonna be working on, you know come up with the the user interface design. Then basically, you two are gonna be working together on this. You won't be going off to your separate offices.
+Industrial Designer: Alright.
+User Interface: Okay.
+Project Manager: Um and I think you are gonna get a chance to play with some clay.
+User Interface: Oh right.
+Project Manager: I think, yeah, it's gonna you know,
+Industrial Designer: Mm.
+Project Manager: come up ki you know, be ab for the next meeting be able to come in and show us some some i some physical ideas. 'Cause at the moment, uh you know, it's it's hard.
+Industrial Designer: Cool.
+User Interface: Yeah.
+Project Manager: We were kinda going, yeah, it's gotta feel nice, it's gotta look cool and that it's
+Industrial Designer: It is.
+Project Manager: you know now we can actually start, you know, s some sort of physical something or other.
+User Interface: That sounds good.",B,,,,
+18,jbk-d133c6,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.","THE BUSINESS
+<ORGANIZATION> <ORGANIZATION> is an international growth company working to give players a better and more secure iGaming experience.
+Through our products we will create a more transparent and honest industry.
+Our ambition is that quality and innovation must also apply to the iGaming industry and we are determined to set new standards and to take the lead in the market.
+We are a dynamic energetic and diverse workplace encouraging an open and informal tone strong unity and high ambitions.
+More than 300 dedicated and talented employees work together and across our offices spread in the hearts of <LOCATION> <LOCATION> <LOCATION> <LOCATION> <LOCATION> <LOCATION> <LOCATION> <LOCATION> <LOCATION> <LOCATION> and <LOCATION>.
+Equal Opportunity Employer We are an equal opportunity employer and diversity is what gives us the little extra we need.
+We believe diverse teams help us make better products.",B,,,,
+19,eml-bba8a3,emails,requests,"Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.","Subject: CNR Invoices for April 2002
+
+You gave me 2 invoices for CNR that are not on your April 2002 payment worksheet.
+Producer Volume Amount
+J E Harris 815 $260.80
+Carol Littleton 748 $239.36
+Should I toss these 2 invoices or should they be included in the list?",B,,,,
+20,med-3dfcb3,clinical,medications,"Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.","One year later, the patient developed liver decompensation with bleeding esophageal varices, ascites, and splenomegaly, and he was referred to LT (Model for End Stage Liver Disease score 17). He underwent successful orthotopic LT in November 2011 in our center, and the donor came from voluntary deceased citizen organ donation in China. Liver histopathology after LT revealed micronodular cirrhosis with SC and positive immunostaining (CD1a and S100), suggestive of LCH involving in the liver (Fig.2). Postoperatively, the man continued to be immunosuppressed with tacrolimus and mycofenolate mofetil.",B,,,,
+21,mtg-4803ad,meetings,action items,"Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.","User Interface: then we should just uh take a look at the costs and uh especially for the voice recognition.
+Industrial Designer: So Yes, because I don't know Yes. I d I really don't know. So
+User Interface: No.
+Industrial Designer: It can be costly.
+Project Manager: Okay.
+Industrial Designer: Maybe not.
+Project Manager: I'm not sure how how we'll f uh determine the costs, I will have a look at it. Maybe you will get some information on that.
+Industrial Designer: Yes.
+Project Manager: Um I'm not sure how how that
+Industrial Designer: Yes, I al I I hope my personal coach will uh have a lo uh look at it.
+Project Manager: Yep. Okay, great. Um well, I think we're qui quite done.
+User Interface: We're done, I think.
+Project Manager: Um for now we will have the lunch break.
+Industrial Designer: How nice.
+Project Manager: Um I'm don't know how long the break will be, but we'll find out.
+User Interface: Me neither.
+Project Manager: Um then we will have thirty minutes of time to perform our individual work, uh and I'm sure your personal coaches will uh assist you with it. Um I will put the minutes I just made in the project documents folder. If you want to look at it um well, just do. Um the Interface Designer, um I would like to the next meeting I would like to receive the uh components concept. Uh Roo, um from you I would like to see
+User Interface: Interface industrial.
+Project Manager: Uh I'm sorry, yeah,
+User Interface: Yeah.
+Project Manager: I'm sorry. User Interface Designer, uh Roo, I would like to see the user interface c uh concept.
+Industrial Designer: Well, we understand.
+Project Manager: And um
+User Interface: Uh the only problem is it that it depends on the divisions the decis uh decisions Sebastian makes. About the voice recognition.
+Industrial Designer: Well
+Project Manager: Well, i it should be easy,
+User Interface: Well
+Project Manager: that's w w what we concluded. It should be an easy interface with not so much buttons. S just a a p a p a volume and a programme one. And um um yeah, some some fancy lights.
+Industrial Designer: Mm yes.
+User Interface: Yeah.
+Project Manager: I think that's what we decided.
+Industrial Designer: So we drop the voice recognition?
+Project Manager: No no no, we didn't
+Industrial Designer: Or Oh.
+Project Manager: but it shouldn't be integrated yeah, it's of course it's user interface, but um i I was talking about really the design of the
+Industrial Designer: Okay. Well um do we really have to decide now or can we decide next meeting?
+Project Manager: No. We can decide the next meeting. Yep.
+Industrial Designer: Okay. Because I'll have some updated info on that uh",B,,,,
+22,med-025498,clinical,medications,"Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.","Follow-up abdominal CT scan performed 1 month after reoperation showed a newly onset 1.7 cm sized subtle enhancing soft tissue mass in splenic bed, and positron emission tomography (PET) showed multiple FDG uptake(max SUV > 3.80) in left upper and lower quadrant area of abdomen, paralumbar area including right subphrenic area (Fig.5A, B, C). Follow-up AFP was 162.69 ng/mL. Systemic chemotherapy started with cisplatin (60 mg/m2), 5-fluorourasil (5-FU) (600 mg/m2), vincristine (1.5 mg/m2) and total 3 cycles of chemotherapy were done every 4 week.",B,,,,
+23,eml-f794b5,emails,requests,"Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.","Subject: FW: Power World Training
+
+Folks,
+Please let Lance and myself know if any of you are interested in attending the Power World training. Power World provides visual representation of an optimal power flow model that can help make decisions regarding potential TLR's and price impacts of congestion. We have the program now and the intent is to make more use of it over the next few months and as RTO's and congestion pricing becomes more prevalent.
+Thanks,
+Tom.",B,,,,
+24,med-e47912,clinical,medications,"Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.","A 69-year-old woman with a history of hypertension presented with a generalized petechial rash and shortness of breath of 3 days duration. The rash was nonpruritic, painless, and started at the thighs, but rapidly disseminated to the rest of the body. She had progressive dyspnea on exertion, with a significant decrease in exercise tolerance. She denied fever, headache, dizziness, hemoptysis, or bleeding from anywhere. There was no history of new drug use, unusual food intake, contact with any sick persons, or recent travel. Her only medication was enalapril, which she had been taking for several years.",B,,,,
+25,job-de10cd,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.","Above all you’re a pragmatist who’s willing to challenge us as well as yourself.
+What you’ll get:
+On-target bonus scheme based on company performance: we all work together to achieve our goals
+25 days of annual leave (plus 8 bank holidays and the option to purchase an extra week) 2 CEO-discretionary days off at Christmas (paid) 2 days off per year (paid) for charity volunteering
+Access to healthy training budgets
+2 annual company socials plus a regular social calendar throughout the year
+Mental health and wellbeing perks like talking therapies with Self Space monthly mindfulness and fortnightly yoga
+Flexible working hours with regular working from home once we go back to the office
+Vitality Health Insurance and reward scheme (inc.
+50% off Virgin Active gyms) Perkbox membership wellbeing budgets and Cycle to Work scheme",B,,,,

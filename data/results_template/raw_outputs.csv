@@ -1,0 +1,1 @@
+request_id,also_answers,doc_id,set,condition,k,n,wording_id,schema_id,enforce_schema,prompt_sha256,run_id,model_key,backend,api_model,model_revision,utc,attempts,http_status,transport_error,latency_ms,status,request_params,schema_sha256,content,reasoning_content,finish_reason,usage,system_fingerprint,response_model,logprobs,error_body

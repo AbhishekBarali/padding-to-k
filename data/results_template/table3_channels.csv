@@ -1,0 +1,1 @@
+model,condition,k,set_scope,n_docs,n_outputs,over_count_rate,over_count_ci_low,over_count_ci_high,invented_rate,invented_ci_low,invented_ci_high,mean_excess,exact_k_rate,placeholder_share,invalid_rate,truncated_rate

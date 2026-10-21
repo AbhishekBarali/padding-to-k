@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_qwen3.5-9b-nothink_think-filters_s3",
+ "model_key": "qwen3.5-9b-nothink",
+ "source": "c05ed006877baca07d3006dcd80c6a68c36c503d893876d49fa9bd6fe1b886c2",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 4464,
+ "entries": 11725
+}

@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_together-qwen3.5-9b_full",
+ "model_key": "together-qwen3.5-9b",
+ "source": "efe9beeccf2bf93043cb25315e98da0f86e8c599155e053e4e2147f095ff5fa9",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 26784,
+ "entries": 64868
+}

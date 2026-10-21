@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-kimi-k3-think_pilot",
+ "model_key": "bedrock-kimi-k3-think",
+ "source": "5d87ee9ffa65a65131d70d9d4495f14031b467fe7b31317a41e2eb65764f4614",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 2520,
+ "entries": 5163
+}

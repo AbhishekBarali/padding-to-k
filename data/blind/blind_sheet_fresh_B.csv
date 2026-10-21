@@ -1,0 +1,275 @@
+row,doc_id,set,list_asked,definition,text,checker,items_found,n_found,unclear_y_n,notes
+2,rcp-73317d,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","ORIGINAL NO SALT
+1 12,000 12,000
+SOUR CREAM N ONION
+2 17,000 34,000
+SUB TOTAL 46,000
+GRAND TOTAL 46,000
+CASH 100,000
+CHANGE DUE 54,000",B,ORIGINAL NO SALT; SOUR CREAM N ONION,2,,
+6,mtg-42912b,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: Okay we all all set? Right. Well this is the uh final detailed design meeting. Um we're gonna discuss the look and feel design, the user interface design, and we're gonna evaluate the product. And the end result of this meeting has to be a decision on the details of this remote control, like absolute final decision, um and then I'm gonna have to specify the final design in the final report. So um just from from last time to recap, we said we were gonna have a snowman shaped remote control with no L_C_D_ display, no need for talk-back, it was hopefully gonna be kinetic power and battery uh with rubber buttons, maybe backlighting the buttons with some internal L_E_D_s to shine through the casing, um hopefully a jog-dial, and incorporating the slogan somewhere as well. Anything I've missed?
+Industrial Designer: No.
+Project Manager: Okay um so uh if you want to present your prototype go ahead.
+User Interface: Uh-oh. This is it?
+Industrial Designer: Ninja Homer, made in Japan.
+User Interface: Um, there are a few changes we've made. Um, well look at the expense sheet, and uh it turned to be quite a lot expensive to have open up and have lots of buttons and stuff inside,
+Project Manager: Okay. Mm. Mm-hmm.
+User Interface: so instead we've um this is gonna be an L_C_D_ screen, um just a a very very basic one, very small um with access to the menu through the the scroll wheel and uh confirm um button.
+Marketing Expert: Mm 'kay.",B,The Project Manager will specify the final design in the final report.,1,,
+7,rcp-25cca2,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","BEEF CURRY UDON 1 52,727
+SUB TOTAL 52,727
+RESTAURANT TAX 5,273
+GRAND TOTAL
+~CASH [58,000] 58,000
+Change 42,000",B,BEEF CURRY UDON,1,,
+9,jbk-e5e5cd,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","You will be frequently collaborating with team members located in <LOCATION> and <LOCATION>.
+<ORGANIZATION> products need to meet a high quality-bar in terms of security data handling reliability and accessibility.
+You will be a role model for pushing excellence around these requirements.
+We are customer obsessed; you will be part of continuous improvement projects for quality and you will be reacting to incidents in production.
+A couple weeks in a year you will be required to be on call.",B,security; data handling; reliability; accessibility,4,,
+10,eml-259926,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: Customer meeting
+
+Diana & Sean,
+I understand your trying to set a customer meeting with Grant and Chelan and Douglas. I would be happy to assist in any way I can. Also, I would like to sit down and talk with you about these and other Northwest consumer owned utilities. Will you please take a look at your schedules and let me know a convenient time.
+Jeff",B,sit down and talk with you about these and other Northwest consumer owned utilities; take a look at your schedules; let me know a convenient time,3,y,Counted the requested discussion separately from scheduling.
+11,jbk-eab4e7,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","Have web development experience in a hyper-growth environment
+The interview process
+Recruiter Call (30 min) Home Test (1-2 hours) 1st Round Technical Interview (2 hours) 2nd Round Technical Interview (2.5 hours) Immersion with your future team (3 hours) Offer!
+More about the position
+Permanent Position
+Full time
+Location: <LOCATION>
+Start Date: as soon as possible
+About <ORGANIZATION>
+Founded in 2013",B,web development,1,,
+14,med-b6a551,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","Subsequently, confirmatory diagnostic assays demonstrated ALK protein expression by IHC using the D5F3 antibody (Cell Signaling Technology Inc., Danvers, MA; H score = 150; Fig.2B) and the presence of an echinoderm microtubule-associated protein-like 4 (EML4)-ALK transcript (E13; A20) by RT-PCR (Fig.2C). The patient then received crizotinib (250 mg twice daily) as third-line therapy in May 2013 with an impressive symptomatic improvement and CT response after 1 month of therapy (Fig.1B). He remains on treatment with crizotinib with no evidence of progression as of September 2013.",B,crizotinib,1,,
+18,quo-870541,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","""Don t look so angry, Basil. It was at my aunt, Lady Agatha s. She told me she had discovered a wonderful young man who was going to help her in the East End, and that his name was Dorian Gray. I am bound to state that she never told me he was good-looking. Women have no appreciation of good looks; at least, good women have not. She said that he was very earnest and had a beautiful nature. I at once pictured to myself a creature with spectacles and lank hair, horribly freckled, and tramping about on huge feet. I wish I had known it was your friend.""",B,"Don t look so angry, Basil. It was at my aunt, Lady Agatha s. She told me she had discovered a wonderful young man who was going to help her in the East End, and that his name was Dorian Gray. I am bound to state that she never told me he was good-looking. Women have no appreciation of good looks; at least, good women have not. She said that he was very earnest and had a beautiful nature. I at once pictured to myself a creature with spectacles and lank hair, horribly freckled, and tramping about on huge feet. I wish I had known it was your friend.",1,,
+20,eml-4c516a,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: FW: Dave Neubauer office
+
+Joan, could you please set up a churn request to relocate Dave Neubauer's Houston office ECN3963 to ECN1354. Julie Armstrong (x33597) should be able to give you company/cost center for the move charges. Julie requested setting up this move after Linda Wehring's return next Monday, so request middle of next week churn date. Please also check with Linda (x36040) on Monday to see if she has anything to add to this request. Since this is not his primary office, there will not be very much to move other than equipment and furniture. Also should check 1354 to see if there is a marker board in there already or if we need to move one in there for him.
+Pat, could you please outfit ECN1354 with VP style furniture (granite racetrack, Mueller chairs, black drum table, along with Barritt guest chairs if they are not already in there) before next week? This will prevent moving the furniture from level 39, then having to replace it when I back-fill the office next week.
+Thanks for your help!",B,set up a churn request to relocate Dave Neubauer's Houston office ECN3963 to ECN1354; get the company/cost center from Julie Armstrong for the move charges; check with Linda on Monday to see if she has anything to add; check ECN1354 to see if there is a marker board already; outfit ECN1354 with VP style furniture,5,y,Counted obtaining billing information from Julie separately; treated the date and possible marker-board move as details of the main requests.
+21,med-b12d9f,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","A 68-year-old man referred to the Internal Medicine Department of Razi Hospital in Rasht (a city in the north of Iran) with a hypogastric region discomfort, especially in the right lower quadrant for one month. The pain was a colicky form which had a few episodes each day, each episode lasting for 4–5 minutes. The pain radiated to the back and was alleviated by resting to one side.",B,,0,,
+23,job-27bba0,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","We offer: - A full-time job that is 1 working month and 1 month free (this means that you will be working only 6 months yearly) - Fixed salary which will be allocated in all 12 months (50% of the total salary per month) - The possibility to make the contract for full 12 months - There is accommodation provided with the job
+The job is for around 40 hours a week where you will be working from around 6:30 in the morning until 15:30 in the afternoon.
+Working every 3rd weekend plus night shift the same weekend e.g.
+checking on the lights in the stables (it takes about ½ hour).
+You will have 1 hour of lunch break and 15 min.
+coffee break.",B,checking on the lights in the stables,1,,
+24,mtg-0fab39,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: for anybody need uh any help, for time being, on this uh subjects, okay, so please come back to me,
+User Interface: Oh
+Project Manager: and uh Christine, maybe I can uh try to help you to get some uh the technical uh the companies to help you for uh make a design uh slim, okay, and to add some features, like we are talking about, the speech recognition and all.
+User Interface: Should we maybe make a decision about what features we actually want to include,
+Project Manager: Yeah.
+User Interface: 'cause we've thrown a lot of features onto the table, but do we actually want to incorporate all of them, or have we missed anything?
+Marketing Expert: Hmm.
+Industrial Designer: Do you wanna go back and look at the closing slide, maybe that would provide some guidance?
+User Interface: Sure.
+Industrial Designer: Doesn't really tell us.
+Project Manager: So not really this one we are talk ab
+Marketing Expert: Individual actions.
+Industrial Designer: Well it says individual actions, it says user interf
+Project Manager: Yep.
+Industrial Designer: so I'm supposed to do the components concept, supposed to work on the user interface concept,
+User Interface: Mm-hmm.
+Industrial Designer: and you're supposed to keep watching the trends. Um and specific instructions will be sent by our our coach. I think we should do as many features as uh start with all of them right now
+User Interface: I thought
+Industrial Designer: and eliminate them later in the process, that's my suggestion.
+Project Manager: Okay, that will be great. And uh I'll send you the the minutes of meet
+Industrial Designer: You can object if you want to
+User Interface: No, I I'm just thinking in terms of time, like if
+Marketing Expert: She's objecting.
+Project Manager: Yeah.
+User Interface: Yes, now I'm objecting. No, I mean, I was just thinking is it really practical to start designing something with features that we're just gonna end up throwing away? I mean, it takes a lot of time and effort for everyone to consider different features, um and s if we spend that time and effort on features that we're not gonna use, maybe it's better to spend it on the f thinking more about features that we actually do want,",B,The Industrial Designer will work on the components concept; The User Interface Designer will work on the user interface concept; The Marketing Expert will keep watching trends; The Project Manager will send the meeting minutes; The team will start with all proposed features and eliminate some later,5,y,Included the suggestion to start with all proposed features and eliminate some later.
+25,eml-d00fd6,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: RE: Storage Allocations
+
+Lynn, we had a conference call with Kelly and Jeff yesterday. Chris was on the call also. We got nowhere, so then Kent and Steve Kirk called them later and explained how the process works and that we can't ""reserve"" capacity for them. They hung up on Steve and Kent. Shelley has been brought up to speed. thanks. sj",B,,0,,
+28,quo-36d8f1,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","Mr. Clacton then told them the substance of the joke, which, however, depended a good deal for its success upon the expression which the artist had put into the people s faces. Mrs. Seal sat all the time perfectly grave. Directly he had done speaking she burst out:
+
+""But surely, if you care about the welfare of your sex at all, you must wish them to have the vote?""
+
+""I never said I didn t wish them to have the vote,"" Katharine protested.",B,"But surely, if you care about the welfare of your sex at all, you must wish them to have the vote?; I never said I didn t wish them to have the vote,",2,,
+29,rcp-226fb1,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","1 TEH TAWAR 5,454
+2 AIR MINERAL 15,454
+1 I TRIPL CHZ 18,636
+1 I SPECIAL SBL 18,181
+MATAH
+1 I ROA GORENG 18,181
+SPC
+Subtotal 75,906
+Pb1 7,590
+Total 83,497
+CASH 100,000
+Cash CHANGE -16,503",B,TEH TAWAR; AIR MINERAL; I TRIPL CHZ; I SPECIAL SBL MATAH; I ROA GORENG SPC,5,y,Counted MATAH and SPC as wrapped parts of the preceding product names.
+30,ppl-151eff,wiki_people,people,"Names of people mentioned in the text, copied as written.","The single received a video on 20 of the following month, in which both singers sing and act.",B,,0,,
+34,med-6ce9ef,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","Mycophenolate mofetil (750 mg/m2) and then abatacept (10 mg/kg/month IV) were sequentially administered, without significant improvement. At age 16 years the patient still had granulomatous retinal lesions and anterior chamber inflammation, and macular edema developed, which led to retinal detachment. In addition to the other steroid therapy, corticosteroid pulse therapy was necessary to control disease flares, with an average of 3 boluses/month for 6 consecutive months.",B,Mycophenolate mofetil; abatacept; other steroid therapy; corticosteroid pulse therapy,4,y,"Counted both steroid-therapy phrases separately, as requested by the user."
+36,rcp-554447,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","1 RB. COKLAT BAR 8,000
+1 RB. CREPES TUNA 9,000
+1 RB. SISIR PANDAN 7,500
+SUBTOTAL 24,500
+DUE 24,500
+CASH 50,000
+CHANGE 25,500",B,RB. COKLAT BAR; RB. CREPES TUNA; RB. SISIR PANDAN,3,,
+39,quo-fb9b93,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","Catherine submitted, and though sorry to think that Isabella should be doing wrong, felt greatly relieved by Mr. Allen s approbation of her own conduct, and truly rejoiced to be preserved by his advice from the danger of falling into such an error herself. Her escape from being one of the party to Clifton was now an escape indeed; for what would the Tilneys have thought of her, if she had broken her promise to them in order to do what was wrong in itself, if she had been guilty of one breach of propriety, only to enable her to be guilty of another?",B,,0,,
+44,job-abcdeb,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Technologies
+apache amazon-web-services java
+Job description
+<ORGANIZATION> is one of the best-known clients of <ORGANIZATION> – a dedicated team of 90 of our software engineers and data science professionals develop the innovations behind its business success.
+As <ORGANIZATION> technology partner we are expanding our team in <LOCATION> and are ready to hire the brightest talents in the IT market.
+<ORGANIZATION> is the world's largest search engine for vacation rentals comparing over 18 million offers from more than 2,000 trusted partners.
+Founded in 2014 <ORGANIZATION> employs more than 250 people and operates 43 websites.
+From apartments cabins boats castles hotels hostels and everything in between <ORGANIZATION> combines price destination dates and amenities to find the perfect accommodation for any trip worldwide.
+As a Senior Data Engineer (Data Platform) you will join our ambitious and forward-thinking colleagues in the Data Engineering team.",B,apache; amazon-web-services; java,3,,
+46,med-b9fc87,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","Meanwhile, considering the MST pathology was that of SCC, the patient received GP chemotherapy (cisplatin 75 mg/m2 d1, gemcitabine 1250 mg/m2 d1, d8, for 21 days as a cycle) for 4 cycles, and the patient achieved partial remission (PR) after 2 cycles, followed by stable disease (SD) after 4 cycles (Fig.3[B3[B and F] and [C and G]) according to response evaluation criteria in solid tumors (RECIST) 1.1. Then, gefitinib (150 mg qd) was used as maintenance treatment from November 2015 onward. During the treatment, Ibandronate sodium was given monthly for skeletal-related events.",B,cisplatin; gemcitabine; gefitinib; Ibandronate sodium,4,,
+47,mtg-9c24b3,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Industrial Designer: Ah yeah, we could add things. Maybe if you click back in that bottom right cell, where you're starting from, and then use the arrow keys.
+Project Manager: Yeah.
+Industrial Designer: Does that work?
+Project Manager: Yeah, I know, that just extends it as well.
+Industrial Designer: No mm.
+Marketing Expert: Uh you can do one thing.
+Project Manager: I don't know.
+Marketing Expert: You just select one box outsi yeah, this box. Then move it with the help of this Okay.
+Project Manager: It One of the buttons is sticking, I don't know.
+Marketing Expert: Just uh just uh Okay, just a minute. Okay. No input, like this. Shift. No it's not.
+Project Manager: No, it's 'cause the uh the shift button's stuck, or something.
+Marketing Expert: Yeah, it's not working.
+Industrial Designer: Is it the other shift button maybe?
+Marketing Expert: Should we ask Meli Should we ask our technical expert Melissa?
+Project Manager: No that's fine. Um we've worked out what it would be anyway.
+Industrial Designer: Did you try both shift buttons? It could be the other side.
+Project Manager: Yeah. Cancel. Piss off.
+Industrial Designer: That's too bad.
+Project Manager: Oh well, never mind. Um. Right, so that's finances and I dunno what we what could we reckon we could add? Um
+User Interface: Well maybe we could add something, but maybe if What do you th
+Project Manager: Well I suppose that's our that's that's our design that we've got. So
+User Interface: We're trying to save money, so. Yeah, if we're happy with the design there's no point in spending money, if we don't have to.
+Project Manager: Yeah.
+User Interface: But if there is anything you think we've missed out there, then, you know, feel free to add it. Maybe I mean obviously it would be bigger so there might be more space for the the slogan on the front, because it's not in an ideal place right now.
+Project Manager: Yeah yeah. Well that's that's uh Okay, so project evaluation. We have under twelve Euros fifty. Project process, how do we think that went? Are we happy?
+Industrial Designer: Oh.
+User Interface: Mm.
+Industrial Designer: Yeah I think we have a a winning product.
+Project Manager: Okay. Evaluation. Oh we've been writing this up for m months.
+User Interface: I think it went quite smoothly.
+Project Manager: Uh room for creativity, were we happy with that?",B,,0,,
+49,quo-1f0445,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","""Maybe I 'm ol'-fashioned, but I can't believe in any ooman's ladyship when she shows herse'f lak dem gals does. Oh, Kit, don't do it. Ain't you seen enough? Don't you know enough already to stay away f'om dese hyeah people? Dey don't want nothin' but to pull you down an' den laugh at you w'en you 's dragged in de dust.""
+
+""You must n't feel that away, ma. I 'm doin' it to help you.""
+
+""I do' want no sich help. I 'd ruther starve.""",B,"Maybe I 'm ol'-fashioned, but I can't believe in any ooman's ladyship when she shows herse'f lak dem gals does. Oh, Kit, don't do it. Ain't you seen enough? Don't you know enough already to stay away f'om dese hyeah people? Dey don't want nothin' but to pull you down an' den laugh at you w'en you 's dragged in de dust.; You must n't feel that away, ma. I 'm doin' it to help you.; I do' want no sich help. I 'd ruther starve.",3,,
+52,ppl-07a6cd,wiki_people,people,"Names of people mentioned in the text, copied as written.","She acted at different theaters in ballets of Michel Fokine (""Paganini""), David Lichine (""Rhapsody"", 1946), George Balanchine (""Song of Norway"", 1946) etc.",B,Michel Fokine; David Lichine; George Balanchine,3,,
+54,jbk-a69776,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","After the application deadline an assessment committee is appointed.
+Please note that the assessment of applicants is based solely on the material received prior to the application deadline.
+For further information see Guidelines for Assessment Committee Aarhus BSS <CONTACT>
+All interested candidates are encouraged to apply regardless of personal background.
+Deadline All applications must be made online and received by: 15/8/2017 Please apply online here <CONTACT>
+<ORGANIZATION> <ORGANIZATION> is a modern academically diverse and research-intensive university with a strong commitment to high-quality research and education and the development of society nationally and globally.
+The university offers an inspiring research and teaching environment to its 42,500 students and 11,500 employees and has an annual budget of EUR 840 million.
+Over the course of the past decade the university has consolidated its position in the top 100 on the most influential rankings of universities world-wide.",B,,0,,
+56,job-89c909,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Required skills:
+* Proven track record of tacking complex design challenges & delivering large projects.
+* Strong technical fundamentals in one or more of the modern programming languages Preference for experience in Java/Spring.
+* Experience with core AWS services including developing and implementing solutions on AWS.
+* Deep understanding of core AWS services like Lambda Cloud Watch EC2 IAM Policies VPCs.
+* Experience with Docker and Kubernetes
+* Experience in infrastructure-As-Code (CloudFormation TerraForm etc).",B,tacking complex design challenges; delivering large projects; modern programming languages; Java; Spring; core AWS services; Lambda; Cloud Watch; EC2; IAM Policies; VPCs; Docker; Kubernetes; infrastructure-As-Code; CloudFormation; TerraForm,16,y,Counted broad skills and technologies as well as their separately named examples.
+61,med-e12244,clinical,medications,"Medications or drugs mentioned as given to or taken by the patient, copied as written.","From the start of ERT/miglustat combination treatment, we observed a reduction in splenomegaly and a gradual normalization of hematological values and plasma angiotensin-converting enzyme activity (Table 1). Plasma chitotriosidase was evaluated at the time of diagnosis and then approximately every 6 months during follow-up. Values showed an initial reduction after the start of ERT, with a further, substantial, and sustained decrease after commencement of miglustat treatment (Fig.1).",B,miglustat,1,,
+63,eml-053cb0,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: ERI financials
+
+Kim:
+Attached are ERI Investments Inc's financials. Noresco will be the signatory to the contracts and ERI Investments Inc will guarantee the transaction. Please send copies of Enron's contracts and Form of Guarantee to Tony Aguiar at aguiar@usourceonline.com and myself. Thank you.
+Phil Glaessner
+713-344-2301",B,copies of Enron's contracts; Form of Guarantee,2,,
+65,quo-3cc5f8,novel_quotes,quotations,"Direct speech quoted in the text, copied word for word.","The executioner's argument was, that you couldn't cut off a head unless there was a body to cut it off from: that he had never had to do such a thing before, and he wasn't going to begin at _his_ time of life.
+
+The King's argument was, that anything that had a head could be beheaded, and that you weren't to talk nonsense.
+
+The Queen's argument was, that if something wasn't done about it in less than no time she'd have everybody executed, all round. (It was this last remark that had made the whole party look so grave and anxious.)",B,,0,,
+68,jbk-5be36a,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","Can you drive and coordinate Deliveries administrate plans and changes to plans?
+Do you have strong communication skills combined with a disciplined structure to ensure successful delivery according to agreed scope cost time?
+And can you do it within agile?
+Customer and Counterparty IT are currently looking for a highly competent Project Manager who can take the roll of a delivery stream driver (SAFe: release train engineer).
+The position we offer The Customer and Counterparty IT provides applications and services for utilizing customer and counterparty data to optimise the customer processes in all of the <ORGANIZATION> group.
+This means among others creating the golden record for customers and counterparties ensure stability and high performance in IT applications and systems utilization of external data sources data analytics processing and calculations ensure compliance with sector regulations and provide a common service interface for the entire <ORGANIZATION> <ORGANIZATION>.",B,agile; SAFe; data analytics,3,y,"Counted only clearly named methods or knowledge fields, not broad department responsibilities."
+71,mtg-a93d7c,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"User Interface: including v voice recognition if we have any like settings for voice recognition now
+Project Manager: In the middle perhaps.
+User Interface: included in the menu.
+Project Manager: Yep.
+Marketing Expert: Ooh, I just got an idea for a design.
+Project Manager: good. Anybody have anything else they'd like to bring up in this meeting?
+Industrial Designer: I had something, but I forgot.
+Project Manager: Okay. get out of here. Let's go back to the meeting closure then and see what we need to do next. Mm. Alright. After this meeting we're gonna be sent a questionnaire and summary again which we need to reply to that e-mail. And then we're gonna have lunch break. And after lunch thirty minutes of individual work time. Um I'm gonna put the minutes I put the minutes for the first meeting already in the project documents folder, if you'd like to review them. And I'm gonna type up the minutes for this one as well. Um here's what we're each going to do. The I_D_ is going to work on the components concept, um U_I_D_ the user interface concept, and you're going to do some trend watching. 'Kay. Specific instructions will be sent to you by your personal coach. And if anybody has anything they would like to add? No? Okay, well, this meeting is officially over. Thank you all.",B,The team will reply to the questionnaire and summary e-mail; The Project Manager will type up the minutes for this meeting; The Industrial Designer will work on the components concept; The User Interface Designer will work on the user interface concept; The Marketing Expert will do trend watching,5,y,"Counted firm work assignments; excluded lunch, scheduled work time, and optional review."
+73,jbk-d315ca,job_posts_knowledge,"tools, technologies and fields of knowledge","Tools, technologies, fields of knowledge and certificates the job ad mentions, copied as written.","You are skilled in Excel and PowerPoint and have a natural interest in working with numbers and data and translate those into findings and key messages.
+You understand the importance of having a strong focus on details and you are effective at building relationship with your stakeholders.
+As you will be engaging with colleagues across the global organisation it is important that you can communicate effectively and confidently in English.
+Your new team
+The position is based at our Headquarters in the greater <LOCATION> area.
+As you will be responsible for Compensation & Benefits related matters for our HQ you will report to the Strategic HR Business Partner Global Finance and Business Services and have a functional dotted line to the Director Global Rewards.
+That means that you can look forward to a close collaboration with HR Business Partners and Line Managers as well as colleagues in the Global Rewards team.",B,Excel; PowerPoint,2,y,Counted only the two concrete named tools.
+74,mtg-de7224,meetings,action items,Next steps that a meeting participant will take after this meeting. One short sentence each.,"Project Manager: So we can uh have a whistle uh remote control?
+Industrial Designer: Yeah. Yeah whistle.
+Project Manager: I don't know, whistle-able?
+Industrial Designer: Whistle tracking.
+Project Manager: Th Whistle tracking yeah. Whistle tracking remote control. That's a good idea, that's very original and that's can uh improve.
+User Interface: That's that's quite cool, but uh of course we you don't normally need uh any audio uh recording stuff on your remote control right?
+Project Manager: Yeah d d uh.
+User Interface: So i it's just going to add t to the cost.
+Project Manager: Yeah but s still we have to mm we have to have an advantage over our competitors. I think this is a good advantage.
+User Interface: It's cool. I think I like the idea, but I'm not sure about the what you, who is giving who's giving who's giving our budget. Who's
+Project Manager: Yeah. We have to ask Yeah. We have to ask the quest of that's uh design to the uh Industrial um Designer.
+User Interface: Yeah. Yeah.
+Industrial Designer: Yeah. yeah
+Project Manager: Which is you.
+User Interface: 'Kay.
+Project Manager: Okay so try to find that for next meeting.
+Industrial Designer: Okay.
+Project Manager: Okay. So next meeting is in thirty minutes or so uh. Don't pani.
+Industrial Designer: Don't panic.
+Project Manager: So so I will ask the Industrial Designer to find out more about this industrial design so any working any working function we have discussed.
+Industrial Designer: Mm-hmm.
+Project Manager: So then I will ask the User Interf Interface Designer to to think about the point we discussed like the number of buttons, the the fact that is lighted or not, things like that, and what would be convenient for the user.
+User Interface: Mm-hmm.
+Project Manager: And also um I will ask the Market Expert to uh try to find out what are the absolute requirements, what is absolutely needed in a remote control uh for the user. So. And then uh I will uh just ask you to think about that and uh look at your mail because you will receive uh some good advice soon.
+User Interface: Mm.
+Project Manager: So. Thank you I think that's all for this point.
+User Interface: Good.
+Industrial Designer: Mm-hmm.
+Marketing Expert: Thank you
+User Interface: Uh, so we come back in five minutes? Half an hour.
+Project Manager: Anyway you will receive some messages. Be careful. You eat it? Does it move uh? Okay, but I don't know if it uh is still correctly uh We'll see.
+Industrial Designer: Ah.",B,"The Industrial Designer will investigate the industrial design and working functions discussed; The User Interface Designer will consider the number of buttons, lighting, and user convenience; The Marketing Expert will identify the absolute user requirements for a remote control; The participants will check their mail for advice",4,y,Merged the earlier whistle-tracking request into the broader Industrial Designer assignment.
+84,ppl-552c13,wiki_people,people,"Names of people mentioned in the text, copied as written.","Tjader died four months after the completion of ""Heat Wave"", it was his final recording.",B,Tjader,1,,
+88,eml-fdb5a7,emails,requests,Things the sender asks the recipient to do or to provide. Copy each request as written in the email.,"Subject: CPUC protest to TW RP97-288
+
+Attached is the CPUC's Protest, Notice of Intervention and Request for Tech. Conference and/or hearing filed yesterday in RP97-288-017.
+The CPUC is protesting the revised tariff sheets filed Oct. 31.
+In a nutshell, the CPUC argues ""the fundamental issue that should be investigated is whether the maximum recourse rate is in fact functioning as the FERC intended to assure fair and reasonable use of negotiated rates by a pipeline with market power.""",B,,0,,
+89,rcp-1e93b8,receipts,items,"Names of the items purchased on this receipt, one entry per item, copied as printed.","Jamur Crispy
+2 13.500 27.000
+Nasi Putih
+2 7.000 14.000
+Sambel Kecap
+2 4.500 9.000
+Es Teh
+2 7.500 15.000
+Subtotal Rp 65.000
+PB1 ( 10%) Rp 6.500
+SC (3%) Rp 1.950
+Total Rp 73.450
+Cash Rp 100.000
+Change Rp 26.550",B,Jamur Crispy; Nasi Putih; Sambel Kecap; Es Teh,4,,
+90,job-c7e726,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Looking for a job where you do not have to be able to speak Danish?
+In a young and international environment?
+And are you from <LOCATION>?
+<ORGANIZATION> <ORGANIZATION> <ORGANIZATION> offers you the opportunity to work while speaking swedish.
+We are looking for people to interview business managers in <LOCATION> as a part of a survey.
+The job is not telephone sales.
+Qualifications: All you need is a good telephone voice and we will teach you the rest.
+We offer: Good salary - not commission Fulltime.",B,speaking swedish; interview business managers in <LOCATION> as a part of a survey; good telephone voice,3,,
+91,ppl-588798,wiki_people,people,"Names of people mentioned in the text, copied as written.","In the late Middle Ages, the area belonged to the Silesian Dukes of Bytom and Cieszyn, who after Mongol raids initiated a program of settlement, founding several new villages.",B,,0,,
+92,ppl-7a2e42,wiki_people,people,"Names of people mentioned in the text, copied as written.","Nagata was posthumously promoted to lieutenant general, and Aizawa was shot by firing group after a court martial held by the IJA 1st Division based in Tokyo.",B,Nagata; Aizawa,2,,
+99,job-464b41,job_posts,skills,"Skills, abilities and duties the job ad mentions, copied as written.","Technical Lead Developer <ORGANIZATION> <ADDRESS> <ADDRESS> <LOCATION> - <LOCATION> Date posted: 2020-12-21 Likes: 0 Dislikes: 0 Love: 0 Job description: Compensation: £75k - 85k | Equity Job type: Full-time Experience level: Lead Role: Frontend Developer Technologies reactjs node.js php laravel vue.js Job description Job description: Technical lead - Salary: c.£75-85K (plus equity package) TALNT is being developed and incubated by the <ORGANIZATION> <ORGANIZATION> <ORGANIZATION> an industry-leading consultancy in people and transformational change with a global presence – and has an ambitious vision to be the ‘go to’ global platform for accurate and transparent data for workforce research and people analytics.
+<ORGANIZATION> is an online platform for providing analytics insights and knowledge on people moves to professionals within an industry to help them find solutions and make a difference in their markets.
+In June 2020 <ORGANIZATION> was successfully launched in beta test and is now rapidly scaling its users.
+Given the success of version 1 <ORGANIZATION> is now developing additional features and functionality to deliver increased value to its growing membership.
+To accelerate the growth of the business <ORGANIZATION> is seeking to hire a hands-on full stack developer to execute a product roadmap and act as a technical lead to an engineering and data science team that the successful candidate will build out over the next 12-18 months.",B,reactjs; node.js; php; laravel; vue.js; hands-on full stack developer; execute a product roadmap; act as a technical lead to an engineering and data science team; build out an engineering and data science team over the next 12-18 months,9,y,"Counted the five technologies, full-stack ability, and three stated duties."

@@ -1,0 +1,3 @@
+pyarrow==26.0.0
+PyYAML==6.0.3
+requests==2.34.2      # data/sources/cord.py downloads the CORD files with HTTP range requests

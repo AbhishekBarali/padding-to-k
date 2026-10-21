@@ -1,0 +1,29 @@
+% POST HOC: padding vs missed true items, 8 GPU main models x 8 conditions, k = 3 and 5, all documents.
+% Written by analysis/posthoc/posthoc.py from analysis/posthoc/out/padding_vs_missed.csv. Needs pgfplots.
+\begin{tikzpicture}
+\begin{axis}[
+  width=\columnwidth, height=0.78\columnwidth,
+  xlabel={Extra entries per output (mean)}, ylabel={True items missed (\%)},
+  label style={font=\footnotesize}, tick label style={font=\footnotesize},
+  legend cell align=left, legend style={font=\footnotesize, at={(0.5,1.02)}, anchor=south, draw=none, legend columns=2,
+               /tikz/every even column/.append style={column sep=4pt}},
+  xmin=0, ymin=0, grid=major, grid style={gray!20},
+]
+\addplot[only marks, mark=*, mark size=1.8pt, color=black] coordinates {(3.398,66.67) (8.654,15.13) (1.070,13.51) (0.572,5.17) (0.256,8.62) (2.097,11.49) (2.043,6.90) (1.120,8.62)};
+\addlegendentry{\cnd{none}}
+\addplot[only marks, mark=o, mark size=1.8pt, color=gray] coordinates {(2.812,53.47) (4.434,21.07) (0.834,17.81) (0.548,9.96) (0.246,12.04) (1.359,18.51) (1.419,12.45) (1.068,14.47)};
+\addlegendentry{\cnd{prose\_up\_to\_k}}
+\addplot[only marks, mark=square*, mark size=1.8pt, color=gray] coordinates {(2.315,65.07) (4.071,21.77) (0.914,18.16) (0.844,9.77) (0.990,9.77) (1.345,20.20) (1.563,12.75) (1.291,14.96)};
+\addlegendentry{\cnd{prose\_exactly\_k}}
+\addplot[only marks, mark=triangle, mark size=1.8pt, color=blue] coordinates {(3.088,68.77) (7.349,17.48) (0.802,16.57) (0.439,9.48) (0.201,12.02) (1.131,18.39) (1.222,10.35) (0.895,13.98)};
+\addlegendentry{\cnd{max\_k\_shown}}
+\addplot[only marks, mark=triangle*, mark size=1.8pt, color=red] coordinates {(2.902,76.53) (9.187,17.05) (1.514,11.64) (1.518,4.84) (1.581,5.22) (2.221,12.88) (2.174,8.14) (1.846,8.96)};
+\addlegendentry{\cnd{min\_k\_shown}}
+\addplot[only marks, mark=diamond*, mark size=1.8pt, color=orange] coordinates {(3.324,65.09) (6.216,23.80) (0.733,26.87) (0.874,7.14) (0.238,7.90) (0.541,34.63) (0.710,17.24) (1.106,11.45)};
+\addlegendentry{\cnd{min\_k\_shown\_fewer\_ok}}
+\addplot[only marks, mark=square, mark size=1.8pt, color=purple] coordinates {(5.799,15.61) (4.509,12.08) (2.800,6.42) (2.215,4.07) (2.028,4.21) (3.350,9.05) (2.794,9.87) (2.022,7.33)};
+\addlegendentry{\cnd{min\_k\_enforced}}
+\addplot[only marks, mark=diamond, mark size=1.8pt, color=teal] coordinates {(5.112,15.07) (3.836,13.58) (1.303,13.22) (0.880,6.18) (0.573,7.28) (1.892,15.33) (0.610,29.41) (1.244,8.75)};
+\addlegendentry{\cnd{min\_k\_escape}}
+\end{axis}
+\end{tikzpicture}

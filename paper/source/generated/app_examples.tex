@@ -1,0 +1,46 @@
+\paragraph{Meetings.} Olmo 3.1 32B, $k = 3$, $n = 1$: 3 entries, 2 extra.
+Asked for: Next steps that a meeting participant will take after this meeting, one per job. One short sentence each. Not decisions, and not instructions they will receive.
+True items: ``The group will find out if the kinetic energy component can provide enough energy.''.
+Output: (1) ``Check with the R\&D department to see if the kinetic metal technology can provide sufficient energy for the remote.'' [true item]; (2) ``Consult with the R\&D department regarding the readiness of the kinetic energy product for market.'' [split true item, extra]; (3) ``Gather and share pictures of the device cases with the Industrial Designer for material identification (titanium vs. plastic).'' [wrong kind, extra].
+
+\paragraph{Emails.} Olmo 3.1 32B, $k = 3$, $n = 2$: 4 entries, 2 extra.
+Asked for: Things the sender asks the recipient to do or to provide, one per thing asked. Copy each request as written in the email.
+True items: ``What do we need to do to get this''; ``how soon can it be granted?''.
+Output: (1) ``Everyone in risk management needs to get access to EOL bridge monitor and reports.'' [true item]; (2) ``What do we need to do to get this access?'' [split true item, extra]; (3) ``How soon can the access be granted?'' [true item]; (4) ``We need this access by Thursday to be prepared for testing.'' [wrong kind, extra].
+
+\paragraph{Receipts.} Qwen3.5-9B, $k = 3$, $n = 1$: 3 entries, 2 extra.
+Asked for: Names of the items purchased on this receipt, one entry per item, copied as printed.
+True items: ``ALMOND CHOCO CREAM CHEESE''.
+Output: (1) ``ALMOND CHOCO CREAM CHEESE'' [true item]; (2) ``SUB TOTAL'' [wrong kind, extra]; (3) ``GRAND TOTAL'' [wrong kind, extra].
+
+\paragraph{Job-ad skills.} Olmo 3.1 32B, $k = 5$, $n = 1$: 5 entries, 4 extra.
+Asked for: Skills, abilities and duties the job ad mentions, copied as written. Not tools, technologies, fields of knowledge, languages or certificates.
+True items: ``running with a full stack development''.
+Output: (1) ``running full stack development'' [true item]; (2) ``Java'' [wrong kind, extra]; (3) ``Python'' [wrong kind, extra]; (4) ``React JS'' [wrong kind, extra]; (5) ``Redux'' [wrong kind, extra].
+
+\paragraph{Clinical.} Ministral 3 14B, $k = 5$, $n = 3$: 5 entries, 2 extra.
+Asked for: Medications or drugs, by name or by class, mentioned as given to or taken by the patient, copied as written.
+True items: ``ACE inhibitor''; ``diuretic''; ``$\beta$-blocker''.
+Output: (1) ``ACE inhibitor'' [true item]; (2) ``diuretic'' [true item]; (3) ``low-dose $\beta$-blocker'' [true item]; (4) ``coronary angiography contrast agent (if applicable)'' [invented, extra]; (5) ``endomyocardial biopsy procedural sedation/anesthesia (if applicable)'' [invented, extra].
+
+\paragraph{Reviews.} Qwen3.5-2B, $k = 5$, $n = 1$: 5 entries, 4 extra.
+Asked for: Features or aspects of the product or service that the reviewer gives an opinion on, copied as written.
+A short hotel review from the restricted reviews set (no review text is reproduced here). The reviewer calls the hotel a hidden gem of its city, says they had expected an ordinary chain hotel, says it beat every hotel they had used in a long time, and praises the staff. The answer list holds one item: the staff.
+
+The model's list has five entries. Four copy short phrases from the review that name the hotel or praise it in general (its headline, the chain it was expected to resemble, the comparison with other hotels); the matcher calls all four real text of the wrong kind, so all four are extra. The fifth, praise of the staff, is the one true item. (Paraphrased: review text is not redistributed.)
+
+\paragraph{Job-ad knowledge.} Gemma 4 31B, $k = 5$, $n = 2$: 5 entries, 3 extra.
+Asked for: Tools, technologies, fields of knowledge, languages and certificates the job ad mentions, copied as written. Not abilities or duties.
+True items: ``science''; ``pharmaceutical production''.
+Output: (1) ``science education'' [true item]; (2) ``pharmaceutical production'' [true item]; (3) ``management experience'' [wrong kind, extra]; (4) ``communication skills'' [wrong kind, extra]; (5) ``collaboration skills'' [wrong kind, extra].
+
+\paragraph{Wikipedia people.} Qwen3.5-2B, $k = 5$, $n = 2$: 3 entries, 1 extra.
+Asked for: Names of people mentioned in the text, copied as written.
+True items: ``Stamatiad''; ``Emil Gârleanu''.
+Output: (1) ``Stamatiad'' [true item]; (2) ``Emil Gârleanu'' [true item]; (3) ``Romanian Writers ' Society (SSR)'' [wrong kind, extra].
+
+\paragraph{Novel quotes.} gpt-oss-20b, $k = 5$, $n = 3$: 5 entries, 2 extra.
+Asked for: Direct speech quoted in the text, copied word for word.
+True items: ``After what happened at Vevey, I think I may certainly call upon them,''; ``If, after what happens-{}-at Vevey and everywhere-{}-you desire to keep up the acquaintance, you are very welcome. Of course a man may know everyone. Men are welcome to the privilege!''; ``Pray what is it that happens-{}-here, for instance?''.
+Output: (1) ``After what happened at Vevey'' [true item]; (2) ``I think I may certainly call upon them,'' [split true item, extra]; (3) ``If, after what happens-{}-at Vevey and everywhere-{}-you desire to keep up the acquaintance, you are very welcome.'' [true item]; (4) ``Of course a man may know everyone. Men are welcome to the privilege!'' [split true item, extra]; (5) ``Pray what is it that happens-{}-here, for instance?'' [true item].
+

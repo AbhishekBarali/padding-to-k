@@ -1,0 +1,602 @@
+# Model registry for the Pad to k runs. One entry per model x setting ("key").
+# Revisions are the Hugging Face main commit on 13 Oct 2026 (read from huggingface.co/api/models).
+# Change an entry only before the preregistration is filed; after that, add a new key and log it in
+# DECISIONS.md. Fields:
+#   role: pilot (one of the 3 pilot models) | main (full study) | subarm | reserve | bedrock_pair |
+#         bedrock_frontier | optional
+#   backend: vllm (local GPU) | bedrock (OpenAI-compatible endpoint on bedrock-runtime)
+#   chat_template_kwargs / reasoning_effort: sent with every request (thinking settings)
+#   max_tokens: per-request output cap (thinking models need room before the JSON)
+#   serve_args: extra vLLM flags for this model (added to defaults.serve_args)
+#   conditions: which conditions this model may run (bedrock cannot enforce minItems > 1)
+#   env: per-model environment for the server (overrides defaults.env)
+#   reserve_for: the main model this reserve replaces if that one fails the engine test
+#   request: per-model overrides of defaults.request (only the sampled-decoding check uses it)
+#   price: USD per million tokens {in, out} at the tier the run uses, with where and when it was read; run.py
+#          multiplies each reply's usage by it for the spending stop (`go --max-usd`). Hosted models only.
+#   base_url: the endpoint `go` uses when --base-url is not given (Bedrock models outside us-east-1)
+#
+# The full-study line-up (which key runs where, on what, under which cap) is the `full_study` block at the end.
+#
+# Batch invariance: vLLM v0.31.0 refuses to start a hybrid model (Qwen3.5's Gated DeltaNet layers,
+# Nemotron-H's Mamba layers) with VLLM_BATCH_INVARIANT=1 (vllm/v1/attention/selector.py raises;
+# GDN support is open as vllm-project/vllm#48613). Those models run with it OFF; their repeat-check
+# flip rate is reported instead. If another model fails to start with it on, set env for that model
+# the same way and log it in DECISIONS.md.
+
+defaults:
+  vllm_image: vllm/vllm-openai@sha256:c1c9f6fd5c109ba7f0546a59f5b2f15fb87f64c77782e90a27b648b42a8e67c3   # v0.31.0, pulled 14 Oct; every server record of 14 Oct ran this digest
+  vllm_image_fallback: vllm/vllm-openai:v0.31.0-cu129
+  serve_args:
+    - --dtype=bfloat16
+    - --kv-cache-dtype=auto                     # BF16 KV cache: FP8 KV had wrong-output bugs on sm_120
+    - --max-model-len=8192
+    - --max-num-seqs=128
+    - --gpu-memory-utilization=0.90
+    - --structured-outputs-config.backend=xgrammar   # never "auto": it can switch engines between releases
+    - --structured-outputs-config.disable_any_whitespace=true   # engine test 14 Oct: Qwen3.5-9B wrote tabs until the
+                                                 # token cap under maxItems 0 (vLLM #38696); the plan applies it to every model
+    - --generation-config=vllm                   # do not load the model's sampling defaults
+    - --seed=0
+    - --no-enable-prefix-caching
+    - --max-logprobs=20
+  env:
+    VLLM_BATCH_INVARIANT: "1"                    # same output whatever the batch; drop only if it breaks, and log it
+    PYTHONHASHSEED: "0"
+  request:
+    temperature: 0
+    top_p: 1
+    seed: 0
+    max_tokens: 512
+  all_conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_enforced, min_k_escape,
+                   min_k_shown_fewer_ok]   # the last added 18 Oct (data/requests_fewer_ok.jsonl)
+  prompt_side_conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+
+models:
+  # ---- Qwen3.5 size ladder (one generation, dense, Apache-2.0). Thinking OFF for the main run.
+  qwen3.5-0.8b:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: main
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-0.8B
+    revision: 2fc06364715b967f1860aea9cf38778875588b17
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    why: Bottom of a same-generation size ladder; PhantomFill used it, so results connect directly.
+  qwen3.5-2b:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: main
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-2B
+    revision: 15852e8c16360a2fea060d615a32b45270f8a8fc
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    why: Second PhantomFill model; keeps the comparison direct.
+  qwen3.5-9b:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: pilot
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-9B
+    revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}    # 9B thinks by default: must be sent every time
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    notes: vLLM #38696 (open) runaway whitespace under json_schema; add --structured-outputs-config.disable_any_whitespace=true if the enforcement test shows it, for ALL models.
+    why: Most-downloaded small open model (8.4M in 30 days); middle of the ladder; pilot model.
+  qwen3.5-27b:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: main
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-27B
+    revision: fc05daec18b0a78c049392ed2e771dde82bdf654
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    why: Top of the dense ladder (about 56 GB in BF16), so scale is not mixed up with mixture-of-experts.
+
+  # ---- Thinking sub-arm: same weights, thinking ON. Pilot documents plus a subset only.
+  qwen3.5-9b-think:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: subarm
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-9B
+    revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: true}
+    max_tokens: 81920                    # the model card's thinking-mode setting; 6,144 cut thinking short (engine test 14 Oct)
+    serve_args: [--language-model-only, --reasoning-parser=qwen3, --max-model-len=90112]
+    # Greedy thinking ran past 46,000 tokens (10 minutes) on 6 of 11 study prompts in the engine test of 14 Oct,
+    # so the thinking pair uses the card's thinking-mode sampling, 3 request seeds; its partner below is the
+    # same with thinking off (the card gives these values for non-thinking reasoning tasks too).
+    request: {temperature: 1.0, top_p: 0.95, top_k: 20, presence_penalty: 1.5}
+    why: Does thinking change padding? Same weights and the same sampling as qwen3.5-9b-nothink, so only thinking differs. The grammar applies after the thinking ends.
+  qwen3.5-9b-nothink:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: subarm
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-9B
+    revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    request: {temperature: 1.0, top_p: 0.95, top_k: 20, presence_penalty: 1.5}
+    why: The thinking-off partner of qwen3.5-9b-think (same sampling, same seeds), added 14 Oct.
+  qwen3.5-9b-think-pp0:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: subarm
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-9B
+    revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: true}
+    max_tokens: 81920
+    serve_args: [--language-model-only, --reasoning-parser=qwen3, --max-model-len=90112]
+    request: {temperature: 1.0, top_p: 0.95, top_k: 20, presence_penalty: 0}
+    why: qwen3.5-9b-think with presence_penalty 0 instead of the card's 1.5 (added 18 Oct), with
+      qwen3.5-9b-nothink-pp0 as its partner and the same requests and seeds as the thinking pair (protocol stage 2,
+      section 3.4), because a presence penalty also acts on the thinking text.
+  qwen3.5-9b-nothink-pp0:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    role: subarm
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-9B
+    revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    request: {temperature: 1.0, top_p: 0.95, top_k: 20, presence_penalty: 0}
+    why: The thinking-off partner of qwen3.5-9b-think-pp0 (added 18 Oct), as qwen3.5-9b-nothink is of qwen3.5-9b-think.
+  gemma-4-31b-think:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # with it on, thinking ran at about 80 tokens/s in total (14 Oct); flip rate reported
+    role: subarm
+    family: gemma
+    hf_repo: google/gemma-4-31B-it
+    revision: 842da3794eaa0b77d5f08bae87a17459d91ff475
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: true}
+    max_tokens: 81920                    # as qwen3.5-9b-think
+    serve_args: [--language-model-only, --reasoning-parser=gemma4, --max-model-len=90112]
+    request: {temperature: 1.0, top_p: 0.95, top_k: 64}   # the Gemma 4 card's one setting; as gemma-4-31b-sampled
+    why: A second same-weights thinking pair, from another family (added 14 Oct), so a thinking effect is not one model's quirk. Its thinking-off partner is gemma-4-31b-sampled (same sampling and seeds); in only if it passes the engine test with thinking on.
+
+  # ---- Other families
+  gemma-4-31b:
+    role: pilot
+    family: gemma
+    hf_repo: google/gemma-4-31B-it
+    revision: 842da3794eaa0b77d5f08bae87a17459d91ff475
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=gemma4]
+    notes: vLLM #40080 repetition loops under JSON schema; #39130 parser bypass (fixed in June 2026). Run the enforcement test with and without --reasoning-parser.
+    why: Second family at about 30B dense and the most-downloaded dense Gemma (9.5M in 30 days); pilot model.
+  olmo-3.1-32b:
+    role: main
+    family: olmo
+    hf_repo: allenai/Olmo-3.1-32B-Instruct
+    revision: ac0587e4a7744a551c059d8cd17ba220bc940dae
+    backend: vllm
+    # The original template stops vLLM v0.31.0 at start-up; this copy differs in one condition and renders all
+    # 25,344 study prompts identically (DECISIONS.md, 14 Oct). serve.py mounts configs/ at /padk/configs.
+    serve_args: [--chat-template=/padk/configs/chat_templates/olmo-3.1-32b-instruct.jinja]
+    notes: In v0.31.0 Olmo3ForCausalLM runs through vLLM's Transformers fallback (registry.py), not a native class; check the repeat-check flip rate and the speed on the pilot before the full run.
+    why: Training data fully open, so a reader can trace behaviour back to data; non-reasoning.
+  ministral-3-14b:
+    role: pilot
+    family: mistral
+    hf_repo: mistralai/Ministral-3-14B-Instruct-2512-BF16
+    revision: 3cea74c1ebaf5ce5f5a2553de470e2ceab825142
+    backend: vllm
+    serve_args: [--language-model-only]
+    notes: Check the model card's own vllm serve line (tokenizer_mode / config_format) on the day; vLLM #52720 fixed a Mistral structured-output 500 in Aug 2026.
+    why: Mistral family, non-reasoning, and the same weights run on Bedrock (backend check); pilot model.
+  gpt-oss-20b:
+    role: main
+    family: gpt-oss
+    hf_repo: openai/gpt-oss-20b
+    revision: 6cee5e81ee83917806bbde320786a8fb61efebee
+    backend: vllm
+    env: {VLLM_BATCH_INVARIANT: "0"}     # no MXFP4 MoE kernel supports batch invariance on this GPU (DECISIONS.md, 14 Oct)
+    reasoning_effort: low
+    max_tokens: 2048
+    serve_args: [--dtype=auto]
+    notes: Always reasons. vLLM #60664 (open since 8 Oct 2026) says json_schema applies from token 0 and drops the reasoning; if the enforcement test confirms it, report gpt-oss enforced cells separately. Its MoE kernels may not support batch invariance on this GPU; if the server will not start, add env VLLM_BATCH_INVARIANT "0" and log it.
+    why: The only widely used model that cannot stop reasoning; same weights on Bedrock.
+
+  # ---- Optional 9th local model, if it passes the enforcement test on sm_120
+  gpt-oss-120b:
+    role: optional
+    family: gpt-oss
+    hf_repo: openai/gpt-oss-120b
+    revision: b5c939de8f754692c1647ca79fbf85e8c1e70f8a
+    backend: vllm
+    env: {VLLM_BATCH_INVARIANT: "0"}     # as gpt-oss-20b
+    reasoning_effort: low
+    max_tokens: 2048
+    serve_args: [--dtype=auto]
+    notes: Native MXFP4, about 65 GB. MXFP4 on sm_120 needs its own smoke test (vLLM #30135). Out after the 14 Oct engine test (E02, E03 and E06 fail; runs/enforce/gpt-oss-120b-20261014T162209Z; DECISIONS.md).
+    why: A large, popular open model that still fits one 96 GB card; on Bedrock too.
+
+  # ---- Reserves (swap in if a model fails the enforcement test; log the swap in DECISIONS.md)
+  qwen3.5-4b:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # GDN layers: not supported in v0.31.0 (#48613)
+    reserve_for: any Qwen3.5 ladder model (keeps the ladder in one family)
+    role: reserve
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-4B
+    revision: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+  gemma-4-26b-a4b:
+    reserve_for: gemma-4-31b
+    role: reserve
+    family: gemma
+    hf_repo: google/gemma-4-26B-A4B-it
+    revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=gemma4]
+  olmo-3-7b:
+    reserve_for: olmo-3.1-32b
+    role: reserve
+    family: olmo
+    hf_repo: allenai/Olmo-3-7B-Instruct
+    revision: 6e5971d9eba42665f5bd5a0fcf047f299ce1dccc
+    backend: vllm
+  nemotron-3-nano-30b:
+    env: {VLLM_BATCH_INVARIANT: "0"}     # Mamba layers: not supported in v0.31.0
+    reserve_for: gpt-oss-20b
+    role: reserve
+    family: nemotron
+    hf_repo: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+    revision: bf77c3174f68ad409e1c2aa60daeb46e32d1c606
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    notes: Licence is NVIDIA's own open model licence, not Apache; check it before release. Also on Bedrock.
+  granite-4.2-8b:
+    reserve_for: any model with no same-family reserve left
+    role: reserve
+    family: granite
+    hf_repo: ibm-granite/granite-4.2-8b
+    revision: f8de16cdcdbc6c779ca517604e050d82cc119e44
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+
+  ministral-3-8b:
+    role: reserve
+    reserve_for: ministral-3-14b (also on Bedrock, so the same-weights pair survives a swap)
+    family: mistral
+    hf_repo: mistralai/Ministral-3-8B-Instruct-2512-BF16
+    revision: f6fae9795746f63c9be8344932f01275f3c63734
+    backend: vllm
+    serve_args: [--language-model-only]
+
+  # ---- Sampled-decoding check: the vendors' recommended sampling, 3 seeds (--request-seed 1, 2, 3),
+  # pilot scope only. The main run stays greedy; this shows how much the greedy choice matters.
+  qwen3.5-9b-sampled:
+    role: subarm
+    family: qwen
+    hf_repo: Qwen/Qwen3.5-9B
+    revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    backend: vllm
+    env: {VLLM_BATCH_INVARIANT: "0"}
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=qwen3]
+    request: {temperature: 0.7, top_p: 0.8, top_k: 20, presence_penalty: 1.5}   # Qwen3.5 card, non-thinking
+  gemma-4-31b-sampled:
+    role: subarm
+    family: gemma
+    hf_repo: google/gemma-4-31B-it
+    revision: 842da3794eaa0b77d5f08bae87a17459d91ff475
+    backend: vllm
+    chat_template_kwargs: {enable_thinking: false}
+    serve_args: [--language-model-only, --reasoning-parser=gemma4]
+    request: {temperature: 1.0, top_p: 0.95, top_k: 64}                          # Gemma 4 card
+
+  # ---- Bedrock: prompt-side conditions only (minItems above 1 cannot be enforced there)
+  # Bedrock, 18 Oct: every key below runs on the Flex tier (`service_tier: flex`, half the Standard price; one
+  # request per model on 18 Oct came back with service_tier "flex") through bedrock-runtime's OpenAI-compatible
+  # endpoint. Prices: aws.amazon.com/bedrock/pricing, read 18 Oct 2026 (page updated 15 Oct). Conditions: the
+  # prompt-side ones plus min_k_shown_fewer_ok (defaults.prompt_side_conditions).
+  bedrock-ministral-3-14b:
+    role: bedrock_pair
+    family: mistral
+    backend: bedrock
+    api_model: mistral.ministral-3-14b-instruct
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 0.10, out: 0.10, tier: flex, source: "aws.amazon.com/bedrock/pricing, Ministral 14B 3.0 0.20 / 0.20 Standard, Flex 50% off, read 2026-10-18"}
+    why: Same weights as ministral-3-14b on the local GPU; shows whether the serving stack changes the result.
+  bedrock-gpt-oss-20b:
+    role: bedrock_pair
+    family: gpt-oss
+    backend: bedrock
+    api_model: openai.gpt-oss-20b-1:0
+    reasoning_effort: low
+    max_tokens: 2048
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 0.035, out: 0.15, tier: flex, source: "aws.amazon.com/bedrock/pricing, gpt-oss-20b Flex tier table, read 2026-10-18"}
+    notes: The reply's content starts with <reasoning>...</reasoning>, then the answer; common.parse_output drops the block.
+    why: Second same-weights pair (a reasoning model).
+  bedrock-gpt-oss-120b:
+    role: bedrock_frontier
+    family: gpt-oss
+    backend: bedrock
+    api_model: openai.gpt-oss-120b-1:0
+    reasoning_effort: low
+    max_tokens: 2048
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 0.075, out: 0.30, tier: flex, source: "aws.amazon.com/bedrock/pricing, gpt-oss-120b Flex tier table, read 2026-10-18"}
+    notes: Added 18 Oct. Reasoning in <reasoning>...</reasoning> at the start of the content, as gpt-oss-20b. The local 120b failed the engine test (14 Oct), so this is its only appearance, prompt-side only.
+    why: The larger gpt-oss at the lowest reasoning effort, next to the 20b pair.
+  bedrock-qwen3-235b:
+    role: bedrock_frontier
+    family: qwen
+    backend: bedrock
+    api_model: qwen.qwen3-235b-a22b-2507-v1:0
+    base_url: https://bedrock-runtime.us-east-2.amazonaws.com/openai/v1   # us-east-1 answers "model identifier is invalid" (18 Oct)
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 0.11, out: 0.44, tier: flex, source: "aws.amazon.com/bedrock/pricing, Qwen3 235B A22B 2507 Flex tier table (US East Ohio), read 2026-10-18"}
+    why: A large non-thinking instruct model (235B, 22B active) far beyond one GPU; cheap on Bedrock.
+  bedrock-deepseek-v3.2:
+    role: bedrock_frontier
+    family: deepseek
+    backend: bedrock
+    api_model: deepseek.v3.2
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    # The pricing page lists no Flex price for v3.2 (only for V3.1), though the endpoint accepts and confirms flex;
+    # the stop counts the Standard price, so the real bill can only be lower.
+    price: {in: 0.62, out: 1.85, tier: standard, source: "aws.amazon.com/bedrock/pricing, DeepSeek v3.2 (US East / West), read 2026-10-18"}
+    why: A widely used frontier open-weight model (685B).
+  bedrock-mistral-large-3:
+    role: bedrock_frontier
+    family: mistral
+    backend: bedrock
+    api_model: mistral.mistral-large-3-675b-instruct
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 0.25, out: 0.75, tier: flex, source: "aws.amazon.com/bedrock/pricing, Mistral Large 3 0.50 / 1.50 Standard, Flex 50% off, read 2026-10-18"}
+    why: Largest Mistral (675B), non-reasoning; pairs with the local Ministral.
+  bedrock-kimi-k3:
+    role: bedrock_frontier
+    family: kimi
+    backend: bedrock
+    api_model: us.moonshotai.kimi-k3
+    reasoning_effort: none                   # 0 reasoning tokens with it (18 Oct); without it K3 thinks
+    request: {top_p: 0.95}                   # the endpoint refuses any other top_p ("accepts 'top_p' only with the value 0.95")
+    max_tokens: 8192
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 1.65, out: 8.25, tier: flex, source: "aws.amazon.com/bedrock/pricing, Kimi K3 US CRIS 3.30 / 16.50 Standard, Flex 50% off (Moonshot footnote), read 2026-10-18"}
+    why: The largest open model reachable here, thinking off; the Together run of it is not used in the full study.
+  bedrock-kimi-k3-think:
+    role: subarm
+    family: kimi
+    backend: bedrock
+    api_model: us.moonshotai.kimi-k3
+    request: {temperature: 1.0, top_p: 0.95}   # top_p is fixed by the endpoint; temperature 1.0 so long thinking is sampled, as for the GPU thinking arms
+    max_tokens: 16384
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]
+    send_seed: false
+    extra_body: {service_tier: flex}
+    price: {in: 1.65, out: 8.25, tier: flex, source: "as bedrock-kimi-k3"}
+    notes: Thinking on (no reasoning_effort sent); the reasoning comes back in message.reasoning_content and is billed as completion tokens.
+    why: Same weights as bedrock-kimi-k3 with thinking on (added 18 Oct), a thinking comparison on a frontier-size model.
+
+  # ---- Together AI: the big-model reference (decided 14 Oct, budget about 50 USD in total).
+  # Endpoint https://api.together.ai/v1, key in TOGETHER_API_KEY. Run enforce_test.py on each first: the
+  # forced condition (min_k_enforced) counts only if E02/E03 show the count is really enforced. Together
+  # does not say which engine or precision serves a model (the catalog lists some), so these results are
+  # a dated reference next to the GPU results, never pooled with them. Model list read 14 Oct 2026 from
+  # docs.together.ai/docs/serverless/models; prices per million tokens in / out.
+  together-kimi-k3:
+    role: together_frontier
+    family: kimi
+    backend: together
+    api_model: moonshotai/Kimi-K3
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}      # hybrid, thinking on by default (docs: Reasoning)
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown]   # count not forced on Together (engine test 14 Oct)
+    why: The largest open model on Together (1M context); 2.70 / 13.50 USD; precision not listed.
+  together-glm-5.3:
+    role: reserve
+    family: glm
+    backend: together
+    api_model: zai-org/GLM-5.3
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}      # check raw.jsonl: the docs list GLM-5.2 as hybrid, not 5.3 yet
+    notes: Out after the 14 Oct engine test, thinking does not reliably switch off (DECISIONS.md); together-glm-5.3-think runs instead.
+    why: Second big family; 1.40 / 4.40 USD; FP4 on Together.
+  together-qwen3.5-9b:
+    role: together_pair
+    family: qwen
+    backend: together
+    api_model: Qwen/Qwen3.5-9B
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}
+    price: {in: 0.17, out: 0.25, tier: serverless, source: "docs.together.ai/docs/serverless/models, read 2026-10-18"}
+    why: Same weights as the GPU pilot model (FP8 on Together, BF16 on the GPU); shows whether the server
+      changes the result, including the forced condition Bedrock cannot run. 0.17 / 0.25 USD.
+  together-deepseek-v4-pro:
+    role: reserve
+    reserve_for: together-kimi-k3 or together-glm-5.3
+    family: deepseek
+    backend: together
+    api_model: deepseek-ai/DeepSeek-V4-Pro-0813
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}
+    why: Spare if one of the two fails the engine test; 1.32 / 3.96 USD; NVFP4.
+
+  # ---- Candidates engine-tested on 14 Oct after Kimi K3 (count not enforced), GLM-5.3 and DeepSeek V4 Pro
+  # (thinking not reliably off) failed the engine test on Together. Proposed in DECISIONS.md; not in the study
+  # until the authors confirm.
+  together-qwen3.5-397b:
+    role: reserve
+    reserve_for: together-kimi-k3 or together-glm-5.3 (proposed 14 Oct)
+    family: qwen
+    backend: together
+    api_model: Qwen/Qwen3.5-397B-A17B
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}
+    why: Top of the Qwen3.5 generation (397B, 17B active), so the GPU size ladder extends past 27B; 0.60 / 3.60 USD.
+  together-gemma-4-31b:
+    role: reserve
+    reserve_for: a same-weights pair for gemma-4-31b (proposed 14 Oct)
+    family: gemma
+    backend: together
+    api_model: google/gemma-4-31B-it
+    max_tokens_field: max_tokens
+    extra_body: {chat_template_kwargs: {enable_thinking: false}}
+    why: Same weights as the GPU pilot model gemma-4-31b; 0.39 / 0.97 USD.
+  together-llama-3.3-70b:
+    role: reserve
+    reserve_for: together-kimi-k3 or together-glm-5.3 (proposed 14 Oct)
+    family: llama
+    backend: together
+    api_model: meta-llama/Llama-3.3-70B-Instruct-Turbo
+    max_tokens_field: max_tokens
+    why: A widely used big dense model with no thinking mode at all; 1.04 / 1.04 USD.
+  together-nemotron-3-ultra:
+    role: reserve
+    reserve_for: together-kimi-k3 or together-glm-5.3 (proposed 14 Oct)
+    family: nemotron
+    backend: together
+    api_model: nvidia/nemotron-3-ultra-550b-a55b
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}
+    why: The largest open model on Together after Kimi K3 (550B, 55B active); 0.60 / 3.60 USD.
+
+  # ---- Second round, 14 Oct evening. Llama 3.3 70B (Dec 2024) is too old to stand for current big models, so it
+  # is the last resort. Qwen3.5-397B, Gemma 4 31B and Nemotron 3 Ultra are not serverless on Together (HTTP 400
+  # "non-serverless model" in runs/enforce/together-*-20261014T1354*), so they are out. Model strings and prices
+  # from docs.together.ai/docs/serverless/models, read 14 Oct evening (Kimi K3 is now 3.00 / 15.00 USD).
+  together-muse-glimmer-30b:
+    role: reserve
+    family: muse
+    backend: together
+    api_model: meta-models/Muse-Glimmer-30B
+    max_tokens_field: max_tokens
+    notes: Failed the 14 Oct engine test (lists cut off at the token cap under minItems 3 and 5).
+    why: Current Meta model, no reasoning mode listed; FP8; 0.35 / 1.50 USD.
+  together-deepseek-v4.1-flash:
+    role: together_frontier
+    family: deepseek
+    backend: together
+    api_model: deepseek-ai/DeepSeek-V4.1-Flash
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: false}}
+    price: {in: 0.30, out: 1.20, tier: serverless, source: "docs.together.ai/docs/serverless/models, read 2026-10-18"}
+    notes: In place of GLM-5.3 for the forced comparison (proposed 14 Oct). Engine test passes, no reasoning on any reply; 1 of 5 repeats identical, so the flip rate is reported.
+    why: Current DeepSeek, open weights (MIT), 8B/16B active per its model card; 0.30 USD per million input tokens.
+  together-gpt-oss-120b:
+    role: reserve
+    family: gpt-oss
+    backend: together
+    api_model: openai/gpt-oss-120b
+    reasoning_effort: low
+    max_tokens: 2048
+    max_tokens_field: max_tokens
+    notes: Failed the 14 Oct engine test like the local 120b (under minItems 3, one entry, then a second that runs to the cap).
+    why: Always reasons (low is the least), like gpt-oss-20b on the GPU, on another server than the local 120b that failed; MXFP4; 0.15 / 0.60 USD.
+
+  # ---- Thinking ON. A hybrid model whose thinking does not reliably switch off (GLM-5.3 reasoned on 4 of 10
+  # requests, and on E03 spent all 256 tokens reasoning before any list) can still give one clean condition: thinking
+  # always on, with room to finish. Counts only if E02/E03 pass and every reply carries reasoning.
+  together-glm-5.3-think:
+    role: together_frontier
+    family: glm
+    backend: together
+    api_model: zai-org/GLM-5.3
+    max_tokens: 8192
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: true}}
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown]   # under a grammar Together drops its reasoning
+    notes: Prompt-side conditions only, pilot scope first (proposed 14 Oct). Engine test passes; reasoning on 3 of 3 requests without a grammar, on 1 of 19 with one.
+    why: A current frontier-size open model in its default mode; FP4; 1.40 / 4.40 USD.
+  together-deepseek-v4-pro-think:
+    role: reserve
+    family: deepseek
+    backend: together
+    api_model: deepseek-ai/DeepSeek-V4-Pro-0813
+    max_tokens: 8192
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: true}}
+    notes: Failed the 14 Oct engine test (minItems 5 not met within 8,192 tokens; HTTP 429 on minItems 3).
+    why: Spare for the thinking-on slot; NVFP4; 1.32 / 3.96 USD.
+  together-qwen3.5-9b-think:
+    role: reserve
+    family: qwen
+    backend: together
+    api_model: Qwen/Qwen3.5-9B
+    max_tokens: 6144
+    max_tokens_field: max_tokens
+    extra_body: {reasoning: {enabled: true}}
+    notes: Failed the 14 Oct engine test (minItems 5 and maxItems 0 not met within 6,144 tokens; HTTP 503 on several requests).
+    why: Same weights as the GPU thinking sub-arm; FP8; 0.17 / 0.25 USD.
+
+# ---- Full-study line-up (18 Oct). Who runs where, on which requests, under which cap. harness/full_study_queue.py
+# turns this block into the ordered list of plan / go commands (`list` prints it, `run` executes it), and
+# analysis/full_study_estimate.py projects the cost and GPU time of every line and checks the caps (`check`).
+# max_usd is the `go --max-usd` of that run: about twice its projection, so that every run of one provider
+# reaching its cap together still stays under that provider's cap.
+full_study:
+  gpu:
+    workers: 32
+    hf_home: /home/ubuntu/hf   # the weights on the GPU machine (runs/NOTES.md, 14 Oct)
+    main:                  # scope full: every document, every condition including min_k_escape and
+                           # min_k_shown_fewer_ok (25,668 sends each), then the repeat check (--repeat-of, 300)
+      [qwen3.5-0.8b, qwen3.5-2b, qwen3.5-9b, qwen3.5-27b, gemma-4-31b, olmo-3.1-32b, ministral-3-14b, gpt-oss-20b]
+    dev_set: [qwen3.5-0.8b, qwen3.5-2b, qwen3.5-27b, olmo-3.1-32b, gpt-oss-20b]   # scope dev; the 3 pilot models ran it on 14 Oct
+    thinking_filters: [--scope, custom, --splits, pilot, full, --conditions, none, max_k_shown, min_k_shown,
+                       min_k_enforced, --k, "3", "5"]   # 3,906 sends per seed, all 558 documents
+    thinking_timeout: 3600
+    thinking_pairs:        # each pair differs only in the thinking switch (protocol stage 2, section 3.4)
+      - {think: qwen3.5-9b-think, partner: qwen3.5-9b-nothink, request_seeds: [1, 2, 3]}
+      - {think: qwen3.5-9b-think-pp0, partner: qwen3.5-9b-nothink-pp0, request_seeds: [1, 2, 3], documents: pilot}   # presence penalty 0, on the pilot's documents: it tests the pilot's own thinking result
+      - {think: gemma-4-31b-think, partner: gemma-4-31b-sampled, request_seeds: [1]}   # decided 18 Oct: all documents, one seed
+    retry_arm: [qwen3.5-9b, gemma-4-31b, ministral-3-14b]   # exploratory: harness/retry_arm.py on their full runs
+  together:                # cash; cap 50 USD in total, 3.64 USD of it spent by the pilot
+    cap_usd: 50
+    spent_usd: 3.64
+    workers: 4
+    api_key_env: TOGETHER_API_KEY
+    base_url: https://api.together.ai/v1
+    models:                # scope full, every condition: both force the count (engine test 14 Oct)
+      together-deepseek-v4.1-flash: {max_usd: 13, repeat_max_usd: 0.5}
+      together-qwen3.5-9b: {max_usd: 6, repeat_max_usd: 0.5}
+    left_out: [together-kimi-k3, together-glm-5.3-think]          # Kimi K3 runs on Bedrock instead; GLM leaves the study
+  bedrock:                 # credits; cap 300 USD, a model is dropped only if the projected total passes 280 USD
+    cap_usd: 300
+    drop_above_usd: 280
+    spent_usd: 0.88        # the cost test of 18 Oct (runs/costtest_2026-10-18_*, -reask1 runs included)
+    tier: flex
+    workers: 16
+    api_key_env: AWS_BEARER_TOKEN_BEDROCK
+    base_url: https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1   # a model's own base_url wins (qwen3-235b)
+    models:                # scope full (prompt-side conditions and min_k_shown_fewer_ok, 22,320 sends each), then
+                           # the repeat check; drop order if the projection ever passes 280 USD: from the first
+      bedrock-kimi-k3: {max_usd: 64, repeat_max_usd: 1}
+      bedrock-deepseek-v3.2: {max_usd: 22, repeat_max_usd: 0.5}
+      bedrock-qwen3-235b: {max_usd: 5, repeat_max_usd: 0.5}
+      bedrock-mistral-large-3: {max_usd: 9, repeat_max_usd: 0.5}
+      bedrock-ministral-3-14b: {max_usd: 3, repeat_max_usd: 0.5}
+      bedrock-gpt-oss-20b: {max_usd: 3, repeat_max_usd: 0.5}
+      bedrock-gpt-oss-120b: {max_usd: 5, repeat_max_usd: 0.5}
+    kimi_k3_thinking:      # every prompt-side request would project past 280 USD in total (analysis/full_study_estimate.md)
+      {key: bedrock-kimi-k3-think, documents: pilot, max_usd: 72}   # scope custom --splits pilot, 2,400 sends
+    retry_arm:             # exploratory: harness/retry_arm.py on their full runs; max_usd per re-ask run
+      {bedrock-kimi-k3: 1.5, bedrock-ministral-3-14b: 0.5}

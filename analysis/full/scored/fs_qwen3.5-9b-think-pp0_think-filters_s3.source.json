@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_qwen3.5-9b-think-pp0_think-filters_s3",
+ "model_key": "qwen3.5-9b-think-pp0",
+ "source": "d33e2573567c11d72c1e2d1a918567afa933ac600a2e923825c9de117fa0faf9",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 480,
+ "entries": 1320
+}

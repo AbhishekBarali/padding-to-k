@@ -1,0 +1,92 @@
+{
+ "run_id": "costtest_2026-10-18_bedrock-qwen3-235b-reask1",
+ "created_utc": "2026-10-18T03:51:05.249+00:00",
+ "harness_version": "0.1.0",
+ "model_key": "bedrock-qwen3-235b",
+ "model": {
+  "role": "bedrock_frontier",
+  "family": "qwen",
+  "backend": "bedrock",
+  "api_model": "qwen.qwen3-235b-a22b-2507-v1:0",
+  "base_url": "https://bedrock-runtime.us-east-2.amazonaws.com/openai/v1",
+  "conditions": [
+   "none",
+   "prose_up_to_k",
+   "prose_exactly_k",
+   "max_k_shown",
+   "min_k_shown",
+   "min_k_shown_fewer_ok"
+  ],
+  "send_seed": false,
+  "extra_body": {
+   "service_tier": "flex"
+  },
+  "price": {
+   "in": 0.11,
+   "out": 0.44,
+   "tier": "flex",
+   "source": "aws.amazon.com/bedrock/pricing, Qwen3 235B A22B 2507 Flex tier table (US East Ohio), read 2026-10-18"
+  },
+  "why": "A large non-thinking instruct model (235B, 22B active) far beyond one GPU; cheap on Bedrock."
+ },
+ "request_defaults": {
+  "temperature": 0,
+  "top_p": 1,
+  "seed": 0,
+  "max_tokens": 512
+ },
+ "scope": "reask1",
+ "filters": {
+  "splits": [
+   "pilot"
+  ],
+  "conditions": [
+   "min_k_shown",
+   "none"
+  ],
+  "k": [
+   3,
+   5
+  ]
+ },
+ "docs_filter_count": null,
+ "shuffle_seed": 20261014,
+ "request_seed": null,
+ "repeat_of": null,
+ "expected_outputs": 1,
+ "expected_request_ids_covered": 1,
+ "by_condition": {
+  "min_k_shown": 1
+ },
+ "documents": 1,
+ "restricted_outputs_expected": 0,
+ "data_sha256": {
+  "documents.jsonl": "70b19fe6e30bdfebd1117588735af164f1f1bc01f5be75b453214794b6653a33",
+  "requests.jsonl": "3590d70a6f0d4756b81068a4f2b408f15b797c79eb709e7331b02f5937f96d88",
+  "requests_robustness.jsonl": "a31bef89049e6968ab095cb92aa4da5d1a649ae8e4dcfe7040ae935d920c8ee1",
+  "requests_dev.jsonl": "7ccdfb0eb325dc489ed5417bb094cdd3b186828adcea38ad7d3ff263bac25f27",
+  "requests_fewer_ok.jsonl": "59c1c26f8591d0922eae87aadd5a9611454b7dd1c4130b7fbb03887d4f5d2dec",
+  "prompts.json": "84e5387ddccf96ae5f44f3b0f26ff0176a545918cc60bd1cff537b24cb839adf",
+  "reference_outputs.jsonl": "b27ad01f6fbd30a9875b35391c93b0cdea3dc70f9686a5a4c3f871d482eaea95",
+  "local/restricted_documents.jsonl": "7f8aaa253b9a0461ac8033680bc8a38bcbaf25f7327ad11d98dcdd5640ecd397",
+  "local/restricted_reference_outputs.jsonl": "ea8fc9f775438f7e7950bddeb050b280d09df82a5e9f1de31357285da64c1c92"
+ },
+ "git": {
+  "commit": "c67f65010ce36758f5de2c4a006b0fa08f1b79e3",
+  "branch": "fs-setup",
+  "dirty_files": [
+   "M configs/models.yaml",
+   " M harness/common.py",
+   " M harness/run.py",
+   "?? data/build_fewer_ok.py",
+   "?? data/reference_outputs_fewer_ok.jsonl",
+   "?? data/requests_fewer_ok.jsonl",
+   "?? harness/retry_arm.py"
+  ]
+ },
+ "retry_of_run": "costtest_2026-10-18_bedrock-qwen3-235b",
+ "selection": {
+  "k or more entries": 34,
+  "retried": 1
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_ministral-3-14b_full",
+ "model_key": "ministral-3-14b",
+ "source": "4ef99268972c8cdb3579565064aac6c6d4ab6e1ed5523cd5e929bbd0fce04f2e",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 26784,
+ "entries": 72156
+}

@@ -1,0 +1,123 @@
+model_key,model,group,condition,outputs,mean_extra_entries,missed_true_items_pct,recall,precision,f1,mean_extra_entries_n_lt_k,unreadable_pct
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,none,1116,3.3978,66.667,0.3333,0.1517,0.2085,3.5413,55.02
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,prose_up_to_k,5580,2.8122,53.467,0.4653,0.2327,0.3103,2.9978,28.57
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,prose_exactly_k,5580,2.3149,65.067,0.3493,0.2166,0.2674,2.5149,46.51
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,max_k_shown,1116,3.0878,68.774,0.3123,0.1556,0.2077,3.297,58.33
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,min_k_shown,1116,2.9023,76.533,0.2347,0.1291,0.1665,3.0825,68.19
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,min_k_shown_fewer_ok,1116,3.3244,65.086,0.3491,0.1621,0.2215,3.5369,50.0
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,min_k_enforced,1116,5.7993,15.613,0.8439,0.2075,0.3331,6.3663,0.72
+qwen3.5-0.8b,Qwen3.5-0.8B,gpu,min_k_escape,1115,5.1121,15.067,0.8493,0.2325,0.3651,5.5352,0.81
+qwen3.5-2b,Qwen3.5-2B,gpu,none,1116,8.6541,15.134,0.8487,0.1535,0.26,9.1177,0.18
+qwen3.5-2b,Qwen3.5-2B,gpu,prose_up_to_k,5580,4.4344,21.073,0.7893,0.2479,0.3773,4.5714,0.68
+qwen3.5-2b,Qwen3.5-2B,gpu,prose_exactly_k,5580,4.0713,21.772,0.7823,0.2626,0.3932,4.134,0.25
+qwen3.5-2b,Qwen3.5-2B,gpu,max_k_shown,1116,7.3495,17.481,0.8252,0.1724,0.2851,7.6249,0.18
+qwen3.5-2b,Qwen3.5-2B,gpu,min_k_shown,1116,9.1873,17.05,0.8295,0.1434,0.2445,9.747,0.36
+qwen3.5-2b,Qwen3.5-2B,gpu,min_k_shown_fewer_ok,1116,6.216,23.803,0.762,0.1851,0.2979,6.5897,0.72
+qwen3.5-2b,Qwen3.5-2B,gpu,min_k_enforced,1115,4.5094,12.081,0.8792,0.2631,0.405,4.8271,0.0
+qwen3.5-2b,Qwen3.5-2B,gpu,min_k_escape,1114,3.8357,13.58,0.8642,0.293,0.4376,4.1334,0.09
+qwen3.5-9b,Qwen3.5-9B,gpu,none,1116,1.0699,13.506,0.8649,0.5991,0.7079,1.0583,0.0
+qwen3.5-9b,Qwen3.5-9B,gpu,prose_up_to_k,5580,0.8342,17.807,0.8219,0.6449,0.7227,0.9294,0.09
+qwen3.5-9b,Qwen3.5-9B,gpu,prose_exactly_k,5580,0.9145,18.161,0.8184,0.6231,0.7075,1.0403,0.0
+qwen3.5-9b,Qwen3.5-9B,gpu,max_k_shown,1116,0.802,16.571,0.8343,0.6576,0.7355,0.8823,0.0
+qwen3.5-9b,Qwen3.5-9B,gpu,min_k_shown,1116,1.5143,11.638,0.8836,0.5196,0.6544,1.6249,0.09
+qwen3.5-9b,Qwen3.5-9B,gpu,min_k_shown_fewer_ok,1116,0.733,26.868,0.7313,0.6488,0.6876,0.7184,0.0
+qwen3.5-9b,Qwen3.5-9B,gpu,min_k_enforced,1116,2.8002,6.418,0.9358,0.3829,0.5434,3.3058,0.18
+qwen3.5-9b,Qwen3.5-9B,gpu,min_k_escape,1116,1.3029,13.218,0.8678,0.553,0.6756,1.4488,0.0
+qwen3.5-27b,Qwen3.5-27B,gpu,none,1116,0.5717,5.172,0.9483,0.7525,0.8391,0.5556,0.0
+qwen3.5-27b,Qwen3.5-27B,gpu,prose_up_to_k,5580,0.5482,9.962,0.9004,0.7505,0.8187,0.6433,0.61
+qwen3.5-27b,Qwen3.5-27B,gpu,prose_exactly_k,5580,0.8443,9.77,0.9023,0.6623,0.7639,0.9996,0.65
+qwen3.5-27b,Qwen3.5-27B,gpu,max_k_shown,1116,0.4391,9.483,0.9052,0.7904,0.8439,0.5116,0.0
+qwen3.5-27b,Qwen3.5-27B,gpu,min_k_shown,1116,1.5179,4.837,0.9516,0.536,0.6858,1.7657,1.97
+qwen3.5-27b,Qwen3.5-27B,gpu,min_k_shown_fewer_ok,1116,0.8737,7.136,0.9286,0.6613,0.7725,1.0209,1.25
+qwen3.5-27b,Qwen3.5-27B,gpu,min_k_enforced,1116,2.2151,4.071,0.9593,0.4442,0.6073,2.6282,0.0
+qwen3.5-27b,Qwen3.5-27B,gpu,min_k_escape,1116,0.8799,6.178,0.9382,0.6625,0.7766,1.0198,0.0
+gemma-4-31b,Gemma 4 31B,gpu,none,1116,0.2563,8.621,0.9138,0.8681,0.8904,0.2442,0.0
+gemma-4-31b,Gemma 4 31B,gpu,prose_up_to_k,5580,0.2461,12.04,0.8796,0.8684,0.874,0.2746,0.02
+gemma-4-31b,Gemma 4 31B,gpu,prose_exactly_k,5580,0.99,9.77,0.9023,0.6286,0.741,1.1701,0.72
+gemma-4-31b,Gemma 4 31B,gpu,max_k_shown,1116,0.2007,12.021,0.8798,0.89,0.8849,0.2178,0.0
+gemma-4-31b,Gemma 4 31B,gpu,min_k_shown,1116,1.5815,5.22,0.9478,0.5271,0.6774,1.8614,3.23
+gemma-4-31b,Gemma 4 31B,gpu,min_k_shown_fewer_ok,1116,0.2384,7.902,0.921,0.8772,0.8986,0.2486,0.0
+gemma-4-31b,Gemma 4 31B,gpu,min_k_enforced,1116,2.0278,4.215,0.9579,0.4677,0.6285,2.4169,0.0
+gemma-4-31b,Gemma 4 31B,gpu,min_k_escape,1116,0.5726,7.28,0.9272,0.7506,0.8296,0.6469,0.0
+olmo-3.1-32b,Olmo 3.1 32B,gpu,none,1116,2.0968,11.494,0.8851,0.4386,0.5865,2.1166,0.72
+olmo-3.1-32b,Olmo 3.1 32B,gpu,prose_up_to_k,5580,1.3595,18.506,0.8149,0.5244,0.6382,1.499,0.27
+olmo-3.1-32b,Olmo 3.1 32B,gpu,prose_exactly_k,5580,1.3453,20.201,0.798,0.5222,0.6313,1.5219,0.38
+olmo-3.1-32b,Olmo 3.1 32B,gpu,max_k_shown,1116,1.1308,18.391,0.8161,0.5707,0.6717,1.2343,0.72
+olmo-3.1-32b,Olmo 3.1 32B,gpu,min_k_shown,1116,2.2213,12.883,0.8712,0.4198,0.5666,2.385,1.08
+olmo-3.1-32b,Olmo 3.1 32B,gpu,min_k_shown_fewer_ok,1116,0.5412,34.626,0.6537,0.6907,0.6717,0.5479,2.42
+olmo-3.1-32b,Olmo 3.1 32B,gpu,min_k_enforced,1116,3.3504,9.052,0.9095,0.3343,0.4889,3.7767,0.0
+olmo-3.1-32b,Olmo 3.1 32B,gpu,min_k_escape,1116,1.8916,15.326,0.8467,0.4527,0.59,2.0033,0.0
+ministral-3-14b,Ministral 3 14B,gpu,none,1116,2.043,6.897,0.931,0.4551,0.6113,2.1694,0.0
+ministral-3-14b,Ministral 3 14B,gpu,prose_up_to_k,5580,1.419,12.452,0.8755,0.5286,0.6592,1.6414,0.11
+ministral-3-14b,Ministral 3 14B,gpu,prose_exactly_k,5580,1.5629,12.749,0.8725,0.5047,0.6395,1.8284,0.14
+ministral-3-14b,Ministral 3 14B,gpu,max_k_shown,1116,1.2222,10.345,0.8966,0.5728,0.699,1.363,0.0
+ministral-3-14b,Ministral 3 14B,gpu,min_k_shown,1116,2.1738,8.142,0.9186,0.4371,0.5924,2.4609,0.0
+ministral-3-14b,Ministral 3 14B,gpu,min_k_shown_fewer_ok,1116,0.7097,17.241,0.8276,0.6812,0.7473,0.7954,0.0
+ministral-3-14b,Ministral 3 14B,gpu,min_k_enforced,1116,2.7939,9.866,0.9013,0.3719,0.5265,3.2706,0.27
+ministral-3-14b,Ministral 3 14B,gpu,min_k_escape,1116,0.6102,29.406,0.7059,0.6791,0.6922,0.6502,0.0
+gpt-oss-20b,gpt-oss-20b,gpu,none,1116,1.1201,8.621,0.9138,0.5996,0.7241,1.1188,0.0
+gpt-oss-20b,gpt-oss-20b,gpu,prose_up_to_k,5580,1.0676,14.473,0.8553,0.5948,0.7017,1.2108,0.0
+gpt-oss-20b,gpt-oss-20b,gpu,prose_exactly_k,5580,1.291,14.962,0.8504,0.5475,0.6661,1.4902,0.22
+gpt-oss-20b,gpt-oss-20b,gpu,max_k_shown,1116,0.8952,13.985,0.8602,0.637,0.7319,1.0374,0.0
+gpt-oss-20b,gpt-oss-20b,gpu,min_k_shown,1116,1.8459,8.956,0.9104,0.4757,0.6249,2.0066,6.63
+gpt-oss-20b,gpt-oss-20b,gpu,min_k_shown_fewer_ok,1116,1.1057,11.446,0.8855,0.5949,0.7117,1.2211,3.58
+gpt-oss-20b,gpt-oss-20b,gpu,min_k_enforced,1115,2.0215,7.335,0.9267,0.4591,0.614,2.2313,0.18
+gpt-oss-20b,gpt-oss-20b,gpu,min_k_escape,1113,1.2435,8.746,0.9125,0.5736,0.7044,1.2999,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,none,1116,1.0161,3.065,0.9693,0.6351,0.7674,1.0561,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,prose_up_to_k,5580,0.8953,7.184,0.9282,0.6534,0.7669,1.051,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,prose_exactly_k,5580,1.3425,6.992,0.9301,0.5581,0.6976,1.5908,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,max_k_shown,1116,0.7455,8.046,0.9195,0.6917,0.7895,0.8801,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,min_k_shown,1116,2.147,1.82,0.9818,0.4559,0.6227,2.4268,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,min_k_shown_fewer_ok,1116,1.3871,2.826,0.9717,0.5615,0.7117,1.5677,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,min_k_enforced,1116,2.8656,1.724,0.9828,0.3864,0.5547,3.3223,0.0
+together-deepseek-v4.1-flash,DeepSeek V4.1 Flash (Together),hosted,min_k_escape,1116,1.362,3.544,0.9646,0.5643,0.7121,1.5149,0.0
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,none,1116,1.1272,14.559,0.8544,0.5834,0.6934,1.1034,0.0
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,prose_up_to_k,5580,0.8444,17.577,0.8242,0.6428,0.7223,0.9366,0.05
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,prose_exactly_k,5580,0.9082,18.285,0.8171,0.6247,0.7081,1.0246,0.04
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,max_k_shown,1116,0.836,16.954,0.8305,0.6474,0.7276,0.9043,0.0
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,min_k_shown,1116,1.5502,11.686,0.8831,0.5135,0.6494,1.681,0.0
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,min_k_shown_fewer_ok,1116,0.7213,29.167,0.7083,0.6455,0.6755,0.7393,0.0
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,min_k_enforced,1116,2.914,6.466,0.9353,0.3734,0.5337,3.3355,0.09
+together-qwen3.5-9b,Qwen3.5-9B (Together),hosted,min_k_escape,1116,1.5582,11.446,0.8855,0.5138,0.6503,1.692,0.0
+bedrock-kimi-k3,Kimi K3 (Bedrock),hosted,none,1116,0.5341,3.544,0.9646,0.7679,0.8551,0.5457,0.0
+bedrock-kimi-k3,Kimi K3 (Bedrock),hosted,prose_up_to_k,5580,0.5674,7.462,0.9254,0.7486,0.8277,0.6766,0.0
+bedrock-kimi-k3,Kimi K3 (Bedrock),hosted,prose_exactly_k,5580,1.0018,6.561,0.9344,0.6314,0.7536,1.1989,0.0
+bedrock-kimi-k3,Kimi K3 (Bedrock),hosted,max_k_shown,1116,0.4892,7.375,0.9262,0.776,0.8445,0.5754,0.0
+bedrock-kimi-k3,Kimi K3 (Bedrock),hosted,min_k_shown,1116,1.5143,1.676,0.9832,0.5448,0.7012,1.7437,0.0
+bedrock-kimi-k3,Kimi K3 (Bedrock),hosted,min_k_shown_fewer_ok,1116,0.7437,2.826,0.9717,0.7054,0.8174,0.8471,0.0
+bedrock-deepseek-v3.2,DeepSeek V3.2 (Bedrock),hosted,none,1116,0.8638,5.172,0.9483,0.6678,0.7837,0.8867,0.0
+bedrock-deepseek-v3.2,DeepSeek V3.2 (Bedrock),hosted,prose_up_to_k,5580,1.0231,8.688,0.9131,0.6206,0.7389,1.2165,0.0
+bedrock-deepseek-v3.2,DeepSeek V3.2 (Bedrock),hosted,prose_exactly_k,5580,1.3011,8.784,0.9122,0.5624,0.6958,1.5437,0.0
+bedrock-deepseek-v3.2,DeepSeek V3.2 (Bedrock),hosted,max_k_shown,1116,0.9077,8.046,0.9195,0.6496,0.7614,1.077,0.0
+bedrock-deepseek-v3.2,DeepSeek V3.2 (Bedrock),hosted,min_k_shown,1116,2.7832,2.73,0.9727,0.3919,0.5587,3.2189,0.0
+bedrock-deepseek-v3.2,DeepSeek V3.2 (Bedrock),hosted,min_k_shown_fewer_ok,1116,1.112,7.471,0.9253,0.6044,0.7312,1.2695,1.16
+bedrock-qwen3-235b,Qwen3-235B (Bedrock),hosted,none,1116,0.948,5.651,0.9435,0.6454,0.7665,0.9835,0.0
+bedrock-qwen3-235b,Qwen3-235B (Bedrock),hosted,prose_up_to_k,5580,0.8769,9.789,0.9021,0.6518,0.7568,1.029,0.0
+bedrock-qwen3-235b,Qwen3-235B (Bedrock),hosted,prose_exactly_k,5580,1.1285,10.795,0.892,0.5909,0.7109,1.3349,0.0
+bedrock-qwen3-235b,Qwen3-235B (Bedrock),hosted,max_k_shown,1116,0.7858,9.818,0.9018,0.6759,0.7727,0.9219,0.0
+bedrock-qwen3-235b,Qwen3-235B (Bedrock),hosted,min_k_shown,1116,1.8862,4.358,0.9564,0.4822,0.6411,2.2189,0.0
+bedrock-qwen3-235b,Qwen3-235B (Bedrock),hosted,min_k_shown_fewer_ok,1116,1.0806,6.418,0.9358,0.6133,0.741,1.2596,0.0
+bedrock-mistral-large-3,Mistral Large 3 (Bedrock),hosted,none,1116,1.1523,5.651,0.9435,0.6011,0.7344,1.2266,0.36
+bedrock-mistral-large-3,Mistral Large 3 (Bedrock),hosted,prose_up_to_k,5580,1.1177,10.354,0.8965,0.5948,0.7151,1.3102,0.27
+bedrock-mistral-large-3,Mistral Large 3 (Bedrock),hosted,prose_exactly_k,5580,1.3475,10.096,0.899,0.5509,0.6832,1.5943,0.45
+bedrock-mistral-large-3,Mistral Large 3 (Bedrock),hosted,max_k_shown,1116,0.853,8.86,0.9114,0.6622,0.767,0.9868,0.45
+bedrock-mistral-large-3,Mistral Large 3 (Bedrock),hosted,min_k_shown,1116,1.9068,5.316,0.9468,0.4779,0.6352,2.1903,0.36
+bedrock-mistral-large-3,Mistral Large 3 (Bedrock),hosted,min_k_shown_fewer_ok,1116,0.7034,11.015,0.8898,0.6995,0.7833,0.8053,0.27
+bedrock-ministral-3-14b,Ministral 3 14B (Bedrock),hosted,none,1116,2.1631,6.322,0.9368,0.4422,0.6008,2.319,0.0
+bedrock-ministral-3-14b,Ministral 3 14B (Bedrock),hosted,prose_up_to_k,5580,1.4487,12.567,0.8743,0.5228,0.6543,1.6735,0.16
+bedrock-ministral-3-14b,Ministral 3 14B (Bedrock),hosted,prose_exactly_k,5580,1.6131,12.768,0.8723,0.4961,0.6325,1.8865,0.14
+bedrock-ministral-3-14b,Ministral 3 14B (Bedrock),hosted,max_k_shown,1116,1.2303,10.057,0.8994,0.5723,0.6995,1.374,0.09
+bedrock-ministral-3-14b,Ministral 3 14B (Bedrock),hosted,min_k_shown,1116,2.2912,7.04,0.9296,0.4269,0.5851,2.5974,0.0
+bedrock-ministral-3-14b,Ministral 3 14B (Bedrock),hosted,min_k_shown_fewer_ok,1116,0.7625,16.571,0.8343,0.6673,0.7415,0.8548,0.09
+bedrock-gpt-oss-20b,gpt-oss-20b (Bedrock),hosted,none,1116,1.1326,9.195,0.908,0.5959,0.7196,1.1375,0.0
+bedrock-gpt-oss-20b,gpt-oss-20b (Bedrock),hosted,prose_up_to_k,5580,1.0733,14.195,0.858,0.5941,0.7021,1.218,0.05
+bedrock-gpt-oss-20b,gpt-oss-20b (Bedrock),hosted,prose_exactly_k,5580,1.2907,14.914,0.8509,0.5474,0.6662,1.497,0.27
+bedrock-gpt-oss-20b,gpt-oss-20b (Bedrock),hosted,max_k_shown,1116,0.8728,13.602,0.864,0.6434,0.7375,1.0011,0.0
+bedrock-gpt-oss-20b,gpt-oss-20b (Bedrock),hosted,min_k_shown,1116,1.8208,9.483,0.9052,0.4787,0.6262,1.9813,6.63
+bedrock-gpt-oss-20b,gpt-oss-20b (Bedrock),hosted,min_k_shown_fewer_ok,1116,1.1425,11.686,0.8831,0.5855,0.7042,1.2453,3.14
+bedrock-gpt-oss-120b,gpt-oss-120b (Bedrock),hosted,none,1116,1.129,4.885,0.9511,0.607,0.7411,1.1485,0.0
+bedrock-gpt-oss-120b,gpt-oss-120b (Bedrock),hosted,prose_up_to_k,5580,0.9115,11.858,0.8814,0.6382,0.7403,1.0409,0.0
+bedrock-gpt-oss-120b,gpt-oss-120b (Bedrock),hosted,prose_exactly_k,5580,1.3057,11.446,0.8855,0.5547,0.6821,1.5243,0.0
+bedrock-gpt-oss-120b,gpt-oss-120b (Bedrock),hosted,max_k_shown,1116,0.9041,11.83,0.8817,0.6405,0.742,1.0352,0.0
+bedrock-gpt-oss-120b,gpt-oss-120b (Bedrock),hosted,min_k_shown,1116,1.8405,6.13,0.9387,0.4834,0.6382,2.0891,0.18
+bedrock-gpt-oss-120b,gpt-oss-120b (Bedrock),hosted,min_k_shown_fewer_ok,1116,1.0717,7.615,0.9239,0.6119,0.7362,1.176,0.18

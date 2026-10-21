@@ -1,0 +1,565 @@
+ami:
+  title: 'AMI Meeting Corpus (manual annotations 1.6.2 / release 1.7): abstractive summaries'
+  domain: meeting_notes
+  list_types:
+  - action_items
+  - decisions
+  url: https://groups.inf.ed.ac.uk/ami/corpus/
+  paper: 'Carletta et al. 2005, The AMI Meeting Corpus: A Pre-Announcement, MLMI 2005 (LNCS 3869)'
+  licence: CC-BY-4.0
+  licence_url: https://groups.inf.ed.ac.uk/ami/corpus/license.shtml
+  licence_quote: The AMI corpus and its annotations are released under the Creative Commons Attribution
+    4.0 International Public License agreement (CC BY 4.0).
+  redistributable: true
+  files:
+  - url: https://groups.inf.ed.ac.uk/ami/AMICorpusAnnotations/ami_public_manual_1.6.2.zip
+    sha256: b56e5babb2496b8795deeeda7e71178d7fbc9963f94276cf2a3f4b56ebbc9f9d
+    path: ami_public_manual_1.6.2.zip
+  unit_description: A window of one AMI meeting transcript (one speaker turn per line, verbatim words)
+    cut around a known number of annotator-summarised action items or decisions.
+  how_gold_was_made: One AMI annotator per meeting wrote an abstractive summary with ACTIONS and DECISIONS
+    sections ('Name the next steps that each member of the group will take until the next meeting'; 'Name
+    all decisions that were made during the meeting'), writing NA for an empty section, and then linked
+    each summary sentence to the dialogue acts it summarises. No reliability figure was published.
+  known_issues:
+  - One annotator per meeting and no published agreement; minor or implicit commitments can be missing.
+  - A gold sentence can bundle several assignees or decisions; n counts sentences, not tasks.
+  - Action links cluster in the wrap-up at the end of the meeting; meta.rel_position records window position.
+  - Meetings whose annotator wrote NA under ACTIONS are mostly final ('d') meetings of a series, so n=0
+    action windows over-represent end-of-project talk.
+  - Scenario meetings are a role-play (designing a TV remote), so items are templated ('X will work on
+    Y').
+  - Overlapping speech is serialised by dialogue-act start time.
+cord:
+  title: 'CORD: A Consolidated Receipt Dataset for Post-OCR Parsing (v2)'
+  domain: receipts
+  list_types:
+  - line_items
+  url: https://huggingface.co/datasets/naver-clova-ix/cord-v2
+  paper: 'Park, Shin, Lee, Lee, Surh, Seo, Lee. CORD: A Consolidated Receipt Dataset for Post-OCR Parsing.
+    Document Intelligence Workshop at NeurIPS 2019. OpenReview SJl3z659UH.'
+  licence: CC-BY-4.0
+  licence_url: https://github.com/clovaai/cord/blob/master/LICENSE-CC-BY
+  licence_quote: This work is licensed under a Creative Commons Attribution 4.0 International License.
+  redistributable: true
+  files:
+  - url: https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/test-00000-of-00001-9c204eb3f4e11791.parquet
+    sha256: 2f1e51a42c47e01e34da1c23cbca9563aaad3804804b01c77eee921d6e4ea3be
+    path: gt/test-00000-of-00001-9c204eb3f4e11791.ground_truth.jsonl
+    parquet_lfs_sha256: 51c65f1788faff392abe2a0b55b023eb23e9be551c509138eaa3a832514224e7
+    parquet_size: 234202795
+    note: range-read of the ground_truth column only; sha256 is of the extracted JSONL
+  - url: https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/train-00000-of-00004-b4aaeceff1d90ecb.parquet
+    sha256: ac5954d495f31eee173d9e96bfa65cd0fc8e59b0985ecd7d6d8641e81b644082
+    path: gt/train-00000-of-00004-b4aaeceff1d90ecb.ground_truth.jsonl
+    parquet_lfs_sha256: da3994eee1bf9bd3c57f0d53a72c3a6812c8696c5ba26245987949ddf73483cc
+    parquet_size: 490224630
+    note: range-read of the ground_truth column only; sha256 is of the extracted JSONL
+  - url: https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/train-00001-of-00004-7dbbe248962764c5.parquet
+    sha256: 5636c59c804a33452cc46364e7ed84a3308a515077e1dfbe9aae96968cfc8139
+    path: gt/train-00001-of-00004-7dbbe248962764c5.ground_truth.jsonl
+    parquet_lfs_sha256: cce4def16a0d6a6c75f80be712f7494c56c318a8829b712f5c62650155c9e58e
+    parquet_size: 441418432
+    note: range-read of the ground_truth column only; sha256 is of the extracted JSONL
+  - url: https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/train-00002-of-00004-688fe1305a55e5cc.parquet
+    sha256: 536ad2b1fc9d22f0a7ec64cc3066388b0f8b7e63c9a9c1b380b2e1cec84ffab4
+    path: gt/train-00002-of-00004-688fe1305a55e5cc.ground_truth.jsonl
+    parquet_lfs_sha256: 591e2db8fe8b1d364b054f46e8c375b7f00e72578914ba46a573b6858162cab2
+    parquet_size: 443802181
+    note: range-read of the ground_truth column only; sha256 is of the extracted JSONL
+  - url: https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/train-00003-of-00004-2d0cd200555ed7fd.parquet
+    sha256: 9c1e5abe2b62106a633bb2884aa035044caf3a2c77e0e813b8382d36156960f5
+    path: gt/train-00003-of-00004-2d0cd200555ed7fd.ground_truth.jsonl
+    parquet_lfs_sha256: 1ffd9de8d6fbcee7630fd4cdfedff05b9b7fabc0fae4fc17557c5fe7cf178748
+    parquet_size: 455555434
+    note: range-read of the ground_truth column only; sha256 is of the extracted JSONL
+  - url: https://huggingface.co/datasets/naver-clova-ix/cord-v2/resolve/7f0115a4b758a71d6473b8d085751692da2fef98/data/validation-00000-of-00001-cc3c5779fe22e8ca.parquet
+    sha256: e6050eec3a8d7fda68c350cd5d71636bfb03585fb6d205988f537024077e24a7
+    path: gt/validation-00000-of-00001-cc3c5779fe22e8ca.ground_truth.jsonl
+    parquet_lfs_sha256: 0d0f6dac11fdcc549de2746aa9f53136a3bc22a2a1aff2b0b847f7622ad60c15
+    parquet_size: 242080800
+    note: range-read of the ground_truth column only; sha256 is of the extracted JSONL
+  unit_description: One Indonesian shop or restaurant receipt, rebuilt as plain text from the annotated
+    OCR words (menu, subtotal and total area only).
+  how_gold_was_made: Clova AI annotators drew word boxes on each receipt photo, typed the text, and labelled
+    every word with a class (menu.nm, menu.cnt, menu.price, total.total_price ...), grouping the words
+    of one purchased item with a shared group id. Gold here is the menu.nm text of each item group, i.e.
+    the item names in the published gt_parse.menu list.
+  known_issues:
+  - Store name, address and payment details were removed by the dataset authors for legal reasons, so
+    texts are only the item / total block and are short.
+  - Sub-items (toppings, modifiers, set contents; menu.sub.nm) are printed as their own lines but are
+    not gold items; units carrying them are flagged has_sub_items.
+  - Text is OCR-like (abbreviations, typos such as CHIKEN, split words) because it is the annotators'
+    transcription of a photo.
+  - Reading order comes from the annotated rows; a visual line annotated as two rows becomes two text
+    lines.
+  - Printed item-count / total-quantity fields (total.menuqty_cnt, total.menutype_cnt) were removed from
+    the text (flag count_leak_stripped); a few unlabelled count-like strings may remain (flag possible_count_leak_unlabelled).
+  - Discounted, free (price 0) and voided lines stay in the text; free items are still gold because annotators
+    labelled them menu.nm.
+fewnerd:
+  title: Few-NERD
+  domain: wiki
+  list_types:
+  - people
+  url: https://github.com/thunlp/Few-NERD
+  paper: 'Ding, Xu, Chen, Wang, Han, Xie, Zheng and Liu (2021). Few-NERD: A Few-shot Named Entity Recognition
+    Dataset. ACL-IJCNLP 2021, pages 3198-3213. https://aclanthology.org/2021.acl-long.248'
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  licence_quote: Few-NERD dataset is distributed under the CC BY-SA 4.0 license. The code is distributed
+    under the Apache 2.0 license.
+  redistributable: true
+  files:
+  - url: https://huggingface.co/datasets/DFKI-SLT/few-nerd/resolve/205f3e9c9f3577ea2561d43f2f62dc249ab92d5b/supervised/test-00000-of-00001.parquet
+    sha256: b7ad746fcbeb68fcc235ba7142d7c3723ea2dc39930089e947284defecf300c6
+    path: supervised/test-00000-of-00001.parquet
+  unit_description: One English Wikipedia sentence from the Few-NERD supervised test set.
+  how_gold_was_made: '70 trained annotators and 10 experts labelled every entity in Wikipedia paragraphs
+    with 8 coarse and 66 fine types: "Each paragraph is independently annotated by two well-trained annotators.
+    Then, an experienced expert goes over the paragraph for possible wrong or omissive annotations, and
+    make the final decision." Gold items here are the distinct strings of the person-* spans in the sentence.'
+  known_issues:
+  - 'Sentences only: Few-NERD has no article or paragraph id and the sentences are shuffled, so no multi-sentence
+    windows can be built. Each sentence is its own group, so two sentences from the same article may land
+    in different splits.'
+  - Few-NERD uses IO tags, so two person names written directly next to each other merge into one span;
+    spans that contain a comma, 'and', '&' or ';' are flagged io_span_has_separator.
+  - 'Text is rebuilt from tokens: spaces are removed before closing punctuation and clitics and after
+    opening brackets, and PTB quote tokens (`` and '''') become a straight double quote (flags tokens_joined,
+    ptb_quotes_to_ascii).'
+  - 'Gold counts distinct strings: a repeated name counts once (flag gold_dedup); a short form and a long
+    form of what may be the same person (''Smith'', ''John Smith'') are both kept and flagged same_person_multiple_forms.'
+  - Name variants of one person that are not substrings of each other ('Jean de Cabannes', 'Jean de Cabanes')
+    count as separate items; names sharing a word (also relatives such as 'John Smith', 'Mary Smith')
+    are flagged names_share_token for the human check.
+  - 'Pronouns (he, she, his, her) are not entities. n = 0 sentences with such pronouns are flagged pronoun_person_reference_present:
+    a model might list the pronoun''s referent.'
+  - Few-NERD has some annotation noise (reported sentence-level accuracy >= 95% per batch, Cohen's kappa
+    76.44%).
+  - Fictional characters, gods and groups follow Few-NERD's typing (gods are other-god, bands are organization-showorganization),
+    so they are not gold people.
+maccrobat:
+  title: MACCROBAT2020
+  domain: clinical
+  list_types:
+  - symptoms
+  - medications
+  url: https://doi.org/10.6084/m9.figshare.9764942.v2
+  paper: Caufield, J. Harry (2019). MACCROBAT. figshare. Dataset. https://doi.org/10.6084/m9.figshare.9764942.v2
+    ; annotation scheme described in Caufield J.H. et al. (2019), A comprehensive typing system for information
+    extraction from clinical narratives, medRxiv 10.1101/19009118
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  licence_quote: 'figshare article 9764942 v2 licence field: "CC BY 4.0" (https://creativecommons.org/licenses/by/4.0/)'
+  redistributable: true
+  files:
+  - url: https://ndownloader.figshare.com/files/21489405
+    sha256: a2d34ccd1a605d9147fc7368293e61dcf2090357b26f7bce6c2b3d257204acc6
+    path: MACCROBAT2020.zip
+  unit_description: A window of 3 to 8 consecutive sentences (40 to 300 words) from one published clinical
+    case report, with either the patient's annotated signs/symptoms or the medications annotated in that
+    window.
+  how_gold_was_made: The dataset author's team annotated all 200 case reports by hand in brat ("All annotations
+    were created manually", figshare description) with a 24+ type clinical event scheme, including Sign_symptom
+    and Medication entities and a POLARITY attribute for negated or uncertain events. The loader lists
+    the Sign_symptom or Medication spans inside a window, minus negated, hedged and other-person mentions.
+  known_issues:
+  - Literature-style case reports, not chart notes; the text was cut down to the case details by the dataset
+    author.
+  - Sign_symptom also covers findings and disease-like terms (mass, lesion, tumor, metastasis, recurrence)
+    and some states (healthy, asymptomatic, recovered); flagged as non_symptom_item.
+  - Medication includes generic classes and procedures (chemotherapy, antibiotics, medication, sedation,
+    general anesthesia); flagged as generic_item.
+  - Negation comes only from the annotators' POLARITY attribute; a negated mention they did not mark would
+    still be gold.
+  - Inter-annotator agreement for MACCROBAT is not reported on the figshare page (not verified).
+  - Windows from one report overlap; the build must use group to keep one report in one split.
+mailex:
+  title: 'MailEx: Email Event and Argument Extraction'
+  domain: emails
+  list_types:
+  - requests
+  url: https://github.com/salokr/Email-Event-Extraction
+  paper: 'Saurabh Srivastava, Gaurav Singh, Shou Matsumoto, Ali Raz, Paulo Costa, Joshua Poore, Ziyu Yao.
+    MailEx: Email Event and Argument Extraction. EMNLP 2023. ACL Anthology 2023.emnlp-main.801, arXiv
+    2305.13469.'
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+  licence_quote: The dataset is distributed under the [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+  redistributable: true
+  files:
+  - url: https://drive.google.com/uc?export=download&id=1a336g4-wlEwsVbXLPB9wPQnBDRE933mb
+    sha256: dda3ce5da5ffc3452dd9e5a58cd69e19e68bd655eafe1deec48e87204f6c37b4
+    path: mailex.zip
+  unit_description: 'One Enron business email (one message of a MailEx thread): its subject line and body.'
+  how_gold_was_made: Two native English-speaking Computer Science students annotated every email of 1,500
+    Enron threads with event triggers and argument spans (10 event types), seeing the earlier thread messages
+    as context; instances where the two annotators disagreed on type or had no trigger overlap were deleted.
+    Gold items here are the Request_* event instances (Request_Action, Request_Data, Request_Meeting,
+    Request_Action_Data, Request_Meeting_Data), one item per instance, text = trigger span joined with
+    the instance's head argument span.
+  known_issues:
+  - Disputed annotations were deleted by the authors, so an email with gold n=0 (or n=k) can still contain
+    a real, unlabelled request; such n=0 emails are flagged maybe_missing_item:request_cue.
+  - Gold item text is a span we cut from the annotators' trigger and head-argument spans; it is extractive
+    but its exact boundaries are our rule, so scoring should be fuzzy.
+  - Annotators read the whole thread; some requests only read as requests with that context (e.g. a bare
+    follow-up question).
+  - The subject line is shown to the model but was never annotated.
+  - Request_Action_Data and some Request_Data instances are questions or offers ('Would you like me to
+    forward ...?'), which a reader may not call a request.
+  - Enron emails are real people's private correspondence (names, phone numbers); the underlying CMU Enron
+    corpus states no licence.
+pdnc:
+  title: Project Dialogism Novel Corpus (PDNC)
+  domain: fiction
+  list_types:
+  - quotations
+  url: https://github.com/Priya22/project-dialogism-novel-corpus
+  paper: 'Vishnubhotla, Hammond and Hirst (2022). The Project Dialogism Novel Corpus: A Dataset for Quotation
+    Attribution in Literary Texts. LREC 2022, pages 5838-5848. https://aclanthology.org/2022.lrec-1.628/'
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  licence_quote: PDNC is free to use under the CC-BY 4.0 License.
+  redistributable: true
+  files:
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/AHandfulOfDust/novel_text.txt
+    sha256: d93d1d7034fb98e38c1400c33caac7a7ff5c2111029de935fac8f5f7dbd960fc
+    path: data/AHandfulOfDust/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/AHandfulOfDust/quotation_info.csv
+    sha256: 138c7f64cea186c5d73c473aa0f7a017b57736a94a89ec08be215ea8d809ab12
+    path: data/AHandfulOfDust/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/APassageToIndia/novel_text.txt
+    sha256: bc9c50093a6822f7c488224ce46c602981759e3b421b1de0cd698bcc8d54d2b2
+    path: data/APassageToIndia/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/APassageToIndia/quotation_info.csv
+    sha256: d96c944be6a6f08293f76480bded9f2449eb1537ba422422c6c43103dc1ce3cb
+    path: data/APassageToIndia/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/ARoomWithAView/novel_text.txt
+    sha256: a7f6e16555eda0e34c03659b797c573d637de90c7bbcd70f8592e74948ef419d
+    path: data/ARoomWithAView/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/ARoomWithAView/quotation_info.csv
+    sha256: 4fa67257c5afbe79c0c71691026fb163b43fc4ac67c133d1f25ffbcfa9ac0267
+    path: data/ARoomWithAView/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/AlicesAdventuresInWonderland/novel_text.txt
+    sha256: 3c07acdad93b3fffab80c1cd05f5a64787837a3a046dcffb82d9f23d25b72cf4
+    path: data/AlicesAdventuresInWonderland/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/AlicesAdventuresInWonderland/quotation_info.csv
+    sha256: 97c23c58701b4c71e62967c710d423a1abcd30afd6fe8b1e0a4bc693dae76cac
+    path: data/AlicesAdventuresInWonderland/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/AnneOfGreenGables/novel_text.txt
+    sha256: caa7444ca060bba9566f3d9ed7ef8340cd5543b03f96c93c24f3691b0e8aeccd
+    path: data/AnneOfGreenGables/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/AnneOfGreenGables/quotation_info.csv
+    sha256: 0a81f83d10804d8e4a3a34d46d32cde863795d8a4d2cddb676ac16f16354060c
+    path: data/AnneOfGreenGables/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/DaisyMiller/novel_text.txt
+    sha256: 3475c47037aa1aa6b35e763b1049a2362ee7cbd286324b9f2a55baa0bece5dde
+    path: data/DaisyMiller/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/DaisyMiller/quotation_info.csv
+    sha256: a7336df3a00736f891ce0012001045ac130904fd7a560cd31240206b52720e0b
+    path: data/DaisyMiller/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/Emma/novel_text.txt
+    sha256: 244f3afe05a7490c0fe0daddad0b93ab42f5639ac2fc24814b321c91dd143d1c
+    path: data/Emma/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/Emma/quotation_info.csv
+    sha256: 2e6672f9e575b5ad83d335f9ef1f3f5ad1c755dfe1c95b4bdb733c57b3247455
+    path: data/Emma/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/HardTimes/novel_text.txt
+    sha256: 86ec45c3bc09d6a08662f5f20d192a1b04de010ea8dc70e5366d3b60ea35e7e6
+    path: data/HardTimes/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/HardTimes/quotation_info.csv
+    sha256: a4eab13d70b2bfa704823f98aeed3ae188385fd5131e660ceab83185ca0274b7
+    path: data/HardTimes/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/HowardsEnd/novel_text.txt
+    sha256: fd5c4e2ac5bc8b0c62577c610b9d2f1768bce94245cad9174b4457b6609ddcd3
+    path: data/HowardsEnd/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/HowardsEnd/quotation_info.csv
+    sha256: 4dcf0da1e22528bd35c4e4eab3d247fa4fbc3711ceda853338502cb61ad2e0b0
+    path: data/HowardsEnd/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/MansfieldPark/novel_text.txt
+    sha256: b6c3c9f73be5e54682dc8b77f31844e48f3972b8e1f80dd86bd2b62c5ff80d87
+    path: data/MansfieldPark/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/MansfieldPark/quotation_info.csv
+    sha256: 3a7a3078031d14ab9cba8361ce873830bbce0ef296b581569287933dcd26feb5
+    path: data/MansfieldPark/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/NightAndDay/novel_text.txt
+    sha256: 39028e9931692c4affebe2f4e43db1b4438c67ac1d452af0d2d55d1b93fe077d
+    path: data/NightAndDay/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/NightAndDay/quotation_info.csv
+    sha256: 390b41d807b9cc7c8023c791a63a0b44c5ec4c4de2127d410c85cf89b75edb80
+    path: data/NightAndDay/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/NorthangerAbbey/novel_text.txt
+    sha256: b204181174e72d207e7a7d48db85faf1758a6e73b9abbf9f8f94ef29e28e13ee
+    path: data/NorthangerAbbey/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/NorthangerAbbey/quotation_info.csv
+    sha256: 2939bb20a22e9e668a66bb77be3e9c06fb8c522a42798037d2e8febf07277ab4
+    path: data/NorthangerAbbey/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/OliverTwist/novel_text.txt
+    sha256: 7042780c3068035978098513fe2d2fe467740af6b82a85fe1e6b36757dd84213
+    path: data/OliverTwist/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/OliverTwist/quotation_info.csv
+    sha256: 5d4bfbb67bfd90a7303e626786bea3d87c76e931e35917b837afc7d94ce52aba
+    path: data/OliverTwist/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/Persuasion/novel_text.txt
+    sha256: b42c4b4735cadffec44ef7462405b1551388fd1be6c35487c23745763584cd26
+    path: data/Persuasion/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/Persuasion/quotation_info.csv
+    sha256: 818959323968d05be920a1488c14bb133143655a801954abb49d192a8c70a53d
+    path: data/Persuasion/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/PrideAndPrejudice/novel_text.txt
+    sha256: 03ef2a45e7d958ea400cd63e77499ba65e0aa4a06e35c434ca348a0e46789660
+    path: data/PrideAndPrejudice/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/PrideAndPrejudice/quotation_info.csv
+    sha256: 4eb8d235fc06dfb39c11eb5525fa21943d1a9f0e1d01af61f9329fa10512792b
+    path: data/PrideAndPrejudice/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/SenseAndSensibility/novel_text.txt
+    sha256: 504919bfd78b59cc995904769eb51e645be05c805718e445d0ec969366e0d5c5
+    path: data/SenseAndSensibility/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/SenseAndSensibility/quotation_info.csv
+    sha256: b9c9c6ae60f72c73e9c43acbda76adffc9a34c4de33a0e9ffcf8b394f9ebea4e
+    path: data/SenseAndSensibility/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheAgeOfInnocence/novel_text.txt
+    sha256: 12be42dbe622193a4519cb0fd08fcda3b593ba3bf000c68849453977994cec60
+    path: data/TheAgeOfInnocence/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheAgeOfInnocence/quotation_info.csv
+    sha256: 0fe87b0bbfeb9b2837a43245436d82be74758c86ac250cf3637ecc4e92f8b2e3
+    path: data/TheAgeOfInnocence/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheAwakening/novel_text.txt
+    sha256: 70e6caa8b14d81c3675f774158abfe674e091b73dafc784ef33c13f08a3de603
+    path: data/TheAwakening/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheAwakening/quotation_info.csv
+    sha256: d5b95f316a562b170be3de5b6ef13e8e216ba0bdbd307d5d0ba9ff721fae3f0c
+    path: data/TheAwakening/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheGambler/novel_text.txt
+    sha256: e11d342dc4a88db12401910a8eed3c1e65eea2252cf7a8ddaca73b201abfbd92
+    path: data/TheGambler/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheGambler/quotation_info.csv
+    sha256: debeeebb3c553dfbfc73f28ce1b090bbb81f09fe8f3e64fc8e49d0e6a166d9ee
+    path: data/TheGambler/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheInvisibleMan/novel_text.txt
+    sha256: 31581b513dfd3a1eea64cf5a8f509c7184038f21787397525ec989f7257f7d31
+    path: data/TheInvisibleMan/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheInvisibleMan/quotation_info.csv
+    sha256: 8976e6c96a016e0bd3a846f1ace0a1ecb1b17280ead7023a09495e0a7ba4c0e5
+    path: data/TheInvisibleMan/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheManWhoWasThursday/novel_text.txt
+    sha256: 9b3b46730e44838a4323e31d74e8eecea5d30414b33b747e39eb517caaf10a71
+    path: data/TheManWhoWasThursday/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheManWhoWasThursday/quotation_info.csv
+    sha256: b4505b6bdadda6c371b304532557b234099db44b079190e27c4fb4cc8f543611
+    path: data/TheManWhoWasThursday/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheMysteriousAffairAtStyles/novel_text.txt
+    sha256: e6b3744c27e5796d706ca7a3507258330a35d21e74e185fdbfe6dc48ea7acc72
+    path: data/TheMysteriousAffairAtStyles/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheMysteriousAffairAtStyles/quotation_info.csv
+    sha256: adce1455ddbb7baa2bf1f7a798a4e893aad6d5012a8407c4026305e6425f0abb
+    path: data/TheMysteriousAffairAtStyles/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/ThePictureOfDorianGray/novel_text.txt
+    sha256: 1293f3b0b9b0088233049391be644421e8226cae54db1dec6c6c22760afe3e9d
+    path: data/ThePictureOfDorianGray/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/ThePictureOfDorianGray/quotation_info.csv
+    sha256: db6d480b169114efe10ef1d3b7a87489a1221dce298d8d5da35ede6b375d0676
+    path: data/ThePictureOfDorianGray/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheSignOfTheFour/novel_text.txt
+    sha256: f64ea9c167a8bda40b1d2c79516759b3c15c50d5f1808fe4a1a2bacd8188ea5f
+    path: data/TheSignOfTheFour/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheSignOfTheFour/quotation_info.csv
+    sha256: 673d2b10888ffb0bce565f3ba6ac37165d86395c7a2fd8bd51f4492c7bf01ed2
+    path: data/TheSignOfTheFour/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheSportOfTheGods/novel_text.txt
+    sha256: 12ab9c8e2c15500ca3d52b163d1f386b6da87c29467259930f6ab24a6b546073
+    path: data/TheSportOfTheGods/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheSportOfTheGods/quotation_info.csv
+    sha256: 8390ec2bfc453fd0c9895cff6e54c4db85924c711175f42b70d9ceb1bb918654
+    path: data/TheSportOfTheGods/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheSunAlsoRises/novel_text.txt
+    sha256: 4fd2e7b51fc866b9f5abfa11be3137c4954a005aeddc1858b8e7778426316923
+    path: data/TheSunAlsoRises/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/TheSunAlsoRises/quotation_info.csv
+    sha256: 4fad59f179406ff9b5685a2fb6a3bcbc91df21d0239377f01483feed33ea12e6
+    path: data/TheSunAlsoRises/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/WhereAngelsFearToTread/novel_text.txt
+    sha256: 4b85d0e79688594c7e3aa5da11424f4717d1b9cf35a6a243b2a2dcc92d719538
+    path: data/WhereAngelsFearToTread/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/WhereAngelsFearToTread/quotation_info.csv
+    sha256: 2ccfaa8240d67b686ddb24261631f58684d4d69f967cd15202af928068cf29b0
+    path: data/WhereAngelsFearToTread/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/WinnieThePooh/novel_text.txt
+    sha256: bb942f9c4cb5727cd9ef01bffd4eea2b22185953ac90351209096f65e7a2f210
+    path: data/WinnieThePooh/novel_text.txt
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/data/WinnieThePooh/quotation_info.csv
+    sha256: ce8a6318369b93b7d199695ccebbf61376abd711b64b90e2f6054570d23d8876
+    path: data/WinnieThePooh/quotation_info.csv
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/ReadMe.md
+    sha256: 68d33b693ead891840b3814af2ffaac1def492d9bbf54ffa1e5bfe97668ef8bd
+    path: ReadMe.md
+  - url: https://raw.githubusercontent.com/Priya22/project-dialogism-novel-corpus/e507a27b89a85c1e9710a897ad0b3f5a9ad73dc4/PDNC-Novel-Index.csv
+    sha256: 1a0f38e68dc57ada0c1d4e7fe6049e2286ddc01b67ff4d68b7c9a6c637588f40
+    path: PDNC-Novel-Index.csv
+  unit_description: One to three consecutive paragraphs (40 to 300 words) from one chapter of a public-domain
+    English novel.
+  how_gold_was_made: University-level literature students annotated every quotation in each full novel;
+    each novel was annotated by two annotators who then resolved all disagreements in up to three consensus
+    rounds (paper section 4.2). Quotations were pre-identified with GutenTag and checked by the annotators.
+    Gold items here are those quotation spans copied verbatim at PDNC's own character offsets.
+  known_issues:
+  - An interrupted quotation ("A," said X, "B.") is ONE PDNC quotation with two sub-spans; it is one gold
+    item whose text is the sub-spans joined by a space, with each sub-span as an evidence span (flag interrupted_quote).
+    meta.n_subquote_spans gives the count if fragments are scored separately.
+  - Speech reported without quote marks (free indirect speech) is not annotated as a quotation and is
+    not detected; a model may list it.
+  - 'PDNC''s novel_text.txt files contain no characters above ASCII: em dashes, curly apostrophes and
+    ligatures were dropped or turned into spaces by PDNC, so some words read oddly (''I m going'', ''antenn
+    '', ''Hastings it''s''). Units copy this text verbatim because PDNC''s offsets index it.'
+  - n = 0 windows that contain a speech verb (said, asked ...) are flagged speech_verb_no_quote_marks;
+    in the ones read these were indirect speech, which is correctly not a quotation.
+  - 'n = 0 windows are longer (median 113 words) than n = 1-3 windows (82-84 words): narration paragraphs
+    are long.'
+  - Quote marks are excluded from gold text, matching PDNC's spans.
+  - Windows containing any double-quote character not covered by a PDNC annotation are dropped, so scare
+    quotes, quoted titles, letters and missed quotations never appear; this removes a slice of real text.
+  - Some texts keep Project Gutenberg underscore italics (_word_); kept verbatim (flag gutenberg_underscore_italics).
+  - Identical quotations in one window (for example two characters saying "No.") are merged (flag gold_dedup),
+    so n counts distinct quote strings.
+  - A Handful of Dust (1934) is excluded because its text is not public domain in the US.
+  - Seven novels are US public domain but may still be in copyright in life+70 countries (flag text_copyright_outside_us_until:<year>).
+roast:
+  title: 'ROAST: Review-level Opinion Aspect Sentiment Target (English domains)'
+  domain: product_reviews
+  list_types:
+  - features
+  url: https://github.com/RiTUAL-UH/ROAST-ABSA
+  paper: 'Chebolu, Dernoncourt, Lipka, Solorio (2024). ROAST: Review-level Opinion Aspect Sentiment Target
+    Joint Detection for ABSA. arXiv:2405.20274'
+  licence: 'Apache-2.0 (annotations); review text: third-party, terms unclear'
+  licence_url: https://github.com/RiTUAL-UH/ROAST-ABSA/blob/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/LICENSE
+  licence_quote: 'Apache License Version 2.0, January 2004 (repo LICENSE). Paper: "We have only used this
+    data for research and academic purposes, ensuring that we respect the terms of use for each platform."'
+  redistributable: false
+  files:
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/LICENSE
+    sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    path: LICENSE
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/amazon_ff/quads/train.txt
+    sha256: 21d3c690882d7961ef7d1de1eb6e4a3758c03ef61df7af0df2f3f23efe27226b
+    path: English/amazon_ff/quads/train.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/amazon_ff/quads/dev.txt
+    sha256: cb05a05acaaa86112d6a17730db91567e244ac65a42e2858fdc6027ae0b3c433
+    path: English/amazon_ff/quads/dev.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/amazon_ff/quads/test.txt
+    sha256: b12eb3b05765ffd941bfe63fb8a94af65d2eaafe276404274db8c8c3418790a1
+    path: English/amazon_ff/quads/test.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/coursera/quads/train.txt
+    sha256: a0e53dab849c75ae9af70b1027f8d9eae975e2fab4c2e90b896eeb11a228e6cf
+    path: English/coursera/quads/train.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/coursera/quads/dev.txt
+    sha256: 830e59f021f097f9f4ae3d34442a8100ae16eb8ef1d05ca2c248541f0cccaaf6
+    path: English/coursera/quads/dev.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/coursera/quads/test.txt
+    sha256: 2c85feec81afd2faa2773699a47bbc7698b9663ff7703bab29531795233b9af8
+    path: English/coursera/quads/test.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/hotels/quads/train.txt
+    sha256: 9aae0a6b337bfcf5c5f51eec55ec8f8116019ccc21d0d7561d53cfe1b8d46156
+    path: English/hotels/quads/train.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/hotels/quads/dev.txt
+    sha256: d16b1ab565acbdec6a0275edbcf80729d4f0f4150fdd7fb74c43328ad8201847
+    path: English/hotels/quads/dev.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/hotels/quads/test.txt
+    sha256: 72b1897c8a52cc96726a1f6e055192d5a527cfa0f5b8294cbbc122aebdc5cc40
+    path: English/hotels/quads/test.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/phones_eng/quads/train.txt
+    sha256: 7aa8b0c0c67148e239b1af1c1a7b40fb48f61284bbb5d079acb3582c78c0e73d
+    path: English/phones_eng/quads/train.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/phones_eng/quads/dev.txt
+    sha256: 833989e831fa583d265be65a4ffa809b90e0fa6fea7e8dcf6b617ad8e354ff1b
+    path: English/phones_eng/quads/dev.txt
+  - url: https://raw.githubusercontent.com/RiTUAL-UH/ROAST-ABSA/9b4e1ba0ed2652c97a74bd3675bf35b16a3297d5/ROAST_Data/English/phones_eng/quads/test.txt
+    sha256: b9103d8dd026212c03ca28f02372fcf8e4f8629fc2c7db085c7088bdd1c020ef
+    path: English/phones_eng/quads/test.txt
+  unit_description: One whole English customer review (food product, online course, hotel or phone), 15
+    to 400 words, as tokenised in the ROAST quads files.
+  how_gold_was_made: Two Upwork annotators labelled every opinion in each full review as a quadruple (target,
+    aspect category, sentiment, opinion phrase) in BRAT, following a guideline written for the task; implicit
+    targets were written as NULL. Disagreements in a 50-review pilot were resolved jointly, 10 of every
+    50 reviews were cross-checked, and quadruple-level agreement was about 78% F1. Gold items here are
+    the distinct non-NULL targets, located in the text by exact match.
+  known_issues:
+  - Only targets of an expressed opinion are annotated; a feature mentioned neutrally (no opinion) is
+    not a gold item.
+  - Text is pre-tokenised by the dataset (spaces around punctuation, "don ' t"); it is kept as is.
+  - n = 0 reviews almost always still hold opinions with an implicit target (the product or course as
+    'it'), so they are weak zeros (flag n0_weak).
+  - Amazon_FF targets are often normalised to the product name rather than the specific feature, so a
+    feature the review praises may be folded into one product target.
+  - Some lines join several paragraphs with no space ("cleanBreakfast") and some hotel texts carry mojibake
+    from mis-decoded quotes; both are flagged.
+  - A few amazon_ff lines appear to hold two concatenated reviews with only the first annotated; units
+    whose last annotation ends long before the text does are flagged.
+  - Targets can be pronoun-like or generic words ('it' is not used, but 'product', 'course', 'hotel' are
+    common gold items).
+  - 638 review texts appear two or more times in the release (often in different splits) with separately
+    made annotations; copies naming the same targets are kept once (flag duplicate_in_source_same_targets),
+    copies that disagree are all dropped.
+  - Some texts lost the first letter of a sentence ('he hotel', 'his is'); flagged maybe_dropped_initial_chars,
+    text left as is.
+skillspan:
+  title: 'SkillSpan: Hard and Soft Skill Extraction from English Job Postings'
+  domain: job_posts
+  list_types:
+  - skills
+  - knowledge
+  url: https://github.com/kris927b/SkillSpan
+  paper: 'Zhang, Jensen, Sonniks and Plank (2022). SkillSpan: Hard and Soft Skill Extraction from English
+    Job Postings. NAACL 2022, ACL Anthology 2022.naacl-main.366, arXiv 2204.12811.'
+  licence: CC-BY-4.0
+  licence_url: https://huggingface.co/datasets/jjzha/skillspan
+  licence_quote: 'HF dataset card (author Mike Zhang) front matter: "license: cc-by-4.0". GitHub repo
+    LICENSE: "MIT License, Copyright (c) 2023 Mike Zhang" (https://github.com/kris927b/SkillSpan/blob/main/LICENSE).
+    Paper Sec. 4: "We release the anonymized raw data and annotations of the parts with permissible licenses,
+    i.e., HOUSE ... and TECH"; Appendix A: "The job posting data in TECH is from Stackoverflow jobs, and
+    is licensed under the CC BY-SA license."'
+  redistributable: true
+  files:
+  - url: https://raw.githubusercontent.com/kris927b/SkillSpan/2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b/data/json/train.json
+    sha256: 5e884c3426087d14fc437d328eb72132082edbfe1e776292ae0e6e9b36c1e1f6
+    path: data/json/train.json
+  - url: https://raw.githubusercontent.com/kris927b/SkillSpan/2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b/data/json/dev.json
+    sha256: 3732937c6869fe191c749b4efe7ffd597ce84eea1192f09b7fe3bd1eb459e2b4
+    path: data/json/dev.json
+  - url: https://raw.githubusercontent.com/kris927b/SkillSpan/2ccf3de5b5af7a5409b8dd814fb1315dd6e0ae1b/data/json/test.json
+    sha256: 8438eda34939a5877b984ea5daf9e6ff39b2d5c7e3d73cca0499d3de3784d24a
+    path: data/json/test.json
+  unit_description: A window of 4 to 10 consecutive sentences (60 to 300 words) from one English job posting
+    (Danish labour agency HOUSE ads or StackOverflow TECH ads), one sentence per line.
+  how_gold_was_made: Domain-expert annotators marked every SKILL span (abilities to apply knowledge, including
+    soft skills/attitudes and the job's duties) and every KNOWLEDGE span (tools, technologies, fields,
+    certificates) in whole postings, following the paper's Appendix B guidelines (ESCO definitions). Test
+    postings were annotated by three annotators and majority-voted (Fleiss kappa 0.70-0.75); train and
+    dev postings by one annotator.
+  known_issues:
+  - 'The ''skills'' list is not ''requirements'': annotators tag every skill the employee is expected
+    to apply, so duties (''Provide your patients with a safe and effective course of treatment'') count
+    as items alongside stated requirements and soft skills. Prompts must ask for skills/competences mentioned,
+    not ''requirements''.'
+  - The 'knowledge' list covers tools, technologies, languages, fields and certificates (Python, AWS,
+    English, gynaecology); guideline rule 13 also tags industries/fields, which are not always obvious
+    named entities.
+  - By guideline, skills/knowledge in the posting title, in job/position names ('Experienced Java Engineer'
+    is untagged) and in text that describes only the company are NOT tagged, so a model may list such
+    mentions and be scored as padding. Windows containing the posting's first row carry flag title_untagged_by_guideline.
+  - Train and dev postings were single-annotated (flag single_annotator); missed spans there mean a true
+    item can be absent from gold, including in n = 0 windows.
+  - The released text is de-identified with placeholders (<ORGANIZATION>, <LOCATION>, <NAME>, <CONTACT>,
+    <ADDRESS>, <SALARY>, ...); some gold knowledge spans are or contain a placeholder (flags anonymised_placeholders,
+    gold_contains_placeholder, gold_is_placeholder).
+  - The source tokenisation removed most commas ('Be good humoured loyal dedicated and flexible .'), and
+    the sentence splitter sometimes breaks mid-sentence ('approx .' / '2,800 operations'); the rebuilt
+    text keeps both as released.
+  - HOUSE text contains cp1252 characters stored as C1 control code points (\x92 for an apostrophe, \x95
+    for a bullet); the loader re-decodes them to the intended characters (flag cp1252_mojibake_repaired).
+    Windows containing \x1a (a lost character) are dropped.
+  - Some boilerplate sentences recur across postings of the same employer with different tags; windows
+    with such a sentence carry flag boilerplate_tag_inconsistent.

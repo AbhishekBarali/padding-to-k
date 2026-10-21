@@ -1,0 +1,1 @@
+request_id,model_key,doc_id,condition,k,item_index,item_text,label,matched_gold_index,match_method,match_score,matched_span_start,matched_span_end,split_or_merge,resolution,human_label,human_checker,decision_path,scorer_version

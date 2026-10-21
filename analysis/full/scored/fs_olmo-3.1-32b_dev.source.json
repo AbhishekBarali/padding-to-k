@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_olmo-3.1-32b_dev",
+ "model_key": "olmo-3.1-32b",
+ "source": "cdd681b25f602fd4d29e397956f6453551806075d334a4e402df1719640d2a14",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 2799,
+ "entries": 6623
+}

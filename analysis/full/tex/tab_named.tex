@@ -1,0 +1,23 @@
+\begin{tabular}{lr}
+  \toprule
+  Named test & Estimate [95\% CI] \\
+  \midrule
+  fewer is fine: min\_k\_shown\_fewer\_ok vs none (length) & -0.77 [$-0.93$, $-0.60$] \\
+  fewer is fine: min\_k\_shown\_fewer\_ok vs min\_k\_shown (length) & -1.39 [$-1.53$, $-1.25$] \\
+  fewer is fine: min\_k\_shown\_fewer\_ok vs none (over-count, points) & -3.5 [$-4.7$, $-2.4$] \\
+  maxItems: max\_k\_shown vs none (length) & -0.49 [$-0.61$, $-0.37$] \\
+  enough items (n $\geq$ k, k = 1, 3, 5): min\_k\_shown vs none (length) & -0.15 [$-0.30$, $-0.02$] \\
+  enough items: min\_k\_shown vs none (share of true items left out, points) & +0.2 [$-0.3$, $+0.8$] \\
+  part of the effect from filling missing slots, k = 3 and 5: change on n $<$ k minus on n $\geq$ k & +0.93 [$+0.63$, $+1.24$] \\
+  enough items, k = 1: n $\geq$ k -0.08 [$-0.20$, $+0.04$]; n $<$ k +0.22 [$-0.12$, $+0.57$]; difference (n $<$ k minus n $\geq$ k) & +0.30 [$-0.06$, $+0.68$] \\
+  enough items, k = 3: n $\geq$ k -0.25 [$-0.51$, $+0.01$]; n $<$ k +0.28 [$+0.09$, $+0.49$]; difference (n $<$ k minus n $\geq$ k) & +0.54 [$+0.20$, $+0.87$] \\
+  enough items, k = 5: n $\geq$ k -0.71 [$-1.57$, $-0.02$]; n $<$ k +0.86 [$+0.69$, $+1.03$]; difference (n $<$ k minus n $\geq$ k) & +1.57 [$+0.84$, $+2.58$] \\
+  empty document, k = 1 (n = 0): prose\_up\_to\_k vs none, share with at least one entry (points) & +8.8 [$+7.3$, $+10.3$] \\
+  empty document, k = 1 (n = 0): prose\_exactly\_k vs none, share with at least one entry (points) & +11.6 [$+9.8$, $+13.4$] \\
+  empty document, k = 1 (n = 0): max\_k\_shown vs none, share with at least one entry (points) & -1.0 [$-2.4$, $+0.4$] \\
+  empty document, k = 1 (n = 0): min\_k\_shown vs none, share with at least one entry (points) & +7.4 [$+5.6$, $+9.2$] \\
+  empty document, k = 1 (n = 0): min\_k\_shown\_fewer\_ok vs none, share with at least one entry (points) & -3.1 [$-5.0$, $-1.2$] \\
+  empty document, k = 1 (n = 0): min\_k\_enforced vs none, share with at least one entry (points) & +47.5 [$+44.5$, $+50.5$] \\
+  empty document, k = 1 (n = 0): min\_k\_escape vs none, share with at least one entry (points) & -4.9 [$-6.9$, $-2.9$] \\
+  \bottomrule
+\end{tabular}

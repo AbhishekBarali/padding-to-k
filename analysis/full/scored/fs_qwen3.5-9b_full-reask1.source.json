@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_qwen3.5-9b_full-reask1",
+ "model_key": "qwen3.5-9b",
+ "source": "caf1d4e9b6a2b068724f62bb2b891eea78c0316be3148553b1584d5a6340c524",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 678,
+ "entries": 2038
+}

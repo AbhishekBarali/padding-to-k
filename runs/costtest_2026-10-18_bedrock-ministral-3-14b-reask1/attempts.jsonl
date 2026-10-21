@@ -1,0 +1,6 @@
+{"request_id": "eml-562d69|min_k_shown|k3|all_1|reask1", "attempt": 1, "utc": "2026-10-18T03:51:18.636+00:00", "http_status": 200, "error": null, "latency_ms": 1308, "retrying": false}
+{"request_id": "eml-3356f4|min_k_shown|k5|all_1|reask1", "attempt": 1, "utc": "2026-10-18T03:51:18.701+00:00", "http_status": 200, "error": null, "latency_ms": 1374, "retrying": false}
+{"request_id": "eml-54b30c|min_k_shown|k5|all_1|reask1", "attempt": 1, "utc": "2026-10-18T03:51:18.854+00:00", "http_status": 200, "error": null, "latency_ms": 1528, "retrying": false}
+{"request_id": "eml-724b7c|min_k_shown|k3|all_1|reask1", "attempt": 1, "utc": "2026-10-18T03:51:18.962+00:00", "http_status": 200, "error": null, "latency_ms": 1634, "retrying": false}
+{"request_id": "eml-8ae4e1|min_k_shown|k5|all_1|reask1", "attempt": 1, "utc": "2026-10-18T03:51:20.248+00:00", "http_status": 200, "error": null, "latency_ms": 1547, "retrying": false}
+{"request_id": "eml-7c5695|min_k_shown|k5|all_1|reask1", "attempt": 1, "utc": "2026-10-18T03:51:20.572+00:00", "http_status": 200, "error": null, "latency_ms": 1936, "retrying": false}

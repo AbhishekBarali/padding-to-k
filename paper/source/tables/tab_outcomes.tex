@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrrrr}
+  \toprule
+  Condition & Over-count \% & Bound \% & Excess & Unreadable \% & Exactly $k$ \% & Left out \% \\
+  \midrule
+  \cnd{none} & 34.5 & 34.3 & 2.41 & 6.9 & 5.6 & 17.0 \\
+  \cnd{prose\_up\_to\_k} & 42.7 & 42.4 & 1.58 & 3.7 & 24.0 & 20.0 \\
+  \cnd{prose\_exactly\_k} & 50.9 & 50.6 & 1.71 & 6.0 & 39.0 & 21.6 \\
+  \cnd{max\_k\_shown} & 35.7 & 35.5 & 1.92 & 7.3 & 15.5 & 20.9 \\
+  \cnd{min\_k\_shown} & 55.4 & 55.2 & 3.02 & 10.5 & 35.5 & 18.2 \\
+  \cnd{min\_k\_shown\_fewer\_ok} & 31.0 & 30.8 & 1.76 & 7.3 & 15.0 & 24.3 \\
+  \cnd{min\_k\_enforced} & 90.1 & 89.5 & 3.49 & 0.2 & 71.8 & 8.6 \\
+  \cnd{min\_k\_escape} & 51.0 & 50.6 & 2.00 & 0.1 & 78.5 & 13.6 \\
+  \bottomrule
+\end{tabular}
