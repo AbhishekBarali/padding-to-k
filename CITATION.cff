@@ -12,6 +12,7 @@ authors:
     affiliation: "St. Xavier's College, Maitighar, Kathmandu, Nepal (Tribhuvan University)"
   - family-names: Paudel
     given-names: Aayush
+    orcid: "https://orcid.org/0009-0001-0962-2821"
     affiliation: "St. Xavier's College, Maitighar, Kathmandu, Nepal (Tribhuvan University)"
 keywords:
   - structured output
@@ -29,3 +30,4 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0007-3317-8437"
     - family-names: Paudel
       given-names: Aayush
+      orcid: "https://orcid.org/0009-0001-0962-2821"
