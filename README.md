@@ -117,13 +117,32 @@ from the paper's own plot data by [`tools/readme_figures.py`](tools/readme_figur
 
 ## How the study was done
 
+<table>
+<tr><td><b>Documents</b></td><td>558 real documents from nine sets: action items in AMI meetings, requests in MailEx emails, items on CORD receipts, skills and knowledge in SkillSpan job ads, medications in MACCROBAT case reports, features in ROAST reviews, people in Few-NERD Wikipedia sentences, and direct speech in PDNC novels. Each holds 0 to 6 true items.</td></tr>
+<tr><td><b>Models</b></td><td>8 open-weight models on one GPU (Qwen3.5-0.8B, -2B, -9B and -27B, Gemma 4 31B, Olmo 3.1 32B, Ministral 3 14B, gpt-oss-20b), served by vLLM with greedy decoding; 6 more on Together AI and Amazon Bedrock as a reference</td></tr>
+<tr><td><b>Requests</b></td><td>k = 1, 3 and 5 under eight conditions (below); 26,784 request ids per GPU model</td></tr>
+<tr><td><b>Main measure</b></td><td>Length change: entries under a condition minus entries with no count, same document and model</td></tr>
+</table>
+
+| Condition | Count stated | Decoder |
+|---|---|---|
+| no count | none | free |
+| prose "up to *k*" | in the instruction, 5 wordings | free |
+| prose "exactly *k*" | in the instruction, 5 wordings | free |
+| shown maximum | `maxItems` in the schema | free |
+| shown minimum | `minItems` in the schema | free |
+| "fewer is fine" | as above, plus "If the document contains fewer than k, list all available ones." | free |
+| enforced minimum | `minItems` in the schema | enforced |
+| N/A escape | as above, plus "If the information is not available, use N/A." | enforced |
+
 - **Preregistered.** The design, the scoring rules and the analyses were registered on
-  [OSF](https://osf.io/e4r9f) before the main run. `tools/check_frozen.py` checks every frozen file
-  against its registered hash.
-- **Checked answer lists.** Each document holds 0 to 6 true items. The answer lists were cleaned under
-  written counting rules and checked by both authors, including blind counts.
+  [OSF](https://osf.io/e4r9f) before the main run, with five confirmatory contrasts corrected together
+  (Holm). `tools/check_frozen.py` checks every frozen file against its registered hash.
+- **Checked answer lists.** The answer lists were cleaned under written counting rules and checked by
+  both authors. Counting 40 documents blind, each author matched the list on 35 and 38 of them (87.5% and
+  95.0%, above the registered 85%).
 - **Human-validated scoring.** The item matcher that scores each entry is evaluated against 400 entries
-  the two authors labelled independently.
+  the two authors labelled independently. No language model judges any headline number.
 - **Reproducible.** Every model is pinned to a revision with its server settings, and the paper's tables
   rebuild exactly from the stored scores.
 
