@@ -5,6 +5,15 @@ type: software
 version: "1.0.0"
 license: MIT
 repository-code: "https://github.com/AbhishekBarali/padding-to-k"
+abstract: >-
+  Code, data and results for a preregistered study of what open-weight language models do when a
+  JSON schema asks for a list of at least k entries but the document holds fewer than k items: eight
+  open-weight models on 558 real documents from nine annotated datasets, and six more models on
+  hosted services.
+identifiers:
+  - type: url
+    value: "https://osf.io/e4r9f"
+    description: "Preregistration on OSF"
 authors:
   - family-names: Barali
     given-names: Abhishek
