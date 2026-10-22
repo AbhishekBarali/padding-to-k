@@ -88,7 +88,7 @@ ones."*
 | `preregistration/` | The registered plan and the hash of every file it froze |
 | `runs/` | The hosted-model cost test, which the registered cost estimate reads |
 | `paper/` | The paper as PDF and its LaTeX source |
-| `tools/` | Two small checks, described below |
+| `tools/` | Two small checks, described below, and their tests |
 
 ## Check and reproduce
 
@@ -99,6 +99,12 @@ python3.12 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 python tools/check_frozen.py        # every file the plan froze still matches its registered hash
 ```
+
+On Windows (PowerShell), activate with `.venv\Scripts\Activate.ps1` and use `py -3.12` for
+`python3.12`. The registered hashes are of the exact bytes, so `.gitattributes` turns off line-ending
+conversion. A clone made with an older Git, or before that file was added, can still have CRLF files;
+`check_frozen.py` lists them as `EOL-ONLY`, and deleting them and running `git checkout -- .` restores
+the original bytes.
 
 **Rebuild the review texts.** The reviews set's text has no licence that allows sharing, so the
 repository holds only its ids and text hashes (`data/restricted_ids.jsonl`). This downloads the nine
@@ -130,7 +136,11 @@ quote the review text.
 **Run the models again.** `harness/README.md` has the commands: a GPU with the pinned vLLM image for the
 open-weight models, or API keys for Together AI and Amazon Bedrock for the hosted ones.
 
-**Tests:** `python -m pytest harness/tests analysis/tests analysis/posthoc/tests`
+**Tests:** `python -m pytest harness/tests analysis/tests analysis/posthoc/tests tools/tests`
+
+The harness takes a file lock with `fcntl`, which exists only on Linux and macOS, so on Windows
+`harness/tests/test_full_study.py` and one test in `harness/tests/test_common.py` cannot import it.
+The other tests, the checks and the analysis run on Windows; run the models from Linux or WSL.
 
 ## Licences
 

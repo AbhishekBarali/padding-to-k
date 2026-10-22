@@ -1,0 +1,4 @@
+# Check out every file byte for byte. preregistration/manifest-stage2.sha256 hashes the exact bytes
+# of each frozen file, so a line-ending conversion (core.autocrlf on Windows) would make
+# tools/check_frozen.py report them as changed.
+* -text
