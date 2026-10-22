@@ -241,11 +241,15 @@ hosted ones.
 
 ## Licences
 
-- Code: MIT (`LICENSE`).
-- Data, answer lists, labels and results: CC BY-SA 4.0, because three source datasets are share-alike.
-  `LICENSE-DATA.md` lists every source with its licence and how to credit it.
+- **Code:** MIT ([`LICENSE`](LICENSE)).
+- **Data, answer lists, labels and results:** CC BY-SA 4.0, because three source datasets are
+  share-alike. [`LICENSE-DATA.md`](LICENSE-DATA.md) lists every source with its licence and how to
+  credit it; please cite the source datasets too.
 
 ## Citation
+
+If you use the benchmark, the code or the results, please cite the paper. GitHub's **Cite this
+repository** button (from [`CITATION.cff`](CITATION.cff)) gives the same entry in APA and BibTeX.
 
 ```bibtex
 @misc{barali2026padding,
@@ -256,4 +260,7 @@ hosted ones.
 }
 ```
 
-Questions or problems: open an issue, or write to abhibidut@gmail.com.
+## Contact
+
+Questions or problems: [open an issue](https://github.com/AbhishekBarali/padding-to-k/issues), or write
+to Abhishek Barali (abhibidut@gmail.com) or Aayush Paudel (aayushpaudel09@gmail.com).
