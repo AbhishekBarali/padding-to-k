@@ -146,6 +146,19 @@ from the paper's own plot data by [`tools/readme_figures.py`](tools/readme_figur
 - **Reproducible.** Every model is pinned to a revision with its server settings, and the paper's tables
   rebuild exactly from the stored scores.
 
+## Advice for schema authors
+
+From the open-weight models tested (the guidance table in the paper's discussion):
+
+- Leave `minItems` off lists whose length the document decides (over-count 34.5% → 55.4% shown,
+  90.1% enforced).
+- Do not rely on a source check: about half of the padding passes it.
+- If a minimum must stay, add "fewer is fine" and test it: some models still lengthen their lists, and
+  recall falls.
+- An "N/A" option under enforcement helps but is not a fix (90.1% → 51.0% padded).
+- Do not re-ask with the bare validation error (Qwen3.5-9B: 10.0% → 69.0% over-count).
+- `maxItems` barely changes over-count but shortens lists and leaves out more true items.
+
 ## What is here
 
 | Folder | What it holds |
