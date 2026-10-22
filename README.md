@@ -183,26 +183,45 @@ pip install -r requirements.txt
 python tools/check_frozen.py        # every file the plan froze still matches its registered hash
 ```
 
-On Windows (PowerShell), activate with `.venv\Scripts\Activate.ps1` and use `py -3.12` for
-`python3.12`. The registered hashes are of the exact bytes, so `.gitattributes` turns off line-ending
-conversion. A clone made with an older Git, or before that file was added, can still have CRLF files;
+<details>
+<summary><b>On Windows</b></summary>
+
+Activate with `.venv\Scripts\Activate.ps1` in PowerShell and use `py -3.12` for `python3.12`.
+
+The registered hashes are of the exact bytes, so `.gitattributes` turns off line-ending conversion. A
+clone made with an older Git, or before that file was added, can still have CRLF files;
 `check_frozen.py` lists them as `EOL-ONLY`, and deleting them and running `git checkout -- .` restores
 the original bytes.
 
-**Rebuild the review texts.** The reviews set's text has no licence that allows sharing, so the
-repository holds only its ids and text hashes (`data/restricted_ids.jsonl`). This downloads the nine
-source datasets once (about 300 MB, into `~/.cache/pad-to-k`) and rebuilds the review texts into
-`data/local/`, checking each against its hash:
+The harness takes a file lock with `fcntl`, which exists only on Linux and macOS, so on Windows
+`harness/tests/test_full_study.py` and one test in `harness/tests/test_common.py` cannot import it.
+The other tests, the checks and the analysis run on Windows; run the models from Linux or WSL.
 
-```bash
-(cd data && python build.py && python build.py check)
-```
+</details>
 
-**Rebuild the paper's tables** from the scored tables in `analysis/full/scored/` (about 3 minutes):
+| Goal | Command | Needs |
+|---|---|---|
+| Check the frozen files | `python tools/check_frozen.py` | nothing else |
+| Run the tests | `python -m pytest harness/tests analysis/tests analysis/posthoc/tests tools/tests` | nothing else |
+| Rebuild the paper's tables | `python analysis/full_study.py tables` | about 3 minutes |
+| Rebuild the review texts | `cd data && python build.py && python build.py check` | about 300 MB of downloads |
+| Score the outputs again | see below | the outputs zip from Zenodo |
+| Run the models again | see [`harness/README.md`](harness/README.md) | a GPU, or Together AI / Bedrock keys |
+
+**Rebuild the paper's tables** from the scored tables in `analysis/full/scored/`:
 
 ```bash
 python analysis/full_study.py tables
 git status --short analysis/full    # no output means every table matches
+```
+
+**Rebuild the review texts.** The reviews set's text has no licence that allows sharing, so the
+repository holds only its ids and text hashes (`data/restricted_ids.jsonl`). This downloads the nine
+source datasets once (into `~/.cache/pad-to-k`) and rebuilds the review texts into `data/local/`,
+checking each against its hash:
+
+```bash
+(cd data && python build.py && python build.py check)
 ```
 
 **Score the model outputs again.** Download the outputs zip from Zenodo (link coming soon) and unzip it,
@@ -216,14 +235,9 @@ python tools/compare_scored.py analysis/full/scored /tmp/rescored
 Every row outside the reviews set matches. Replies on the reviews set are not in the zip, because they
 quote the review text.
 
-**Run the models again.** `harness/README.md` has the commands: a GPU with the pinned vLLM image for the
-open-weight models, or API keys for Together AI and Amazon Bedrock for the hosted ones.
-
-**Tests:** `python -m pytest harness/tests analysis/tests analysis/posthoc/tests tools/tests`
-
-The harness takes a file lock with `fcntl`, which exists only on Linux and macOS, so on Windows
-`harness/tests/test_full_study.py` and one test in `harness/tests/test_common.py` cannot import it.
-The other tests, the checks and the analysis run on Windows; run the models from Linux or WSL.
+**Run the models again.** [`harness/README.md`](harness/README.md) has the commands: a GPU with the
+pinned vLLM image for the open-weight models, or API keys for Together AI and Amazon Bedrock for the
+hosted ones.
 
 ## Licences
 
