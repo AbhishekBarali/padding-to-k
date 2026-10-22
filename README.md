@@ -163,15 +163,15 @@ From the open-weight models tested (the guidance table in the paper's discussion
 
 | Folder | What it holds |
 |---|---|
-| `data/` | The benchmark: 558 documents, their answer lists, the prompts and schemas for every condition, the counting rules (`data/cleanup/COUNTING_RULES.md`), and `build.py`, which rebuilds every file from the original datasets |
-| `configs/` | Every model with its pinned revision and server settings, and the chat templates |
-| `harness/` | The code that runs the models (vLLM on a GPU, or hosted APIs) and the rules that count entries |
-| `analysis/` | Scoring, the item matcher, the statistics, and every result: `analysis/full/` (the study), `analysis/posthoc/out/` (analyses added after the run) |
-| `analysis/human/`, `data/blind/` | The human checks: blind counts, the 400 matcher labels from both authors, the scoring check and the recount |
-| `preregistration/` | The registered plan and the hash of every file it froze |
-| `runs/` | The hosted-model cost test, which the registered cost estimate reads |
-| `paper/` | The paper as PDF and its LaTeX source |
-| `tools/` | Two small checks, described below, and their tests |
+| [`data/`](data/) | The benchmark: 558 documents, their answer lists, the prompts and schemas for every condition, the counting rules ([`COUNTING_RULES.md`](data/cleanup/COUNTING_RULES.md)), and `build.py`, which rebuilds every file from the original datasets |
+| [`configs/`](configs/) | Every model with its pinned revision and server settings, and the chat templates |
+| [`harness/`](harness/) | The code that runs the models (vLLM on a GPU, or hosted APIs) and the rules that count entries |
+| [`analysis/`](analysis/) | Scoring, the item matcher, the statistics, and every result: [`analysis/full/`](analysis/full/) (the study), [`analysis/posthoc/out/`](analysis/posthoc/out/) (analyses added after the run) |
+| [`analysis/human/`](analysis/human/), [`data/blind/`](data/blind/) | The human checks: blind counts, the 400 matcher labels from both authors, the scoring check and the recount |
+| [`preregistration/`](preregistration/) | The registered plan and the hash of every file it froze |
+| [`runs/`](runs/) | The hosted-model cost test, which the registered cost estimate reads |
+| [`paper/`](paper/) | The paper as PDF and its LaTeX source |
+| [`tools/`](tools/) | The frozen-file and rescore checks, the README figure script, and their tests |
 
 ## Check and reproduce
 
