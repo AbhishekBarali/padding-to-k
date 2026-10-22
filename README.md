@@ -1,12 +1,31 @@
-# Padding to k
+<div align="center">
 
-**A Minimum Count in the Schema Makes Open-Weight Models Pad Their Extraction Lists**
+# Padding to *k*
 
-Abhishek Barali ([ORCID](https://orcid.org/0009-0007-3317-8437)) and Aayush Paudel
-([ORCID](https://orcid.org/0009-0001-0962-2821)), St. Xavier's College, Maitighar, Kathmandu
-(Tribhuvan University), Nepal
+### A Minimum Count in the Schema Makes Open-Weight Models Pad Their Extraction Lists
 
-[Paper (PDF)](paper/padding-to-k.pdf) · [Preregistration on OSF](https://osf.io/e4r9f) · arXiv: coming soon
+**Abhishek Barali** [![ORCID](https://img.shields.io/badge/-0009--0007--3317--8437-a6ce39?logo=orcid&logoColor=white&style=flat-square)](https://orcid.org/0009-0007-3317-8437)
+&nbsp;·&nbsp;
+**Aayush Paudel** [![ORCID](https://img.shields.io/badge/-0009--0001--0962--2821-a6ce39?logo=orcid&logoColor=white&style=flat-square)](https://orcid.org/0009-0001-0962-2821)<br>
+St. Xavier's College, Maitighar, Kathmandu (Tribhuvan University), Nepal
+
+[![Paper](https://img.shields.io/badge/paper-PDF-b31b1b)](paper/padding-to-k.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-lightgrey)](#citation)
+[![Preregistered on OSF](https://img.shields.io/badge/preregistered-OSF-0a7d8c)](https://osf.io/e4r9f)
+[![checks](https://github.com/AbhishekBarali/padding-to-k/actions/workflows/checks.yml/badge.svg)](https://github.com/AbhishekBarali/padding-to-k/actions/workflows/checks.yml)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-3776ab)](requirements.txt)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-yellow)](LICENSE)
+[![Data: CC BY-SA 4.0](https://img.shields.io/badge/data-CC%20BY--SA%204.0-ef9421)](LICENSE-DATA.md)
+
+[Paper](paper/padding-to-k.pdf) · [Preregistration](https://osf.io/e4r9f) ·
+[All results](analysis/full/RESULTS.md) · [Benchmark data](data/README.md) ·
+[Reproduce](#check-and-reproduce) · [Cite](#citation)
+
+</div>
+
+> [!NOTE]
+> **In short:** when a JSON schema says a list needs at least *k* entries and the document holds fewer,
+> most open-weight models pad the list to reach *k*, mostly with real text copied from the document.
 
 This repository holds everything behind the paper: the benchmark, the code that ran the models, every
 scored result, and the authors' human checks.
