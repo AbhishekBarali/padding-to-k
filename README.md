@@ -44,6 +44,12 @@ pip install -r requirements.txt
 python tools/check_frozen.py        # every file the plan froze still matches its registered hash
 ```
 
+On Windows (PowerShell), activate with `.venv\Scripts\Activate.ps1` and use `py -3.12` for
+`python3.12`. The registered hashes are of the exact bytes, so `.gitattributes` turns off line-ending
+conversion. A clone made with an older Git, or before that file was added, can still have CRLF files;
+`check_frozen.py` lists them as `EOL-ONLY`, and deleting them and running `git checkout -- .` restores
+the original bytes.
+
 **Rebuild the review texts.** The reviews set's text has no licence that allows sharing, so the
 repository holds only its ids and text hashes (`data/restricted_ids.jsonl`). This downloads the nine
 source datasets once (about 300 MB, into `~/.cache/pad-to-k`) and rebuilds the review texts into
