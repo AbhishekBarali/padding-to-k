@@ -32,7 +32,7 @@ models on hosted services. Three findings:
 | `preregistration/` | The registered plan and the hash of every file it froze |
 | `runs/` | The hosted-model cost test, which the registered cost estimate reads |
 | `paper/` | The paper as PDF and its LaTeX source |
-| `tools/` | Two small checks, described below |
+| `tools/` | Two small checks, described below, and their tests |
 
 ## Check and reproduce
 
@@ -79,7 +79,11 @@ quote the review text.
 **Run the models again.** `harness/README.md` has the commands: a GPU with the pinned vLLM image for the
 open-weight models, or API keys for Together AI and Amazon Bedrock for the hosted ones.
 
-**Tests:** `python -m pytest harness/tests analysis/tests analysis/posthoc/tests`
+**Tests:** `python -m pytest harness/tests analysis/tests analysis/posthoc/tests tools/tests`
+
+The harness takes a file lock with `fcntl`, which exists only on Linux and macOS, so on Windows
+`harness/tests/test_full_study.py` and one test in `harness/tests/test_common.py` cannot import it.
+The other tests, the checks and the analysis run on Windows; run the models from Linux or WSL.
 
 ## Licences
 
