@@ -33,8 +33,8 @@ Every prompt is one user message: an instruction, the JSON schema pasted the way
 The schema describes the item in one line (each set's line is quoted with its example in Appendix~\ref{app:posthoc}).
 Table~\ref{tab:conditions} lists the eight conditions; each runs at $k = 1$, 3 and 5 (the no-count prompt does not depend on $k$ and is sent once), with all five wordings of each prose condition.
 The schema conditions keep one instruction (``List all the requests.'' for emails) and differ only in a \texttt{minItems} or \texttt{maxItems} keyword, an added line or the decoder; the shown and the enforced minimum send the same prompt.
-The ``fewer is fine'' line is ``If the document contains fewer than $k$, list all available ones.''
-The prose conditions replace the instruction with a count wording modelled on real extraction prompts, such as ``Extract up to $k$ requests from this document.'' or ``Return the top $k$ requests.'', and keep the schema without a count (Table~\ref{tab:wordings}), so they differ from no count in the instruction as well as the count.
+The ``fewer is fine'' line is ``If the document contains fewer than $k$, list all available ones.'', adapted from a real extraction prompt in ScrapeGraphAI-100k \citep{brach2026scrapegraphai}.
+The prose conditions replace the instruction with a count wording modelled on prompts from the same dataset, such as ``Extract up to $k$ requests from this document.'' or ``Return the top $k$ requests.'', and keep the schema without a count (Table~\ref{tab:wordings}), so they differ from no count in the instruction as well as the count.
 
 \begin{table}[t]
   \centering

@@ -1,5 +1,13 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Brach et~al.(2026)Brach, Zuppichini, Vinciguerra, and
+  Padoan}]{brach2026scrapegraphai}
+William Brach, Francesco Zuppichini, Marco Vinciguerra, and Lorenzo Padoan.
+  2026.
+\newblock \href {https://arxiv.org/abs/2602.15189} {{ScrapeGraphAI-100k:
+  Dataset for Schema-Constrained LLM Generation}}.
+\newblock \emph{Preprint}, arXiv:2602.15189.
 
 \bibitem[{Carletta et~al.(2006)Carletta, Ashby, Bourban, Flynn, Guillemot,
   Hain, Kadlec, Karaiskos, Kraaij, Kronenthal, Lathoud, Lincoln, Lisowska,
