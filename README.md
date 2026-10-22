@@ -66,22 +66,54 @@ We tested eight open-weight models on 558 real documents from nine annotated dat
 emails to receipts, job ads, clinical case reports and novels, with six more models on hosted services as
 a reference.
 
-<p align="center"><img src="docs/outcomes.png" alt="Bar chart: how outputs end on documents with fewer than k true items, by prompt condition. A shown minimum pads 55% of outputs against 35% with no count; an enforced minimum pads 90%." width="420"></p>
+| | No count | Shown minimum | Enforced minimum |
+|---|:---:|:---:|:---:|
+| Lists longer than the true count | 34.5% | **55.4%** | **90.1%** |
+| Lists with exactly *k* entries | 5.6% | 35.5% | 71.8% |
 
-*How the eight open-weight models' lists end when the document holds fewer items than asked for
-(k = 3 and 5). Dark: padded past the true count. **Shown minimum:** the schema in the prompt says
-`minItems: k`. **Enforced minimum:** the decoder makes the model write at least k entries. **"Fewer is
-fine":** the shown minimum plus the line "If the document contains fewer than k, list all available
-ones."*
+<sub>Eight GPU models pooled, documents with fewer true items than asked for (*n* < *k*), *k* = 3 and 5.</sub>
 
 - **Models treat the count as a target.** A minimum shown in the schema, but not enforced, raises the share
-  of lists longer than the true count from 34.5% to 55.4%.
+  of lists longer than the true count from 34.5% to 55.4%. Six of the eight GPU models and all nine hosted
+  runs lengthen their lists.
 - **The padding is hard to catch.** Most added entries are real text from the document, so about half of
   them pass a check that each entry occurs in the source.
 - **Common fixes help only partly.** Saying that fewer items are fine removes the effect on average but
   misses more true items; "up to *k*" in the prompt also raises over-counting; an "N/A" option under an
   enforced minimum still leaves half the lists padded; re-asking with the validation error makes padding
   far more common.
+
+### The main contrast, per model
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/figures/headline-dark.png">
+    <img src="docs/figures/headline-light.png" width="720" alt="Dot plot with 95% intervals: extra entries a shown minimum adds over no count, per model. Six of the eight GPU models and all nine hosted runs are above zero, from +0.26 (Olmo 3.1 32B) to +1.68 (Gemma 4 31B) on the GPU and up to +2.39 (DeepSeek V3.2) hosted; Qwen3.5-0.8B is at -0.59 and Qwen3.5-2B's interval crosses zero.">
+  </picture>
+</p>
+
+*Substantive entries under a `minItems` shown in the schema minus entries with no count, for the same
+document and model, on documents with n < k (k = 3 and 5), with 95% group-bootstrap intervals. The
+pooled GPU estimate is **+0.62 [+0.46, +0.78]** entries. The exceptions are the two smallest models; the
+0.8B one often writes no readable list. Hosted runs are a reference and are never pooled.*
+
+### How the lists end
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/figures/outcomes-dark.png">
+    <img src="docs/figures/outcomes-light.png" width="720" alt="Stacked bar chart: how outputs end on documents with fewer than k true items, by prompt condition. A shown minimum pads 55.4% of outputs against 34.5% with no count; an enforced minimum pads 90.1%; the N/A escape still pads 51.0%.">
+  </picture>
+</p>
+
+*How the eight open-weight models' lists end when the document holds fewer items than asked for
+(k = 3 and 5). **Padded:** more substantive entries than true items, even with a note. **Shown
+minimum:** the schema in the prompt says `minItems: k`. **Enforced minimum:** the decoder makes the model
+write at least k entries. **"Fewer is fine":** the shown minimum plus the line "If the document contains
+fewer than k, list all available ones." **N/A escape:** the enforced minimum, with "N/A" allowed.*
+
+Every number above is in [`analysis/full/RESULTS.md`](analysis/full/RESULTS.md); the figures are drawn
+from the paper's own plot data by [`tools/readme_figures.py`](tools/readme_figures.py).
 
 ## How the study was done
 
