@@ -1,7 +1,12 @@
 __pycache__/
 *.pyc
 .venv/
+.pytest_cache/
 .DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
 # Rebuilt locally by data/build.py; holds the review text, which must not be shared
 data/local/
 # Local caches of the analysis
@@ -11,4 +16,7 @@ paper/source/*.aux
 paper/source/*.log
 paper/source/*.out
 paper/source/*.blg
+paper/source/*.fls
+paper/source/*.fdb_latexmk
+paper/source/*.synctex.gz
 paper/source/main.pdf
