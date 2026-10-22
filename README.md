@@ -1,15 +1,59 @@
 # Padding to k
 
-Code, data and results for the paper **Padding to k: A Minimum Count in the Schema Makes Open-Weight
-Models Pad Their Extraction Lists** by Abhishek Barali and Aayush Paudel (2026).
+**A Minimum Count in the Schema Makes Open-Weight Models Pad Their Extraction Lists**
 
-[Paper (PDF)](paper/padding-to-k.pdf) · arXiv: to be added · [Preregistration on OSF](https://osf.io/e4r9f) ·
-Model outputs on Zenodo: to be added
+Abhishek Barali ([ORCID](https://orcid.org/0009-0007-3317-8437)) and Aayush Paudel
+([ORCID](https://orcid.org/0009-0001-0962-2821)), St. Xavier's College, Maitighar, Kathmandu
+(Tribhuvan University), Nepal
 
-Extraction pipelines often ask a language model for JSON that follows a schema, and the schema can say
-that a list needs at least *k* entries. We tested what models do when the document holds fewer than *k*
-items, with eight open-weight models on 558 real documents from nine annotated datasets, and six more
-models on hosted services. Three findings:
+[Paper (PDF)](paper/padding-to-k.pdf) · [Preregistration on OSF](https://osf.io/e4r9f) · arXiv: coming soon
+
+This repository holds everything behind the paper: the benchmark, the code that ran the models, every
+scored result, and the authors' human checks.
+
+## The problem in one example
+
+Extraction pipelines ask a language model for JSON that follows a schema, and the schema can say that a
+list needs at least *k* entries, for example `"minItems": 3`. That is fine when the document holds at
+least *k* items. What does the model do when it holds fewer?
+
+This email holds one request:
+
+> *Subject: Cost Allocations*
+>
+> In connection with the Legal costs allocations for 2002, what percentage of your time do you think you
+> would spend on EGM matters? The accounting group who is asking for this information realizes that this
+> is a guess on your part. Thanks, Alan
+
+Asked "List all the requests." with a schema whose `requests` list has `"minItems": 3` (shown in the
+prompt, not enforced), Qwen3.5-9B returned:
+
+```json
+{
+  "requests": [
+    "In connection with the Legal costs allocations for 2002, what percentage of your time do you think you would spend on EGM matters?",
+    "The accounting group who is asking for this information realizes that this is a guess on your part.",
+    "Thanks, Alan"
+  ]
+}
+```
+
+Only the first is a request. The other two are real text from the email, so nothing looks invented and a
+check that each entry occurs in the source passes all three. We call this padding.
+
+## What we found
+
+We tested eight open-weight models on 558 real documents from nine annotated datasets, from meetings and
+emails to receipts, job ads, clinical case reports and novels, with six more models on hosted services as
+a reference.
+
+<p align="center"><img src="docs/outcomes.png" alt="Bar chart: how outputs end on documents with fewer than k true items, by prompt condition. A shown minimum pads 55% of outputs against 35% with no count; an enforced minimum pads 90%." width="420"></p>
+
+*How the eight open-weight models' lists end when the document holds fewer items than asked for
+(k = 3 and 5). Dark: padded past the true count. **Shown minimum:** the schema in the prompt says
+`minItems: k`. **Enforced minimum:** the decoder makes the model write at least k entries. **"Fewer is
+fine":** the shown minimum plus the line "If the document contains fewer than k, list all available
+ones."*
 
 - **Models treat the count as a target.** A minimum shown in the schema, but not enforced, raises the share
   of lists longer than the true count from 34.5% to 55.4%.
@@ -19,6 +63,18 @@ models on hosted services. Three findings:
   misses more true items; "up to *k*" in the prompt also raises over-counting; an "N/A" option under an
   enforced minimum still leaves half the lists padded; re-asking with the validation error makes padding
   far more common.
+
+## How the study was done
+
+- **Preregistered.** The design, the scoring rules and the analyses were registered on
+  [OSF](https://osf.io/e4r9f) before the main run. `tools/check_frozen.py` checks every frozen file
+  against its registered hash.
+- **Checked answer lists.** Each document holds 0 to 6 true items. The answer lists were cleaned under
+  written counting rules and checked by both authors, including blind counts.
+- **Human-validated scoring.** The item matcher that scores each entry is evaluated against 400 entries
+  the two authors labelled independently.
+- **Reproducible.** Every model is pinned to a revision with its server settings, and the paper's tables
+  rebuild exactly from the stored scores.
 
 ## What is here
 
@@ -60,7 +116,8 @@ python analysis/full_study.py tables
 git status --short analysis/full    # no output means every table matches
 ```
 
-**Score the model outputs again.** Download the outputs zip from Zenodo and unzip it, then:
+**Score the model outputs again.** Download the outputs zip from Zenodo (link coming soon) and unzip it,
+then:
 
 ```bash
 python analysis/full_study_score.py --runs-dir padding-to-k-outputs --cache /tmp/rescored
