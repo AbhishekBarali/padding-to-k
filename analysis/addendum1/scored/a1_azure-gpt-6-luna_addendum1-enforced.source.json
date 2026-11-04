@@ -1,0 +1,9 @@
+{
+ "run_id": "a1_azure-gpt-6-luna_addendum1-enforced",
+ "model_key": "azure-gpt-6-luna",
+ "source": "21125019ce9ee37943fb9bba5de71e93008a06a5c34252e0615b7bc51d045c36",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 2028,
+ "entries": 9824
+}

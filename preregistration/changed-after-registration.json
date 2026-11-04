@@ -1,0 +1,26 @@
+{
+  "about": "Registered files (preregistration/manifest-stage2.sha256, tag prereg-v2.1) changed after registration, for OSF addendum 1 (https://osf.io/45mfb, preregistration/addendum-1.md), filed before its runs. Each registered original is kept byte for byte at registered_copy and still matches the manifest; the live file must match current_sha256.",
+  "files": [
+    {
+      "path": "configs/models.yaml",
+      "registered_sha256": "0e6570d3a70a9931ca0cc1756b907820e2b1c4c18173b5b5e4962b76f0927504",
+      "current_sha256": "ed2713beb8e40254403dec25d6b9ccf21e24783e8aa97589f913ae9cc97294a6",
+      "reason": "addendum 1, section 1: closed models (Grok 4.3 on Bedrock, GPT-6 Sol and GPT-6 Luna on Azure) added; the registered entries are unchanged",
+      "registered_copy": "preregistration/registered-files/configs/models.yaml"
+    },
+    {
+      "path": "harness/retry_arm.py",
+      "registered_sha256": "bd72dbe23e203bf0bc4586a15e1556a39f4d09bb324e4f7c3335c284ea0a0201",
+      "current_sha256": "5a4a96a7347d23faf90f2d6e8cc3f6965bf2fae0acc4a1212975805590cea550",
+      "reason": "addendum 1, section 2: the \"fewer is fine\" re-ask (--fewer-ok, with --like and --out-parent); without these options it plans the registered re-ask as before",
+      "registered_copy": "preregistration/registered-files/harness/retry_arm.py"
+    },
+    {
+      "path": "harness/run.py",
+      "registered_sha256": "4eebc5812e1ccb4cf2a1c9afbea2103f50cf51b0ecf656dc5bffec619567114a",
+      "current_sha256": "33407c68ff52657481c6d38e733dad78187c7bc15c41d20bd448d59239d722eb",
+      "reason": "addendum 1, section 1: closed models, the addendum1 scope that selects their requests; the registered scopes are unchanged",
+      "registered_copy": "preregistration/registered-files/harness/run.py"
+    }
+  ]
+}

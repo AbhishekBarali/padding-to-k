@@ -1,0 +1,18 @@
+{
+ "version": "v1.2.1",
+ "package": "ESCO dataset - v1.2.1 - classification - en - csv.zip",
+ "url": "https://ec.europa.eu/esco/download/ESCO%20dataset%20-%20v1.2.1%20-%20classification%20-%20en%20-%20csv.zip",
+ "last_modified": "Tue, 16 Dec 2025 15:27:28 GMT",
+ "fetched_utc": "2026-10-25T05:45:48Z",
+ "zip_sha256": "f9761b0b52be1828b38a3e5e0ae59a93a7b0ce358bc800f52f57a8b002adeb3e",
+ "skills_en_csv_sha256": "d03b10efca94b4bcfa260a992cfde89c375f0fa12095d6662a663cfd2f9f2950",
+ "list_file": "esco_skills_v1.2.1_en.csv.gz",
+ "list_sha256_uncompressed": "d161822c2f862698e4f332d7dc7d961165b25dfe183e1634b0c9b095049bc1c1",
+ "concepts": 13960,
+ "skill_types": {
+  "": 5,
+  "knowledge": 3221,
+  "skill/competence": 10734
+ },
+ "labels_preferred_plus_alternative": 100650
+}

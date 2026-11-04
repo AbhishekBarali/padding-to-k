@@ -25,6 +25,11 @@ licence sentence. The only changes to a source text are removing lines that give
 example "TOTAL ITEMS 3" on receipts), whitespace, re-joined tokens and repaired characters, each recorded
 in the document's `flags`.
 
+The downstream check in `analysis/downstream/esco/` uses ESCO v1.2.1 (European Skills, Competences,
+Qualifications and Occupations), published free of charge by the European Commission at
+https://esco.ec.europa.eu; reuse is allowed with attribution under the Commission's reuse policy
+(Decision 2011/833/EU).
+
 The Enron emails are real people's mail, public since 2003. The case reports are published and
 de-identified. Model weights are not redistributed; each model's licence is in its model card
 (`configs/models.yaml` has the ids and revisions).
