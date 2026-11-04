@@ -146,6 +146,18 @@ from the paper's own plot data by [`tools/readme_figures.py`](tools/readme_figur
 - **Reproducible.** Every model is pinned to a revision with its server settings, and the paper's tables
   rebuild exactly from the stored scores.
 
+## Addendum 1
+
+A first addendum was registered on [OSF](https://osf.io/45mfb) before any of its requests was sent. It is
+exploratory and keeps the registered models, requests and scoring. It adds three closed models (Grok 4.3 on
+Amazon Bedrock, GPT-6 Sol and GPT-6 Luna on Azure) as a dated reference, a re-ask with the "fewer is fine"
+line, and two downstream checks: the decisions a pipeline makes from the list, and job-ad skills linked to
+ESCO. The results are in [`analysis/addendum1/RESULTS.md`](analysis/addendum1/RESULTS.md) and
+[`analysis/downstream/`](analysis/downstream/). Three registered files changed for it (`configs/models.yaml`,
+`harness/retry_arm.py`, `harness/run.py`). They are declared in
+[`preregistration/changed-after-registration.json`](preregistration/changed-after-registration.json), with
+their registered originals kept, and `tools/check_frozen.py` checks them that way.
+
 ## Advice for schema authors
 
 From the open-weight models tested (the guidance table in the paper's discussion):

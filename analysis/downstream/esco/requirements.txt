@@ -1,0 +1,12 @@
+# Python 3.12. The ESCO linking analysis (analysis/downstream/esco/), on top of the analysis requirements
+# in requirements.txt. Install into a venv:
+#   python3 -m venv .venv
+#   .venv/bin/pip install --index-url https://download.pytorch.org/whl/cpu torch==2.14.1+cpu
+#   .venv/bin/pip install -r requirements.txt -r analysis/downstream/esco/requirements.txt
+sentence-transformers==6.2.0
+transformers==5.20.2
+tokenizers==0.23.3
+huggingface_hub==2.3.0
+safetensors==0.8.0
+scikit-learn==1.9.1
+openpyxl==3.1.5

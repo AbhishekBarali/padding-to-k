@@ -39,6 +39,9 @@ Scopes:
   dev     the 312 reserve documents (never in the study; data/requests_dev.jsonl), same 4 conditions at
           k = 3 and 5: model outputs here are what the item matcher is tuned on. 2,184 sends per model.
   custom  filters only (--splits, --conditions, --k, --wordings, --sets, --docs).
+  addendum1  the closed models of OSF addendum 1 (preregistration/addendum-1.md): the prompt-side conditions on
+          documents with n < k at k = 3 and 5 and on the empty documents at k = 1, wording 1 of each prose
+          condition. 5,604 sends per model.
   --repeat-of RUN  the repeat check: the same requests as a seeded sample (--repeat-n, default 300) of an
           earlier run, under a new run id; compare with harness/repeat_check.py.
 """
@@ -181,6 +184,12 @@ def select(args, model_cfg):
                     and (r["k"] in (3, 5) or r["condition"] == "none"))
         elif args.scope == "full":
             keep = r["split"] in ("pilot", "full")
+        elif args.scope == "addendum1":
+            # OSF addendum 1 (preregistration/addendum-1.md): n < k at k = 3 and 5, the empty documents at k = 1,
+            # wording 1 of each prose condition; the model's `conditions` list keeps the prompt-side ones
+            keep = (r["split"] in ("pilot", "full")
+                    and ((r["k"] in (3, 5) and r["n"] < r["k"]) or (r["k"] == 1 and r["n"] == 0))
+                    and (not r["condition"].startswith("prose_") or r["wording_id"].endswith("_1")))
         else:
             keep = True
         if args.splits:
@@ -633,7 +642,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("plan")
     p.add_argument("--model", required=True)
-    p.add_argument("--scope", choices=["pilot", "full", "robustness", "dev", "custom"], default="pilot")
+    p.add_argument("--scope", choices=["pilot", "full", "robustness", "dev", "custom", "addendum1"], default="pilot")
     p.add_argument("--run-id")
     p.add_argument("--splits", nargs="*")
     p.add_argument("--conditions", nargs="*")

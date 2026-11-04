@@ -1,0 +1,9 @@
+{
+ "run_id": "fs_bedrock-kimi-k3_full-reask1-fewer-ok",
+ "model_key": "bedrock-kimi-k3",
+ "source": "cc3ab95fc12ff2235d1463f4d65aa0fe6624a7c0b4164858f7bb330101d0fe6f",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 510,
+ "entries": 1062
+}

@@ -1,0 +1,225 @@
+doc_id,gold_index,text,concept_uri,concept_label,matched_label,cosine
+jbk-01a1a0,0,in-person and remote user research,http://data.europa.eu/esco/skill/a4c2aa71-086f-4a46-b481-2619673c9dfe,execute ICT user research activities,carry out ICT user research,0.6353
+jbk-03c630,0,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-03c630,1,SAP,http://data.europa.eu/esco/skill/f8e3425c-fe44-4ffb-bafe-0e20d91dadf4,SAP Data Services,SAP,1.0000
+jbk-07d4dd,0,.net,http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413,Visual Basic,.NET,1.0000
+jbk-07d4dd,1,c#,http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a,C#,C#,1.0000
+jbk-07d4dd,2,cloud,http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f,database management systems,Cloudscape,0.6127
+jbk-0c6399,0,mouse research,http://data.europa.eu/esco/skill/804ba625-e9c8-4853-a44b-9f3801a782bb,mammalogy,mammal studies,0.6567
+jbk-17aac4,0,Danish,http://data.europa.eu/esco/skill/273a28d6-1bd3-4d13-a906-3d75c1cfdfc1,Danish,Danish,1.0000
+jbk-17aac4,1,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-22d8d3,0,science,http://data.europa.eu/esco/skill/692ace70-7f97-4214-92bd-88f7637d8a44,physics,natural science,0.7845
+jbk-22d8d3,1,pharmaceutical production,http://data.europa.eu/esco/skill/94bbdb2d-b70e-4e42-8977-f4627b42a0a6,pharmaceutical processes,pharmaceutical manufacturing,0.9366
+jbk-25b23c,0,SAP,http://data.europa.eu/esco/skill/f8e3425c-fe44-4ffb-bafe-0e20d91dadf4,SAP Data Services,SAP,1.0000
+jbk-2808f9,0,battery powered wireless systems,http://data.europa.eu/esco/skill/dc3d679e-c46e-4ecd-881d-1d3aa0581525,types of alarm systems,wireless alarms,0.5324
+jbk-2ba678,0,German,http://data.europa.eu/esco/skill/4812a4ea-dc55-4dc6-b9b0-4a59bba2c647,German,German,1.0000
+jbk-2ba678,1,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-3338e7,0,React,http://data.europa.eu/esco/skill/be7c80ee-0b7a-455c-8928-055cfa65076c,react to events in time-critical environments,react appropriately,0.6032
+jbk-3338e7,1,Redux,http://data.europa.eu/esco/skill/8fdf4273-d8ce-47a2-b461-45cb1282ef36,reverse engineering,RE,0.4023
+jbk-3338e7,2,GraphQL,http://data.europa.eu/esco/skill/9cf681c7-89ec-470c-b651-7fe03786f586,query languages,RDQL,0.6090
+jbk-3bd52d,0,software development lifecycle,http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575,systems development life-cycle,application development life-cycle,0.7838
+jbk-3cf49a,0,computer science,http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787,computer science,computer science,1.0000
+jbk-3cf49a,1,agile approaches to software,http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221,Agile development,Agile software development methods,0.8782
+jbk-47542d,0,Danish Class B Driver’s License,http://data.europa.eu/esco/skill/42b7c03a-3ed5-4dc1-adc0-ff1fb8d4d697,write Danish,write Danish,0.5368
+jbk-4b6dc9,0,German,http://data.europa.eu/esco/skill/4812a4ea-dc55-4dc6-b9b0-4a59bba2c647,German,German,1.0000
+jbk-4b6dc9,1,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-4ce10b,0,Power BI reports,http://data.europa.eu/esco/skill/c544a9f3-5945-4b54-afed-de0697852817,report analysis results,use data reporting,0.6479
+jbk-4ce10b,1,DAX queries,http://data.europa.eu/esco/skill/e2fb1ee4-fbf9-4690-b677-3e6ff7cfdc48,test ICT queries,check ICT query output,0.4752
+jbk-4ce10b,2,Azure Analysis Services models,http://data.europa.eu/esco/skill/f8e3425c-fe44-4ffb-bafe-0e20d91dadf4,SAP Data Services,SAP analytics cloud,0.5684
+jbk-564570,0,occupational health and safety,http://data.europa.eu/esco/skill/d5e39a53-4f54-4d5f-9df3-b49664c9559d,occupational health,occupational health,0.8466
+jbk-564570,1,maritime field,http://data.europa.eu/esco/skill/0d73a5c0-7f95-4ede-92f3-eac434a970a9,marine engineering,maritime engineering,0.8395
+jbk-564570,2,Scandinavian language,http://data.europa.eu/esco/skill/76506870-aeac-4bc2-96b2-cbc6702601ea,write Norwegian,write Norwegian,0.7694
+jbk-564f5a,0,machine learning,http://data.europa.eu/esco/skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43,machine learning,machine learning,1.0000
+jbk-564f5a,1,cloud services,http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0,cloud technologies,cloud computing,0.7996
+jbk-564f5a,2,APIs,http://data.europa.eu/esco/skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968,design application interfaces,design API,0.6125
+jbk-5ad1c2,0,mass-spectrometry,http://data.europa.eu/esco/skill/f591979a-dc42-4000-810f-5852056982c6,mass spectrometry,mass spectrometry,0.9881
+jbk-5ad1c2,1,SILAC,http://data.europa.eu/esco/skill/b769f524-0f25-44d7-8538-5c46710a040e,manage digital documents,SIVADOC,0.7372
+jbk-5be36a,0,agile,http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9,ICT project management methodologies,agile,1.0000
+jbk-5be36a,1,SAFe,http://data.europa.eu/esco/skill/b99ffdda-699d-4d55-b361-23036da33f1e,advise on safety measures,offer suggestions on safety,0.5452
+jbk-62845a,0,Java,http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389,Java (computer programming),Java,1.0000
+jbk-62e9d5,0,mutagenesis,http://data.europa.eu/esco/skill/e3423f86-0e6b-4bec-a354-1d21fe8597b6,genetic engineering,genetic engineering,0.5891
+jbk-62e9d5,1,electrophysiological,http://data.europa.eu/esco/skill/2052d546-c8ed-4595-a2e2-49247063372b,neurophysiology,neurophysiology,0.8341
+jbk-62e9d5,2,optical measurements,http://data.europa.eu/esco/skill/a2f40faa-f101-414c-9258-1b91fb564f10,optical engineering,optical instrumentation,0.8577
+jbk-7a43b8,0,Swedish,http://data.europa.eu/esco/skill/7ee51257-8947-4b69-9bdf-322baf0a6398,Swedish,Swedish,1.0000
+jbk-7a43b8,1,Norwegian,http://data.europa.eu/esco/skill/829f6eb5-0b26-4152-8eb3-82dd32b2b6f2,Norwegian,Norwegian,1.0000
+jbk-7a43b8,2,Danish,http://data.europa.eu/esco/skill/273a28d6-1bd3-4d13-a906-3d75c1cfdfc1,Danish,Danish,1.0000
+jbk-7c0015,0,business research,http://data.europa.eu/esco/skill/0839eea4-c57b-4c14-b19b-923fbedb5d88,perform business research,perform business research,0.9236
+jbk-7ee88b,0,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-7ee88b,1,security clearance,http://data.europa.eu/esco/skill/70165e8b-322c-489c-b436-66af6190afa3,manage security clearance,conduct security clearance,0.8664
+jbk-800445,0,Docker Containers,http://data.europa.eu/esco/skill/1b2ec9bb-ba7c-4f93-87ac-ec712c9b68c3,install containers,install containers,0.8013
+jbk-800445,1,K8s,http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516,graphics editor software,sK1,0.4880
+jbk-800445,2,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-94bcc3,0,Computer Science,http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787,computer science,computer science,1.0000
+jbk-94bcc3,1,Python,http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d,Python (computer programming),Python,1.0000
+jbk-94bcc3,2,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-9be316,0,security architecture,http://data.europa.eu/esco/skill/6f1edc19-191f-4ba5-a048-ee69aff05bab,security engineering,security engineering,0.6953
+jbk-9d8c0f,0,frontend development,http://data.europa.eu/esco/skill/c4b1f326-224a-420a-b8b3-814a8f13b6cb,implement front-end website design,design and develop front-end website,0.7954
+jbk-a46af1,0,Node JS (server side and tooling),http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7,JavaScript,Server-side JavaScript,0.5736
+jbk-a46af1,1,React,http://data.europa.eu/esco/skill/be7c80ee-0b7a-455c-8928-055cfa65076c,react to events in time-critical environments,react appropriately,0.6032
+jbk-afbdaf,0,post-translational modifications,http://data.europa.eu/esco/skill/da3fb416-d3ee-4d2b-864c-050d8122ee13,revise translation works,modify translation works,0.5191
+jbk-afbdaf,1,"B.
+subtilis",http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f,database management systems,Velocis,0.4182
+jbk-afbdaf,2,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-b38772,0,Ruby on Rails,http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3,Ruby (computer programming),Ruby (computer programming),0.7181
+jbk-b38772,1,TDD,http://data.europa.eu/esco/skill/c46cf6f9-8b1e-44b9-a529-f5774c9167dd,desktop publishing,DTP,0.5531
+jbk-b77aaf,0,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-be5d9f,0,data visualisation,http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389,deliver visual presentation of data,visualise data,0.8970
+jbk-bebeb9,0,testing of Mainframe,http://data.europa.eu/esco/skill/52b38e90-3d05-4042-a9e2-d19dec8dd7c1,test hardware,testing hardware systems,0.6830
+jbk-bebeb9,1,test automation frameworks,http://data.europa.eu/esco/skill/7557f0f4-b8bc-4ac0-b91e-222ab1ba744f,tools for ICT test automation,test automation tools,0.8578
+jbk-bebeb9,2,Python,http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d,Python (computer programming),Python,1.0000
+jbk-d315ca,0,Excel,http://data.europa.eu/esco/skill/1973c966-f236-40c9-b2d4-5d71a89019be,use spreadsheets software,MS Excel,0.8441
+jbk-d315ca,1,PowerPoint,http://data.europa.eu/esco/skill/234aeb8d-56c3-4531-9193-1c5e6a8d16cb,use presentation software,Microsoft Office PowerPoint,0.8824
+jbk-d315ca,2,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-d740c8,0,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-dbaf9b,0,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-e80923,0,ISO 27001 certification,http://data.europa.eu/esco/skill/95bff246-c3ce-4181-a11b-e4363453c2f8,environmental management standards,ISO 14001,0.7175
+jbk-e80923,1,IT field,http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef,computer engineering,field of computer engineering,0.6713
+jbk-eab4e7,0,web development,http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28,web programming,web programming,0.9033
+jbk-f2d614,0,SoundCheck,http://data.europa.eu/esco/skill/5cd76739-b8c7-45d1-a950-082dee2d6778,perform soundchecks,perform soundchecks,0.8788
+jbk-f2d614,1,HEAD acoustics ACQUA audio analyzers,http://data.europa.eu/esco/skill/f88d8667-d476-43bb-980f-2dbd01ae00cf,types of audiological equipment,type of audiological equipment,0.6514
+jbk-f87098,0,quality assurance,http://data.europa.eu/esco/skill/c7cc6dc5-d56b-4323-8e5c-47c4022f615f,quality assurance methodologies,quality assurance processes,0.8477
+jbk-f87098,1,English,http://data.europa.eu/esco/skill/6d3edede-8951-4621-a835-e04323300fa0,English,English,1.0000
+jbk-f9e72b,0,financial control,http://data.europa.eu/esco/skill/e4c205f6-55ba-4bed-9c5d-2032058300c0,financial jurisdiction,financial control,1.0000
+jbk-f9e72b,1,budget management,http://data.europa.eu/esco/skill/21c5790c-0930-4d74-b3b0-84caf5af12ea,manage budgets,manage budgets,0.8905
+job-06dd58,0,improving continuous delivery/continuous deployment environments,http://data.europa.eu/esco/skill/0550431f-9c8b-4204-9c45-59bc5feacf06,continuous improvement philosophies,continuous improvement systems,0.6587
+job-06dd58,1,working with people with a range of technical experience,http://data.europa.eu/esco/skill/8496d258-bf95-4041-a3d7-1cc19b629d14,liaise with industry experts,work together with industry experts,0.6227
+job-06dd58,2,bring others along with you,http://data.europa.eu/esco/skill/ab89ad86-1098-44bb-9465-05af5624557c,accompany people,accompany people,0.7567
+job-084f37,0,analytical thinking,http://data.europa.eu/esco/skill/4707da90-9cfc-46ca-8de0-38a0b7bfb137,think analytically,analytical thinking,1.0000
+job-084f37,1,delivering great UX,http://data.europa.eu/esco/skill/07dd856d-6141-48a7-a228-918f88494812,create prototype of user experience solutions,UX,0.6440
+job-084f37,2,working with custom UI,http://data.europa.eu/esco/skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e,design user interface,design user interface,0.6201
+job-084f37,3,Own the full app lifecycle from ideation to delivery to the Play Store,http://data.europa.eu/esco/skill/83b33952-3872-46ec-9a2e-b28f91303a7e,oversee development of software,oversee development of applications,0.5334
+job-0ad70d,0,be responsible for our customer's core company platform,http://data.europa.eu/esco/skill/43268a87-8280-4e3f-bf97-97dc973d60ef,represent the company,represent the company to customers,0.6336
+job-1a5188,0,Present insights progress and bottlenecks,http://data.europa.eu/esco/skill/7f70572d-f0c1-4039-9954-b57dc69981f6,keep updated on innovations in various business fields,keep updated on breakthroughs in various business fields,0.5780
+job-1a5188,1,Enjoy science,http://data.europa.eu/esco/skill/4fabca9a-7435-4f33-b1da-3cdb00340fdc,perform scientific research,engage in scientific research,0.6800
+job-1a5188,2,adhere to the European code of conduct for research integrity,http://data.europa.eu/esco/skill/833289fa-3646-4010-9d9e-93ba8c9ef2d8,apply research ethics and scientific integrity principles in research activities,obey scientific research code of conduct,0.8196
+job-1be607,0,establish and develop a close collaboration,http://data.europa.eu/esco/skill/326809fc-238d-40c2-881e-40042f7f2f0d,establish collaborative relations,establish collaborative relations,0.8168
+job-1be607,1,planning,http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a,plan,undertake planning,0.7634
+job-1ce47f,0,delivering a broad range of reward initiatives,http://data.europa.eu/esco/skill/7109d172-c370-47fe-ac81-8fe93550a9e3,impact investing,impact investing initiatives,0.5496
+job-1ce47f,1,working with numbers and data,http://data.europa.eu/esco/skill/57231a22-4da7-49c8-97b8-75672feadf1e,manage quantitative data,handle numerical data,0.7566
+job-1ce47f,2,translate those into findings and key messages,http://data.europa.eu/esco/skill/6eaeea3a-f100-43e4-b694-16a4dc5a79e1,formulate findings,formulate findings,0.6690
+job-1d827a,0,quality-minded,http://data.europa.eu/esco/skill/35ebe444-9ece-4fbc-a55d-e99ea37267ae,manage quality,attend to quality,0.6403
+job-1d827a,1,performing verification and validation experiments,http://data.europa.eu/esco/skill/65825c90-dd02-4533-8192-9195c18e1676,test pharmaceutical process,using validation engineering,0.7297
+job-1d827a,2,improve products on the market,http://data.europa.eu/esco/skill/c0fce59c-e227-4745-945f-95eb2f0bc03e,recommend product improvements,propose product improvements,0.7753
+job-200658,0,solving business problems through innovation and engineering practices,http://data.europa.eu/esco/skill/07e51c60-763a-4335-b4ec-70a15f66d328,propose ICT solutions to business problems,propose technical solutions to business problems,0.6899
+job-200658,1,apply your depth of knowledge and expertise,http://data.europa.eu/esco/skill/5c3ab99d-a3f1-4620-9602-d12d2151a03d,"apply knowledge of science, technology and engineering","apply knowledge of science, technology and engineering",0.7356
+job-200658,2,partner continuously with your many stakeholders,http://data.europa.eu/esco/skill/99c4c69a-025c-464f-adda-874c7f107a31,engage with stakeholders,build partnerships with stakeholders,0.8670
+job-22ddc2,0,developing responsive web apps,http://data.europa.eu/esco/skill/6ad40ca3-dc34-4442-b23f-0b1b28936f56,maintain responsive design,ensure responsive design of website,0.6860
+job-249e06,0,do some lifts,http://data.europa.eu/esco/skill/c3d61bcf-e698-4d39-8db1-388284dbfc74,operate lifting equipment,use lifting equipment,0.6908
+job-249e06,1,precise,http://data.europa.eu/esco/skill/83e6510b-ffeb-4aec-959c-4265fd0ff7b7,attend to detail,to work precisely,0.5816
+job-249e06,2,focused,http://data.europa.eu/esco/skill/74aa45cf-175f-47ef-9978-d9de437d92ba,stay alert,remain focused,0.7613
+job-249e06,3,manual work,http://data.europa.eu/esco/skill/3782a625-52c2-46c7-b585-35ba4ddc4a1d,crafting,hand work,0.7366
+job-27bba0,0,checking on the lights in the stables,http://data.europa.eu/esco/skill/79c48123-b0d4-4d01-b511-0ce999f3161c,manage stable,overseeing stables,0.6069
+job-27e719,0,support,http://data.europa.eu/esco/skill/4bd6e2ad-bf69-4198-b3ac-3baabd9da46e,support managers,support manager,0.7182
+job-27e719,1,problem-solving,http://data.europa.eu/esco/skill/df64a7cc-2e96-4304-95d3-56fe0ac2dd39,design thinking,creative problem solving solutions,0.7556
+job-2e58fa,0,work closely with a postdoc counterpart,http://data.europa.eu/esco/skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c,cooperate with colleagues,work in collaboration with colleague,0.6299
+job-2e58fa,1,computational analysis of RNA-seq and DNA-sequencing data,http://data.europa.eu/esco/skill/50431cf0-3b03-40fe-82aa-0b3a55ff7f9b,genomics,genomic study,0.6536
+job-2e58fa,2,integrating these data with phenotypic measurements,http://data.europa.eu/esco/skill/e3fcd642-5f9c-48ee-be58-258dd895d281,collect biological data,analysing biological data,0.6639
+job-2f4da8,0,running with a full stack development,http://data.europa.eu/esco/skill/ebec77ca-6d9d-4d90-9f65-f9d287a13286,development delays,development difficulty,0.4738
+job-38bc37,0,conduct research,http://data.europa.eu/esco/skill/4fabca9a-7435-4f33-b1da-3cdb00340fdc,perform scientific research,conduct scientific research,0.8996
+job-38bc37,1,document interdisciplinary research,http://data.europa.eu/esco/skill/f7b071bf-4882-4cfc-ae0a-7e0e0ab94c61,conduct research across disciplines,conduct interdisciplinary research,0.8786
+job-3a7b74,0,communication skills,http://data.europa.eu/esco/skill/f5122357-c3f7-4f3e-b0cc-25173199d554,teach communication methods,teach communication skills,0.8603
+job-3a7b74,1,motivated to learn new things,http://data.europa.eu/esco/skill/1fce1197-3a5b-45b7-8797-575cd3b57a01,show commitment,demonstrate motivation,0.6499
+job-3a7b74,2,positive attitude to new challenges,http://data.europa.eu/esco/skill/469748ce-051a-407e-9099-0c9415ac2705,approach challenges positively,approach challenges positively,0.7654
+job-3a7b74,3,interpersonal skills,http://data.europa.eu/esco/skill/3838a64c-78dc-4f3f-a0c0-9f604e33eefd,maintain internal communication systems,apply internal communcation skills,0.7073
+job-3a7b74,4,build relationships,http://data.europa.eu/esco/skill/bf983f2a-e941-4646-811d-cc81060cb53f,build networks,building effective relationships,0.8412
+job-41a50e,0,hands-on,http://data.europa.eu/esco/skill/8259c2c0-2749-41e2-a4a8-4a64a76eab37,laboratory techniques,lab techniques,0.4759
+job-41a50e,1,build and manage your own teams,http://data.europa.eu/esco/skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b,manage a team,manage a team,0.7866
+job-41a50e,2,coordinate outsourced development,http://data.europa.eu/esco/skill/6f8baa62-bc2b-4cc1-942b-f540c837cfa2,outsourcing strategy,outsourcing strategy,0.7076
+job-464b41,0,hands-on,http://data.europa.eu/esco/skill/8259c2c0-2749-41e2-a4a8-4a64a76eab37,laboratory techniques,lab techniques,0.4759
+job-464b41,1,execute a product roadmap,http://data.europa.eu/esco/skill/d15ba5cb-9212-4a90-85af-2c560da59925,perform product planning,perform a product plan,0.7161
+job-464b41,2,act as a technical lead,http://data.europa.eu/esco/skill/2624158e-4a53-4667-8921-96ee7aaea7b3,consult with technical staff,consulting technical staff,0.6461
+job-464b41,3,engineering and data science team that the successful candidate will build out,http://data.europa.eu/esco/skill/550e2d00-bd89-4614-8e15-330ae5277af3,assess candidates,assess candidates,0.5715
+job-48be79,0,Preparation of self-service counters,http://data.europa.eu/esco/skill/ada4654d-e4e7-4db7-acbe-84946287bcec,tend confectionery manufacturing equipment,watch confectionery manufacturing equipment,0.4948
+job-564bd4,0,physical attendance,http://data.europa.eu/esco/skill/a8fe6eae-cfc1-4580-ad12-f325e8c2b21b,keep records of attendance,keep records of attendance,0.6159
+job-564bd4,1,active participation,http://data.europa.eu/esco/skill/f5c3bcbe-a8a5-43b5-9fbe-05d6458a04d7,recruit members,engage participants,0.6680
+job-5f1cfe,0,programming skills,http://data.europa.eu/esco/skill/bf4d884f-c848-402a-b130-69c266b04164,apply basic programming skills,apply basic programming skills,0.8744
+job-6eedb1,0,independently conduct the experimental work,http://data.europa.eu/esco/skill/89db623e-e1fc-4ec2-9a0f-7b72b4c35303,gather experimental data,collect experimental data,0.7817
+job-6fb9e8,0,clean for a king and a queen,http://data.europa.eu/esco/skill/d9449998-c1f5-478c-a103-2255398cf0b6,apply hygiene standards,attend to cleanliness,0.6542
+job-6fb9e8,1,work fast,http://data.europa.eu/esco/skill/7a93e22f-54d8-4bf0-9213-d711f6601b49,work efficiently,work efficiently,0.7489
+job-6fb9e8,2,eye to details,http://data.europa.eu/esco/skill/83e6510b-ffeb-4aec-959c-4265fd0ff7b7,attend to detail,attend to detail,0.7266
+job-6fb9e8,3,work according to very specific procedures,http://data.europa.eu/esco/skill/a23659b1-a8bc-4331-a58d-eef263ca6a14,follow work procedures,work in accordance with procedures,0.7611
+job-6fb9e8,4,professional attitude,http://data.europa.eu/esco/skill/59ad10b1-6f71-4dd4-ad1f-a1fdf68bc2fb,show professional responsibility,adopt a professional attitude,0.8797
+job-6fb9e8,5,flexible,http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4,adapt to change,be flexible,0.8467
+job-70494e,0,unwavering commitment to quality,http://data.europa.eu/esco/skill/35ebe444-9ece-4fbc-a55d-e99ea37267ae,manage quality,managing quality,0.7505
+job-70494e,1,collaborative work ethic,http://data.europa.eu/esco/skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c,cooperate with colleagues,work collaboratively,0.8011
+job-70494e,2,coding,http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97,computer programming,computer programming,0.7950
+job-70494e,3,visual design skills,http://data.europa.eu/esco/skill/1f403e44-7a79-4b91-b86a-e406208be161,interpret visual literacy,have visual literacy,0.6999
+job-70494e,4,work effectively with common tools for conception design and prototyping,http://data.europa.eu/esco/skill/ed1d8bd4-cd2a-4c64-b665-56d70651026c,Prototyping development,prototyping methodology,0.7110
+job-70494e,5,working in an interactive agile environment,http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221,Agile development,Agile development,0.6753
+job-711bc9,0,technically strong,http://data.europa.eu/esco/skill/f504dee7-f68d-4d1b-8707-cda82f0f1d6c,work to develop physical ability to perform at the highest level in sport,develop physical strength to excel in sports,0.4273
+job-711bc9,1,commercially aware,http://data.europa.eu/esco/skill/d63c2bad-817d-4116-b4d8-b927cb01212d,commercial law,commercial regulation,0.5973
+job-711bc9,2,take the technical lead,http://data.europa.eu/esco/skill/14832d87-2f2f-4895-b290-e4760ebae42a,solve technical problems,solve technical problems,0.6393
+job-7425db,0,keep focus,http://data.europa.eu/esco/skill/74aa45cf-175f-47ef-9978-d9de437d92ba,stay alert,remain focused,0.9541
+job-7425db,1,be proactive,http://data.europa.eu/esco/skill/58240e34-7364-4078-a530-7a4f51649731,identify preventive actions,develop preventive actions,0.6347
+job-7425db,2,"Team
+-
+player",http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3,build team spirit,build teams,0.5673
+job-7425db,3,customer orientation,http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4,ensure client orientation,ensure customer orientation,0.9135
+job-7425db,4,thrive in a cross cultural setting,http://data.europa.eu/esco/skill/c10d5d87-36cf-42f5-8a12-e560fb5f4af8,demonstrate intercultural competence,adapt to cultural differences,0.8003
+job-7425db,5,communicator,http://data.europa.eu/esco/skill/75de3aa9-6208-4563-a31a-be0b680e5786,relay messages through radio and telephone systems,utilise communication skills to relay messages using radio and telephone equipment,0.5991
+job-77a1c1,0,Use data insights,http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c,business intelligence,business analytics,0.7321
+job-77a1c1,1,empathetic mindset,http://data.europa.eu/esco/skill/996243ee-543f-4c36-a31a-e0f2403c0c5d,relate empathetically,be empathetic,0.7812
+job-77a1c1,2,working with developers designers and product owners,http://data.europa.eu/esco/skill/d52382fe-f236-421f-95fe-34fe69d48dbd,collaborate with designers,work together with designers,0.7203
+job-7e885f,0,Design and extension of our Micro-Services based web architecture,http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c,web services,web services systems,0.6552
+job-7e885f,1,work hand in hand with UX QA and Product Owner,http://data.europa.eu/esco/skill/99ca6ed2-b6b8-4eb0-8180-92e750e546be,liaise with quality assurance,liaising with quality assurance,0.5481
+job-7e885f,2,all your decisions and actions have the maximum customer benefit and the company goals in mind,http://data.europa.eu/esco/skill/a15dab55-f1da-4f85-ae3e-2b5c5b5333ca,provide high quality customer service,aim to provide customers with the best possible service,0.6908
+job-82ca16,0,interpersonal,http://data.europa.eu/esco/skill/1a59af95-f36a-4d99-a5ca-6a7a46e2ecb0,body language,body language,0.6085
+job-82ca16,1,communication skills,http://data.europa.eu/esco/skill/f5122357-c3f7-4f3e-b0cc-25173199d554,teach communication methods,teach communication skills,0.8603
+job-83bbf2,0,developing mobile games with a large amount of content delivery,http://data.europa.eu/esco/skill/fcffe2a5-6253-4848-92e7-749304aca647,develop innovative mobility solutions,develop mobility applications,0.4882
+job-83bbf2,1,sense of F2P game design,http://data.europa.eu/esco/skill/3140d979-2d6a-4c10-add9-f7091103829f,create concept of digital game,design concepts of digital games,0.5594
+job-868257,0,Assesses projects for cloud impacts,http://data.europa.eu/esco/skill/11430d93-c835-48ed-8e70-285fa69c9ae6,design cloud architecture,engineer cloud architecture,0.5750
+job-868257,1,Provide regular reporting,http://data.europa.eu/esco/skill/78b1de70-0930-462f-9a7e-bf9b4135e1e2,write routine reports,carry out routine reporting,0.8545
+job-868257,2,elicitation and specification of architectural functional and non-functional requirements,http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2,define technical requirements,gather technical requirements,0.7132
+job-888c7a,0,communicate,http://data.europa.eu/esco/skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7,communication,communicating,0.9200
+job-89c909,0,tacking complex design challenges,http://data.europa.eu/esco/skill/7a8fb784-67fa-41e9-a75c-6b491d91f800,develop strategy to solve problems,design strategy to solve problems,0.6284
+job-89c909,1,delivering large projects,http://data.europa.eu/esco/skill/4ca91852-c534-4b98-ab1c-59a126534c88,project commissioning,managing projects,0.6868
+job-89c909,2,developing and implementing solutions on AWS,http://data.europa.eu/esco/skill/6b643893-0a1f-4f6c-83a1-e7eef75849b9,develop with cloud services,develop cloud applications,0.6458
+job-8a04ab,0,Participation in the elaboration of user stories,http://data.europa.eu/esco/skill/f5c3bcbe-a8a5-43b5-9fbe-05d6458a04d7,recruit members,engage participants,0.5275
+job-910be5,0,base your decisions on solid data and metrics,http://data.europa.eu/esco/skill/be20d05c-f6b4-4580-9fcf-f00f4baab562,make data-driven decisions,take decisions based on data,0.7731
+job-910be5,1,keen to build your knowledge on them all,http://data.europa.eu/esco/skill/7b901041-3863-4f35-ad9b-5f89de38b1e5,advise on maritime regulations,advise on maritime subjects,0.4515
+job-92b840,0,designing applications,http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef,computer engineering,software design,0.8052
+job-92b840,1,designing and building reusable services,http://data.europa.eu/esco/skill/83218cac-3599-417e-93d2-26013cdccd98,service-oriented modelling,service oriented models,0.6817
+job-95960d,0,passion,http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156,demonstrate curiosity,curiosity,0.5648
+job-95960d,1,dedication,http://data.europa.eu/esco/skill/113b4428-0a31-4199-8496-070af7854b91,meet commitments,show commitment,0.5663
+job-95960d,2,support and scale cloud services,http://data.europa.eu/esco/skill/38716afc-a93b-44ab-96cc-2ecf67edcf32,do cloud refactoring,optimise cloud services,0.7198
+job-95960d,3,establish SRE practices for a private cloud service,http://data.europa.eu/esco/skill/1c2978b8-bb0d-4249-9c23-877571a4dffa,cloud security and compliance,cloud compliance,0.5452
+job-a452b0,0,solve technical challenges,http://data.europa.eu/esco/skill/14832d87-2f2f-4895-b290-e4760ebae42a,solve technical problems,solve technical problems,0.8811
+job-a452b0,1,deliver high quality code,http://data.europa.eu/esco/skill/9d1b08b3-ba1e-41f6-a466-1ac1e62eb5f0,conduct ICT code review,perform code reviews,0.5797
+job-a452b0,2,continuously improve and evolve core of the graph database,http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f,manage database,implement database theory,0.4143
+job-ac5e6b,0,to build and support integrated cloud services in a broadly distributed multi-tenant cloud environment,http://data.europa.eu/esco/skill/11430d93-c835-48ed-8e70-285fa69c9ae6,design cloud architecture,create cloud architecture,0.6073
+job-ad6c3c,0,study nanomaterials for the selective catalytic reduction (SCR) of NOx,http://data.europa.eu/esco/skill/24603607-640c-41a9-93a1-d2420399d55c,sulphur recovery processes,catalytic reaction processes,0.4741
+job-addc7d,0,Acting as a sparring partner,http://data.europa.eu/esco/skill/024910a2-1ee8-4f07-bac6-33b577d9392e,supervise performers' fights,supervising performers' fights,0.6199
+job-addc7d,1,Supporting new sites,http://data.europa.eu/esco/skill/d0e23450-1409-4dd7-99ef-0f84ffd15da1,coordinate new sites preparation,coordinating new sites preparation,0.6067
+job-addc7d,2,cooperate closely with stakeholders,http://data.europa.eu/esco/skill/87de6e49-ca1c-42a4-8751-5ff0b991966b,negotiate with stakeholders,collaborate with stakeholders,0.8785
+job-addc7d,3,business acumen,http://data.europa.eu/esco/skill/4ddf5204-95f5-4be2-ad35-571e2f493ae5,apply business acumen,employ business acumen,0.8494
+job-addc7d,4,translated financial performance data into business cases and actions,http://data.europa.eu/esco/skill/8a43795b-bb38-4f29-91df-a6c92ad4643c,analyse financial performance of a company,analyse company financial performance,0.6810
+job-addc7d,5,be a valuable partner to the Head of International SC,http://data.europa.eu/esco/skill/77931759-69af-4637-8b26-c8376f9240e2,international business,international business,0.5853
+job-b2c8cc,0,passionate,http://data.europa.eu/esco/skill/0c9f20cb-32fb-4ff7-877e-508762791151,RAGE (digital game creation systems),RAGE,0.4519
+job-b2c8cc,1,develop the best travel product,http://data.europa.eu/esco/skill/6a8e9cfe-b337-406b-8549-7db7cdc93c96,develop tourism products,develop a tourism product,0.7418
+job-ba0731,0,optimize the user experience on mobile devices and Set-Top Boxes,http://data.europa.eu/esco/skill/cf532795-a1fd-43bd-8407-6e43f877e6e3,mobile device management,mobile device management,0.4699
+job-c7e726,0,interview business managers,http://data.europa.eu/esco/skill/f14ff4b7-be1e-4b55-b39b-520005f8a97e,liaise with managers,liaise with managers,0.6363
+job-c7e726,1,telephone voice,http://data.europa.eu/esco/skill/2b285a57-4add-453e-af5d-3d986a65c8fe,use computer telephony integration,computer telephony,0.6857
+job-ca4253,0,willingness to learn,http://data.europa.eu/esco/skill/9bf266a6-188b-4d17-a22f-2f266d76832b,demonstrate willingness to learn,demonstrate willingness to learn,0.8172
+job-cb34d9,0,hands on technical design and implementation,http://data.europa.eu/esco/skill/ed1d8bd4-cd2a-4c64-b665-56d70651026c,Prototyping development,Prototyping development,0.6001
+job-cb34d9,1,developing roadmaps and target architectures,http://data.europa.eu/esco/skill/80c042de-bc1a-4d78-b266-35bc80ba3093,architectural design,architectural blueprint,0.6239
+job-d19ed2,0,open to new ideas,http://data.europa.eu/esco/skill/c2a0c52c-0b4b-4180-a918-92650ea3b458,think innovatively,think innovatively,0.6886
+job-d19ed2,1,communication skills,http://data.europa.eu/esco/skill/f5122357-c3f7-4f3e-b0cc-25173199d554,teach communication methods,teach communication skills,0.8603
+job-d19ed2,2,being part of a team,http://data.europa.eu/esco/skill/8c8da904-cdb3-47d9-bfbf-15ade747d9ec,work in a hospitality team,form part of a team,0.8251
+job-d4fd75,0,defining and documenting technical architecture of complex and highly scalable products,http://data.europa.eu/esco/skill/5c98825f-146d-4d35-97cf-207b2afd9ae2,create technical plans,create technical blueprints,0.6198
+job-d4fd75,1,running large scale customer facing web services,http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c,web services,web services systems,0.6730
+job-dce69a,0,Insights creation and commenting,http://data.europa.eu/esco/skill/f263da7f-0708-42c2-b1a9-39083416f632,communicate analytical insights,share insights derived from analysis,0.6790
+job-dce69a,1,Creation/ optimization of PPT,http://data.europa.eu/esco/skill/c643e59b-d74c-4f44-b76e-6e1d96c05ec4,use safety equipment in construction,using PPE,0.6005
+job-dd00eb,0,developing large scale and high-volume systems,http://data.europa.eu/esco/skill/b3a75400-103f-42c7-b742-be11d161d05b,manage production systems,managing production systems,0.5605
+job-dd00eb,1,deliver accessible and performance web applications,http://data.europa.eu/esco/skill/8c88d336-c249-4537-b26e-d679a85c4b9b,Ajax Framework,Ajax framework for web applications development,0.5964
+job-dd00eb,2,Active contribution towards key design decisions and detailed design and implementation,http://data.europa.eu/esco/skill/f03a3387-c4a7-41e3-a5d4-dd4577147940,integrated design,integrative design approach,0.6124
+job-de10cd,0,pragmatist,http://data.europa.eu/esco/skill/513673ed-7007-4aa8-a803-e71162ec0e5d,political ideologies,political ideologue,0.6313
+job-de10cd,1,willing to challenge us as well as yourself,http://data.europa.eu/esco/skill/7a147904-22b3-498a-b4d9-7bceeb86b45d,cope with stress,accept challenges,0.5839
+job-e369e1,0,provide customer care,http://data.europa.eu/esco/skill/704fda1b-cd0a-40fe-99fc-0a24250a2010,deal with public,provide customer care,1.0000
+job-e369e1,1,communications skills,http://data.europa.eu/esco/skill/f5122357-c3f7-4f3e-b0cc-25173199d554,teach communication methods,teach communication skills,0.7885
+job-e76704,0,Grows from feedback,http://data.europa.eu/esco/skill/d73cb129-b385-4776-8303-f3f926b2e481,report on production results,feedback of production results,0.6191
+job-e76704,1,appreciates learning new things,http://data.europa.eu/esco/skill/9bf266a6-188b-4d17-a22f-2f266d76832b,demonstrate willingness to learn,exhibit willingness to learn,0.5507
+job-e76704,2,Welcomes being challenged,http://data.europa.eu/esco/skill/05aa7c09-46e7-433f-a81b-92841f4551e7,accept criticism and guidance,welcome criticism,0.6026
+job-e76704,3,respectfully challenges colleagues,http://data.europa.eu/esco/skill/f8e5f1fd-82ee-45c0-b179-399d8e9a22aa,deal with challenging people,dealing with people who challenge,0.6813
+job-e76704,4,Sees a programming language/framework as a tool to get a specific job done,http://data.europa.eu/esco/skill/bcbf5957-afc6-4f35-930f-15e7e0bda744,help the programmer define an artistic vision,help the programmer define an artistic vision,0.5068
+job-f1c012,0,Communicating technical issues,http://data.europa.eu/esco/skill/6bc57b80-37c8-4c9a-be7b-960d2e44fb77,communicate commercial and technical issues in foreign languages,communicate technical issues in foreign languages,0.7702
+job-f35015,0,troubleshooting IT infrastructure related issues,http://data.europa.eu/esco/skill/744442ac-c157-4350-8be0-ce454df4f5c5,perform ICT troubleshooting,performing ICT troubleshooting,0.7374

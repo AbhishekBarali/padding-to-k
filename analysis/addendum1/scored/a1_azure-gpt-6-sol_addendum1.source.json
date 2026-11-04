@@ -1,0 +1,9 @@
+{
+ "run_id": "a1_azure-gpt-6-sol_addendum1",
+ "model_key": "azure-gpt-6-sol",
+ "source": "f30085385799f85dabaaadbebcd88922eae4567331a987d80392afe15be47c47",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 6084,
+ "entries": 11860
+}

@@ -1,0 +1,9 @@
+{
+ "run_id": "a1_bedrock-grok-4.3_addendum1-repeat",
+ "model_key": "bedrock-grok-4.3",
+ "source": "2a519df5682c2a6890319007196c0c11ae34f1f7db980315973207244f1d7d5b",
+ "score_version": "fs-2",
+ "matcher": "v0-dev-preliminary",
+ "rows": 300,
+ "entries": 702
+}

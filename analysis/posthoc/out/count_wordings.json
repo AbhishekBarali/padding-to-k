@@ -1,0 +1,339 @@
+{
+ "dataset": "scrapegraphai/scrapegraphai-100k",
+ "excluded_distinct": {
+  "at_least": {
+   "decimal": 5,
+   "no_head": 24,
+   "of": 1,
+   "range": 6,
+   "unit": 32
+  },
+  "at_most": {
+   "no_head": 2,
+   "range": 2,
+   "unit": 23
+  },
+  "bare": {
+   "decimal": 2,
+   "no_head": 81,
+   "of": 4,
+   "range": 4
+  },
+  "exactly": {
+   "no_head": 8,
+   "of": 27,
+   "unit": 16
+  },
+  "first_k": {
+   "no_head": 30,
+   "range": 6,
+   "unit": 95
+  },
+  "top": {
+   "no_head": 8
+  },
+  "up_to": {
+   "decimal": 2,
+   "percent": 3,
+   "unit": 1
+  }
+ },
+ "licence": "Apache-2.0",
+ "meta": {
+  "columns": [
+   "id",
+   "prompt",
+   "schema",
+   "schema_hash"
+  ],
+  "dataset": "scrapegraphai/scrapegraphai-100k",
+  "downloaded_utc": "2026-11-01 04:28 UTC",
+  "file": "data/train.parquet",
+  "local_sha256": "480c624d0280e905b2a2aa7b4bd358f8d59b49eee031f7252a4800d209655dd7",
+  "remote_lfs_sha256": "b0d4e38dad678b9e29379eea9fc1a8bbdce821132c5e3b2a83cadd701b1a16bd",
+  "remote_size": 792892104,
+  "revision": "0f8d168f2a64632a3ec860059919059273314e66"
+ },
+ "n_random_pool": 186,
+ "num": "(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+ "overall": {
+  "any_rows": 606,
+  "asked_rows": 517,
+  "k_matches": {
+   "1": 126,
+   "3": 191,
+   "5": 146,
+   "other": 247
+  },
+  "k_rows": {
+   "1": 112,
+   "3": 181,
+   "5": 136,
+   "other": 221
+  },
+  "pct_any": 0.65,
+  "pct_asked": 0.55,
+  "rows": 93695
+ },
+ "patterns": {
+  "at_least": "\\b(?:at\\s+least|a\\s+minimum\\s+of|minimum\\s+of|no\\s+fewer\\s+than|no\\s+less\\s+than|not\\s+less\\s+than)\\s+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+  "at_most": "\\b(?:at\\s+most|no\\s+more\\s+than|not\\s+more\\s+than|a\\s+maximum\\s+of|maximum\\s+of|max(?:imum)?\\.?|limit(?:ed)?\\s+to)\\s+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+  "bare": "\\b(?:list|extract|get|return|give|find|scrape|show|provide|collect|fetch|retrieve|pull|grab|select|pick|identify|name|choose|output|generate|suggest|recommend|gather|include)(?:\\s+(?:me|us))?(?:\\s+(?:the|only|just))?\\s+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+  "exactly": "\\bexactly\\s+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+  "first_k": "\\b(?:first|last|latest|next|most\\s+recent|newest)\\s+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+  "top": "\\btop[\\s-]+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b",
+  "up_to": "\\bup\\s+to\\s+(?P<num>\\d{1,3}(?:,\\d{3})+(?![.,]?\\d)|\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|hundred)\\b"
+ },
+ "per_type": {
+  "at_least": {
+   "distinct": 12,
+   "k": {
+    "3": 12,
+    "other": 30
+   },
+   "number_words": 3,
+   "pct_distinct": 0.03,
+   "pct_rows": 0.04,
+   "rows": 41
+  },
+  "at_most": {
+   "distinct": 24,
+   "k": {
+    "3": 5,
+    "5": 20,
+    "other": 38
+   },
+   "number_words": 0,
+   "pct_distinct": 0.06,
+   "pct_rows": 0.06,
+   "rows": 56
+  },
+  "bare": {
+   "distinct": 56,
+   "k": {
+    "1": 60,
+    "3": 19,
+    "5": 11,
+    "other": 40
+   },
+   "number_words": 20,
+   "pct_distinct": 0.13,
+   "pct_rows": 0.14,
+   "rows": 127
+  },
+  "exactly": {
+   "distinct": 43,
+   "k": {
+    "1": 56,
+    "5": 11,
+    "other": 6
+   },
+   "number_words": 43,
+   "pct_distinct": 0.1,
+   "pct_rows": 0.07,
+   "rows": 63
+  },
+  "first_k": {
+   "distinct": 50,
+   "k": {
+    "3": 46,
+    "5": 39,
+    "other": 13
+   },
+   "number_words": 6,
+   "pct_distinct": 0.12,
+   "pct_rows": 0.09,
+   "rows": 89
+  },
+  "top": {
+   "distinct": 69,
+   "k": {
+    "3": 84,
+    "5": 39,
+    "other": 73
+   },
+   "number_words": 2,
+   "pct_distinct": 0.17,
+   "pct_rows": 0.21,
+   "rows": 193
+  },
+  "up_to": {
+   "distinct": 64,
+   "k": {
+    "1": 10,
+    "3": 25,
+    "5": 26,
+    "other": 47
+   },
+   "number_words": 2,
+   "pct_distinct": 0.15,
+   "pct_rows": 0.09,
+   "rows": 88
+  }
+ },
+ "posthoc": true,
+ "random_matches": [
+  {
+   "context": "... (Produktbeschreibung) - Technical data (Technische Daten) - **up to 5** key specifications - Key features (Eigenschaften) - up ...",
+   "k": 5,
+   "match": "up to 5 key specifications",
+   "pattern": "up_to"
+  },
+  {
+   "context": "... If Druckluft: compressors, regulators, maintenance units Extract **up to 8** products with detailed information. Include German technical terms ...",
+   "k": 8,
+   "match": "up to 8 products",
+   "pattern": "up_to"
+  },
+  {
+   "context": "**Extract 10** publicly available datasets related to the population, including ...",
+   "k": 10,
+   "match": "Extract 10 publicly available datasets",
+   "pattern": "bare"
+  },
+  {
+   "context": "... user query: CIO from GCC graduated from **top 20** universities Make sure the you extract all the ...",
+   "k": 20,
+   "match": "top 20 universities",
+   "pattern": "top"
+  },
+  {
+   "context": "... or service). 2/ Identify the company_name and **top 5** keywords. 3/ Given the following categories: ['Books & ...",
+   "k": 5,
+   "match": "top 5 keywords",
+   "pattern": "top"
+  },
+  {
+   "context": "... the body content in three sentences, and **retrieve one** main image, if any.",
+   "k": 1,
+   "match": "retrieve one main",
+   "pattern": "bare"
+  },
+  {
+   "context": "... strings or [] for lists - Output **exactly one** JSON object - no commentary, no extra keys ...",
+   "k": 1,
+   "match": "exactly one JSON",
+   "pattern": "exactly"
+  },
+  {
+   "context": "... web page (from the initial set of **up to 7** search results) that you analyzed for this entry. ...",
+   "k": 7,
+   "match": "up to 7 search results",
+   "pattern": "up_to"
+  },
+  {
+   "context": "... tags, include all GPE entities, and the **top 20** entities from the other categories.:",
+   "k": 20,
+   "match": "top 20 entities",
+   "pattern": "top"
+  },
+  {
+   "context": "... comments, no explanations. Goal: From this page, **extract one** quote where the user genuinely recommends the book ...",
+   "k": 1,
+   "match": "extract one quote",
+   "pattern": "bare"
+  },
+  {
+   "context": "... with the same scoring B/ Return the **top 5** categories with the highest scoring 3/ Describe the ...",
+   "k": 5,
+   "match": "top 5 categories",
+   "pattern": "top"
+  },
+  {
+   "context": "... For each product you find (aim for **up to 25** products), extract: 1. **Product Identity:** - Full product ...",
+   "k": 25,
+   "match": "up to 25 products",
+   "pattern": "up_to"
+  },
+  {
+   "context": "... (exactly 'Clarivate') - cluster (exactly 'Competitor - **Top 3**') OUTPUT RULES: - LIST page => include multiple ...",
+   "k": 3,
+   "match": "Top 3",
+   "pattern": "top"
+  },
+  {
+   "context": "... NOT write NA. Fields: title, price, rating, **first 5** bullets under 'About this item'.",
+   "k": 5,
+   "match": "first 5 bullets",
+   "pattern": "first_k"
+  },
+  {
+   "context": "Please **list 2** jobs with their titles",
+   "k": 2,
+   "match": "list 2 jobs",
+   "pattern": "bare"
+  },
+  {
+   "context": "... and the different types of accommodation.Get the **last 3** reviews, a description of the property, the urls ...",
+   "k": 3,
+   "match": "last 3 reviews",
+   "pattern": "first_k"
+  },
+  {
+   "context": "... (exactly 'Anaqua') - cluster (exactly 'Competitor - **Top 3**') OUTPUT RULES: - LIST page => include multiple ...",
+   "k": 3,
+   "match": "Top 3",
+   "pattern": "top"
+  },
+  {
+   "context": "... statistics courses, depending on your background* * **A minimum of four** research courses * A minimum of 9 content ...",
+   "k": 4,
+   "match": "A minimum of four research courses",
+   "pattern": "at_least"
+  },
+  {
+   "context": "... invest in warehouse properties for passive income\" \"**Top 5** emerging markets for medical office building investments\" \"Luxury ...",
+   "k": 5,
+   "match": "Top 5 emerging markets",
+   "pattern": "top"
+  },
+  {
+   "context": "... with the same scoring B/ Return the **top 5** categories with the highest scoring 3/ List up ...",
+   "k": 5,
+   "match": "top 5 categories",
+   "pattern": "top"
+  }
+ ],
+ "revision": "0f8d168f2a64632a3ec860059919059273314e66",
+ "rule_changes": [
+  [
+   "2026-11-01",
+   "first_k no longer counts with nothing after k; only top k does. Found in the first run's matches: 'move forward to the next one.' The first rules are at commit 3342830 (rules sha256 fbe8ef7d58c1).",
+   "rows: any 633 (0.68%), asked types 517 (0.55%), first_k 116, k=1 139, k=3 181, k=5 136",
+   "rows: any 606 (0.65%), asked types 517 (0.55%), first_k 89, k=1 112, k=3 181, k=5 136 (other types unchanged)"
+  ]
+ ],
+ "rules_sha256": "beff03d2e371cdf16a711900b8ebc9f2bc1c6547d44f62b4389814616450219e",
+ "schemas_rows": {
+  "array": 84697,
+  "max_any": 28,
+  "min1_list": 32,
+  "min2": 11,
+  "min2_list": 11,
+  "min3": 11,
+  "rows": 93695
+ },
+ "schemas_unique": {
+  "array": 22447,
+  "max_any": 8,
+  "min1_list": 16,
+  "min2": 7,
+  "min2_list": 7,
+  "min3": 7,
+  "schemas": 25453
+ },
+ "seed": 20261101,
+ "source": "https://huggingface.co/datasets/scrapegraphai/scrapegraphai-100k/tree/0f8d168f2a64632a3ec860059919059273314e66",
+ "unique": {
+  "any": 289,
+  "asked": 239,
+  "at_least": 12,
+  "at_most": 24,
+  "bare": 56,
+  "exactly": 43,
+  "first_k": 50,
+  "prompts": 41538,
+  "top": 69,
+  "up_to": 64
+ }
+}

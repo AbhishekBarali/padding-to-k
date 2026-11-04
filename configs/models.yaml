@@ -548,6 +548,44 @@ models:
     notes: Failed the 14 Oct engine test (minItems 5 and maxItems 0 not met within 6,144 tokens; HTTP 503 on several requests).
     why: Same weights as the GPU thinking sub-arm; FP8; 0.17 / 0.25 USD.
 
+  # ---- Closed models (OSF addendum 1, https://osf.io/45mfb, filed 25 Oct 2026 before any of these requests was
+  # sent; preregistration/addendum-1.md). Exploratory, a dated reference next to the hosted models, never pooled.
+  # Scope `addendum1` of harness/run.py: prompt-side conditions on documents with n < k at k = 3 and 5 and on the
+  # empty documents at k = 1, wording 1 of each prose condition (5,604 sends). A 1-request check on 25 Oct: all
+  # three accept reasoning_effort none (0 reasoning tokens), temperature 0 and seed 0.
+  bedrock-grok-4.3:
+    role: closed_reference
+    family: grok
+    backend: bedrock
+    api_model: xai.grok-4.3
+    base_url: https://bedrock-mantle.us-east-1.api.aws/openai/v1   # Grok 4.3 is served on bedrock-mantle only
+    reasoning_effort: none                   # "none" disables reasoning (Bedrock model card); the default is "low"
+    max_tokens: 2048
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok, min_k_enforced, min_k_escape]   # engine test 25 Oct (runs/enforce/): E02-E06 pass, so the enforced pair runs too (addendum 1)
+    extra_body: {service_tier: flex}
+    price: {in: 0.625, out: 1.25, tier: flex, source: "docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-3.html, 1.25 / 2.50 Standard In-Region, Flex 0.5x, read 2026-10-25"}
+    why: A closed frontier model (xAI) that can switch reasoning off, so it matches the thinking-off setting of the study.
+  azure-gpt-6-sol:
+    role: closed_reference
+    family: gpt-6
+    backend: azure
+    api_model: gpt-6-sol                     # Azure deployment name; the reply reports gpt-6-sol-2026-09-22
+    reasoning_effort: none
+    max_tokens: 2048
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok]   # engine test 25 Oct: E03 and E05 fail (one runaway entry to the 2,048-token cap), so no enforced cells
+    price: {in: 2.00, out: 10.00, tier: global-standard, source: "azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry, GPT-6 Sol Global Standard short context, read 2026-10-25"}
+    why: OpenAI's general-purpose GPT-6 model, reasoning off (GPT-6.1 Sol cannot switch it off).
+  azure-gpt-6-luna:
+    role: closed_reference
+    family: gpt-6
+    backend: azure
+    api_model: gpt-6-luna                    # Azure deployment name; the reply reports gpt-6-luna-2026-09-22
+    reasoning_effort: none
+    max_tokens: 2048
+    conditions: [none, prose_up_to_k, prose_exactly_k, max_k_shown, min_k_shown, min_k_shown_fewer_ok, min_k_enforced, min_k_escape]   # engine test 25 Oct (runs/enforce/): E02-E06 pass, so the enforced pair runs too (addendum 1)
+    price: {in: 0.10, out: 0.50, tier: global-standard, source: "azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry, GPT-6 Luna Global Standard short context, read 2026-10-25"}
+    why: The small GPT-6 model, built for extraction, next to Sol, so the two form a size pair inside one closed family.
+
 # ---- Full-study line-up (18 Oct). Who runs where, on which requests, under which cap. harness/full_study_queue.py
 # turns this block into the ordered list of plan / go commands (`list` prints it, `run` executes it), and
 # analysis/full_study_estimate.py projects the cost and GPU time of every line and checks the caps (`check`).

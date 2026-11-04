@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrrrrrr}
+  \toprule
+  Condition & Grok 4.3: over & empty & GPT-6 Sol: over & empty & GPT-6 Luna: over & empty & 8 GPU models: over & empty \\
+  \midrule
+  \cnd{none} & 25.5 & 17.1 & 23.5 & 14.4 & 24.3 & 10.6 & 34.5 & 34.9 \\
+  \cnd{prose\_up\_to\_k} & 34.9 & 18.1 & 22.1 & 11.4 & 24.1 & 7.6 & 45.2 & 41.4 \\
+  \cnd{prose\_exactly\_k} & 56.9 & 32.4 & 69.3 & 63.5 & 50.8 & 20.2 & 59.7 & 52.1 \\
+  \cnd{max\_k\_shown} & 27.3 & 9.5 & 20.8 & 12.4 & 21.3 & 2.9 & 35.7 & 33.9 \\
+  \cnd{min\_k\_shown} & 59.7 & 34.3 & 52.7 & 49.5 & 39.8 & 57.1 & 55.4 & 42.3 \\
+  \cnd{min\_k\_shown\_fewer\_ok} & 49.9 & 20.0 & 28.4 & 53.3 & 36.1 & 79.0 & 31.0 & 31.8 \\
+  \cnd{min\_k\_enforced} & 89.3 & 94.3 & -- & -- & 90.2 & 71.4 & 90.1 & 82.4 \\
+  \cnd{min\_k\_escape} & 37.7 & 7.6 & -- & -- & 42.8 & 18.1 & 51.0 & 30.0 \\
+  \bottomrule
+\end{tabular}
